@@ -1,0 +1,21 @@
+<thirdpartyincoming-policy version="1">
+<itemList>
+
+<!-- QQ -->
+<item pkg="com.tencent.mobileqq" cls="com.tencent.av.ui.VChatActivity" policy="IGNORE"/>
+<item pkg="com.tencent.mobileqq" cls="com.tencent.av.ui.VideoInviteFull" policy="NOTICE"/>
+<!-- update for QQ version 8.1.0 -->
+<item pkg="com.tencent.mobileqq" cls="com.tencent.av.ui.VideoInviteActivity" policy="NOTICE"/>
+<item pkg="com.tencent.mobileqq" cls="com.tencent.av.ui.MultiIncomingCallsActivity" policy="HOLD"/>
+<!-- 群聊 -->
+<item pkg="com.tencent.mobileqq" cls="com.tencent.av.gaudio.GaInviteDialogActivity" policy="NOTICE"/>
+<!-- update for QQ version 8.1.0 -->
+<item pkg="com.tencent.mobileqq" cls="com.tencent.av.gaudio.GaInviteLockActivity" policy="NOTICE"/>
+
+<!-- WeiXin -->
+<item pkg="com.tencent.mm" cls="com.tencent.mm.plugin.voip.ui.VideoActivity" policy="NOTICE"/>
+<!-- 群聊 -->
+<item pkg="com.tencent.mm" cls="com.tencent.mm.plugin.multitalk.ui.MultiTalkMainUI" policy="NOTICE"/>
+
+</itemList>
+</thirdpartyincoming-policy>

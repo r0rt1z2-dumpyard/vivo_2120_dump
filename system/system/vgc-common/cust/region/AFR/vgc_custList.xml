@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <custlist name="setupwizard_language_with_iso_map">
+        <item name="TZ" value="en_US"/>
+        <item name="KE" value="en_US"/>
+        <item name="NG" value="en_US"/>
+        <item name="GH" value="en_US"/>
+        <item name="CI" value="fr_FR"/>
+    </custlist>
+    <custlist name="setupwizard_default_area_with_language">
+        <item name="fr_FR" value="CI"/>
+        <item name="en_US" value="NG"/>
+    </custlist>
+</config>

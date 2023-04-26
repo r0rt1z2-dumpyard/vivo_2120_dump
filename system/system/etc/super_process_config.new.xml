@@ -1,0 +1,25 @@
+<config version="20">
+    <sps switch="on" />
+    <packages>
+        <package name="com.vivo.permissionmanager" fwk-version="10-" enable-on="*" />
+        <package name="com.vivo.appfilter" fwk-version="10-" enable-on="*" />
+        <package name="com.vivo.multinlp" fwk-version="10-" enable-on="*" />
+        <package name="com.vivo.gamewatch" fwk-version="20-" enable-on="*" />
+        <package name="com.vivo.vms" fwk-version="20-" enable-on="*" />
+        <package name="com.vivo.gamecube" fwk-version="20-" enable-on="*" />
+        <package name="com.vivo.fingerprintui" fwk-version="20-" enable-o="*" />
+        <package name="com.vivo.contentcatcher" fwk-version="20-" enable-o="*" />
+        <package name="com.vivo.doubleinstance" fwk-version="20-" enable-o="*" />
+        <package name="com.vivo.faceui" fwk-version="20-" disable-on="PD1824,PD1916,
+			PD1922,PD1936,PD1955,PD1981,PD1986,PD2012,PD2024,PD2025,PD1832F_EX,PD1901BF_EX,
+			PD1911F_EX,PD1913F_EX,PD1921F_EX,PD1921BF_EX,PD1921CF_EX,PD1930F_EX,
+			PD1930CF_EX,PD1931F_EX,PD1934F_EX,PD1945F_EX,PD1948F_EX,PD1955F_EX,
+			PD1964F_EX,PD1965EF_EX,PD1968F_EX,PD1969F_EX,PD1987F_EX,PD1987BF_EX,
+			PD2001F_EX,PD2005F_EX,PD2006F_EX,PD2020F_EX,PD2034EF_EX,PD2042F_EX,
+			PD2036F_EX,PD2038F_EX" />
+        <!-- demo:
+        <package name="com.vivo.abc" fwk-version="8,10-" pkg-version="10010", enable-on="*" />
+        <package name="com.vivo.def" disable-on="PD2049,PD2046" />
+        -->
+    </packages>
+</config>

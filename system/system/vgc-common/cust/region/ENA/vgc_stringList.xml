@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <list name="vgc_region_limit_list">
+        <item value="AL"/>
+        <item value="MK"/>
+        <item value="BA"/>
+        <item value="ME"/>
+        <item value="RS"/>
+    </list>
+    <!-- auto add vivo config -->
+</config>

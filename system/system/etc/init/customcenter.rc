@@ -1,0 +1,7 @@
+on post-fs-data
+    setprop ro.vivo.yzfswjmanager.enable 1
+
+service customcenter /system/bin/customcenter
+    class main
+    user system
+    group system shell sdcard_rw readproc

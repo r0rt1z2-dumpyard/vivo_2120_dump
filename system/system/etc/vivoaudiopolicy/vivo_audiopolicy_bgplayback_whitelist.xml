@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2015 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<lists>
+	<list name="vivo_audio_policy_bgplayback_whitelist">
+		<item value="com.vivo.browser"/>
+		<item value="com.vivo.findphone"/>
+		<item value="com.vivo.aiservice"/>
+		<item value="com.vivo.aiservice:tts"/>
+		<item value="com.iflytek.speechsuite"/>
+		<item value="com.google.android.marvin.talkback"/>
+		<item value="com.google.android.gms"/>
+		<item value="android.media.cts"/>
+		<item value="com.google.uid.shared"/>
+		<item value="com.ss.android.article.video"/>
+		<item value="com.android.VideoPlayer"/>
+		<item value="com.ss.android.ugc.aweme"/>
+		<item value="com.baidu.haokan"/>
+		<item value="com.yuncheapp.android.pearl"/>
+		<item value="com.all.video"/>
+		<item value="com.qiyi.video"/>
+		<item value="com.sesame.video"/>
+		<item value="com.le123.ysdq"/>
+		<item value="com.vivo.vms"/>
+		<item value="com.vivo.musicwidgetmix"/>
+		<item value="com.android.providers.downloads"/>
+		<item value="com.vivo.gamecube"/>
+		<item value="com.android.systemui"/>
+		<item value="android.uid.systemui"/>
+		<item value="com.android.bbkmusic"/>
+		<item value="com.android.mms"/>
+		<item value="com.vivo.gallery"/>
+		<item value="com.android.bbksoundrecorder"/>
+		<item value="com.android.BBKClock"/>
+		<item value="com.android.camera"/>
+		<item value="com.vivo.ai.ime"/>
+		<item value="com.vivo.health"/>
+		<item value="com.vivo.game"/>
+		<item value="com.vivo.hybrid"/>
+		<item value="com.vivo.smartanswer"/>
+		<item value="com.vivo.timerwidget"/>
+		<item value="com.vivo.videoeditor"/>
+		<item value="com.kugou.android"/>
+	</list>
+</lists>

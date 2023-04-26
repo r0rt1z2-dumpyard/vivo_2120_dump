@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content>
+    <version>1</version>
+    <application name="com.tencent.mm">
+        <!-- This path is for system media -->
+        <path name="/system/media/audio/notifications/"></path>
+        <!-- This path is for application data media -->
+        <path name="/data/app/"></path>
+        <!-- This path is for system media -->
+        <path name="/data/system_de/0/ringtones/notification_sound_cache"></path>
+        <!-- This path is for vivo application data media -->
+        <path name="/data/vivo-apps/"></path>
+        <path name="/data/user/0/com.tencent.mm/tinker/"></path>
+        <!-- The datasize is for com.tencent.mm notification -->
+        <datasize name="0"></datasize>
+    </application>
+
+    <application name="com.tencent.mobileqq">
+        <!-- This path is for system media -->
+        <path name="/system/media/audio/notifications/"></path>
+        <!-- This path is for application data media -->
+        <path name="/data/app/"></path>
+        <!-- This path is for system media -->
+        <path name="/data/system_de/0/ringtones/notification_sound_cache"></path>
+        <!-- This path is for vivo application data media -->
+        <path name="/data/vivo-apps/"></path>
+        <!-- The datasize is for com.tencent.mobileqq notification -->
+        <datasize name="8777"></datasize>
+        <datasize name="14240"></datasize>
+    </application>
+</content>

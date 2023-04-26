@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TaskConfig version="1.0">
+    <Task name="ImageCoverage" version="1.0">
+        <CommandRequest require="32547" loop="1" timeout="20000" extra="0"/>
+    </Task>
+    <Task name="AT+BKZWSB=0" alias="BadPixelDetection" version="1.0">
+        <CommandRequest require="32543" loop="1" timeout="20000" extra="0"/>
+    </Task>
+    <Task name="ImageQuality" version="1.0">
+        <CommandRequest require="32542" loop="1" extra="0"/>
+    </Task>
+    <Task name="AT+BK_FDT_UDF=2" alias="Spi" version="1.0">
+        <CommandRequest require="32549" loop="1" extra="0"/>
+    </Task>
+    <Task name="AT+BK_FPT_TEST=4" version="1.0">
+        <CommandRequest require="32547" loop="1" timeout="20000" extra="0"/>
+    </Task>
+    <Task name="AT+BK_FDT_UDF=4" version="1.0">
+        <CommandRequest require="32547" loop="1" timeout="20000" extra="0"/>
+    </Task>
+    <Task name="AT+BKZWSB=1" version="1.0">
+        <CommandRequest require="32542" loop="1" extra="0"/>
+    </Task>
+    <Task name="AT+BK_FDT_SNID=0" version="1.0">
+        <CommandRequest require="32562" loop="1" extra="0"/>
+    </Task>
+    <Task name="AT+BK_FDT_SNID=1" version="1.0">
+        <CommandRequest require="32612" loop="1" extra="0"/>
+    </Task>
+</TaskConfig>

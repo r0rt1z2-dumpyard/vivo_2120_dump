@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <path name="apn_file_path">apns-conf.xml</path>
+    <path name="launcher_file_path">preconfig.xml</path>
+    <path name="config_path">vgc_config.xml</path>
+    <path name="scene_launcher_file_path">scene_preconfig.xml</path>
+    <path name="drawer_launcher_file_path">drawer_preconfig.xml</path>
+    <path name="wallpaper_file_path">media/wallpaper/default_wallpaper.jpg</path>
+    <path name="lockscreen_file_path">media/lockscreen/default_lockscreen.jpg</path>
+    <path name="privapp_perm_path">permissions/privapp-permissions-platform.xml</path>
+    <path name="app_install_white_path">whiteapp.list</path>
+    <path name="app_install_black_path">blackapp.list</path>
+    <path name="setting_media_audio_dir_path">media/audio</path>
+    <path name="vgc_cbs_carrier_siminfo_path">carrier_siminfo.xml</path>
+    <path name="system_config_dir_path">sysconfig</path>
+</config>

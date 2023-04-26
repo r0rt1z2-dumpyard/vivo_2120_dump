@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display_ic_white_list>
+    <enableAll>true</enableAll>
+    <!--control_by_app：1表示usecase切换又应用控制，框架不会自动切换其usecase-->
+    <!--ui_video_split：ui和video是否能分离-->
+
+    <!--内置相机-->
+    <package name="com.android.camera">
+        <activity name="com.android.camera/com.android.camera.CameraActivity">
+            <item name="control_by_app">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">0</item>
+            <item name="nr">5</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <!-- 王者荣耀 官服-->
+    <package name="com.tencent.tmgp.sgame">
+        <activity name="com.tencent.tmgp.sgame/com.tencent.tmgp.sgame.SGameActivity">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+	<!-- 王者荣耀 体验服-->
+    <package name="com.tencent.tmgp.sgamece">
+        <activity name="com.tencent.tmgp.sgamece/com.tencent.tmgp.sgamece.SGameActivity">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <!--原神 官服-->
+    <package name="com.miHoYo.Yuanshen">
+        <activity name="com.miHoYo.Yuanshen/com.miHoYo.GetMobileInfo.MainActivity">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+	<!--原神 bilibili服-->
+    <package name="com.miHoYo.ys.bilibili">
+        <activity name="com.miHoYo.ys.bilibili/com.miHoYo.GetMobileInfo.MainActivity">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <!--原神 国际服-->
+    <package name="com.miHoYo.GenshinImpact">
+        <activity name="com.miHoYo.GenshinImpact/com.miHoYo.GetMobileInfo.MainActivity">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <!--崩坏3 官服-->
+    <package name="com.miHoYo.enterprise.NGHSoD">
+        <activity name="com.miHoYo.enterprise.NGHSoD/com.miHoYo.overridenativeactivity.OverrideNativeActivity">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <!--崩坏3 vivo服-->
+    <package name="com.miHoYo.bh3.vivo">
+        <activity name="com.miHoYo.bh3.vivo/com.miHoYo.overridenativeactivity.OverrideNativeActivity">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <!--崩坏3 bilibili服-->
+    <package name="com.miHoYo.bh3.bilibili">
+        <activity name="com.miHoYo.bh3.bilibili/com.miHoYo.overridenativeactivity.OverrideNativeActivity">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <!--完美世界-->
+    <package name="com.tencent.wmsj">
+        <activity name="com.tencent.wmsj/com.tencent.wmsj.UnityPlayerActivity">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <!--天刀-->
+    <package name="com.tencent.tmgp.wuxia">
+        <activity name="com.tencent.tmgp.wuxia/com.tencent.tmgp.wuxia.ApolloWuxia">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <!--鬼泣-->
+    <package name="com.yunchang.dmc">
+        <activity name="com.yunchang.dmc/com.yunchang.plugin.YunchangPluginActivity">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <!-- 天谕 -->
+    <package name="com.netease.pm02">
+        <activity name="com.netease.pm02/com.netease.ntunisdk.unisdk4UnityPlugin.AndroidPlugin">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <package name="com.netease.pm02.nearme.vivo">
+        <activity name="com.netease.pm02.nearme.vivo/com.netease.ntunisdk.unisdk4UnityPlugin.AndroidPlugin">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <!-- 和平精英 -->
+    <package name="com.tencent.tmgp.pubgmhd">
+        <activity name="com.tencent.tmgp.pubgmhd/com.epicgames.ue4.GameActivity">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <!-- 第五人格 -->
+    <package name="com.netease.dwrg">
+        <activity name="com.netease.dwrg5.vivo/com.netease.dwrg.Client">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <package name="com.netease.dwrg5.vivo">
+        <activity name="com.netease.dwrg5.vivo/com.netease.dwrg.Client">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <!-- 使命召唤 -->
+    <package name="com.tencent.tmgp.cod">
+        <activity name="com.tencent.tmgp.cod/com.tencent.tmgp.cod.CODMainActivity">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <!-- 使命召唤 Garena服-->
+    <package name="com.garena.game.codm">
+        <activity name="com.garena.game.codm/com.tencent.tmgp.cod.CODMainActivity">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <!-- 使命召唤 国际服-->
+    <package name="com.activision.callofduty.shooter">
+        <activity name="com.activision.callofduty.shooter/com.tencent.tmgp.cod.CODMainActivity">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <!-- PUBG 全球服-->
+    <package name="com.tencent.ig">
+        <activity name="com.tencent.ig/com.epicgames.ue4.GameActivity$_29469">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <!-- PUBG 印度服-->
+    <package name="com.pubg.imobile">
+        <activity name="com.pubg.imobile/com.epicgames.ue4.GameActivity$_3258">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <!-- 战神遗迹 官服-->
+    <package name="com.pwrd.zsyj.laohu">
+        <activity name="com.pwrd.zsyj.laohu/com.pwrd.zsyj.support.MainActivity">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <!-- 战神遗迹 vivo服-->
+    <package name="com.wmcj.zsyj.vivo">
+        <activity name="com.wmcj.zsyj.vivo/com.pwrd.zsyj.support.MainActivity">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+
+    <!-- MobileLegends 国际服-->
+    <package name="com.mobile.legends">
+        <activity name="com.mobile.legends/com.moba.unityplugin.MobaGameUnityActivity">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+    <!-- 部落冲突 国际服-->
+    <package name="com.supercell.clashofclans">
+        <activity name="com.supercell.clashofclans/com.supercell.titan.GameApp">
+            <item name="isgame">1</item>
+            <item name="memc">2</item>
+            <item name="sdr2hdr">1</item>
+            <item name="nr">0</item>
+            <item name="aisr">0</item>
+        </activity>
+    </package>
+
+	<!--Socket 自动化测试-->
+	<package name="com.vivo.socketboardtest">
+		<activity name="com.vivo.socketboardtest/com.vivo.socketboardtest.mvp.view.activity.VideoActivity">
+			<item name="control_by_app">1</item>
+		</activity>
+		<activity name="com.vivo.socketboardtest/com.vivo.socketboardtest.mvp.view.activity.PictureActivity">
+			<item name="control_by_app">1</item>
+		</activity>
+		<activity name="com.vivo.socketboardtest/com.vivo.socketboardtest.mvp.view.activity.CameraActivity">
+			<item name="control_by_app">1</item>
+		</activity>
+		<activity name="com.vivo.socketboardtest/com.vivo.socketboardtest.mvp.view.activity.MainAppActivity">
+			<item name="control_by_app">1</item>
+		</activity>
+	</package>
+
+    <!--相机-->
+    <package name="com.vivo.engineercamera">
+        <activity name="com.vivo.engineercamera/com.android.camera.CameraActivity">
+            <item name="control_by_app">1</item>
+        </activity>
+    </package>
+
+    <package name="com.demo.vcameraengine">
+        <activity name="com.demo.vcameraengine/com.demo.vcameraengine.MainActivity">
+            <item name="control_by_app">1</item>
+        </activity>
+    </package>
+
+    <!--工模-->
+    <package name="com.iqoo.engineermode">
+        <activity name="com.iqoo.engineermode/com.iqoo.engineermode.VideoPlayerAcitivity">
+            <item name="control_by_app">1</item>
+        </activity>
+    </package>
+
+</display_ic_white_list>

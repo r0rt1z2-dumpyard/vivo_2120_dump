@@ -1,0 +1,3 @@
+service hal_osccamera_default /system/bin/hw/vendor.vivo.hardware.osccamera.provider@1.0-service
+    class main
+    group media_rw sdcard_rw

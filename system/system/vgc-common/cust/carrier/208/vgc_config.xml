@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <int name="setupwizard_default_location_status">1</int>
+<!-- auto add vivo config -->
+</config>

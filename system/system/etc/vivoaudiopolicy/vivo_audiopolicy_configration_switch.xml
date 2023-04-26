@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2015 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- value off:false,on:true
+The secondary switch for example persist.sys.audio.vapc.playback.bkplaybackenable
+Only after the switch of the previous level is opened, the switch of the next level can be opened, otherwise it is closed by default
+-->
+<switches>
+	<switch name="persist.sys.audio.vapc.enable" value="on"/>
+	<switch name="persist.sys.audio.vapc.collectepmdata.enable" value="off"/>
+	<switch name="persist.sys.audio.vapc.sco.enable" value="on"/>
+	<switch name="persist.sys.audio.vapc.sco.reroute_speaker.enable" value="on"/>
+	<switch name="persist.sys.audio.vapc.btfakepause.enable" value="on"/>
+	<switch name="persist.sys.audio.vapc.volume.enable" value="on"/>
+	<switch name="persist.sys.audio.vapc.volume.change.enable" value="off"/>
+	<switch name="persist.sys.audio.vapc.volume.intercept.enable" value="off"/>
+	<switch name="persist.sys.audio.vapc.volume.adjust_streamtype.enable" value="off"/>
+	<switch name="persist.sys.audio.vapc.volume.adapte_volume.enable" value="off"/>
+	<switch name="persist.sys.audio.vapc.playback.enable" value="on"/>
+	<switch name="persist.sys.audio.vapc.playback.pause_mute.enable" value="off"/>
+	<switch name="persist.sys.audio.vapc.playback.phonecall_advolume.enable" value="off"/>
+	<switch name="persist.sys.audio.vapc.voip.enable" value="off"/>
+	<switch name="persist.sys.audio.vapc.voip.reroute_record.enable" value="off"/>
+	<switch name="persist.sys.audio.vapc.voip.force_reroute_record.enable" value="off"/>
+	<switch name="persist.sys.audio.vapc.voip.adapte_volume.enable" value="off"/>
+</switches>

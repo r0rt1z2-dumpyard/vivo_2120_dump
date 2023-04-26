@@ -1,0 +1,17 @@
+service dcdiming /system/bin/dcdiming
+    class core
+    user system
+    group graphics
+    disabled
+    writepid /dev/stune/top-app/tasks
+
+on property:init.svc.surfaceflinger=stopped
+	stop dcdiming
+	start dcdiming
+
+on property:init.svc.surfaceflinger=running
+	start dcdiming
+
+on property:init.svc.surfaceflinger=restarting
+	stop dcdiming
+	start dcdiming

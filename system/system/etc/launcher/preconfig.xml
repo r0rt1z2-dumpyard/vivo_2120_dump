@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<favorites xmlns:launcher="http://schemas.android.com/apk/res-auto/com.android.launcher3">
+
+    <!-- google go 搜索 -->
+    <appwidget
+        launcher:className="com.google.android.apps.searchlite.widget.SearchLiteWidgetProvider"
+        launcher:container="-100"
+        launcher:packageName="com.google.android.apps.searchlite"
+        launcher:screen="0"
+        launcher:spanX="5"
+        launcher:spanY="1"
+        launcher:x="0"
+        launcher:y="0"/>
+
+        <!-- 时钟组件 -->		
+    <appwidget
+        launcher:className="com.vivo.timerwidget.clockwidget.ClockWidgetProvider"
+        launcher:container="-100"
+        launcher:packageName="com.vivo.timerwidget"
+        launcher:screen="0"
+        launcher:spanX="5"
+        launcher:spanY="1"
+        launcher:x="0"
+        launcher:y="1"/>
+
+    <!-- 常驻栏 -->
+    <!-- 电话 -->
+    <resolve
+        launcher:container="-101"
+        launcher:screen="0"
+        launcher:x="0"
+        launcher:y="0" >
+        <favorite launcher:uri="#Intent;action=android.intent.action.DIAL;end" />
+        <favorite launcher:uri="tel:123" />
+        <favorite launcher:uri="#Intent;action=android.intent.action.CALL_BUTTON;end" />
+    </resolve>
+
+    <!-- 电话 -->
+    <favorite
+        launcher:className="com.android.dialer.TwelveKeyDialer"
+        launcher:container="-101"
+        launcher:packageName="com.android.dialer"
+        launcher:screen="0"
+        launcher:x="0"
+        launcher:y="0"/>
+
+    <!-- 信息 -->
+    <resolve
+        launcher:container="-101"
+        launcher:screen="1"
+        launcher:x="1"
+        launcher:y="0" >
+        <favorite launcher:uri="#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_MESSAGING;end" />
+        <favorite launcher:uri="sms:" />
+        <favorite launcher:uri="smsto:" />
+        <favorite launcher:uri="mms:" />
+        <favorite launcher:uri="mmsto:" />
+    </resolve>
+
+    <!-- 信息 -->
+    <favorite
+        launcher:className="com.android.mms.ui.ConversationList"
+        launcher:container="-101"
+        launcher:packageName="com.android.mms"
+        launcher:screen="1"
+        launcher:x="1"
+        launcher:y="0"/>
+
+    <!-- 浏览器 -->
+    <resolve
+        launcher:container="-101"
+        launcher:screen="2"
+        launcher:x="2"
+        launcher:y="0" >
+        <favorite
+            launcher:uri="#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_BROWSER;end" />
+        <favorite launcher:uri="http://www.example.com/" />
+    </resolve>
+
+    <!-- Chrome -->
+    <favorite
+        launcher:className="com.google.android.apps.chrome.Main"
+        launcher:container="-101"
+        launcher:packageName="com.android.chrome"
+        launcher:screen="2"
+        launcher:x="2"
+        launcher:y="0"/>
+
+    <!-- 谷歌商店 -->
+    <favorite
+        launcher:className="com.android.vending.AssetBrowserActivity"
+        launcher:container="-101"
+        launcher:packageName="com.android.vending"
+        launcher:screen="3"
+        launcher:x="3"
+        launcher:y="0"/>
+
+    <!-- 相机 -->
+    <resolve
+        launcher:container="-101"
+        launcher:screen="4"
+        launcher:x="4"
+        launcher:y="0" >
+        <favorite launcher:uri="#Intent;action=android.media.action.STILL_IMAGE_CAMERA;end" />
+        <favorite launcher:uri="#Intent;action=android.intent.action.CAMERA_BUTTON;end" />
+    </resolve>
+
+    <!-- 第1屏 -->
+    <!-- Google Assistant GO -->
+    <favorite
+        launcher:className="com.google.android.apps.assistant.go.MainActivity"
+        launcher:container="-100"
+        launcher:packageName="com.google.android.apps.assistant"
+        launcher:screen="0"
+        launcher:x="0"
+        launcher:y="5"/>
+
+    <!-- Duo -->
+    <favorite
+        launcher:className="com.google.android.apps.tachyon.MainActivity"
+        launcher:container="-100"
+        launcher:packageName="com.google.android.apps.tachyon"
+        launcher:screen="0"
+        launcher:x="1"
+        launcher:y="5"/>
+
+    <!-- 相册 -->
+    <favorite
+        launcher:className="com.android.gallery3d.vivo.GalleryTabActivity"
+        launcher:container="-100"
+        launcher:packageName="com.vivo.gallery"
+        launcher:screen="0"
+        launcher:x="2"
+        launcher:y="5"/>
+
+	<!-- i 管家 -->
+    <favorite
+        launcher:className="com.iqoo.secure.MainGuideActivity"
+        launcher:container="-100"
+        launcher:packageName="com.vivo.imanager"
+        launcher:screen="0"
+        launcher:x="3"
+        launcher:y="5"/>
+
+    <!-- Google（文件夹） -->
+    <folder
+        launcher:container="-100"
+        launcher:title="@string/folder_google"
+        launcher:screen="0"
+        launcher:x="4"
+        launcher:y="5">
+
+    <!-- Google GO -->
+    <favorite
+        launcher:className="com.google.android.apps.searchlite.ui.SearchActivity"
+        launcher:packageName="com.google.android.apps.searchlite"
+        launcher:screen="0"
+        launcher:x="0"
+        launcher:y="0"/>
+
+    <!-- Gmail -->
+    <favorite
+        launcher:className="com.google.android.gm.ConversationListActivityGmail"
+        launcher:packageName="com.google.android.gm"
+        launcher:screen="0"
+        launcher:x="1"
+        launcher:y="0"/>
+
+    <!-- Maps -->
+    <favorite
+        launcher:className="com.google.android.maps.MapsActivity"
+        launcher:packageName="com.google.android.apps.maps"
+        launcher:screen="0"
+        launcher:x="2"
+        launcher:y="0"/>
+
+    <!-- YouTube -->
+    <favorite
+        launcher:className="com.google.android.youtube.app.honeycomb.Shell$HomeActivity"
+        launcher:packageName="com.google.android.youtube"
+        launcher:screen="0"
+        launcher:x="3"
+        launcher:y="0"/>
+
+    <!-- Drive -->
+    <favorite
+        launcher:className="com.google.android.apps.docs.app.NewMainProxyActivity"
+        launcher:packageName="com.google.android.apps.docs"
+        launcher:screen="0"
+        launcher:x="4"
+        launcher:y="0"/>
+
+    <!-- YT music -->
+    <favorite
+        launcher:className="com.google.android.apps.youtube.music.activities.MusicActivity"
+        launcher:packageName="com.google.android.apps.youtube.music"
+        launcher:screen="0"
+        launcher:x="5"
+        launcher:y="0"/>
+
+    <!-- Play Movies -->
+    <favorite
+        launcher:className="com.google.android.youtube.videos.EntryPoint"
+        launcher:packageName="com.google.android.videos"
+        launcher:screen="0"
+        launcher:x="6"
+        launcher:y="0"/>
+
+    <!-- Gallery Go -->
+    <favorite
+        launcher:className="com.google.android.apps.photosgo.home.HomeActivity"
+        launcher:packageName="com.google.android.apps.photosgo"
+        launcher:screen="0"
+        launcher:x="7"
+        launcher:y="0"/>
+
+    <!-- Contacts -->
+    <favorite
+        launcher:className="com.android.contacts.activities.PeopleActivity"
+        launcher:packageName="com.google.android.contacts"
+        launcher:screen="0"
+        launcher:x="8"
+        launcher:y="0"/>
+
+    <!-- Google Calendar -->
+    <favorite
+        launcher:className="com.android.calendar.AllInOneActivity"
+        launcher:packageName="com.google.android.calendar"
+        launcher:screen="0"
+        launcher:x="9"
+        launcher:y="0"/>
+
+    <!-- Google One -->
+    <favorite
+        launcher:className="com.google.android.apps.subscriptions.red.LauncherActivity"
+        launcher:packageName="com.google.android.apps.subscriptions.red"
+        launcher:screen="0"
+        launcher:x="10"
+        launcher:y="0"/>
+
+    </folder>
+
+    <!-- 第2屏 -->
+    <!-- Google Files -->
+    <favorite
+        launcher:className="com.google.android.apps.nbu.files.home.HomeActivity"
+        launcher:container="-100" 
+        launcher:packageName="com.google.android.apps.nbu.files"
+        launcher:screen="1"
+        launcher:x="0"
+        launcher:y="5" />
+
+    <!-- 闹钟时钟 -->
+    <favorite
+        launcher:className="com.android.deskclock.DeskClock"
+        launcher:container="-100"
+        launcher:packageName="com.android.deskclock"
+        launcher:screen="1"
+        launcher:x="1"
+        launcher:y="5" />
+
+    <!-- 设置 -->
+    <favorite
+        launcher:className="com.android.settings.Settings"
+        launcher:container="-100"
+        launcher:packageName="com.android.settings"
+        launcher:screen="1"
+        launcher:x="2"
+        launcher:y="5" />
+
+    <!-- vivo官网 -->
+    <favorite
+        launcher:className="com.vivo.website.activity.SplashActivity"
+        launcher:container="-100"
+        launcher:packageName="com.vivo.website"
+        launcher:screen="1"
+        launcher:x="3"
+        launcher:y="5" />
+
+    <!-- vivo官网 -->
+    <favorite
+        launcher:className="com.vivo.website.activity.SplashActivity"
+        launcher:container="-100"
+        launcher:packageName="com.vivo.website.gdpr"
+        launcher:screen="1"
+        launcher:x="3"
+        launcher:y="5" />
+
+    <!-- Facebook -->
+    <favorite
+        launcher:className="com.facebook.lite.MainActivity"
+        launcher:container="-100"
+        launcher:packageName="com.facebook.lite"
+        launcher:screen="1"
+        launcher:x="4"
+        launcher:y="5"/>
+
+</favorites>

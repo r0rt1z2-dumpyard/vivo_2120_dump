@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2015 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- value off:false,on:true
+The secondary switch for example persist.sys.audio.vapc.playback.bkplaybackenable
+Only after the switch of the previous level is opened, the switch of the next level can be opened, otherwise it is closed by default
+-->
+<customlists>
+	<clist name="persist.vivo.audio.feature.speaker_vcode">
+		<item name="persist.vivo.audio.feature.speaker_vcode.report.time.ms" value="86400000"/>
+		<item name="persist.vivo.audio.feature.speaker_vcode.report.max.count" value="3600"/>
+	</clist>
+	<clist name="persist.vivo.audio.feature.callmute_vcode">
+		<item name="persist.vivo.audio.feature.callmute_threshold" value="95"/>
+	</clist>
+	<clist name="persist.vivo.audio.feature.apps.voip_adapte_volume">
+		<item name="com.baidu.BaiduMap" value="25"/>
+		<item name="com.autonavi.minimap" value="10"/>
+		<item name="com.dragon.read" value="25"/>
+		<item name="com.ximalaya.ting.android" value="25"/>
+		<item name="com.kugou.android" value="25"/>
+		<item name="com.netease.cloudmusic" value="25"/>
+		<item name="com.tencent.qqmusic" value="25"/>
+	</clist>
+	<clist name="persist.vivo.audio.feature.apps.btcarkit_adapte_volume">
+		<item name="com.baidu.BaiduMap" value="50"/>
+		<item name="com.autonavi.minimap" value="50"/>
+		<item name="com.tencent.mm" value="50"/>
+	</clist>
+	<clist name="persist.vivo.audio.feature.volume.parameters.timems">
+		<item name="persist.vivo.audio.feature.volume.touchevent.max_delay.timems" value="150"/>
+		<item name="persist.vivo.audio.feature.volume.intercept.volumekey.timems" value="200"/>
+	</clist>
+	<clist name="persist.vivo.audio.feature.apps.btsco.timeout">
+	</clist>
+	<clist name="persist.vivo.audio.feature.btignore.mediakey">
+		<item name="persist.vivo.audio.feature.btignore.mediakey.time.ms" value="1000"/>
+	</clist>
+	<clist name="persist.vivo.audio.feature.apps.backlist.phonecall.adapte.volume">
+		<item name="com.ss.android.ugc.aweme" value="0"/>
+		<item name="com.smile.gifmaker" value="0"/>
+		<item name="com.ss.android.article.video" value="0"/>
+		<item name="com.mobile.videonews.li.video" value="0"/>
+		<item name="com.tencent.rijvideo" value="0"/>
+		<item name="com.baidu.haokan" value="0"/>
+		<item name="com.ss.android.article.news" value="0"/>
+		<item name="com.baidu.searchbox" value="0"/>
+		<item name="com.baidu.searchbox.lite" value="0"/>
+		<item name="com.tencent.mtt" value="0"/>
+		<item name="com.vivo.browser" value="0"/>
+	</clist>
+</customlists>

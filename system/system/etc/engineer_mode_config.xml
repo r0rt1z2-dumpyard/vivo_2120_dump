@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="AdbWifiActivity">mServiceIP[192.168.137.1]mPassword[12345678]mStaticIp[192.168.137.137]</string>
+	<string name="QrCodeParameters">mQrCodePassWord[V5i6v23O78]</string>
+	<string name="SSIDItem">mServiceIP[192.168.137.1]mPassword[12345678]mStaticIp[192.168.137.137]MTK_mServiceIP[181.157.137.1]MTK_mStaticIp[181.157.137.137]</string>
+	<string name="WifiAdmin">ad1_temp[181.157.137]ad2_temp[181.157.137.1]ad3_temp[192.168.137.254]ad4_temp[114.114.114.114]</string>
+	
+</resources>

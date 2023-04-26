@@ -1,0 +1,618 @@
+{
+    "Version" :  "1.5",
+    "Debug"   :  "false",
+    "PolicyStatus" : "false",
+
+    "AppPolicy" : [
+        {
+            "index" : 0,
+            "appPolicyInfo" : [
+                {
+                    "level" : 0,
+                    "appName" : ["com.android.camera", "com.vivo.gallery", "com.google.android.apps.photosgo",
+                        "com.vivo.collage", "com.iqoo.engineermode", "com.vivo.lts",
+                        "com.raybin.helloworld", "com.vivo.fingerprintengineer", "com.example.autotestapk",
+                        "com.vivo.sda", "com.iqoo.aftersale.engineermode", "com.yjcs.backlight",
+                        "enfc.metro"]
+                },
+                {
+                    "level" : 1,
+                    "appName" : ["com.bbk.launcher2", "com.ss.android.ugc.trill", "com.android.launcher3",
+                        "com.vivo.hiboard"],
+                    "appSubtype" : ["13", "121", "128", "190"]
+                },
+                {
+                    "level" : 2,
+                    "appName" : ["others"],
+                    "appSupertype" : ["1000"]
+                },
+                {
+                    "level" : 3,
+                    "appName" : ["com.tencent.mm", "com.imo.android.imoimbeta", "com.imo.android.imoim",
+                        "com.facebook.katana", "com.facebook.orca", "com.whatsapp",
+                        "jp.naver.line.android", "com.instagram.android"]
+                },
+                {
+                    "level" : 4,
+                    "appSubtype" : ["37"]
+                },
+                {
+                    "level" : 5,
+                    "appName" : ["com.tencent.tmgp.pubgmhd", "com.tencent.tmgp.sgame", "com.netease.chiji", "com.tencent.ig"]
+                }
+            ],
+            "comment" : "ID value refer to file vendor/vivo/frameworks/base/services/java/com/android/server/display/color/brightness/apptype/AppTypeInfo.java"
+        },
+        {
+            "index" : 1,
+            "appPolicyInfo" : [
+                {
+                    "level" : 0,
+                    "appName" : ["com.android.camera", "com.vivo.gallery", "com.google.android.apps.photosgo",
+                        "com.vivo.collage", "com.iqoo.engineermode", "com.vivo.lts",
+                        "com.raybin.helloworld", "com.vivo.fingerprintengineer", "com.example.autotestapk",
+                        "com.vivo.sda", "com.iqoo.aftersale.engineermode", "com.yjcs.backlight",
+                        "enfc.metro"]
+                },
+                {
+                    "level" : 1,
+                    "appName" : ["com.bbk.launcher2", "com.ss.android.ugc.trill", "com.android.launcher3",
+                        "com.vivo.hiboard"],
+                    "appSubtype" : ["13", "121", "128", "190"]
+                },
+                {
+                    "level" : 2,
+                    "appName" : ["others"],
+                    "appSupertype" : ["1000"]
+                },
+                {
+                    "level" : 3,
+                    "appSubtype" : ["37"]
+                },
+                {
+                    "level" : 4,
+                    "appName" : ["com.tencent.tmgp.pubgmhd", "com.tencent.tmgp.sgame", "com.netease.chiji", "com.tencent.ig"]
+                }
+            ],
+            "comment" : "ID value refer to file vendor/vivo/frameworks/base/services/java/com/android/server/display/color/brightness/apptype/AppTypeInfo.java"
+        },
+        {
+            "index" : 2,
+            "appPolicyInfo" : [
+                {
+                    "level" : 0,
+                    "appName" : ["com.android.camera", "com.vivo.gallery", "com.google.android.apps.photosgo",
+                        "com.vivo.collage", "com.iqoo.engineermode", "com.vivo.lts",
+                        "com.raybin.helloworld", "com.vivo.fingerprintengineer", "com.example.autotestapk",
+                        "com.vivo.sda", "com.iqoo.aftersale.engineermode", "com.yjcs.backlight",
+                        "enfc.metro"]
+                },
+                {
+                    "level" : 1,
+                    "appName" : ["com.bbk.launcher2", "com.ss.android.ugc.trill", "com.android.launcher3",
+                        "com.vivo.hiboard"],
+                    "appSubtype" : ["190"]
+                },
+                {
+                    "level" : 2,
+                    "appName" : ["others"]
+                },
+                {
+                    "level" : 3,
+                    "appSupertype" : ["1000"]
+                }
+            ],
+            "comment" : "ID value refer to file vendor/vivo/frameworks/base/services/java/com/android/server/display/color/brightness/apptype/AppTypeInfo.java"
+        }
+    ],
+
+    "DeviceBrightnessPolicy" : [
+        {
+            "deviceType" : "phone",
+            "panelType"  : "oled",
+            "panelMaxNit" : 500,
+            "coeffInfo" : [
+                {"controlMode" : "automatic", "level" : 0, "coeffIndex" : 0},
+                {"controlMode" : "automatic", "level" : 1, "coeffIndex" : 1},
+                {"controlMode" : "automatic", "level" : 2, "coeffIndex" : 2},
+                {"controlMode" : "automatic", "level" : 3, "coeffIndex" : 3},
+                {"controlMode" : "automatic", "level" : 4, "coeffIndex" : 4},
+                {"controlMode" : "automatic", "level" : 5, "coeffIndex" : 5},
+                {"controlMode" :    "manual", "level" : 0, "coeffIndex" : 6},
+                {"controlMode" :    "manual", "level" : 1, "coeffIndex" : 7},
+                {"controlMode" :    "manual", "level" : 2, "coeffIndex" : 8},
+                {"controlMode" :    "manual", "level" : 3, "coeffIndex" : 9},
+                {"controlMode" :    "manual", "level" : 4, "coeffIndex" : 10},
+                {"controlMode" :    "manual", "level" : 5, "coeffIndex" : 11}
+            ],
+            "appPolicyIndex" : 0,
+            "controlModeMaxNitLimit" : [
+                {"controlMode" : "automatic",  "luxLowerLimit" :    0, "luxUpperLimit" :       1000, "maxNit" : 430},
+                {"controlMode" : "automatic",  "luxLowerLimit" : 1001, "luxUpperLimit" : 2147483647, "maxNit" : 500}
+            ],
+            "darkModeMaxNitLimit" : 500,
+            "appMaxNitLimitStatus" : "true",
+            "appMaxNitLimit" : [
+                {
+                    "appActivity" : ["com.ss.android.ugc.aweme.live.LiveBroadcastActivity", "com.kuaishou.live.anchor.basic.activity.LivePushActivity", "com.instagram.modal.ModalActivity"],
+                    "luxLowerLimit" : 0, "luxUpperLimit" : 30000,
+                    "maxNit" : 500
+                },
+                {
+                    "appActivity" : ["com.ss.android.ugc.aweme.live.LiveBroadcastActivity", "com.kuaishou.live.anchor.basic.activity.LivePushActivity", "com.instagram.modal.ModalActivity"],
+                    "luxLowerLimit" : 30001, "luxUpperLimit" : 2147483647,
+                    "maxNit" : 500
+                }
+            ]
+        },
+        {
+            "deviceType" : "phone",
+            "panelType"  : "oled",
+            "panelMaxNit" : 430,
+            "coeffInfo" : [
+                {"controlMode" : "automatic", "level" : 0, "coeffIndex" : 12},
+                {"controlMode" : "automatic", "level" : 1, "coeffIndex" : 13},
+                {"controlMode" : "automatic", "level" : 2, "coeffIndex" : 14},
+                {"controlMode" : "automatic", "level" : 3, "coeffIndex" : 15},
+                {"controlMode" : "automatic", "level" : 4, "coeffIndex" : 16},
+                {"controlMode" :    "manual", "level" : 0, "coeffIndex" : 17},
+                {"controlMode" :    "manual", "level" : 1, "coeffIndex" : 18},
+                {"controlMode" :    "manual", "level" : 2, "coeffIndex" : 19},
+                {"controlMode" :    "manual", "level" : 3, "coeffIndex" : 20},
+                {"controlMode" :    "manual", "level" : 4, "coeffIndex" : 21}
+            ],
+            "appPolicyIndex" : 1,
+            "controlModeMaxNitLimit" : [
+                {"controlMode" : "automatic",  "luxLowerLimit" :    0, "luxUpperLimit" :       1000, "maxNit" : 430},
+                {"controlMode" : "automatic",  "luxLowerLimit" : 1001, "luxUpperLimit" : 2147483647, "maxNit" : 430}
+            ],
+            "darkModeMaxNitLimit" : 430,
+            "appMaxNitLimitStatus" : "true",
+            "appMaxNitLimit" : [
+                {
+                    "appActivity" : ["com.ss.android.ugc.aweme.live.LiveBroadcastActivity", "com.kuaishou.live.anchor.basic.activity.LivePushActivity", "com.instagram.modal.ModalActivity"],
+                    "luxLowerLimit" : 0, "luxUpperLimit" : 30000,
+                    "maxNit" : 430
+                },
+                {
+                    "appActivity" : ["com.ss.android.ugc.aweme.live.LiveBroadcastActivity", "com.kuaishou.live.anchor.basic.activity.LivePushActivity", "com.instagram.modal.ModalActivity"],
+                    "luxLowerLimit" : 30001, "luxUpperLimit" : 2147483647,
+                    "maxNit" : 430
+                }
+            ]
+        },
+        {
+            "deviceType" : "phone",
+            "panelType"  : "lcd",
+            "panelMaxNit" : 2000,
+            "coeffInfo" : [
+                {"controlMode" : "automatic", "level" : 0, "coeffIndex" : 22},
+                {"controlMode" : "automatic", "level" : 1, "coeffIndex" : 23},
+                {"controlMode" : "automatic", "level" : 2, "coeffIndex" : 24},
+                {"controlMode" : "automatic", "level" : 3, "coeffIndex" : 25},
+                {"controlMode" :    "manual", "level" : 0, "coeffIndex" : 26},
+                {"controlMode" :    "manual", "level" : 1, "coeffIndex" : 27},
+                {"controlMode" :    "manual", "level" : 2, "coeffIndex" : 28},
+                {"controlMode" :    "manual", "level" : 3, "coeffIndex" : 29}
+            ],
+            "appPolicyIndex" : 2,
+            "controlModeMaxNitLimit" : [
+                {"controlMode" : "automatic",  "luxLowerLimit" :    0, "luxUpperLimit" :       1000, "maxNit" : 2000},
+                {"controlMode" : "automatic",  "luxLowerLimit" : 1001, "luxUpperLimit" : 2147483647, "maxNit" : 2000}
+            ],
+            "darkModeMaxNitLimit" : 2000,
+            "appMaxNitLimitStatus" : "true",
+            "appMaxNitLimit" : [
+                {
+                    "appActivity" : ["com.ss.android.ugc.aweme.live.LiveBroadcastActivity", "com.kuaishou.live.anchor.basic.activity.LivePushActivity", "com.instagram.modal.ModalActivity"],
+                    "luxLowerLimit" : 0, "luxUpperLimit" : 30000,
+                    "maxNit" : 2000
+                },
+                {
+                    "appActivity" : ["com.ss.android.ugc.aweme.live.LiveBroadcastActivity", "com.kuaishou.live.anchor.basic.activity.LivePushActivity", "com.instagram.modal.ModalActivity"],
+                    "luxLowerLimit" : 30001, "luxUpperLimit" : 2147483647,
+                    "maxNit" : 2000
+                }
+            ]
+        }
+    ],
+
+    "PolicyCoeff" : [
+        {
+            "index"   : 0,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 459, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" : 460, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "0"}
+            ],
+            "comment" : "oled, automatic brightness, 500 max nit, level 0"
+        },
+        {
+            "index"   : 1,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0.1176", "coeffB" : "-5.294"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "10"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 459, "coeffA" : "-0.0636", "coeffB" : "32.273"},
+                {"nitLowerLimit" : 460, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "3"}
+            ],
+            "comment" : "oled, automatic brightness, 500 max nit, level 1"
+        },
+        {
+            "index"   : 2,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0.2353", "coeffB" : "-10.588"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "20"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 459, "coeffA" : "-0.1182", "coeffB" : "61.364"},
+                {"nitLowerLimit" : 460, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "7"}
+            ],
+            "comment" : "oled, automatic brightness, 500 max nit, level 2"
+        },
+        {
+            "index"   : 3,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0.2353", "coeffB" : "-10.588"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "20"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 459, "coeffA" : "-0.0455", "coeffB" : "35.909"},
+                {"nitLowerLimit" : 460, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "15"}
+            ],
+            "comment" : "oled, automatic brightness, 500 max nit, level 3"
+        },
+        {
+            "index"   : 4,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0.3529", "coeffB" : "-15.882"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "30"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 459, "coeffA" : "-0.0727", "coeffB" : "55.454"},
+                {"nitLowerLimit" : 460, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "22"}
+            ],
+            "comment" : "oled, automatic brightness, 500 max nit, level 4"
+        },
+        {
+            "index"   : 5,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0.1765", "coeffB" : "-7.941"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "15"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 459, "coeffA" : "-0.0727", "coeffB" : "40.455"},
+                {"nitLowerLimit" : 460, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "7"}
+            ],
+            "comment" : "oled, automatic brightness, 500 max nit, level 5"
+        },
+
+        {
+            "index"   : 6,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 459, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" : 460, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "0"}
+            ],
+            "comment" : "oled, manual brightness, 500 max nit, level 0"
+        },
+        {
+            "index"   : 7,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0.2353", "coeffB" : "-10.588"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "20"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 459, "coeffA" : "-0.1545", "coeffB" : "74.091"},
+                {"nitLowerLimit" : 460, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "3"}
+            ],
+            "comment" : "oled, manual brightness, 500 max nit, level 1"
+        },
+        {
+            "index"   : 8,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0.3529", "coeffB" : "-15.882"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "30"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 459, "coeffA" : "-0.2091", "coeffB" : "103.182"},
+                {"nitLowerLimit" : 460, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "7"}
+            ],
+            "comment" : "oled, manual brightness, 500 max nit, level 2"
+        },
+        {
+            "index"   : 9,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0.3529", "coeffB" : "-15.882"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "30"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 459, "coeffA" : "-0.1364", "coeffB" : "77.727"},
+                {"nitLowerLimit" : 460, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "15"}
+            ],
+            "comment" : "oled, manual brightness, 500 max nit, level 3"
+        },
+        {
+            "index"   : 10,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0.3529", "coeffB" : "-15.882"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "30"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 459, "coeffA" : "-0.0727", "coeffB" : "55.454"},
+                {"nitLowerLimit" : 460, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "22"}
+            ],
+            "comment" : "oled, manual brightness, 500 max nit, level 4"
+        },
+        {
+            "index"   : 11,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0.2353", "coeffB" : "-10.588"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "20"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 459, "coeffA" : "-0.1182", "coeffB" : "61.364"},
+                {"nitLowerLimit" : 460, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "7"}
+            ],
+            "comment" : "oled, manual brightness, 500 max nit, level 5"
+        },
+
+
+        {
+            "index"   : 12,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 399, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" : 400, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "0"}
+            ],
+            "comment" : "oled, automatic brightness, 430 max nit, level 0"
+        },
+        {
+            "index"   : 13,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0.1176", "coeffB" : "-5.294"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "10"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 399, "coeffA" : "-0.2", "coeffB" : "80"},
+                {"nitLowerLimit" : 400, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "0"}
+            ],
+            "comment" : "oled, automatic brightness, 430 max nit, level 1"
+        },
+        {
+            "index"   : 14,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0.2353", "coeffB" : "-10.588"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "20"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 399, "coeffA" : "-0.4", "coeffB" : "160"},
+                {"nitLowerLimit" : 400, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "0"}
+            ],
+            "comment" : "oled, automatic brightness, 430 max nit, level 2"
+        },
+        {
+            "index"   : 15,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0.3529", "coeffB" : "-15.882"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "30"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 399, "coeffA" : "-0.4", "coeffB" : "170"},
+                {"nitLowerLimit" : 400, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "10"}
+            ],
+            "comment" : "oled, automatic brightness, 430 max nit, level 3"
+        },
+        {
+            "index"   : 16,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0.1765", "coeffB" : "-7.941"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "15"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 399, "coeffA" : "-0.3", "coeffB" : "120"},
+                {"nitLowerLimit" : 400, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "0"}
+            ],
+            "comment" : "oled, automatic brightness, 430 max nit, level 4"
+        },
+        {
+            "index"   : 17,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 399, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" : 400, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "0"}
+            ],
+            "comment" : "oled, manual brightness, 430 max nit, level 0"
+        },
+        {
+            "index"   : 18,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0.2353", "coeffB" : "-10.588"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "20"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 399, "coeffA" : "-0.4", "coeffB" : "160"},
+                {"nitLowerLimit" : 400, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "0"}
+            ],
+            "comment" : "oled, manual brightness, 430 max nit, level 1"
+        },
+        {
+            "index"   : 19,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0.3529", "coeffB" : "-15.882"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "30"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 399, "coeffA" : "-0.6", "coeffB" : "240"},
+                {"nitLowerLimit" : 400, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "0"}
+            ],
+            "comment" : "oled, manual brightness, 430 max nit, level 2"
+        },
+        {
+            "index"   : 20,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0.3529", "coeffB" : "-15.882"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "30"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 399, "coeffA" : "-0.4", "coeffB" : "170"},
+                {"nitLowerLimit" : 400, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "10"}
+            ],
+            "comment" : "oled, manual brightness, 430 max nit, level 3"
+        },
+        {
+            "index"   : 21,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :  44, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  45, "nitUpperLimit" : 129, "coeffA" : "0.2353", "coeffB" : "-10.588"},
+                {"nitLowerLimit" : 130, "nitUpperLimit" : 349, "coeffA" : "0", "coeffB" : "20"},
+                {"nitLowerLimit" : 350, "nitUpperLimit" : 399, "coeffA" : "-0.4", "coeffB" : "160"},
+                {"nitLowerLimit" : 400, "nitUpperLimit" : 600, "coeffA" : "0", "coeffB" : "0"}
+            ],
+            "comment" : "oled, manual brightness, 430 max nit, level 4"
+        },
+
+
+        {
+            "index"   : 22,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :         49, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  50, "nitUpperLimit" :        149, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" : 150, "nitUpperLimit" :        299, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" : 300, "nitUpperLimit" :        399, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" : 400, "nitUpperLimit" :        600, "coeffA" : "0", "coeffB" : "0"}
+            ],
+            "comment" : "lcd, automatic brightness, level 0"
+        },
+        {
+            "index"   : 23,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :         49, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  50, "nitUpperLimit" :        149, "coeffA" : "0", "coeffB" : "10"},
+                {"nitLowerLimit" : 150, "nitUpperLimit" :        299, "coeffA" : "0", "coeffB" : "15"},
+                {"nitLowerLimit" : 300, "nitUpperLimit" :        399, "coeffA" : "0", "coeffB" : "10"},
+                {"nitLowerLimit" : 400, "nitUpperLimit" :        600, "coeffA" : "0", "coeffB" : "10"}
+            ],
+            "comment" : "lcd, automatic brightness, level 1"
+        },
+        {
+            "index"   : 24,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :         49, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  50, "nitUpperLimit" :        149, "coeffA" : "0", "coeffB" : "20"},
+                {"nitLowerLimit" : 150, "nitUpperLimit" :        299, "coeffA" : "0", "coeffB" : "25"},
+                {"nitLowerLimit" : 300, "nitUpperLimit" :        399, "coeffA" : "0", "coeffB" : "20"},
+                {"nitLowerLimit" : 400, "nitUpperLimit" :        600, "coeffA" : "0", "coeffB" : "7"}
+            ],
+            "comment" : "lcd, automatic brightness, level 2"
+        },
+        {
+            "index"   : 25,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :         49, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  50, "nitUpperLimit" :        149, "coeffA" : "0", "coeffB" : "20"},
+                {"nitLowerLimit" : 150, "nitUpperLimit" :        299, "coeffA" : "0", "coeffB" : "25"},
+                {"nitLowerLimit" : 300, "nitUpperLimit" :        399, "coeffA" : "0", "coeffB" : "20"},
+                {"nitLowerLimit" : 400, "nitUpperLimit" :        600, "coeffA" : "0", "coeffB" : "15"}
+            ],
+            "comment" : "lcd, automatic brightness, level 3"
+        },
+        {
+            "index"   : 26,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :         49, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  50, "nitUpperLimit" :        149, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" : 150, "nitUpperLimit" :        299, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" : 300, "nitUpperLimit" :        399, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" : 400, "nitUpperLimit" :        600, "coeffA" : "0", "coeffB" : "0"}
+            ],
+            "comment" : "lcd, manual brightness, level 0"
+        },
+        {
+            "index"   : 27,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :         49, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  50, "nitUpperLimit" :        149, "coeffA" : "0", "coeffB" : "10"},
+                {"nitLowerLimit" : 150, "nitUpperLimit" :        299, "coeffA" : "0", "coeffB" : "15"},
+                {"nitLowerLimit" : 300, "nitUpperLimit" :        399, "coeffA" : "0", "coeffB" : "10"},
+                {"nitLowerLimit" : 400, "nitUpperLimit" :        600, "coeffA" : "0", "coeffB" : "10"}
+            ],
+            "comment" : "lcd, manual brightness, level 1"
+        },
+
+        {
+            "index"   : 28,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :         49, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  50, "nitUpperLimit" :        149, "coeffA" : "0", "coeffB" : "20"},
+                {"nitLowerLimit" : 150, "nitUpperLimit" :        299, "coeffA" : "0", "coeffB" : "25"},
+                {"nitLowerLimit" : 300, "nitUpperLimit" :        399, "coeffA" : "0", "coeffB" : "20"},
+                {"nitLowerLimit" : 400, "nitUpperLimit" :        600, "coeffA" : "0", "coeffB" : "7"}
+            ],
+            "comment" : "lcd, manual brightness, level 2"
+        },
+        {
+            "index"   : 29,
+            "intervalNum" : 5,
+            "formula" : "y = Ax + B",
+            "coeff" : [
+                {"nitLowerLimit" :   0, "nitUpperLimit" :         49, "coeffA" : "0", "coeffB" : "0"},
+                {"nitLowerLimit" :  50, "nitUpperLimit" :        149, "coeffA" : "0", "coeffB" : "20"},
+                {"nitLowerLimit" : 150, "nitUpperLimit" :        299, "coeffA" : "0", "coeffB" : "25"},
+                {"nitLowerLimit" : 300, "nitUpperLimit" :        399, "coeffA" : "0", "coeffB" : "20"},
+                {"nitLowerLimit" : 400, "nitUpperLimit" :        600, "coeffA" : "0", "coeffB" : "15"}
+            ],
+            "comment" : "lcd, manual brightness, level 3"
+        }
+    ]
+}

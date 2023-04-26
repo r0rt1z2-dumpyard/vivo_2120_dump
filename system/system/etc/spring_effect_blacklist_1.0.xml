@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lists>
+    <list name="spring_effect_blacklist">
+        <item value="com.boohee.one"/>
+        <item value="com.koovs.fashion"/>
+        <item value="com.tencent.weread"/>
+        <item value="com.xiaomi.smarthome"/>
+        <item value="com.unionpay"/>
+        <item value="cris.org.in.prs.ima"/>
+    </list>
+</lists>

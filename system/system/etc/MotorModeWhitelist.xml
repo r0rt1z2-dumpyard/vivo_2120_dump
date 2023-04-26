@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content>
+    <version>1</version>
+    <application name="com.google.android.music"></application>
+    <application name="com.spotify.music"></application>
+    <application name="com.tencent.ibg.joox"></application>
+    <application name="com.saavn.android"></application>
+    <application name="com.smule.singandroid"></application>
+    <application name="com.android.bbkmusic"></application>
+    <application name="com.zing.mp3"></application>
+    <application name="android"></application>
+</content>

@@ -1,0 +1,2 @@
+#bkoem_calculation,配置AT+BKOEM=1统计定制包的方式，值可以是oem/vgc/dyn三者的组合
+bkoem_calculation=oem,vgc,dyn

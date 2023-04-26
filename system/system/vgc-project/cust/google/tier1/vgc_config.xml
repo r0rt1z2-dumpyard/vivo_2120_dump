@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <string name="setting_message_default">com.google.android.apps.messaging</string>
+    <string name="phone_default_dialer_package">com.google.android.dialer</string>
+    <!-- auto add vivo config -->
+    <string name="role_browser_default">com.android.chrome</string>
+    <string name="role_dialer_default">com.google.android.dialer</string>
+</config>

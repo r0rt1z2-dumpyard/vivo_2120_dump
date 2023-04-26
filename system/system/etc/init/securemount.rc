@@ -1,0 +1,8 @@
+on post-fs-data && property:ro.vivo.dyn.support=yes
+    securemount --type=dyn
+
+on property:ro.vivo.dyn.veritystate=*
+    load_props /system/dyn/dyn.prop
+    setprop ro.vendor.defend.dyn.name ${ro.vivo.dyn.name}
+    setprop ro.vendor.defend.dyn.mount.ready 1
+

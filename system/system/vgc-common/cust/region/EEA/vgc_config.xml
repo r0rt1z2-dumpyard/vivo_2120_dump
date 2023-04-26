@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <string name="settings_default_region">DE</string>
+    <string name="setupwizard_default_language">en_GB</string>
+    <bool name="setupwizard_carrier_location_enable">False</bool>
+    <!-- auto add vivo config -->
+</config>

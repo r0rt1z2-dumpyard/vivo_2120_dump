@@ -1,0 +1,9 @@
+service bsptestserver /system/bin/bsptestserver
+    class main
+    disabled
+
+on property:persist.vivo.bsptestserver.enabled=1
+    start bsptestserver
+
+on property:persist.vivo.bsptestserver.enabled=0
+    stop bsptestserver

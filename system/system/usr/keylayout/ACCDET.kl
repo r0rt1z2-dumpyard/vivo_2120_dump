@@ -1,0 +1,12 @@
+
+key 122   ENDCALL           
+key 163   MEDIA_NEXT
+key 164   HEADSETHOOK
+key 165   MEDIA_PREVIOUS
+key 114   VOLUME_DOWN
+key 115   VOLUME_UP
+key 582   VOICE_ASSIST
+
+# vivo zhaweidong add for imusic_collect begin
+key 760 IMUSIC_COLLECT
+# vivo zhaweidong add for imusic_collect end

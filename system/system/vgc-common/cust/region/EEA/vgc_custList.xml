@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <custlist name="VGC_iccid_language_map">
+        <item name="33" value="fr_FR"/>
+        <item name="34" value="es_ES"/>
+        <item name="39" value="it_IT"/>
+        <item name="48" value="pl_PL"/>
+        <item name="49" value="de_DE"/>
+    </custlist>
+    <custlist name="VGC_iso_country_alias_setupwizard_map">
+        <item name="GB" value="UK"/>
+    </custlist>
+    <custlist name="setupwizard_language_area_map_baseon_vgc">
+        <item name="fr" value="FR"/>
+        <item name="es" value="ES"/>
+        <item name="it" value="IT"/>
+        <item name="pl" value="PL"/>
+        <item name="de" value="DE"/>
+    </custlist>
+    <!-- auto add vivo config -->
+    <custlist name="setupwizard_language_with_iso_map">
+        <item name="FR" value="fr_FR"/>
+        <item name="ES" value="es_ES"/>
+        <item name="IT" value="it_IT"/>
+        <item name="PL" value="pl_PL"/>
+        <item name="DE" value="de_DE"/>
+        <item name="CZ" value="cs_CZ"/>
+        <item name="RO" value="ro_RO"/>
+        <item name="AT" value="de_AT"/>
+        <item name="PT" value="pt_PT"/>
+        <item name="BG" value="bg_BG"/>
+        <item name="GR" value="el_GR"/>
+        <item name="IE" value="en_GB"/>
+        <item name="SI" value="sl_SI"/>
+        <item name="CY" value="el_CY"/>
+        <item name="HR" value="hr_HR"/>
+        <item name="SK" value="sk_SK"/>
+    </custlist>
+    <custlist name="setupwizard_default_area_with_language">
+        <item name="en_GB" value="DE"/>
+    </custlist>
+</config>

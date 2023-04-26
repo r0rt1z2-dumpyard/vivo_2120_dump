@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="camera_type">back[Master,Macro]front[Master]</string>
+	<boolean name="light_sensor_angle">true</boolean>
+	<boolean name="camera_pdaf">true</boolean>
+	<boolean name="camera_rear_fill_light_test">true</boolean>
+	<boolean name="voice_wakeup">true</boolean>
+	<boolean name="receiver_simulate_call">true</boolean>
+	<boolean name="tf_hotplug">true</boolean>
+	
+	<boolean name="infrared_near_support">true</boolean>
+	<boolean name="flash_light_cali_support">true</boolean>
+	<boolean name="sim_test_support">true</boolean>
+	
+	<boolean name="tf_btb_support">true</boolean>
+	<boolean name="light_sensor_leak">true</boolean>
+	<boolean name="sub_echo_support">false</boolean>
+
+</resources>
