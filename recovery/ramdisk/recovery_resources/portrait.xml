@@ -1,0 +1,3150 @@
+<?xml version="1.0"?>
+<recovery>
+	<styles>
+		<style name="text_x">
+			<font resource="font_x" color="%text_color%"/>
+		</style>
+
+		<style name="text_h">
+			<font resource="font_h" color="%text_color%"/>
+		</style>
+
+		<style name="text_l">
+			<font resource="font_l" color="%text_color%"/>
+		</style>
+
+		<style name="text_m">
+			<font resource="font_m" color="%text_color%"/>
+		</style>
+
+		<style name="text_m_accent">
+			<font resource="font_m" color="%accent_color%"/>
+		</style>
+
+		<style name="text_m_fail">
+			<font resource="font_m" color="%text_fail_color%"/>
+		</style>
+
+		<style name="text_s">
+			<font resource="font_s" color="%text_color%"/>
+		</style>
+
+		<style name="text_s_warning">
+			<font resource="font_s" color="%red_color%"/>
+		</style>
+
+		<style name="input">
+			<background color="%background_color%"/>
+			<cursor color="%accent_color%" hasfocus="1" width="%input_line_width%"/>
+			<font resource="font_m" color="%text_color%"/>
+		</style>
+
+		<style name="checkbox">
+			<font resource="font_m" color="%text_color%"/>
+			<image checked="checkbox_true" unchecked="checkbox_false"/>
+		</style>
+
+		<style name="main_button">
+			<highlight color="%highlight_color%"/>
+			<font resource="font_h" color="%text_button_color%"/>
+			<image resource="main_button"/>
+		</style>
+
+		<style name="main_button_half_height">
+			<highlight color="%highlight_color%"/>
+			<font resource="font_m" color="%text_button_color%"/>
+			<image resource="main_button_half_height"/>
+		</style>
+
+		<style name="box_button">
+			<font resource="font_h" color="%text_button_color%" highlightcolor="%confirm_box_btn_highlight_color%"/>
+			<image resource="box_button"/>
+		</style>
+
+		<style name="main_button_half_height_full_width">
+			<highlight color="%highlight_color%"/>
+			<font resource="font_m" color="%text_button_color%"/>
+			<image resource="main_button_half_height_full_width"/>
+		</style>
+
+		<style name="button_third_width">
+			<highlight color="%highlight_color%"/>
+			<font resource="font_m" color="%text_button_color%"/>
+			<image resource="tab_3"/>
+		</style>
+
+		<style name="button_quarter_width">
+			<highlight color="%highlight_color%"/>
+			<font resource="font_m" color="%text_button_color%"/>
+			<image resource="tab_4"/>
+		</style>
+
+		<style name="fab">
+			<highlight color="%highlight_color%"/>
+			<placement x="%indent_right%" y="%row21a_y%" placement="1"/>
+			<font resource="font_m" color="%button_text_color%"/>
+		</style>
+
+		<style name="tab">
+			<highlight color="%highlight_color%"/>
+			<fill color="%transparent%"/>
+			<font resource="font_s" color="%text_button_color%"/>
+		</style>
+
+		<style name="console">
+			<fastscroll rectcolor="%accent_color%" w="%console_fastscroll_w%" rectw="%console_fastscroll_rectw%" recth="%console_fastscroll_recth%"/>
+			<color foreground="%text_color%" background="%background_color%" scroll="%background_color%"/>
+			<font resource="fixed"/>
+		</style>
+
+		<style name="terminal">
+			<fastscroll linecolor="%transparent%" rectcolor="%accent_color%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%"/>
+			<background color="%background_color%"/>
+			<font resource="fixed" spacing="3" color="%text_color%"/>
+		</style>
+
+		<style name="fileselector">
+			<highlight color="%highlight_color%"/>
+			<fastscroll linecolor="%transparent%" rectcolor="%accent_color%" w="%fastscroll_w%" linew="%fastscroll_linew%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%"/>
+			<separator color="%fileselector_linecolor%" height="%fileselector_separatorheight%"/>
+			<sort name="tt_gui_sort_order"/>
+			<!-- <icon folder="folder" file="file"/> -->
+			<itemprop height="%menuitem_h%"/>
+			<background color="%background_color%"/>
+			<font resource="font_m" spacing="%fileselector_spacing%" color="%text_color%" highlightcolor="%accent_color%"/>
+		</style>
+
+		<style name="listbox">
+			<highlight color="%highlight_color%"/>
+			<header background="%background_color%" textcolor="%accent_color%" separatorcolor="%accent_color%" separatorheight="%fileselector_separatorheight%"/>
+			<fastscroll linecolor="%fileselector_linecolor%" rectcolor="%accent_color%" w="%fastscroll_w%" linew="%fastscroll_linew%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%"/>
+			<separator color="%fileselector_linecolor%" height="%fileselector_separatorheight%"/>
+			<icon selected="radio_true" unselected="radio_false"/>
+			<background color="%background_color%"/>
+			<font resource="font_m" spacing="%fileselector_spacing%" color="%text_color%" highlightcolor="%accent_color%"/>
+		</style>
+
+		<style name="scrolllist">
+			<background color="%background_color%"/>
+			<font resource="font_m" spacing="%fileselector_spacing%" color="%text_color%"/>
+			<fastscroll linecolor="%fileselector_linecolor%" rectcolor="%accent_color%" w="%fastscroll_w%" linew="%fastscroll_linew%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%"/>
+		</style>
+
+		<style name="partitionlist">
+			<highlight color="%fileselector_highlight_color%"/>
+			<header background="%background_color%" textcolor="%accent_color%" separatorcolor="%accent_color%" separatorheight="%fileselector_separatorheight%"/>
+			<fastscroll linecolor="%fileselector_linecolor%" rectcolor="%accent_color%" w="%fastscroll_w%" linew="%fastscroll_linew%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%"/>
+			<dimensions lineh="%slidervalue_lineh%" linepadding="%slidervalue_padding%" sliderw="%slidervalue_sliderw%" sliderh="%slidervalue_sliderh%"/>
+			<icon selected="checkbox_true" unselected="checkbox_false"/>
+			<separator color="%fileselector_linecolor%" height="%fileselector_separatorheight%"/>
+			<background color="%background_color%"/>
+			<font resource="font_m" spacing="%partitionlist_spacing%" color="%text_color%" highlightcolor="%fileselector_highlight_font_color%"/>
+		</style>
+
+		<style name="partitionlist_storage">
+			<highlight color="%fileselector_highlight_color%"/>
+			<placement x="%col1_x_left%" y="%row5_y%" w="%content_overlay_width%" h="%partitionlist_storage_height%"/>
+			<header background="%background_color%" textcolor="%accent_color%" separatorcolor="%accent_color%" separatorheight="%fileselector_separatorheight%"/>
+			<fastscroll linecolor="%fileselector_linecolor%" rectcolor="%accent_color%" w="%fastscroll_w%" linew="%fastscroll_linew%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%"/>
+			<dimensions lineh="%slidervalue_lineh%" linepadding="%slidervalue_padding%" sliderw="%slidervalue_sliderw%" sliderh="%slidervalue_sliderh%"/>
+			<icon selected="radio_true" unselected="radio_false"/>
+			<separator color="%fileselector_linecolor%" height="%fileselector_separatorheight%"/>
+			<background color="%background_color%"/>
+			<font resource="font_m" spacing="%partitionlist_spacing%" color="%text_color%" highlightcolor="%fileselector_highlight_font_color%"/>
+		</style>
+
+		<style name="slider">
+			<placement x="%center_x%" y="%row23_y%"/>
+			<font resource="font_s" color="%text_color%"/>
+			<resource base="slider" used="slider_used" touch="slider_touch"/>
+		</style>
+
+		<style name="slidervalue">
+			<resource handle="handle"/>
+			<font resource="font_m" color="%text_color%"/>
+			<colors line="%fileselector_linecolor%"/>
+			<dimensions lineh="%slidervalue_lineh%" linepadding="%slidervalue_padding%" sliderw="%slidervalue_sliderw%" sliderh="%slidervalue_sliderh%"/>
+		</style>
+
+		<style name="patternpassword">
+			<size name="tt_gui_pattern_grid_size" default="3"/>
+		</style>
+		<!-- vivo recovery  -->
+		<style name="menubox">
+			<!-- <highlight color="%highlight_color%"/> -->
+			<fastscroll linecolor="%transparent%" rectcolor="%accent_color%" w="%fastscroll_w%" linew="%fastscroll_linew%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%"/>
+			<separator color="%separator_line_color%" height="%separator_line_h%"/>
+			<itemprop height="%menuitem_h%"/>
+			<background color="%background_color%"/>
+			<font resource="font_l" spacing="%menuitem_spacing%" color="%text_color%" highlightcolor="%highlight_color%"/>
+		</style>
+
+		<style name="vivo_main_button">
+			<font resource="font_l" color="%text_button_color%"/>
+			<image resource="button_main" highlightresource="button_main_highlight"/>
+		</style>
+
+		<style name="vivo_round_button">
+			<font resource="font_l" color="%text_button_color%"/>
+			<image resource="button_round" highlightresource="button_round_highlight"/>
+		</style>
+
+		<style name="vivo_round_button_long">
+			<font resource="font_l" color="%text_button_color%"/>
+			<image resource="button_round_long" highlightresource="button_round_highlight_long"/>
+		</style>
+
+		<style name="password">
+			<background color="%background_color%"/>
+			<prop hasfocus="1"/>
+			<font resource="font_h" color="%text_color%"/>
+		</style>
+
+		<style name="wifiselector">
+			<highlight color="%highlight_color%"/>
+			<fastscroll linecolor="%transparent%" rectcolor="%accent_color%" w="%fastscroll_w%" linew="%fastscroll_linew%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%"/>
+			<separator color="%fileselector_linecolor%" height="%fileselector_separatorheight%"/>
+			<itemprop height="%menuitem_h%"/>
+			<background color="%background_color%"/>
+			<font resource="font_m" spacing="%fileselector_spacing%" color="%text_color%" highlightcolor="%accent_color%"/>
+		</style>
+	</styles>
+
+	<!-- ============================================================================================================================ -->
+	<!--                                                                                                                              -->
+	<!--                                                   pages start                                                                -->
+	<!--                                                                                                                              -->
+	<!-- ============================================================================================================================ -->
+	<pages>
+		<page name="clear_vars">
+			<action>
+				<action function="set">tt_actions_completed=0</action>
+				<action function="set">tt_operation_state=0</action>
+				<action function="set">tt_text1=</action>
+				<action function="set">tt_text2=</action>
+				<action function="set">tt_text3=</action>
+				<action function="set">tt_text4=</action>
+				<action function="set">tt_action_text1=</action>
+				<action function="set">tt_action_text2=</action>
+				<action function="set">tt_action_param=</action>
+				<action function="set">tt_has_action2=0</action>
+				<action function="set">tt_action2=</action>
+				<action function="set">tt_action2_param=</action>
+				<action function="set">tt_has_cancel=0</action>
+				<action function="set">tt_cancel_action=</action>
+				<action function="set">tt_cancel_param=</action>
+				<action function="set">tt_operation_done_reboot=0</action>
+				<action function="set">tt_hide_password=1</action>
+				<action function="set">tt_confirm_go=</action>
+				<action function="page">%tt_clear_destination%</action>
+			</action>
+		</page>
+
+		<page name="main">
+			<!-- recovery gui -->
+			<action>
+				<conditions>
+					<condition var1="property.recovery.gui_mode" op="!=" var2="0"/>
+					<condition var1="property.recovery.repair_mode" var2="0"/>
+					<condition var1="property.recovery.fastboot_mode" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_clear_destination=recovery</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+
+			<!-- fastboot gui -->
+			<action>
+				<conditions>
+					<condition var1="property.recovery.gui_mode" op="!=" var2="0"/>
+					<condition var1="property.recovery.repair_mode" var2="0"/>
+					<condition var1="property.recovery.fastboot_mode" op="!=" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_clear_destination=fastboot</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+
+			<!-- survival gui -->
+			<action>
+				<conditions>
+					<condition var1="property.recovery.gui_mode" op="!=" var2="0"/>
+					<condition var1="property.recovery.repair_mode" op="!=" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_clear_destination=survival</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+
+			<!-- finish gui -->
+			<action>
+				<conditions>
+					<condition var1="property.recovery.gui_mode" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_gui_done=1</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="recovery">
+			<template name="page"/>
+
+			<image>
+				<placement x="%center_x%" y="%logo_y%" placement="4"/>
+				<image resource="logo"/>
+			</image>
+
+			<text style="text_l">
+				<placement x="%center_x%" y="%logo_title_y%" placement="5"/>
+				<text>RECOVERY</text>
+			</text>
+
+			<button style="vivo_main_button">
+				<placement x="%main_btn_row1_x%" y="%main_btn_col1_y%"/>
+				<icon resource="icon_install"/>
+				<text>{@install_packege_btn=...}</text>
+				<actions>
+					<action function="check_storage_device"/>
+					<action function="set">tt_selectimage=0</action>
+					<action function="page">install</action>
+				</actions>
+			</button>
+
+			<button style="vivo_main_button">
+				<placement x="%main_btn_row2_x%" y="%main_btn_col1_y%"/>
+				<icon resource="icon_wipe"/>
+				<text>{@wipe_data_btn=...}</text>
+				<actions>
+					<action function="page">wipe</action>
+				</actions>
+			</button>
+
+			<button style="vivo_main_button">
+				<placement x="%main_btn_row1_x%" y="%main_btn_col2_y%"/>
+				<icon resource="icon_check"/>
+				<text>{@check_system_btn=...}</text>
+				<actions>
+					<action function="set">tt_back=main</action>
+					<action function="set">tt_action=root_check</action>
+					<action function="set">tt_action_param=</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_text1=...</action>
+					<action function="set">tt_text2=...</action>
+					<action function="set">tt_action_text1={@root_check_running_commands=...}</action>
+					<action function="set">tt_complete_text1=...</action>
+					<action function="set">tt_complete_text2=...</action>
+					<action function="overlay">rootchecking</action>
+				</actions>
+			</button>
+
+			<button style="vivo_main_button">
+				<condition var1="vivo_find_secret" var2="1"/>
+				<placement x="%main_btn_row2_x%" y="%main_btn_col2_y%"/>
+				<icon resource="icon_search"/>
+				<text>{@view_log_btn=...}</text>
+				<actions>
+					<action function="set">tt_back=main</action>
+					<action function="set">tmpfile_selector_root=/tmp/selector_log</action>
+					<action function="set">tt_action=copylog</action>
+					<action function="set">tt_action_param=%tmpfile_selector_root%</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_text1=...</action>
+					<action function="set">tt_text2=...</action>
+					<action function="set">tt_action_text1=...</action>
+					<action function="set">tt_complete_text1=...</action>
+					<action function="set">tt_complete_text2=...</action>
+					<action function="set">tt_complete_text1={@view_log_hdr=...}</action>
+					<action function="page">prepare_log</action>
+				</actions>
+			</button>
+
+			<button style="vivo_round_button">
+				<placement x="%round_btn_row1_x%" y="%round_btn_col1_y%"/>
+				<text>{@shutdown_btn=...}</text>
+				<actions>
+					<action function="set">tt_back=main</action>
+					<action function="set">tt_action=reboot</action>
+					<action function="set">tt_action_param=poweroff</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_text1={@tips_shutdown=...}</action>
+					<action function="set">tt_text2=...</action>
+					<action function="set">tt_action_text1=...</action>
+					<action function="set">tt_complete_text1=...</action>
+					<action function="set">tt_complete_text2=...</action>
+					<action function="overlay">confirm_box</action>
+				</actions>
+			</button>
+
+			<button style="vivo_round_button">
+				<placement x="%round_btn_row2_x%" y="%round_btn_col1_y%"/>
+				<text>{@reboot_btn=...}</text>
+				<actions>
+					<action function="set">tt_back=main</action>
+					<action function="set">tt_action=reboot</action>
+					<action function="set">tt_action_param=system</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_text1={@tips_reboot=...}</action>
+					<action function="set">tt_text2=...</action>
+					<action function="set">tt_action_text1=...</action>
+					<action function="set">tt_complete_text1=...</action>
+					<action function="set">tt_complete_text2=...</action>
+					<action function="overlay">confirm_box</action>
+				</actions>
+			</button>
+
+			<button>
+				<condition var1="property.recovery.state.root" op="!=" var2="0"/>
+				<placement x="%center_x%" y="%root_tip_y%" w="%confirmbox_btn_w%" h="%confirmbox_btn_h%"  placement="4"/>
+				<fill color="%transparent%"/>
+				<font resource="font_m" color="%text_button_color%"/>
+				<text>{@has_root_tips=...}</text>
+				<actions>
+					<action function="expore_secret"/>
+				</actions>
+			</button>
+
+			<button>
+				<condition var1="property.recovery.state.root" var2="0"/>
+				<placement x="%center_x%" y="%root_tip_y%" w="%confirmbox_btn_w%" h="%confirmbox_btn_h%"  placement="4"/>
+				<fill color="%transparent%"/>
+				<font resource="font_m" color="%text_button_color%"/>
+				<text>{@no_root_tips=...}</text>
+				<actions>
+					<action function="expore_secret"/>
+				</actions>
+			</button>
+		</page>
+
+		<page name="survival">
+			<template name="page"/>
+
+			<image>
+				<placement x="%center_x%" y="%logo_y%" placement="4"/>
+				<image resource="logo"/>
+			</image>
+
+			<text style="text_l">
+				<placement x="%center_x%" y="%logo_title_y%" placement="5"/>
+				<text>{@survival_mode=...}</text>
+			</text>
+
+			<button style="vivo_round_button_long">
+				<placement x="%center_x%" y="%vivo_repair_btn_y%" placement="4"/>
+				<text>{@repair_down_btn=...}</text>
+				<actions>
+					<action function="set">tt_clear_destination=wifi_link_prepare</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</button>
+
+			<button style="vivo_round_button">
+				<placement x="%round_btn_row1_x%" y="%round_btn_col1_y%"/>
+				<text>{@shutdown_btn=...}</text>
+				<actions>
+					<action function="set">tt_back=main</action>
+					<action function="set">tt_action=reboot</action>
+					<action function="set">tt_action_param=poweroff</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_text1={@tips_shutdown=...}</action>
+					<action function="set">tt_text2=...</action>
+					<action function="set">tt_action_text1=...</action>
+					<action function="set">tt_complete_text1=...</action>
+					<action function="set">tt_complete_text2=...</action>
+					<action function="overlay">confirm_box</action>
+				</actions>
+			</button>
+
+			<button style="vivo_round_button">
+				<placement x="%round_btn_row2_x%" y="%round_btn_col1_y%"/>
+				<text>{@reboot_btn=...}</text>
+				<actions>
+					<action function="set">tt_back=main</action>
+					<action function="set">tt_action=reboot</action>
+					<action function="set">tt_action_param=system</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_text1={@tips_reboot=...}</action>
+					<action function="set">tt_text2=...</action>
+					<action function="set">tt_action_text1=...</action>
+					<action function="set">tt_complete_text1=...</action>
+					<action function="set">tt_complete_text2=...</action>
+					<action function="overlay">confirm_box</action>
+				</actions>
+			</button>
+		</page>
+
+		<page name="fastboot">
+			<template name="page"/>
+
+			<image>
+				<placement x="%center_x%" y="%logo_y%" placement="4"/>
+				<image resource="logo"/>
+			</image>
+
+			<text style="text_l">
+				<placement x="%center_x%" y="%logo_title_y%" placement="5"/>
+				<text>{@fastboot_mode=...}</text>
+			</text>
+
+			<button style="vivo_round_button_long">
+				<placement x="%center_x%" y="%vivo_fastboot_btn1_y%" placement="4"/>
+				<text>{@reboot_recovery_btn=...}</text>
+				<actions>
+					<action function="set">tt_back=main</action>
+					<action function="set">tt_action=reboot</action>
+					<action function="set">tt_action_param=recovery</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_text1={@tips_reboot=...}</action>
+					<action function="set">tt_text2=...</action>
+					<action function="set">tt_action_text1=...</action>
+					<action function="set">tt_complete_text1=...</action>
+					<action function="set">tt_complete_text2=...</action>
+					<action function="overlay">confirm_box</action>
+				</actions>
+			</button>
+
+			<button style="vivo_round_button">
+				<placement x="%round_btn_row1_x%" y="%round_btn_col1_y%"/>
+				<text>{@shutdown_btn=...}</text>
+				<actions>
+					<action function="set">tt_back=main</action>
+					<action function="set">tt_action=reboot</action>
+					<action function="set">tt_action_param=poweroff</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_text1={@tips_shutdown=...}</action>
+					<action function="set">tt_text2=...</action>
+					<action function="set">tt_action_text1=...</action>
+					<action function="set">tt_complete_text1=...</action>
+					<action function="set">tt_complete_text2=...</action>
+					<action function="overlay">confirm_box</action>
+				</actions>
+			</button>
+
+			<button style="vivo_round_button">
+				<placement x="%round_btn_row2_x%" y="%round_btn_col1_y%"/>
+				<text>{@reboot_btn=...}</text>
+				<actions>
+					<action function="set">tt_back=main</action>
+					<action function="set">tt_action=reboot</action>
+					<action function="set">tt_action_param=system</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_text1={@tips_reboot=...}</action>
+					<action function="set">tt_text2=...</action>
+					<action function="set">tt_action_text1=...</action>
+					<action function="set">tt_complete_text1=...</action>
+					<action function="set">tt_complete_text2=...</action>
+					<action function="overlay">confirm_box</action>
+				</actions>
+			</button>
+
+			<button>
+				<condition var1="property.recovery.state.root" op="!=" var2="0"/>
+				<placement x="%center_x%" y="%root_tip_y%" w="%confirmbox_btn_w%" h="%confirmbox_btn_h%"  placement="4"/>
+				<fill color="%transparent%"/>
+				<font resource="font_m" color="%text_button_color%"/>
+				<text>{@has_root_tips=...}</text>
+				<actions>
+					<action function="switch_usb_port"/>
+				</actions>
+			</button>
+
+			<button>
+				<condition var1="property.recovery.state.root" var2="0"/>
+				<placement x="%center_x%" y="%root_tip_y%" w="%confirmbox_btn_w%" h="%confirmbox_btn_h%"  placement="4"/>
+				<fill color="%transparent%"/>
+				<font resource="font_m" color="%text_button_color%"/>
+				<text>{@no_root_tips=...}</text>
+				<actions>
+					<action function="switch_usb_port"/>
+				</actions>
+			</button>
+		</page>
+
+		<!-- ============================================================================================================================ -->
+		<!--                                                                                                                              -->
+		<!--                                                 install pages start                                                          -->
+		<!--                                                                                                                              -->
+		<!-- ============================================================================================================================ -->
+		<page name="install">
+			<template name="page"/>
+
+			<text style="text_h">
+				<placement x="%center_x%" y="%header_y%" placement="5"/>
+				<text>{@install_image_hdr=...}</text>
+			</text>
+
+			<fill color="#4D4D4D">
+				<placement x="0" y="%header_separator_y%" w="%screen_width%" h="%header_separator_h%"/>
+			</fill>
+
+			<text color="%txt_tips_color%">
+				<font resource="font_l"/>
+				<placement x="%menulist_x%" y="%menulist_tips_y%"/>
+				<text>{@install_menu_tips=...}</text>
+			</text>
+
+			<fill color="#4D4D4D">
+				<placement x="0" y="%menulist_tips_separator_y%" w="%screen_width%" h="%separator_line_h%"/>
+			</fill>
+
+			<menubox>
+				<placement x="%menulist_x%" y="%menulist_y%" w="%menulist_w%" h="%menulist_h%"/>
+				<icon2 resource="button_listbox"/>
+				<listitem name="{@install_menu_media=...}">
+					<conditions>
+						<condition var1="tt_device_has_datamedia" op="!=" var2="0"/>
+					</conditions>
+					<action>
+						<actions>
+							<action function="set">tt_selectimage=0</action>
+							<action function="set">install_fileselector_hdr={@install_media_hdr=...}</action>
+							<action function="set">install_fileselector_root=/data/media/0</action>
+							<action function="set">tt_zip_location=%install_fileselector_root%</action>
+							<action function="mount">tt_zip_location</action>
+
+							<action function="set">tt_gatekeeper_jump=install_fileselector</action>
+							<action function="set">tt_gatekeeper_reason=</action>
+							<action function="set">tt_gatekeeper_back=install</action>
+
+							<action function="page">vivo_gatekeeper</action>
+						</actions>
+					</action>
+				</listitem>
+				<listitem name="{@install_menu_sd=...}">
+					<conditions>
+						<condition var1="tt_device_has_sdcard" op="!=" var2="0"/>
+					</conditions>
+					<action>
+						<actions>
+							<action function="set">tt_selectimage=0</action>
+							<action function="set">install_fileselector_hdr={@install_sd_hdr=...}</action>
+							<action function="set">install_fileselector_root=/sdcard</action>
+							<action function="set">tt_zip_location=%install_fileselector_root%</action>
+							<action function="mount">tt_zip_location</action>
+
+							<action function="set">tt_gatekeeper_jump=install_fileselector</action>
+							<action function="set">tt_gatekeeper_reason=</action>
+							<action function="set">tt_gatekeeper_back=install</action>
+
+							<action function="page">vivo_gatekeeper</action>
+						</actions>
+					</action>
+				</listitem>
+				<listitem name="{@install_menu_net=...}">
+					<conditions>
+						<condition var1="tt_device_support_survival" op="!=" var2="0"/>
+					</conditions>
+					<action>
+						<actions>
+							<action function="set">tt_clear_destination=goto_surival</action>
+							<action function="page">clear_vars</action>
+						</actions>
+					</action>
+				</listitem>
+			</menubox>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="page">main</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="goto_surival">
+			<action>
+				<actions>
+					<action function="set">tt_back=install</action>
+					<action function="set">tt_action=reboot</action>
+					<action function="set">tt_action_param=survival</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_text1={@wlan_network_hdr=...}</action>
+					<action function="set">tt_text2={@wlan_repair_tips=...}</action>
+					<action function="set">tt_action_text1=...</action>
+					<action function="set">tt_complete_text1=...</action>
+					<action function="set">tt_complete_text2=...</action>
+					<action function="overlay">confirm_box_big2</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="install_fileselector">
+			<background color="%background_color%"/>
+			<text style="text_h">
+				<placement x="%center_x%" y="%header_y%" placement="5"/>
+				<text>%install_fileselector_hdr%</text>
+			</text>
+
+			<fill color="#4D4D4D">
+				<placement x="0" y="%header_separator_y%" w="%screen_width%" h="%header_separator_h%"/>
+			</fill>
+
+			<text color="%txt_tips_color%">
+				<font resource="font_l"/>
+				<placement x="%package_fileselector_x%" y="%package_install_tips_y%"/>
+				<text>{@install_image_tips=...}</text>
+			</text>
+
+			<fill color="#4D4D4D">
+				<placement x="0" y="%package_install_tips_separator_y%" w="%screen_width%" h="%fileselector_separatorheight%"/>
+			</fill>
+
+			<!-- fileselector start  *** has helper button to up level folder ***-->
+			<image>
+				<condition var1="tt_busy" var2="1"/>
+				<placement x="%back_btn_x%" y="%header_y%"/>
+				<image resource="back"/>
+			</image>
+
+			<button>
+				<condition var1="tt_busy" var2="0"/>
+				<condition var1="tt_zip_location" var2="%install_fileselector_root%"/>
+				<placement x="%back_btn_x%" y="%header_y%"/>
+				<image resource="back"/>
+				<action function="key">back</action>
+			</button>
+
+			<button>
+				<condition var1="tt_busy" var2="0"/>
+				<condition var1="tt_zip_location" op="!=" var2="%install_fileselector_root%"/>
+				<placement x="%back_btn_x%" y="%header_y%"/>
+				<image resource="back"/>
+				<action function="fileselector_path_check">install_fileselector_root+tt_zip_location</action>
+			</button>
+
+			<fileselector>
+				<placement x="%package_fileselector_x%" y="%package_fileselector_y%" w="%package_fileselector_w%" h="%package_fileselector_h%"/>
+				<!-- <header background="%background_color%" textcolor="%text_color%" separatorcolor="%fileselector_linecolor%" separatorheight="%fileselector_separatorheight%"/> -->
+				<filter extn=".zip" folders="1" files="1" nav="0"/>
+				<!-- <text>%tt_zip_location%</text> -->
+				<path name="tt_zip_location" default="%install_fileselector_root%"/>
+				<data name="tt_update_package"/>
+				<selection name="tt_package_name"/>
+				<extra helperBtn="1"  priority="file" fixroot="1"/>
+			</fileselector>
+			<!-- fileselector end -->
+
+			<action>
+				<conditions>
+					<condition var1="tt_update_package" op="modified"/>
+				</conditions>
+				<actions>
+					<action function="page">goto_install</action>
+				</actions>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_clear_destination=install</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="goto_install">
+			<action>
+				<actions>
+					<action function="set">tt_back=install_fileselector</action>
+					<action function="set">tt_action=package_check</action>
+					<action function="set">tt_action_param=tt_update_package</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_text1=...</action>
+					<action function="set">tt_text2=...</action>
+					<action function="set">tt_action_text1={@package_check_running_commands=...}</action>
+					<action function="set">tt_complete_text1=...</action>
+					<action function="set">tt_complete_text2=...</action>
+					<action function="overlay">packagechecking</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="packagechecking">
+			<background color="%semi_transparent%"/>
+
+			<button>
+				<conditions>
+					<condition var1="tt_busy" var2="0"/>
+					<condition var1="tt_operation_state" var2="1"/>
+				</conditions>
+				<placement x="%back_btn_x%" y="%header_y%"/>
+				<image resource="back"/>
+				<action function="key">back</action>
+			</button>
+
+			<image>
+				<placement x="%center_x%" y="%center_y%" placement="4"/>
+				<image resource="confirm_box_small_bg"/>
+			</image>
+
+			<text>
+				<placement x="%center_x%" y="%center_y%"  placement="4"/>
+				<font resource="font_l" color="%black_color%"/>
+				<text>%tt_action_text1%</text>
+			</text>
+
+			<animation>
+				<placement x="%action_box_anim_x%" y="%center_y%" placement="4"/>
+				<resource name="anim_chrysanthemum"/>
+				<speed fps="10" render="2"/>
+				<loop frame="1"/>
+			</animation>
+
+			<action>
+				<actions>
+					<action function="%tt_action%">%tt_action_param%</action>
+				</actions>
+			</action>
+
+			<action>
+				<conditions>
+					<condition var1="tt_busy" var2="0"/>
+					<condition var1="tt_operation_state" var2="1"/>
+				</conditions>
+				<actions>
+					<action function="overlay"/>
+					<action function="set">tt_text1={@warnning_btn=...}</action>
+					<action function="set">tt_text2=%tt_complete_text1%</action>
+					<action function="overlay">packagecheck_done</action>
+				</actions>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="overlay"/>
+					<action function="page">main</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="packagecheck_done">
+			<template name="confirm_box_big_temp"/>
+
+			<fill color="%separator_line_color%">
+				<condition var1="tt_operation_status" var2="0"/>
+				<placement x="%center_x%" y="%confirmbox_big_btn_y%" w="1" h="%confirmbox_big_btn_h%"/>
+			</fill>
+
+			<button>
+				<condition var1="tt_operation_status" var2="0"/>
+				<placement x="%confirmbox_big_btn1_x%" y="%confirmbox_big_btn_y%" w="%confirmbox_big_btn_w%" h="%confirmbox_big_btn_h%"/>
+				<fill color="%transparent%"/>
+				<font resource="font_l" color="%highlight_color%"/>
+				<text>{@package_check_install_btn=...}</text>
+				<actions>
+					<action function="set">tt_clear_destination=install_active</action>
+					<action function="overlay"/>
+					<action function="page">clear_vars</action>
+				</actions>
+			</button>
+
+			<button>
+				<condition var1="tt_operation_status" var2="0"/>
+				<placement x="%confirmbox_big_btn2_x%" y="%confirmbox_big_btn_y%" w="%confirmbox_big_btn_w%" h="%confirmbox_big_btn_h%"/>
+				<fill color="%transparent%"/>
+				<font resource="font_l" color="%highlight_color%"/>
+				<text>{@package_check_ok_btn=...}</text>
+				<action function="key">back</action>
+			</button>
+
+			<button>
+				<condition var1="tt_operation_status" op="!=" var2="0"/>
+				<placement x="%center_x%" y="%confirmbox_big_btn_y%" w="%confirmbox_big_btn_w%" h="%confirmbox_big_btn_h%" placement="4"/>
+				<fill color="%transparent%"/>
+				<font resource="font_l" color="%highlight_color%"/>
+				<text>{@package_check_ok_btn=...}</text>
+				<action function="key">back</action>
+			</button>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_clear_destination=%tt_back%</action>
+					<action function="overlay"/>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="install_active">
+			<action>
+				<actions>
+					<action function="set">tt_back=install</action>
+					<action function="set">tt_action=install_package</action>
+					<action function="set">tt_action_param=tt_update_package</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_action_text1={@install_running_commands=...}</action>
+					<action function="set">tt_action_text2=</action>
+					<action function="set">tt_complete_text1=</action>
+					<action function="page">action_page</action>
+				</actions>
+			</action>
+		</page>
+
+		<!-- ============================================================================================================================ -->
+		<!--                                                                                                                              -->
+		<!--                                                 root check start                                                             -->
+		<!--                                                                                                                              -->
+		<!-- ============================================================================================================================ -->
+		<page name="rootchecking">
+			<background color="%semi_transparent%"/>
+
+			<button>
+				<conditions>
+					<condition var1="tt_busy" var2="0"/>
+					<condition var1="tt_operation_state" var2="1"/>
+				</conditions>
+				<placement x="%back_btn_x%" y="%header_y%"/>
+				<image resource="back"/>
+				<action function="key">back</action>
+			</button>
+
+			<image>
+				<placement x="%center_x%" y="%center_y%" placement="4"/>
+				<image resource="confirm_box_small_bg"/>
+			</image>
+
+			<text>
+				<placement x="%center_x%" y="%center_y%"  placement="4"/>
+				<font resource="font_l" color="%black_color%"/>
+				<text>%tt_action_text1%</text>
+			</text>
+
+			<animation>
+				<placement x="%action_box_anim_x%" y="%center_y%" placement="4"/>
+				<resource name="anim_chrysanthemum"/>
+				<speed fps="10" render="2"/>
+				<loop frame="1"/>
+			</animation>
+
+			<action>
+				<actions>
+					<action function="%tt_action%">%tt_action_param%</action>
+				</actions>
+			</action>
+
+			<action>
+				<conditions>
+					<condition var1="tt_busy" var2="0"/>
+					<condition var1="tt_operation_state" var2="1"/>
+				</conditions>
+				<actions>
+					<action function="overlay"/>
+					<action function="overlay">rootcheck_done</action>
+				</actions>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="overlay"/>
+					<action function="page">main</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="rootcheck_done">
+			<background color="%semi_transparent%"/>
+
+			<image>
+				<image resource="confirm_box_bg"/>
+				<placement x="%center_x%" y="%confirmbox_y%" placement="4"/>
+			</image>
+
+			<text>
+				<placement x="%center_x%" y="%confirmbox_txt_tips_y%"  placement="5"/>
+				<font resource="font_l" color="%black_color%"/>
+				<text>%tt_complete_text1%</text>
+			</text>
+
+			<fill color="%separator_line_color%">
+				<condition var1="tt_operation_status" op="!=" var2="0"/>
+				<placement x="%center_x%" y="%confirmbox_btn_y%" w="1" h="%confirmbox_btn_h%"/>
+			</fill>
+
+			<button>
+				<condition var1="tt_operation_status" var2="0"/>
+				<placement x="%center_x%" y="%confirmbox_big_btn_y%" w="%confirmbox_big_btn_w%" h="%confirmbox_big_btn_h%" placement="4"/>
+				<fill color="%transparent%"/>
+				<font resource="font_l" color="%highlight_color%"/>
+				<text>{@root_check_ok_btn=...}</text>
+				<action function="key">back</action>
+			</button>
+
+			<button>
+				<condition var1="tt_operation_status" op="!=" var2="0"/>
+				<placement x="%confirmbox_big_btn1_x%" y="%confirmbox_big_btn_y%" w="%confirmbox_big_btn_w%" h="%confirmbox_big_btn_h%"/>
+				<fill color="%transparent%"/>
+				<font resource="font_l" color="%highlight_color%"/>
+				<text>{@root_check_fail_btn=...}</text>
+				<actions>
+					<action function="overlay"/>
+					<action function="set">tt_complete_text1={@rootcheck_fail_hdr=...}</action>
+					<action function="page">action_complete2</action>
+				</actions>
+			</button>
+
+			<button>
+				<condition var1="tt_operation_status" op="!=" var2="0"/>
+				<placement x="%confirmbox_big_btn2_x%" y="%confirmbox_big_btn_y%" w="%confirmbox_big_btn_w%" h="%confirmbox_big_btn_h%"/>
+				<fill color="%transparent%"/>
+				<font resource="font_l" color="%highlight_color%"/>
+				<text>{@root_check_ok_btn=...}</text>
+				<action function="key">back</action>
+			</button>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_clear_destination=%tt_back%</action>
+					<action function="overlay"/>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+		</page>
+
+		<!-- ============================================================================================================================ -->
+		<!--                                                                                                                              -->
+		<!--                                                  view log star                                                               -->
+		<!--                                                                                                                              -->
+		<!-- ============================================================================================================================ -->
+		<page name="prepare_log">
+			<template name="page"/>
+
+			<animation>
+				<placement x="%center_x%" y="%action_box_anim_y%" placement="4"/>
+				<resource name="progress"/>
+				<speed fps="30" render="2"/>
+				<loop frame="1"/>
+			</animation>
+
+			<action>
+				<conditions>
+					<condition var1="tt_operation_state" var2="1"/>
+				</conditions>
+				<actions>
+					<!--  -->
+					<action function="set">tmpfile_selector_root=/tmp/selector_log</action>
+					<action function="set">tt_zip_location=%tmpfile_selector_root%</action>
+					<!--  -->
+					<action function="set">tt_back=main</action>
+					<action function="set">tt_action=file_to_screen</action>
+					<action function="set">tt_action_param=%tmpfile_selector_root%</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_text1={@view_log_hdr=...}</action>
+					<action function="set">tt_text2=...</action>
+					<action function="set">tt_action_text1=...</action>
+					<action function="set">tt_complete_text1=...</action>
+					<action function="set">tt_complete_text2=...</action>
+					<action function="set">tt_complete_text1={@view_log_hdr=...}</action>
+					<action function="set">tt_page_done=1</action>
+					<action function="set">tt_operation_state=0</action>
+					<action function="page">tmpfile_selector</action>
+				</actions>
+			</action>
+
+			<action>
+				<actions>
+					<action function="%tt_action%">%tt_action_param%</action>
+				</actions>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="page">main</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="tmpfile_selector">
+			<background color="%background_color%"/>
+			<text style="text_l">
+				<placement x="%center_x%" y="%header_y%" placement="5"/>
+				<text>%tt_text1%</text>
+			</text>
+
+			<fill color="#4D4D4D">
+				<placement x="0" y="%header_separator_y%" w="%screen_width%" h="%header_separator_h%"/>
+			</fill>
+
+			<image>
+				<condition var1="tt_busy" var2="1"/>
+				<placement x="%back_btn_x%" y="%header_y%"/>
+				<image resource="back"/>
+			</image>
+
+			<button>
+				<condition var1="tt_busy" var2="0"/>
+				<placement x="%back_btn_x%" y="%header_y%"/>
+				<image resource="back"/>
+				<action function="key">back</action>
+			</button>
+
+			<fileselector>
+				<placement x="%menulist_x%" y="%menulist_wipe_y%" w="%menulist_w%" h="%menulist_h%"/>
+				<filter folders="0" files="1" nav="0"/>
+				<path name="tt_zip_location" default="%tmpfile_selector_root%"/>
+				<data name="tt_filename"/>
+				<selection name="tt_file"/>
+				<extra helperBtn="0"  priority="file" fixroot="1"/>
+			</fileselector>
+
+			<action>
+				<conditions>
+					<condition var1="tt_filename" op="modified"/>
+					<condition var1="tt_busy" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_complete_text1=%tt_file%</action>
+					<action function="page">action_page2</action>
+				</actions>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="page">main</action>
+				</actions>
+			</action>
+		</page>
+
+		<!-- ============================================================================================================================ -->
+		<!--                                                                                                                              -->
+		<!--                                                  wipe pages star                                                             -->
+		<!--                                                                                                                              -->
+		<!-- ============================================================================================================================ -->
+		<page name="wipe">
+			<template name="page"/>
+
+			<text style="text_h">
+				<placement x="%center_x%" y="%header_y%" placement="5"/>
+				<text>{@wipe_common_hdr=...}</text>
+			</text>
+
+			<fill color="#4D4D4D">
+				<placement x="0" y="%header_separator_y%" w="%screen_width%" h="%header_separator_h%"/>
+			</fill>
+
+			<menubox>
+				<placement x="%menulist_x%" y="%menulist_wipe_y%" w="%menulist_w%" h="%menulist_h%"/>
+				<listitem name="{@wipe_menu_cache=...}">
+					<action>
+						<actions>
+							<action function="page">wipe_cache_confirm</action>
+						</actions>
+					</action>
+				</listitem>
+				<listitem name="{@wipe_menu_data=...}">
+					<conditions>
+						<condition var1="property.ro.recovery.vivo.custom_limit" op="!=" var2="1"/>
+					</conditions>
+					<action>
+						<actions>
+							<action function="page">wipe_data_confirm</action>
+						</actions>
+					</action>
+				</listitem>
+			</menubox>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="page">main</action>
+				</actions>
+			</action>
+		</page>
+
+		<!-- wipe data preaction start  -->
+		<page name="wipe_data_confirm">
+			<action>
+				<actions>
+					<action function="set">tt_back=wipe</action>
+					<action function="set">tt_text1={@wipe_data_hdr=...}</action>
+					<action function="set">tt_text2={@format_data_warnning=...}</action>
+					<action function="set">tt_confirm_go=wipe_data_all</action>
+					<action function="overlay">confirm_auto_box_big</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="wipe_data_confirm_dload">
+			<action>
+				<actions>
+					<action function="set">tt_text1={@wipe_data_hdr=...}</action>
+					<action function="set">tt_text2={@wipe_data_warnning=...}</action>
+					<action function="set">tt_confirm_go=wipe_data_gatekeeper_dload</action>
+					<action function="overlay">confirm_auto_box_big</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="wipe_data_gatekeeper_dload">
+			<action>
+				<actions>
+					<action function="set">tt_gatekeeper_jump=wipe_data_dload</action>
+					<action function="set">tt_gatekeeper_reason=wipe</action>
+					<action function="set">tt_gatekeeper_back=%tt_back%</action>
+					<action function="page">vivo_gatekeeper</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="wipe_data_gatekeeper">
+			<action>
+				<conditions>
+					<condition var1="property.recovery.gui_mode" op="!=" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_gatekeeper_jump=wipe_data</action>
+					<action function="set">tt_gatekeeper_reason=wipe</action>
+					<action function="set">tt_gatekeeper_back=wipe</action>
+					<action function="page">vivo_gatekeeper</action>
+				</actions>
+			</action>
+
+			<action>
+				<conditions>
+					<condition var1="property.recovery.gui_mode" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_gatekeeper_jump=wipe_data</action>
+					<action function="set">tt_gatekeeper_reason=wipe</action>
+					<action function="set">tt_gatekeeper_back=main</action>
+					<action function="page">vivo_gatekeeper</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="format_data_prompt">
+			<background color="%background_color%"/>
+
+			<image>
+				<placement x="%center_x%" y="%logo_y%" placement="4"/>
+				<image resource="logo"/>
+			</image>
+
+			<text style="text_l">
+				<placement x="%center_x%" y="%logo_title_y%" placement="5"/>
+				<text>RECOVERY</text>
+			</text>
+
+			<textbox>
+				<placement x="%center_x%" y="%row11_y%" w="%content_width%" h="%center_y%" placement="4"/>
+				<background color="%transparent%"/>
+				<font resource="font_h" spacing="%fileselector_spacing%" color="%red_color%"/>
+				<view_style x="%center_x%" placement="5"/>
+				<text>{@factory_reset_tips=...}</text>
+			</textbox>
+
+			<button style="vivo_round_button_long">
+				<placement x="%center_x%" y="%round_btn_col1_y%" placement="4"/>
+				<text>{@wipe_all_data_btn=...}</text>
+				<actions>
+					<action function="set">tt_back=format_data_prompt</action>
+					<action function="set">tt_text1={@wipe_data_hdr=...}</action>
+					<action function="set">tt_text2={@format_data_warnning=...}</action>
+					<action function="set">tt_confirm_go=wipe_data</action>
+					<action function="overlay">confirm_auto_box_big</action>
+				</actions>
+			</button>
+
+			<button style="vivo_round_button_long">
+				<placement x="%center_x%" y="%round_btn_col2_y%" placement="4"/>
+				<text>{@shutdown_btn=...}</text>
+				<actions>
+					<action function="set">tt_back=format_data_prompt</action>
+					<action function="set">tt_action=reboot</action>
+					<action function="set">tt_action_param=poweroff</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_text1={@tips_shutdown=...}</action>
+					<action function="set">tt_text2=...</action>
+					<action function="set">tt_action_text1=...</action>
+					<action function="set">tt_complete_text1=...</action>
+					<action function="set">tt_complete_text2=...</action>
+					<action function="overlay">confirm_box</action>
+				</actions>
+			</button>
+		</page>
+
+		<page name="wipe_data">
+			<action>
+				<conditions>
+					<condition var1="property.recovery.gui_mode" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_back=main</action>
+					<action function="set">tt_action=run_action_bridge_cmd</action>
+					<action function="set">tt_action_param=</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_action_text1={@wipe_data_running_commands=...}</action>
+					<action function="set">tt_complete_text1={@wipedata_done_success=...}</action>
+					<action function="set">tt_complete_text2={@wipedata_success_tips=...}</action>
+					<action function="page">action_page3</action>
+				</actions>
+			</action>
+
+			<action>
+				<conditions>
+					<condition var1="property.recovery.gui_mode" op="!=" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_back=wipe</action>
+					<action function="set">tt_action=wipe</action>
+					<action function="set">tt_action_param=data</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_action_text1={@wipe_data_running_commands=...}</action>
+					<action function="set">tt_complete_text1={@wipedata_done_success=...}</action>
+					<action function="set">tt_complete_text2={@wipedata_success_tips=...}</action>
+					<action function="page">action_page3</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="wipe_data_dload">
+			<action>
+				<actions>
+					<action function="set">tt_back=pkg_dload_ensure</action>
+					<action function="set">tt_action=wipe</action>
+					<action function="set">tt_action_param=data</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_action_text1={@wipe_data_running_commands=...}</action>
+					<action function="set">tt_complete_text1={@wipedata_done_success=...}</action>
+					<action function="set">tt_complete_text2={@wipedata_success_tips=...}</action>
+					<action function="page">action_page3</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="wipe_data_all">
+			<action>
+				<conditions>
+					<condition var1="property.recovery.gui_mode" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_back=main</action>
+					<action function="set">tt_action=run_action_bridge_cmd</action>
+					<action function="set">tt_action_param=</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_action_text1={@wipe_data_running_commands=...}</action>
+					<action function="set">tt_complete_text1={@wipedata_done_success=...}</action>
+					<action function="set">tt_complete_text2={@wipedata_success_tips=...}</action>
+					<action function="page">action_page3</action>
+				</actions>
+			</action>
+
+			<action>
+				<conditions>
+					<condition var1="property.recovery.gui_mode" op="!=" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_back=wipe</action>
+					<action function="set">tt_action=wipe</action>
+					<action function="set">tt_action_param=data_all</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_action_text1={@wipe_data_running_commands=...}</action>
+					<action function="set">tt_complete_text1={@wipedata_done_success=...}</action>
+					<action function="set">tt_complete_text2={@wipedata_success_tips=...}</action>
+					<action function="page">action_page3</action>
+				</actions>
+			</action>
+		</page>
+		<!-- wipe data preaction end  -->
+
+		<!-- wipe cache preaction start  -->
+		<page name="wipe_cache_confirm">
+			<action>
+				<actions>
+					<action function="set">tt_back=wipe</action>
+					<action function="set">tt_text1={@wipe_cache_hdr=...}</action>
+					<action function="set">tt_text2={@wipe_cache_warnning=...}</action>
+					<action function="set">tt_confirm_go=wipe_cache</action>
+					<action function="overlay">confirm_auto_box_big</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="wipe_cache">
+			<action>
+				<actions>
+					<action function="set">tt_back=wipe</action>
+					<action function="set">tt_action=wipe</action>
+					<action function="set">tt_action_param=cache</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_action_text1={@wipe_cache_running_commands=...}</action>
+					<action function="set">tt_complete_text1={@wipecache_done_success=...}</action>
+					<action function="set">tt_complete_text2={@wipecache_success_tips=...}</action>
+					<action function="page">action_page</action>
+				</actions>
+			</action>
+		</page>
+		<!-- wipe cache preaction start  -->
+
+		<!-- wipe settings preaction start  -->
+		<page name="wipe_settings_confirm">
+			<action>
+				<actions>
+					<action function="set">tt_back=wipe</action>
+					<action function="set">tt_text1={@rest_settings_hdr=...}</action>
+					<action function="set">tt_text2={@rest_settings_warnning=...}</action>
+					<action function="set">tt_confirm_go=wipe_settings_gatekeeper</action>
+					<action function="overlay">confirm_auto_box_big</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="wipe_settings_gatekeeper">
+			<action>
+				<conditions>
+					<condition var1="property.recovery.gui_mode" op="!=" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_gatekeeper_jump=wipe_settings</action>
+					<action function="set">tt_gatekeeper_reason=wipe</action>
+					<action function="set">tt_gatekeeper_back=wipe</action>
+					<action function="page">vivo_gatekeeper</action>
+				</actions>
+			</action>
+
+			<action>
+				<conditions>
+					<condition var1="property.recovery.gui_mode"  var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_gatekeeper_jump=wipe_settings</action>
+					<action function="set">tt_gatekeeper_reason=wipe</action>
+					<action function="set">tt_gatekeeper_back=main</action>
+					<action function="page">vivo_gatekeeper</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="wipe_settings">
+			<action>
+				<conditions>
+					<condition var1="property.recovery.gui_mode" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_back=main</action>
+					<action function="set">tt_action=run_action_bridge_cmd</action>
+					<action function="set">tt_action_param=</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_action_text1={@rest_settings_running_commands=...}</action>
+					<action function="set">tt_complete_text1={@resettings_done_success=...}</action>
+					<action function="set">tt_complete_text2={@resettings_success_tips=...}</action>
+					<action function="page">action_page3</action>
+				</actions>
+			</action>
+
+			<action>
+				<conditions>
+					<condition var1="property.recovery.gui_mode" op="!=" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_back=wipe</action>
+					<action function="set">tt_action=wipe</action>
+					<action function="set">tt_action_param=settings</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_action_text1={@rest_settings_running_commands=...}</action>
+					<action function="set">tt_complete_text1={@resettings_done_success=...}</action>
+					<action function="set">tt_complete_text2={@resettings_success_tips=...}</action>
+					<action function="page">action_page3</action>
+				</actions>
+			</action>
+		</page>
+		<!-- wipe settings preaction end  -->
+
+		<!-- ============================================================================================================================ -->
+		<!--                                                                                                                              -->
+		<!--                                                  command pages                                                               -->
+		<!--                                                                                                                              -->
+		<!-- ============================================================================================================================ -->
+		<page name="confirm_box">
+			<background color="%semi_transparent%"/>
+
+			<image>
+				<image resource="confirm_box_bg"/>
+				<placement x="%center_x%" y="%confirmbox_y%" placement="4"/>
+			</image>
+
+			<text>
+				<placement x="%center_x%" y="%confirmbox_txt_tips_y%"  placement="5"/>
+				<font resource="font_l" color="%black_color%"/>
+				<text>%tt_text1%</text>
+			</text>
+
+			<fill color="%separator_line_color%">
+				<placement x="%center_x%" y="%confirmbox_btn_y%" w="1" h="%confirmbox_btn_h%"/>
+			</fill>
+
+			<button>
+				<placement x="%confirmbox_btn1_x%" y="%confirmbox_btn_y%" w="%confirmbox_btn_w%" h="%confirmbox_btn_h%"/>
+				<fill color="%transparent%"/>
+				<font resource="font_l" color="%highlight_color%"/>
+				<text>{@cancel_btn=...}</text>
+				<action function="key">back</action>
+			</button>
+
+			<button>
+				<placement x="%confirmbox_btn2_x%" y="%confirmbox_btn_y%" w="%confirmbox_btn_w%" h="%confirmbox_btn_h%"/>
+				<fill color="%transparent%"/>
+				<font resource="font_l" color="%highlight_color%"/>
+				<text>{@ok_btn=...}</text>
+				<actions>
+					<action function="overlay"/>
+					<action function="page">action_page2</action>
+				</actions>
+			</button>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_clear_destination=%tt_back%</action>
+					<action function="overlay"/>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="confirm_box_big">
+			<template name="confirm_box_big_temp"/>
+
+			<fill color="%separator_line_color%">
+				<placement x="%center_x%" y="%confirmbox_big_btn_y%" w="1" h="%confirmbox_big_btn_h%"/>
+			</fill>
+
+			<button>
+				<placement x="%confirmbox_big_btn1_x%" y="%confirmbox_big_btn_y%" w="%confirmbox_big_btn_w%" h="%confirmbox_big_btn_h%"/>
+				<fill color="%transparent%"/>
+				<font resource="font_l" color="%highlight_color%"/>
+				<text>{@cancel_btn=...}</text>
+				<action function="key">back</action>
+			</button>
+
+			<button>
+				<placement x="%confirmbox_big_btn2_x%" y="%confirmbox_big_btn_y%" w="%confirmbox_big_btn_w%" h="%confirmbox_big_btn_h%"/>
+				<fill color="%transparent%"/>
+				<font resource="font_l" color="%highlight_color%"/>
+				<text>{@ok_btn=...}</text>
+				<actions>
+					<action function="overlay"/>
+					<action function="page">action_page</action>
+				</actions>
+			</button>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_clear_destination=%tt_back%</action>
+					<action function="overlay"/>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="confirm_box_big2">
+			<template name="confirm_box_big_temp"/>
+
+			<fill color="%separator_line_color%">
+				<placement x="%center_x%" y="%confirmbox_big_btn_y%" w="1" h="%confirmbox_big_btn_h%"/>
+			</fill>
+
+			<button>
+				<placement x="%confirmbox_big_btn1_x%" y="%confirmbox_big_btn_y%" w="%confirmbox_big_btn_w%" h="%confirmbox_big_btn_h%"/>
+				<fill color="%transparent%"/>
+				<font resource="font_l" color="%highlight_color%"/>
+				<text>{@cancel_btn=...}</text>
+				<action function="key">back</action>
+			</button>
+
+			<button>
+				<placement x="%confirmbox_big_btn2_x%" y="%confirmbox_big_btn_y%" w="%confirmbox_big_btn_w%" h="%confirmbox_big_btn_h%"/>
+				<fill color="%transparent%"/>
+				<font resource="font_l" color="%highlight_color%"/>
+				<text>{@ok_btn=...}</text>
+				<actions>
+					<action function="overlay"/>
+					<action function="page">action_page2</action>
+				</actions>
+			</button>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_clear_destination=%tt_back%</action>
+					<action function="overlay"/>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="confirm_auto_box_big">
+			<template name="confirm_box_big_temp"/>
+
+			<fill color="%separator_line_color%">
+				<placement x="%center_x%" y="%confirmbox_big_btn_y%" w="1" h="%confirmbox_big_btn_h%"/>
+			</fill>
+
+			<button>
+				<placement x="%confirmbox_big_btn1_x%" y="%confirmbox_big_btn_y%" w="%confirmbox_big_btn_w%" h="%confirmbox_big_btn_h%"/>
+				<fill color="%transparent%"/>
+				<font resource="font_l" color="%highlight_color%"/>
+				<text>{@cancel_btn=...}</text>
+				<action function="key">back</action>
+			</button>
+
+			<button>
+				<placement x="%confirmbox_big_btn2_x%" y="%confirmbox_big_btn_y%" w="%confirmbox_big_btn_w%" h="%confirmbox_big_btn_h%"/>
+				<fill color="%transparent%"/>
+				<font resource="font_l" color="%highlight_color%"/>
+				<text>{@ok_btn=...}</text>
+				<actions>
+					<action function="overlay"/>
+					<action function="page">%tt_confirm_go%</action>
+				</actions>
+			</button>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_clear_destination=%tt_back%</action>
+					<action function="overlay"/>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="action_page">
+			<background color="%background_color%"/>
+
+			<image>
+				<placement x="%center_x%" y="%progress_logo_y%" placement="4"/>
+				<image resource="logo"/>
+			</image>
+
+			<!-- <text style="text_m">
+				<placement x="%center_x%" y="%progress_txt_y%" placement="5"/>
+				<text>%tt_action_text1%</text>
+			</text> -->
+
+			<image>
+				<condition var1="tt_power_key_long_hold" var2="1"/>
+				<placement x="%center_x%" y="%progress_warning_y%" placement="4"/>
+				<image resource="vivo_warning"/>
+			</image>
+
+			<textbox>
+				<condition var1="tt_power_key_long_hold" var2="1"/>
+				<placement x="%center_x%" y="%progress_txt_y%" w="%progress_txt_w%" h="%progress_txt_h%" placement="4"/>
+				<background color="%transparent%"/>
+				<font resource="font_m" spacing="%fileselector_spacing%" color="%red_color%"/>
+				<view_style autofit="1" x="%center_x%" placement="5"/>
+				<text>{@key_hold_warning=...}</text>
+			</textbox>
+
+			<textbox>
+				<condition var1="tt_power_key_long_hold" op="!=" var2="1"/>
+				<placement x="%center_x%" y="%progress_txt_y%" w="%progress_txt_w%" h="%progress_txt_h%" placement="4"/>
+				<background color="%transparent%"/>
+				<font resource="font_s" spacing="%fileselector_spacing%" color="%text_color%"/>
+				<view_style autofit="1" x="%center_x%" placement="5"/>
+				<text>%tt_action_text1%</text>
+			</textbox>
+
+			<template name="progress_bar"/>
+
+			<action>
+				<condition var1="tt_operation_state" var2="1"/>
+				<actions>
+					<action function="page">action_complete</action>
+				</actions>
+			</action>
+
+			<action>
+				<condition var1="tt_has_action2" var2="0"/>
+				<actions>
+					<action function="%tt_action%">%tt_action_param%</action>
+				</actions>
+			</action>
+
+			<action>
+				<condition var1="tt_has_action2" var2="1"/>
+				<actions>
+					<action function="%tt_action%">%tt_action_param%</action>
+					<action function="%tt_action2%">%tt_action2_param%</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="action_page2">
+			<action>
+				<condition var1="tt_operation_state" var2="1"/>
+				<actions>
+					<action function="page">action_complete2</action>
+				</actions>
+			</action>
+
+			<action>
+				<actions>
+					<action function="%tt_action%">%tt_action_param%</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="action_page3">
+			<background color="%background_color%"/>
+
+			<image>
+				<placement x="%center_x%" y="%progress_logo_y%" placement="4"/>
+				<image resource="logo"/>
+			</image>
+
+			<textbox>
+				<placement x="%center_x%" y="%progress_txt_y%" w="%progress_txt_w%" h="%progress_txt_h%" placement="4"/>
+				<background color="%transparent%"/>
+				<font resource="font_m" spacing="%fileselector_spacing%" color="%text_color%"/>
+				<view_style autofit="1" x="%center_x%" placement="5"/>
+				<text>%tt_action_text1%</text>
+			</textbox>
+
+			<template name="progress_bar"/>
+
+			<action>
+				<conditions>
+					<condition var1="property.recovery.gui_mode" op="!=" var2="0"/>
+					<condition var1="tt_operation_state" var2="1"/>
+				</conditions>
+				<actions>
+					<action function="page">action_complete</action>
+				</actions>
+			</action>
+
+			<action>
+				<conditions>
+					<condition var1="property.recovery.gui_mode" var2="0"/>
+					<condition var1="tt_operation_state" var2="1"/>
+					<condition var1="tt_operation_status" op="!=" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="page">action_complete3</action>
+				</actions>
+			</action>
+
+			<action>
+				<conditions>
+					<condition var1="property.recovery.gui_mode" var2="0"/>
+					<condition var1="tt_operation_state" var2="1"/>
+					<condition var1="tt_operation_status" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="page">main</action>
+				</actions>
+			</action>
+
+			<action>
+				<condition var1="tt_has_action2" var2="0"/>
+				<actions>
+					<action function="%tt_action%">%tt_action_param%</action>
+				</actions>
+			</action>
+
+			<action>
+				<condition var1="tt_has_action2" var2="1"/>
+				<actions>
+					<action function="%tt_action%">%tt_action_param%</action>
+					<action function="%tt_action2%">%tt_action2_param%</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="action_box">
+			<!-- <background color="%semi_transparent%"/> -->
+			<!-- <fill color="%semi_transparent%">
+				<placement x="0" y="0" w="%screen_width%" h="%screen_height%"/>
+			</fill> -->
+
+			<image>
+				<placement x="%center_x%" y="%action_box_y%" placement="4"/>
+				<image resource="confirm_box_small_bg"/>
+			</image>
+
+			<text>
+				<placement x="%center_x%" y="%action_box_tips_y%"  placement="5"/>
+				<font resource="font_l" color="%black_color%"/>
+				<text>%tt_action_text1%</text>
+			</text>
+
+			<animation>
+				<placement x="%center_x%" y="%action_box_anim_y%" placement="4"/>
+				<resource name="progress"/>
+				<speed fps="30" render="2"/>
+				<loop frame="1"/>
+			</animation>
+
+			<action>
+				<condition var1="tt_operation_state" var2="1"/>
+				<actions>
+					<action function="page">action_complete</action>
+				</actions>
+			</action>
+
+			<action>
+				<actions>
+					<action function="%tt_action%">%tt_action_param%</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="action_complete">
+			<background color="%background_color%"/>
+
+			<text style="text_x">
+				<placement x="%center_x%" y="%complete_txt_header_y%" placement="5"/>
+				<text>%tt_complete_text1%</text>
+			</text>
+
+			<textbox>
+				<placement x="%center_x%" y="%complete_txt_tips_y%" w="%complete_tips_w%" h="%complete_tips_h%" placement="4"/>
+				<background color="%transparent%"/>
+				<font resource="font_l" spacing="%fileselector_spacing%" color="%text_color%"/>
+				<view_style x="%center_x%" placement="5"/>
+				<text>%tt_complete_text2%</text>
+			</textbox>
+
+			<console>
+				<placement x="%indent%" y="%complete_txt_box_y%" w="%content_width%" h="%console_height%"/>
+			</console>
+
+			<fill color="#4D4D4D">
+				<placement x="%center_x%" y="%complete_separator_y%" w="%complete_separator_w%" h="%separator_line_height%" placement="4"/>
+			</fill>
+
+			<button style="vivo_round_button_long">
+				<conditions>
+					<condition var1="tt_operation_done_reboot"   var2="0"/>
+				</conditions>
+				<placement x="%center_x%" y="%complete_btn_col1_y%" placement="4"/>
+				<text>{@back_btn=Back}</text>
+				<action function="key">back</action>
+			</button>
+
+			<button style="vivo_round_button_long">
+				<conditions>
+					<condition var1="tt_operation_done_reboot" op="!=" var2="0"/>
+				</conditions>
+				<placement x="%center_x%" y="%complete_btn_col1_y%" placement="4"/>
+				<text>{@reboot_btn=}</text>
+				<actions>
+					<action function="reboot">%tt_reboot_arg%</action>
+				</actions>
+			</button>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_clear_destination=%tt_back%</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="action_complete2">
+			<template name="page"/>
+
+			<text style="text_l">
+				<placement x="%center_x%" y="%header_y%" placement="5"/>
+				<text>%tt_complete_text1%</text>
+			</text>
+
+			<console>
+				<placement x="txt_console_x" y="%txt_console_y%" w="%txt_console_w%" h="%txt_console_h%"/>
+			</console>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_clear_destination=%tt_back%</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="action_complete3">
+			<background color="%background_color%"/>
+
+			<text style="text_x">
+				<placement x="%center_x%" y="%complete_txt_header_y%" placement="5"/>
+				<text>%tt_complete_text1%</text>
+			</text>
+
+			<textbox>
+				<placement x="%center_x%" y="%complete_txt_tips_y%" w="%complete_tips_w%" h="%complete_tips_h%" placement="4"/>
+				<background color="%transparent%"/>
+				<font resource="font_l" spacing="%fileselector_spacing%" color="%text_color%"/>
+				<view_style x="%center_x%" placement="5"/>
+				<text>%tt_complete_text2%</text>
+			</textbox>
+
+			<console>
+				<placement x="%indent%" y="%complete_txt_box_y%" w="%content_width%" h="%console_height%"/>
+			</console>
+
+			<fill color="#4D4D4D">
+				<placement x="%center_x%" y="%complete_separator_y%" w="%complete_separator_w%" h="%separator_line_height%" placement="4"/>
+			</fill>
+
+			<button style="vivo_round_button_long">
+				<condition var1="property.recovery.gui_mode" var2="0"/>
+				<placement x="%center_x%" y="%complete_btn_col1_y%" placement="4"/>
+				<text>{@back_btn=Back}</text>
+				<action function="key">back</action>
+			</button>
+
+			<!-- success in gui mode -->
+			<button style="vivo_round_button_long">
+				<conditions>
+					<condition var1="property.recovery.gui_mode" op="!=" var2="0"/>
+					<condition var1="tt_operation_status" var2="0"/>
+					<condition var1="tt_operation_done_reboot"   var2="0"/>
+				</conditions>
+				<placement x="%center_x%" y="%complete_btn_col1_y%" placement="4"/>
+				<text>{@back_btn=Back}</text>
+				<action function="key">back</action>
+			</button>
+
+			<button style="vivo_round_button_long">
+				<conditions>
+					<condition var1="property.recovery.gui_mode" op="!=" var2="0"/>
+					<condition var1="tt_operation_status" var2="0"/>
+					<condition var1="tt_operation_done_reboot" op="!=" var2="0"/>
+				</conditions>
+				<placement x="%center_x%" y="%complete_btn_col1_y%" placement="4"/>
+				<text>{@reboot_btn=}</text>
+				<actions>
+					<action function="reboot">%tt_reboot_arg%</action>
+				</actions>
+			</button>
+
+			<!-- fail in gui mode -->
+			<button style="vivo_round_button_long">
+				<conditions>
+					<condition var1="property.recovery.gui_mode" op="!=" var2="0"/>
+					<condition var1="tt_operation_status"        op="!=" var2="0"/>
+					<condition var1="tt_operation_done_reboot"   var2="0"/>
+				</conditions>
+				<placement x="%center_x%" y="%complete_btn_col1_y%" placement="4"/>
+				<text>{@back_btn=Back}</text>
+				<action function="key">back</action>
+			</button>
+
+			<button style="vivo_round_button_long">
+				<conditions>
+					<condition var1="property.recovery.gui_mode" op="!=" var2="0"/>
+					<condition var1="tt_operation_status" op="!=" var2="0"/>
+					<condition var1="tt_operation_done_reboot"   op="!=" var2="0"/>
+				</conditions>
+				<placement x="%center_x%" y="%complete_btn_col1_y%" placement="4"/>
+				<text>{@reboot_btn=}</text>
+				<actions>
+					<action function="reboot">%tt_reboot_arg%</action>
+				</actions>
+			</button>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_clear_destination=%tt_back%</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+		</page>
+
+		<!-- ============================================================================================================================ -->
+		<!--                                                                                                                              -->
+		<!--                                                  password lock start                                                         -->
+		<!--                                                                                                                              -->
+		<!-- ============================================================================================================================ -->
+		<page name="vivo_gatekeeper">
+			<action>
+				<actions>
+					<action function="gatekeeper_predecrypt"/>
+				</actions>
+			</action>
+
+			<action>
+				<conditions>
+					<condition var1="tt_operation_state" var2="1"/>
+					<condition var1="tt_actions_completed" op="!=" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="page">vivo_gatekeeper_predecrypt</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="vivo_gatekeeper_predecrypt">
+			<action>
+				<conditions>
+					<condition var1="tt_userpassword_type" op="!=" var2="0"/>
+					<condition var1="tt_userpassword_forbid" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_decryptfail_back=vivo_gatekeeper</action>
+					<action function="page">vivo_gatekeeper_decrypt</action>
+				</actions>
+			</action>
+
+			<action>
+				<conditions>
+					<condition var1="tt_userpassword_type" op="!=" var2="0"/>
+					<condition var1="tt_userpassword_forbid"  op="!=" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_password_fail=0</action>
+					<action function="page">vivo_gatekeeper_forbid</action>
+				</actions>
+			</action>
+
+			<action>
+				<condition var1="tt_userpassword_type" var2="0"/>
+				<actions>
+					<action function="set">tt_password_fail=0</action>
+					<action function="page">%tt_gatekeeper_jump%</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="vivo_gatekeeper_decrypt">
+			<background color="%background_color%"/>
+
+			<action>
+				<condition var1="tt_userpassword_type" var2="2"/>
+				<action function="page">vivo_gatekeeper_pattern</action>
+			</action>
+
+			<action>
+				<condition var1="tt_userpassword_type" var2="11"/>
+				<action function="page">vivo_gatekeeper_password4</action>
+			</action>
+
+			<action>
+				<condition var1="tt_userpassword_type" var2="12"/>
+				<action function="page">vivo_gatekeeper_password6</action>
+			</action>
+
+			<action>
+				<condition var1="tt_userpassword_type" var2="13"/>
+				<action function="page">vivo_gatekeeper_password4_16</action>
+			</action>
+
+			<action>
+				<condition var1="tt_userpassword_type" var2="3"/>
+				<action function="page">vivo_gatekeeper_password</action>
+			</action>
+
+			<button style="vivo_round_button">
+				<placement x="%center_x%" y="%btn_pswd_cancle_y%" placement="4"/>
+				<text>{@back_btn=Back}</text>
+				<action function="key">back</action>
+			</button>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_clear_destination=%tt_gatekeeper_back%</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="vivo_gatekeeper_password4">
+			<background color="%background_color%"/>
+
+			<text style="text_l">
+				<placement x="%center_x%" y="%password_tips_y%" placement="5"/>
+				<text>{@password_input_tips=...}</text>
+			</text>
+
+			<password>
+				<placement x="%center_x%" y="%password_input_y%" w="%content_width%" h="%input_height%" placement="4"/>
+				<dot color="%password_dot_color%" activecolor="%password_dot_activecolor%" freecolor="%password_dot_freecolor%" radius="%password_dot_dia%" space="%password_dot_space%" thickness="%password_dot_thick%"/>
+				<data name="tt_crypto_password" mask="*" maskvariable="tt_crypto_display"/>
+				<restrict fixlen="4"/>
+				<actions>
+					<action function="page">vivo_gatekeeper_trydecrypt</action>
+				</actions>
+			</password>
+
+			<button style="vivo_round_button">
+				<placement x="%center_x%" y="%btn_pswd_cancle_y%" placement="4"/>
+				<text>{@cancle_btn=...}</text>
+				<action function="key">back</action>
+			</button>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_clear_destination=%tt_gatekeeper_back%</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+			<template name="vivodigitkeyboardtemplate"/>
+		</page>
+
+		<page name="vivo_gatekeeper_password6">
+			<background color="%background_color%"/>
+
+			<text style="text_l">
+				<placement x="%center_x%" y="%password_tips_y%" placement="5"/>
+				<text>{@password_input_tips=...}</text>
+			</text>
+
+			<password>
+				<placement x="%center_x%" y="%password_input_y%" w="%content_width%" h="%input_height%" placement="4"/>
+				<dot color="%password_dot_color%" activecolor="%password_dot_activecolor%" freecolor="%password_dot_freecolor%" radius="%password_dot_dia%" space="%password_dot_space%" thickness="%password_dot_thick%"/>
+				<data name="tt_crypto_password" mask="*" maskvariable="tt_crypto_display"/>
+				<restrict fixlen="6"/>
+				<actions>
+					<action function="page">vivo_gatekeeper_trydecrypt</action>
+				</actions>
+			</password>
+
+			<button style="vivo_round_button">
+				<placement x="%center_x%" y="%btn_pswd_cancle_y%" placement="4"/>
+				<text>{@cancle_btn=...}</text>
+				<action function="key">back</action>
+			</button>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_clear_destination=%tt_gatekeeper_back%</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+			<template name="vivodigitkeyboardtemplate"/>
+		</page>
+
+		<page name="vivo_gatekeeper_password4_16">
+			<background color="%background_color%"/>
+
+			<text style="text_l">
+				<placement x="%center_x%" y="%password_tips_y2%" placement="5"/>
+				<text>{@password_input_tips=...}</text>
+			</text>
+
+			<password>
+				<placement x="%center_x%" y="%password_input_y2%" w="%content_width%" h="%input_height%" placement="4"/>
+				<dot color="%password_dot_color%" activecolor="%password_dot_activecolor%" freecolor="%password_dot_freecolor%" radius="%password_dot_dia%" space="%password_dot_littlespace%" thickness="%password_dot_thick%"/>
+				<data name="tt_crypto_password" mask="*" maskvariable="tt_crypto_display"/>
+				<extra-prop inputbox="1" inputboxlinecolor="%separator_line_color%" inputboxcolor="%background_color%" inputboxw="vivo_wlan_passwd_input_box_w" inputboxh="vivo_wlan_passwd_input_box_h" inputboxtextw="vivo_wlan_passwd_input_box_text_w"/>
+				<restrict minlen="1" maxlen="254"/>
+				<actions>
+					<action function="page">vivo_gatekeeper_trydecrypt</action>
+				</actions>
+			</password>
+
+			<button style="vivo_round_button">
+				<placement x="%btn_pswd_cancle_x%" y="%btn_pswd_cancle_y%"/>
+				<text>{@cancle_btn=...}</text>
+				<action function="key">back</action>
+			</button>
+
+			<button style="vivo_round_button">
+				<placement x="%btn_pswd_enter_x%" y="%btn_pswd_cancle_y%"/>
+				<text>{@password_input_ok=..}</text>
+				<action function="key">enter</action>
+			</button>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_clear_destination=%tt_gatekeeper_back%</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+			<template name="vivodigitkeyboardtemplate"/>
+		</page>
+
+		<page name="vivo_gatekeeper_password">
+			<background color="%background_color%"/>
+
+			<text style="text_l">
+				<placement x="%center_x%" y="%password_tips_y3%" placement="5"/>
+				<text>{@password_input_tips=...}</text>
+			</text>
+
+			<password>
+				<placement x="%center_x%" y="%password_input_y3%" w="%content_width%" h="%input_height%" placement="4"/>
+				<dot color="%password_dot_color%" activecolor="%password_dot_activecolor%" freecolor="%password_dot_freecolor%" radius="%password_dot_dia%" space="%password_dot_littlespace%" thickness="%password_dot_thick%"/>
+				<data name="tt_crypto_password" mask="*" maskvariable="tt_crypto_display"/>
+				<extra-prop inputbox="1" inputboxlinecolor="%separator_line_color%" inputboxcolor="%background_color%" inputboxw="vivo_wlan_passwd_input_box_w" inputboxh="vivo_wlan_passwd_input_box_h" inputboxtextw="vivo_wlan_passwd_input_box_text_w"/>
+				<restrict minlen="1" maxlen="254"/>
+
+				<actions>
+					<action function="page">vivo_gatekeeper_trydecrypt</action>
+				</actions>
+			</password>
+
+			<button style="vivo_round_button">
+				<placement x="%btn_pswd_cancle_x%" y="%btn_pswd_cancle_y%"/>
+				<text>{@cancle_btn=...}</text>
+				<action function="key">back</action>
+			</button>
+
+			<button style="vivo_round_button">
+				<placement x="%btn_pswd_enter_x%" y="%btn_pswd_cancle_y%"/>
+				<text>{@password_input_ok=..}</text>
+				<action function="key">enter</action>
+			</button>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_clear_destination=%tt_gatekeeper_back%</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+			<template name="vivokeyboardtemplate"/>
+		</page>
+
+		<page name="vivo_gatekeeper_pattern">
+			<background color="%background_color%"/>
+
+			<text style="text_l">
+				<placement x="%center_x%" y="%pattern_tips_y%" placement="5"/>
+				<text>{@password_pattern_tips=...}</text>
+			</text>
+
+			<patternpassword>
+				<placement x="%pattern_x%" y="%pattern_y%" w="%pattern_size%" h="%pattern_size%"/>
+				<dot color="%pattern_dot_color%" activecolor="%pattern_dot_activecolor%" radius="%pattern_dot_dia%"/>
+				<line color="%pattern_line_color%" width="%pattern_line_w%"/>
+				<data name="tt_crypto_password"/>
+				<restrict minlen="4" maxlen="254"/>
+				<actions>
+					<action function="page">vivo_gatekeeper_trydecrypt</action>
+				</actions>
+			</patternpassword>
+
+			<button style="vivo_round_button">
+				<placement x="%center_x%" y="%btn_pswd_cancle_y%" placement="4"/>
+				<text>{@cancle_btn=...}</text>
+				<action function="key">back</action>
+			</button>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_clear_destination=%tt_gatekeeper_back%</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="vivo_gatekeeper_trydecrypt">
+			<action>
+				<action function="gatekeeper_decrypt"/>
+			</action>
+
+			<action>
+				<conditions>
+					<condition var1="tt_operation_state" var2="1"/>
+					<condition var1="tt_operation_status" op="!=" var2="0"/>
+					<condition var1="tt_actions_completed" op="!=" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="compute">tt_password_fail+1</action>
+					<action function="page">%tt_decryptfail_back%</action>
+				</actions>
+			</action>
+
+			<action>
+				<conditions>
+					<condition var1="tt_operation_state" var2="1"/>
+					<condition var1="tt_operation_status" op="=" var2="0"/>
+					<condition var1="tt_actions_completed" op="!=" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_password_fail=0</action>
+					<action function="set">tt_page_done=1</action>
+					<action function="set">tt_clear_destination=%tt_gatekeeper_jump%</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="vivo_gatekeeper_forbid">
+			<background color="%background_color%"/>
+
+			<text style="text_l">
+				<placement x="%center_x%" y="%password_tips_y%" placement="5"/>
+				<text>{@password_forbid_tips=...}</text>
+			</text>
+
+			<text style="text_m">
+				<placement x="%center_x%" y="%password_input_y%" placement="5"/>
+				<text>{@password_forbid_time=...}</text>
+			</text>
+
+			<button style="vivo_round_button">
+				<placement x="%center_x%" y="%btn_pswd_cancle_y%" placement="4"/>
+				<text>{@back_btn=Back}</text>
+				<action function="key">back</action>
+			</button>
+
+			<action>
+				<conditions>
+					<condition var1="tt_password_forbid_time" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_userpassword_forbid=0</action>
+					<action function="key">back</action>
+				</actions>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_clear_destination=%tt_gatekeeper_back%</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+		</page>
+
+		<!-- ============================================================================================================================ -->
+		<!--                                                                                                                              -->
+		<!--                                                  survival pages start                                                        -->
+		<!--                                                                                                                              -->
+		<!-- ============================================================================================================================ -->
+		<page name="wifi_link_prepare">
+			<action>
+				<actions>
+					<action function="set">tt_back=wifi_link_selector</action>
+					<action function="set">tt_action=wifi_init</action>
+					<action function="set">tt_action_param=</action>
+					<action function="set">tt_has_action2=1</action>
+					<action function="set">tt_action2=wifi_tryconnect</action>
+					<action function="set">tt_action2_param=</action>
+					<action function="set">tt_text1=</action>
+					<action function="set">tt_action_text1={@wlan_scanning=...}</action>
+					<action function="set">tt_action_text2={@wlan_connectting=...}</action>
+					<action function="set">tt_complete_text1=</action>
+					<action function="set">tt_selector_wifi_root=/tmp/selector_wifi</action>
+					<action function="page">wifi_link_action</action>
+				</actions>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="page">main</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="wifi_link_action">
+			<background color="%background_color%"/>
+			<button>
+				<conditions>
+					<condition var1="tt_busy" var2="0"/>
+					<condition var1="tt_actions_completed" var2="1"/>
+				</conditions>
+				<placement x="%back_btn_x%" y="%header_y%"/>
+				<image resource="back"/>
+				<action function="key">back</action>
+			</button>
+
+			<image>
+				<placement x="%center_x%" y="%center_y%" placement="4"/>
+				<image resource="confirm_box_small_bg"/>
+			</image>
+
+			<text>
+				<placement x="%center_x%" y="%center_y%"  placement="4"/>
+				<font resource="font_l" color="%black_color%"/>
+				<text>%tt_action_text1%</text>
+			</text>
+
+			<text>
+				<conditions>
+					<condition var1="tt_has_action2" var2="1"/>
+					<condition var1="tt_operation_state" var2="1"/>
+					<condition var1="tt_actions_completed" var2="0"/>
+				</conditions>
+				<placement x="%center_x%" y="%center_y%"  placement="4"/>
+				<font resource="font_l" color="%black_color%"/>
+				<text>%tt_action_text2%</text>
+			</text>
+
+			<animation>
+				<placement x="%action_wifi_anim_x%" y="%center_y%" placement="4"/>
+				<resource name="anim_chrysanthemum"/>
+				<speed fps="10" render="2"/>
+				<loop frame="1"/>
+			</animation>
+
+			<action>
+				<conditions>
+					<condition var1="tt_operation_state" var2="1"/>
+					<condition var1="tt_actions_completed" var2="1"/>
+				</conditions>
+				<actions>
+					<action function="page">wifi_link_complete</action>
+				</actions>
+			</action>
+
+			<action>
+				<condition var1="tt_has_action2" var2="0"/>
+				<actions>
+					<action function="%tt_action%">%tt_action_param%</action>
+				</actions>
+			</action>
+
+			<action>
+				<condition var1="tt_has_action2" var2="1"/>
+				<actions>
+					<action function="%tt_action%">%tt_action_param%</action>
+					<action function="%tt_action2%">%tt_action2_param%</action>
+				</actions>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_clear_destination=%tt_back%</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="wifi_link_complete">
+			<action>
+				<condition var1="tt_operation_status" op="!=" var2="0"/>
+				<actions>
+					<action function="set">tt_page_done=1</action>
+					<action function="set">tt_clear_destination=%tt_back%</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+
+			<action>
+				<condition var1="tt_operation_status" var2="0"/>
+				<actions>
+					<action function="set">tt_page_done=1</action>
+					<action function="set">tt_clear_destination=pkg_dload_prepare</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="wifi_link_selector">
+			<template name="page"/>
+
+			<text style="text_h">
+				<placement x="%center_x%" y="%header_y%" placement="5"/>
+				<text>{@wlan_sel_hdr=...}</text>
+			</text>
+
+			<fill color="#4D4D4D">
+				<placement x="0" y="%header_separator_y%" w="%screen_width%" h="%header_separator_h%"/>
+			</fill>
+
+			<text color="%txt_tips_color%">
+				<font resource="font_l"/>
+				<placement x="%package_fileselector_x%" y="%package_install_tips_y%"/>
+				<text>{@wifi_selector_tips=...}</text>
+			</text>
+
+			<fill color="#4D4D4D">
+				<placement x="0" y="%package_install_tips_separator_y%" w="%screen_width%" h="%fileselector_separatorheight%"/>
+			</fill>
+
+			<wifiselector>
+				<placement x="%package_fileselector_x%" y="%package_fileselector_y%" w="%package_fileselector_w%" h="%package_fileselector_h%"/>
+				<wifi-icons lock="vivo_wifi_signal_lock_" unlock="vivo_wifi_signal_" infront="0" num="4"/>
+				<path name="tt_selector_wifi_root" default="%tt_selector_wifi_root%"/>
+				<data name="tt_wifiname"/>
+				<selection name="tt_wifi"/>
+			</wifiselector>
+
+			<action>
+				<conditions>
+					<condition var1="tt_wifiname" op="modified"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_wifi_need_password=1</action>
+					<action function="set">tt_wlan_reconnect_tips=</action>
+					<action function="check_wifi_need_password">%tt_wifiname%</action>
+					<action function="page">wifi_link_gatekeeper</action>
+				</actions>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="page">main</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="wifi_link_gatekeeper">
+			<template name="page"/>
+			<text style="text_h">
+				<placement x="%center_x%" y="%header_y%" placement="5"/>
+				<text>{@wlan_password_hdr=...}</text>
+			</text>
+
+			<fill color="#4D4D4D">
+				<placement x="0" y="%header_separator_y%" w="%screen_width%" h="%header_separator_h%"/>
+			</fill>
+
+			<text style="text_l">
+				<placement x="%center_x%" y="%vivo_wlan_passwd_input_tip_y%" placement="5"/>
+				<text>{@wlan_passwd_input_tips=...}</text>
+			</text>
+
+			<text color="%red_color%">
+				<font resource="font_s"/>
+				<placement x="%center_x%" y="%vivo_wlan_passwd_error_tip_y%" placement="5"/>
+				<text>{@wlan_reconnect_tips=...}</text>
+			</text>
+
+			<action>
+				<condition var1="tt_wifi_need_password" var2="0"/>
+				<actions>
+					<action function="set">tt_back=wifi_link_selector</action>
+					<action function="set">tt_action=wifi_tryconnect</action>
+					<action function="set">tt_action_param=%tt_wifiname%</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_action2=</action>
+					<action function="set">tt_action2_param=</action>
+					<action function="set">tt_text1=</action>
+					<action function="set">tt_action_text1={@wlan_connectting=...}</action>
+					<action function="set">tt_complete_text1=</action>
+					<action function="page">wifi_link_action</action>
+				</actions>
+			</action>
+
+			<password>
+				<placement x="%center_x%" y="%vivo_wlan_passwd_box_tip_y%" w="%content_width%" h="%input_height%" placement="4"/>
+				<dot color="%password_dot_color%" activecolor="%password_dot_activecolor%" freecolor="%password_dot_freecolor%" radius="%password_dot_dia%" space="%password_dot_littlespace%" thickness="%password_dot_thick%" />
+				<data name="tt_wifi_password" mask="*" maskvariable="tt_crypto_display"/>
+				<text></text>
+				<extra-prop viewstyle="1" inputbox="1" inputboxlinecolor="%separator_line_color%" inputboxcolor="%background_color%" inputboxw="%vivo_wlan_passwd_input_box_w%" inputboxh="%vivo_wlan_passwd_input_box_h%" inputboxtextw="%vivo_wlan_passwd_input_box_text_w%"/>
+				<restrict minlen="8" maxlen="254"/>
+				<actions>
+					<action function="set">tt_back=wifi_link_gatekeeper</action>
+					<action function="set">tt_action=wifi_tryconnect</action>
+					<action function="set">tt_action_param=%tt_wifiname%</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_action2=</action>
+					<action function="set">tt_action2_param=</action>
+					<action function="set">tt_text1=</action>
+					<action function="set">tt_action_text1={@wlan_connectting=...}</action>
+					<action function="set">tt_complete_text1=</action>
+					<action function="page">wifi_link_action</action>
+				</actions>
+			</password>
+
+			<image>
+				<condition var1="tt_hide_password" var2="0"/>
+				<image resource="passwd_view"/>
+				<placement x="%vivo_wlan_passwd_view_btn_x%" y="%vivo_wlan_passwd_view_btn_y%"/>
+			</image>
+
+			<image>
+				<condition var1="tt_hide_password" op="!=" var2="0"/>
+				<image resource="passwd_hide"/>
+				<placement x="%vivo_wlan_passwd_view_btn_x%" y="%vivo_wlan_passwd_view_btn_y%"/>
+			</image>
+
+			<button>
+				<placement x="%vivo_wlan_passwd_view_btn_x%" y="%vivo_wlan_passwd_view_btn_y%" w="%vivo_wlan_passwd_view_btn_w%" h="%vivo_wlan_passwd_view_btn_h%"/>
+				<fill color="%transparent%"/>
+				<actions>
+					<action function="hide_password"/>
+				</actions>
+			</button>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_clear_destination=wifi_link_selector</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+			<template name="vivokeyboardtemplate"/>
+		</page>
+
+		<page name="pkg_dload_prepare">
+			<action>
+				<actions>
+					<action function="set">tt_back=wifi_link_selector</action>
+					<action function="set">tt_action=init_downloader</action>
+					<action function="set">tt_action_param=</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_action2=</action>
+					<action function="set">tt_action2_param=</action>
+					<action function="set">tt_text1=</action>
+					<action function="set">tt_action_text1={@wlan_checking=...}</action>
+					<action function="set">tt_complete_text1=</action>
+					<action function="page">pkg_dload_init</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="pkg_dload_init">
+			<button>
+				<conditions>
+					<condition var1="tt_actions_completed" var2="1"/>
+				</conditions>
+				<placement x="%back_btn_x%" y="%header_y%"/>
+				<image resource="back"/>
+				<action function="key">back</action>
+			</button>
+
+			<image>
+				<placement x="%center_x%" y="%center_y%" placement="4"/>
+				<image resource="confirm_box_small_bg"/>
+			</image>
+
+			<text>
+				<placement x="%center_x1%" y="%center_y%"  placement="4"/>
+				<font resource="font_m" color="%black_color%"/>
+				<text>%tt_action_text1%</text>
+			</text>
+
+			<animation>
+				<placement x="%action_wifi_anim_x%" y="%center_y%" placement="4"/>
+				<resource name="anim_chrysanthemum"/>
+				<speed fps="10" render="2"/>
+				<loop frame="1"/>
+			</animation>
+
+			<action>
+				<conditions>
+					<condition var1="tt_actions_completed" var2="1"/>
+					<condition var1="tt_operation_state" var2="1"/>
+				</conditions>
+				<actions>
+					<action function="page">pkg_dload_ensure</action>
+				</actions>
+			</action>
+
+			<action>
+				<condition var1="tt_has_action2" var2="0"/>
+				<actions>
+					<action function="%tt_action%">%tt_action_param%</action>
+				</actions>
+			</action>
+
+			<action>
+				<condition var1="tt_has_action2" var2="1"/>
+				<actions>
+					<action function="%tt_action%">%tt_action_param%</action>
+					<action function="%tt_action2%">%tt_action2_param%</action>
+				</actions>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="page">main</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="pkg_dload_ensure">
+			<template name="page"/>
+			<text style="text_h">
+				<placement x="%center_x%" y="%header_y%" placement="5"/>
+				<text>{@wlan_download_hdr=...}</text>
+			</text>
+
+			<fill color="#4D4D4D">
+				<placement x="0" y="%header_separator_y%" w="%screen_width%" h="%header_separator_h%"/>
+			</fill>
+
+			<image>
+				<image resource="logo"/>
+				<placement x="%center_x%" y="%vivo_funtouch_logo_y%" placement="4"/>
+			</image>
+
+			<text style="text_m">
+				<condition var1="tt_operation_status" op="!=" var2="0"/>
+				<placement x="%center_x%" y="%vivo_funtouch_package_tips_y%" placement="5"/>
+				<text>%tt_wlan_package_error_tips%</text>
+			</text>
+
+			<text style="text_m">
+				<condition var1="tt_operation_status" var2="0"/>
+				<placement x="%center_x%" y="%vivo_funtouch_package_tips_y%" placement="5"/>
+				<text>{@wlan_newer_package_info=...}</text>
+			</text>
+
+			<button style="vivo_round_button_long">
+				<condition var1="tt_operation_status" op="!=" var2="0"/>
+				<placement x="%center_x%" y="%vivo_package_checking_btn1_y%" placement="4"/>
+				<text>{@wlan_retry_btn=...}</text>
+				<actions>
+					<action function="set">tt_page_done=1</action>
+					<action function="set">tt_clear_destination=pkg_dload_prepare</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</button>
+
+			<button style="vivo_round_button_long">
+				<condition var1="tt_operation_status" var2="0"/>
+				<placement x="%center_x%" y="%vivo_package_checking_btn1_y%" placement="4"/>
+				<text>{@wlan_download_btn=...}</text>
+				<actions>
+					<action function="set">tt_page_done=1</action>
+					<action function="set">tt_clear_destination=pkg_dload_check_action</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</button>
+
+			<button style="vivo_round_button_long">
+				<placement x="%center_x%" y="%vivo_package_checking_btn2_y%" placement="4"/>
+				<text>{@wlan_change_btn=...}</text>
+				<actions>
+					<action function="wifi_disconnect"/>
+					<action function="set">tt_page_done=1</action>
+					<action function="set">tt_clear_destination=wifi_link_prepare</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</button>
+
+			<text style="text_l">
+				<placement x="%center_x%" y="%vivo_wifi_tip_y%" placement="5"/>
+				<text>{@wlan_linked_tips=...}</text>
+			</text>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_page_done=1</action>
+					<action function="page">main</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="pkg_dload_check_action">
+			<action>
+				<actions>
+					<action function="pkg_dload_ensure_storage_sapce"/>
+				</actions>
+			</action>
+
+			<!-- action completed -->
+			<action>
+				<conditions>
+					<condition var1="tt_actions_completed" op="!=" var2="0"/>
+					<condition var1="tt_operation_status" op="!=" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="overlay">pkg_dload_confirm_box</action>
+				</actions>
+			</action>
+
+			<action>
+				<conditions>
+					<condition var1="tt_actions_completed" op="!=" var2="0"/>
+					<condition var1="tt_operation_status"  var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_page_done=1</action>
+					<action function="set">tt_clear_destination=pkg_dloading_prepare</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="pkg_dload_confirm_box">
+			<template name="confirm_box_big_temp"/>
+
+			<fill color="%separator_line_color%">
+				<placement x="%center_x%" y="%confirmbox_big_btn_y%" w="1" h="%confirmbox_big_btn_h%"/>
+			</fill>
+
+			<!--  device don't support sdcard -->
+			<button>
+				<conditions>
+					<condition var1="tt_device_support_sdcard" op="!=" var2="1"/>
+				</conditions>
+				<placement x="%confirmbox_big_btn1_x%" y="%confirmbox_big_btn_y%" w="%confirmbox_big_btn_w%" h="%confirmbox_big_btn_h%"/>
+				<fill color="%transparent%"/>
+				<font resource="font_l" color="%highlight_color%"/>
+				<text>{@cancel_btn=...}</text>
+				<action function="key">back</action>
+			</button>
+
+			<button>
+				<conditions>
+					<condition var1="tt_device_support_sdcard" op="!=" var2="1"/>
+				</conditions>
+				<placement x="%confirmbox_big_btn2_x%" y="%confirmbox_big_btn_y%" w="%confirmbox_big_btn_w%" h="%confirmbox_big_btn_h%"/>
+				<fill color="%transparent%"/>
+				<font resource="font_l" color="%highlight_color%"/>
+				<text>{@ok_btn=...}</text>
+				<actions>
+					<action function="overlay"/>
+					<action function="set">tt_back=pkg_dload_ensure</action>
+					<action function="page">wipe_data_confirm_dload</action>
+				</actions>
+			</button>
+
+			<!--  device don't use sdcard or size isn't enough -->
+			<button>
+				<conditions>
+					<condition var1="tt_device_support_sdcard" var2="1"/>
+				</conditions>
+				<placement x="%confirmbox_big_btn1_x%" y="%confirmbox_big_btn_y%" w="%confirmbox_big_btn_w%" h="%confirmbox_big_btn_h%"/>
+				<fill color="%transparent%"/>
+				<font resource="font_l" color="%highlight_color%"/>
+				<text>{@wlan_tips_wipe_btn=...}</text>
+				<actions>
+					<action function="overlay"/>
+					<action function="set">tt_back=pkg_dload_ensure</action>
+					<action function="page">wipe_data_confirm_dload</action>
+				</actions>
+			</button>
+
+			<button>
+				<conditions>
+					<condition var1="tt_device_support_sdcard" var2="1"/>
+				</conditions>
+				<placement x="%confirmbox_big_btn2_x%" y="%confirmbox_big_btn_y%" w="%confirmbox_big_btn_w%" h="%confirmbox_big_btn_h%"/>
+				<fill color="%transparent%"/>
+				<font resource="font_l" color="%highlight_color%"/>
+				<text>{@wlan_tips_ok_btn=...}</text>
+				<action function="key">back</action>
+			</button>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">tt_clear_destination=pkg_dload_ensure</action>
+					<action function="overlay"/>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="pkg_dloading_prepare">
+			<action>
+				<actions>
+					<action function="set">tt_back=pkg_dload_ensure</action>
+					<action function="set">tt_action=download_package</action>
+					<action function="set">tt_action_param=</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_action2=</action>
+					<action function="set">tt_action2_param=</action>
+					<action function="set">tt_text1=</action>
+					<action function="set">tt_action_text1={@wlan_checking=...}</action>
+					<action function="set">tt_complete_text1=</action>
+					<action function="set">tt_download_pause=0</action>
+					<action function="set">tt_battery_capacity_risk=0</action>
+					<action function="page">pkg_dloading_action</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="pkg_dloading_action">
+			<background color="%background_color%"/>
+
+			<button>
+				<condition var1="tt_actions_completed" op="!=" var2="0"/>
+				<placement x="%back_btn_x%" y="%header_y%"/>
+				<image resource="back"/>
+				<action function="key">back</action>
+			</button>
+
+			<batteryview>
+				<placement x="%battery_pos_x%" y="%row1_header_y%"/>
+				<resource name="vivo_battery"/>
+				<speed fps="3" render="2"/>
+				<loop frame="1"/>
+			</batteryview>
+
+			<text style="text_h">
+				<placement x="%center_x%" y="%header_y%" placement="5"/>
+				<text>{@wlan_download_hdr=...}</text>
+			</text>
+
+			<fill color="#4D4D4D">
+				<placement x="0" y="%header_separator_y%" w="%screen_width%" h="%header_separator_h%"/>
+			</fill>
+
+			<image>
+				<image resource="logo"/>
+				<placement x="%center_x%" y="%vivo_funtouch_logo_y%" placement="4"/>
+			</image>
+
+			<text style="text_s">
+				<placement x="%vivo_downloading_tips_x1%" y="%vivo_downloading_tips_y%"/>
+				<text>{@wlan_downloading_progress=...}</text>
+			</text>
+
+			<text style="text_s">
+				<placement x="%vivo_downloading_tips_x2%" y="%vivo_downloading_tips_y%"/>
+				<text>{@wlan_downloading_infor=...}</text>
+			</text>
+
+			<text style="text_s_warning">
+				<condition var1="tt_battery_capacity_risk"  var2="1"/>
+				<placement x="%center_x%" y="%vivo_downloading_progress_tips_y%" placement="4"/>
+				<text>{@battery_low_tips=...}</text>
+			</text>
+
+			<progressbar>
+				<placement x="%center_x%" y="%vivo_downloading_progress_bar_y%" placement="4"/>
+				<resource empty="progress_empty" full="progress_full"/>
+				<data name="ui_progress"/>
+			</progressbar>
+
+			<animation>
+				<condition var1="tt_actions_completed"  var2="0"/>
+				<placement x="%center_x%" y="%vivo_downloading_progress_anima_y%" placement="4"/>
+				<resource name="progress"/>
+				<speed fps="30" render="2"/>
+				<loop frame="1"/>
+			</animation>
+
+			<action>
+				<conditions>
+					<condition var1="tt_actions_completed" op="!=" var2="0"/>
+					<condition var1="tt_operation_status" var2="0"/>
+					<condition var1="tt_download_pause"   var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_page_done=1</action>
+					<action function="set">tt_clear_destination=system_repair_prepare</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+
+			<action>
+				<conditions>
+					<condition var1="tt_actions_completed" op="!=" var2="0"/>
+					<condition var1="tt_operation_status"  op="!=" var2="0"/>
+					<condition var1="tt_download_pause"  var2="0"/>
+				</conditions>
+				<actions>
+					<action function="page">pkg_dloading_error</action>
+				</actions>
+			</action>
+
+			<action>
+				<actions>
+					<action function="%tt_action%">%tt_action_param%</action>
+				</actions>
+			</action>
+
+			<button style="vivo_round_button_long">
+				<conditions>
+					<condition var1="tt_download_pause" op="!=" var2="0"/>
+					<condition var1="tt_actions_completed" op="!=" var2="0"/>
+				</conditions>
+				<placement x="%center_x%" y="%vivo_downloading_btn1_y%" placement="4"/>
+				<text>{@wlan_download_continue=...}</text>
+				<actions>
+					<action function="set">tt_page_done=1</action>
+					<action function="set">tt_clear_destination=pkg_dloading_prepare</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</button>
+
+			<button style="vivo_round_button_long">
+				<conditions>
+					<condition var1="tt_download_pause" op="!=" var2="0"/>
+					<condition var1="tt_actions_completed" op="!=" var2="0"/>
+				</conditions>
+				<placement x="%center_x%" y="%vivo_downloading_btn2_y%" placement="4"/>
+				<text>{@wlan_change_btn=...}</text>
+				<actions>
+					<action function="download_pause"/>
+					<action function="wifi_disconnect"/>
+					<action function="set">tt_page_done=1</action>
+					<action function="set">tt_clear_destination=wifi_link_prepare</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</button>
+
+			<button style="vivo_round_button_long">
+				<condition var1="tt_download_pause" var2="0"/>
+				<placement x="%center_x%" y="%vivo_downloading_btn1_y%" placement="4"/>
+				<text>{@wlan_download_pause=...}</text>
+				<actions>
+					<action function="download_pause"/>
+				</actions>
+			</button>
+
+			<button style="vivo_round_button_long">
+				<conditions>
+					<condition var1="tt_download_pause" op="!=" var2="0"/>
+					<condition var1="tt_actions_completed" var2="0"/>
+				</conditions>
+				<placement x="%center_x%" y="%vivo_downloading_btn1_y%" placement="4"/>
+				<text>{@wlan_download_pause_ing=...}</text>
+			</button>
+
+			<text style="text_l">
+				<placement x="%center_x%" y="%vivo_wifi_tip_y%" placement="5"/>
+				<text>{@wlan_linked_tips=...}</text>
+			</text>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="download_pause"/>
+					<action function="set">tt_page_done=1</action>
+					<action function="set">tt_clear_destination=pkg_dload_prepare</action>
+					<action function="page">clear_vars</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="pkg_dloading_error">
+			<background color="%background_color%"/>
+
+			<text style="text_x">
+				<placement x="%center_x%" y="%complete_txt_header_y%" placement="5"/>
+				<text>{@wlan_download_fail=...}</text>
+			</text>
+
+			<textbox>
+				<placement x="%center_x%" y="%complete_txt_tips_y%" w="%complete_tips_w%" h="%complete_tips_h%" placement="4"/>
+				<background color="%transparent%"/>
+				<font resource="font_l" spacing="%fileselector_spacing%" color="%text_color%"/>
+				<view_style x="%center_x%" placement="5"/>
+				<text>%tt_complete_text2%</text>
+			</textbox>
+
+			<console>
+				<placement x="%indent%" y="%complete_txt_box_y%" w="%content_width%" h="%console_height%"/>
+			</console>
+
+			<fill color="#4D4D4D">
+				<placement x="%center_x%" y="%complete_separator_y%" w="%complete_separator_w%" h="%separator_line_height%" placement="4"/>
+			</fill>
+
+			<button style="vivo_round_button_long">
+				<placement x="%center_x%" y="%complete_btn_col1_y%" placement="4"/>
+				<text>{@back_btn=Back}</text>
+				<action function="key">back</action>
+			</button>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="page">main</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="system_repair_prepare">
+			<background color="%background_color%"/>
+
+			<button>
+				<placement x="%back_btn_x%" y="%header_y%"/>
+				<image resource="back"/>
+				<actions>
+					<action function="cancle_battery_capacity"/>
+					<action function="key">back</action>
+				</actions>
+			</button>
+
+			<text style="text_s">
+				<placement x="%battery_text_x%" y="%battery_text_y%"/>
+				<text>%tt_battery_capacity%%</text>
+			</text>
+
+			<batteryview>
+				<placement x="%battery_pos_x%" y="%row1_header_y%"/>
+				<resource name="vivo_battery"/>
+				<speed fps="3" render="2"/>
+				<loop frame="1"/>
+			</batteryview>
+
+			<text style="text_h">
+				<placement x="%center_x%" y="%header_y%" placement="5"/>
+				<text>{@wlan_download_hdr=...}</text>
+			</text>
+
+			<fill color="#4D4D4D">
+				<placement x="0" y="%header_separator_y%" w="%screen_width%" h="%header_separator_h%"/>
+			</fill>
+
+			<image>
+				<image resource="logo"/>
+				<placement x="%center_x%" y="%vivo_funtouch_logo_y%" placement="4"/>
+			</image>
+
+			<text style="text_s">
+				<placement x="%vivo_downloading_tips_x1%" y="%vivo_downloading_tips_y%"/>
+				<text>{@wlan_downloading_progress=...}</text>
+			</text>
+
+			<!-- <text style="text_s_warning">
+				<condition var1="tt_battery_capacity" op="&lt;" var2="%tt_install_battery%"/>
+				<placement x="%center_x%" y="%vivo_downloading_progress_anima_y%" placement="4"/>
+				<text>{@install_battery_tips=...}</text>
+			</text> -->
+
+			<textbox>
+				<condition var1="tt_battery_capacity" op="&lt;" var2="%tt_install_battery%"/>
+				<placement x="%center_x%" y="%vivo_downloading_progress_anima_y%" w="%progress_txt_w%" h="%progress_txt_h%" placement="4"/>
+				<background color="%transparent%"/>
+				<font resource="font_m" spacing="%fileselector_spacing%" color="%text_color%"/>
+				<view_style autofit="1" x="%center_x%" placement="5"/>
+				<text>{@install_battery_tips=...}</text>
+			</textbox>
+
+			<progressbar>
+				<placement x="%center_x%" y="%vivo_downloading_progress_bar_y%" placement="4"/>
+				<resource empty="progress_full" full="progress_full"/>
+				<data name="ui_progress"/>
+			</progressbar>
+
+			<text style="text_l">
+				<placement x="%center_x%" y="%vivo_wifi_tip_y%" placement="5"/>
+				<text>{@wlan_linked_tips=...}</text>
+			</text>
+
+			<action>
+				<conditions>
+					<condition var1="tt_actions_completed" op="!=" var2="0"/>
+				</conditions>
+				<actions>
+					<action function="set">tt_back=main</action>
+					<action function="set">tt_action=install_package</action>
+					<action function="set">tt_action_param=tt_repair_package</action>
+					<action function="set">tt_has_action2=0</action>
+					<action function="set">tt_action_text1={@install_running_commands=...}</action>
+					<action function="set">tt_action_text2=</action>
+					<action function="set">tt_complete_text1=</action>
+					<action function="page">action_page</action>
+				</actions>
+			</action>
+
+			<action>
+				<actions>
+					<action function="wait_battery_capacity"/>
+				</actions>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="page">main</action>
+				</actions>
+			</action>
+		</page>
+	</pages>
+</recovery>

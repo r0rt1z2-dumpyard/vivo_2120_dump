@@ -1,0 +1,19 @@
+## full_k65v1_32_bsp_2g_ago-user 12 SP1A.210812.003 compiler04252208 release-keys
+- Manufacturer: vivo
+- Platform: mt6765
+- Codename: 2120
+- Brand: vivo
+- Flavor: full_k65v1_32_bsp_2g_ago-user
+- Release Version: 12
+- Kernel Version: 4.19.191
+- Id: SP1A.210812.003
+- Incremental: compiler04252208
+- Tags: release-keys
+- CPU Abilist: armeabi-v7a,armeabi
+- A/B Device: false
+- Locale: en-US
+- Screen Density: 300
+- Fingerprint: vivo/2020/2120:12/SP1A.210812.003/compiler04252208:user/release-keys
+- OTA version: 
+- Branch: full_k65v1_32_bsp_2g_ago-user-12-SP1A.210812.003-compiler04252208-release-keys
+- Repo: vivo_2120_dump

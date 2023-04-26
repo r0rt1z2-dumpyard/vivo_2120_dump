@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+
+<language>
+	<display>Deutsch</display>
+
+	<resources>
+		<!-- Font overrides - only change these if your language requires special characters -->
+		<resource name="font_x" type="fontoverride" filename="Roboto-Regular.ttf" size="49" />
+		<resource name="font_h" type="fontoverride" filename="Roboto-Regular.ttf" size="36" />
+		<resource name="font_l" type="fontoverride" filename="Roboto-Regular.ttf" size="31" />
+		<resource name="font_m" type="fontoverride" filename="Roboto-Regular.ttf" size="25" />
+		<resource name="font_s" type="fontoverride" filename="Roboto-Regular.ttf" size="22" />
+		<resource name="fixed"  type="fontoverride" filename="Roboto-Regular.ttf" size="18" />
+
+		<!-- recovery common -->
+		<string name="install_packege_btn">Software installieren</string>
+		<string name="wipe_data_btn">Daten löschen</string>
+		<string name="check_system_btn">System überprüfen</string>
+		<string name="view_log_btn">Upgrade-Protokoll anzeigen</string>
+		<string name="shutdown_btn">Ausschalten</string>
+		<string name="reboot_btn">Neu starten</string>
+		<string name="reboot_recovery_btn">Wiederherstellungsmodus öffnen</string>
+		<string name="cancel_btn">Abbrechen</string>
+		<string name="ok_btn">OK</string>
+		<string name="wipe_all_data_btn">Alle Daten löschen</string>
+
+		<string name="tips_shutdown">Sind Sie sicher, dass Sie abschalten möchten?</string>
+		<string name="tips_reboot">Sind Sie sicher, dass Sie neu starten möchten?</string>
+		<string name="has_root_tips">Gerooted</string>
+		<string name="no_root_tips">Nicht gerooted</string>
+		<string name="back_btn">Zurück</string>
+		<string name="cancle_btn">Abbrechen</string>
+		<string name="symol_btn">Symbol</string>
+		<string name="compelte_btn">Fertig</string>
+		<string name="warnning_btn">Warnung</string>
+
+		<string name="key_hold_warning">Bitte geben Sie die Einschalttaste sofort frei, um Gerätefehler zu verhindern.</string>
+
+		<!-- recovery  install string -->
+		<string name="install_image_hdr">Software installieren</string>
+		<string name="install_menu_tips">Die Installation eines inoffiziellen Upgrade-Pakets bringt Sicherheitsrisiken mit sich !</string>
+		<string name="install_menu_media">Telefonspeicher</string>
+		<string name="install_menu_sd">SD-Karte</string>
+		<string name="install_menu_net">Online auf aktuelle Version aktualisieren</string>
+		<string name="install_media_hdr">Telefonspeicher</string>
+		<string name="install_sd_hdr">SD-Karte</string>
+		<string name="install_image_tips">Offizielles Upgrade-Paket auswählen:</string>
+		<string name="install_running_commands">Upgrade-Paket wird installiert. Bitte berühren Sie die Schaltflächen des Telefons nicht. Nach Beendigung schaltet sich der Bildschirm zur Optimierung ab. Bitte warten Sie, bis das Telefon neu gestartet wird.</string>
+		<string name="install_done_success">Upgrade-Paket erfolgreich installiert</string>
+		<string name="install_success_tips"> </string>
+		<string name="install_done_fail">Installation des Upgrade-Pakets fehlgeschlagen</string>
+		<string name="install_fail_apps">Fehler beim Installieren der App</string>
+		<string name="install_fail_oem">Upgrade-Paket nicht unterstützt</string>
+		<string name="install_fail_versionlow">Die Version der System-Software, die Sie installieren, ist älter als die aktuelle Version</string>
+		<string name="install_fail_error">Installation aufgrund fehlerhafter Daten fehlgeschlagen. Zur Behebung müssen Sie das Telefon neu starten und die aktuelle Version herunterladen.</string>
+		<string name="install_fail_corrupt">Installation aufgrund fehlerhafter Daten fehlgeschlagen. Zur Behebung müssen Sie das Telefon neu starten und die aktuelle Version herunterladen.</string>
+		<string name="install_fail_unknow">Installation aufgrund fehlerhafter Daten fehlgeschlagen. Zur Behebung müssen Sie das Telefon neu starten und die aktuelle Version herunterladen.</string>
+		<string name="battery_low_tips">Es verbleiben weniger als %tt_install_battery%%. Bitte schließen Sie das Ladegerät an</string>
+		<string name="install_battery_tips">Bitte lassen Sie das Ladegerät angeschlossen. Die Installation startet automatisch, sobald die Batterie %tt_install_battery%% erreicht</string>
+		<string name="package_check_running_commands">Upgrade-Paket wird geladen</string>
+		<string name="packagecheck_done_success">Please download the specified upgrade package from the official website or forum. To protect your phone, do not use an upgrade package from non-official channels.</string>
+		<string name="packagecheck_done_fail">Please download the specified upgrade package from the official website or forum. To protect your phone, do not use an upgrade package from non-official channels.</string>
+		<string name="package_check_install_btn">Upgrade trotzdem ausführen</string>
+		<string name="package_check_ok_btn">Empfangen</string>
+
+		<!-- update app -->
+		<string name="update_app_running_commands">Upgrade-Paket wird installiert. Bitte berühren Sie die Schaltflächen des Telefons nicht. Nach Beendigung schaltet sich der Bildschirm zur Optimierung ab. Bitte warten Sie, bis das Telefon neu gestartet wird.</string>
+
+		<!-- wipe page -->
+		<string name="wipe_common_hdr">Daten löschen</string>
+		<string name="wipe_menu_data">Alle Daten löschen</string>
+		<string name="wipe_menu_cache">Cache leeren</string>
+		<string name="wipe_menu_settings">Alle Einstellungen wiederherstellen</string>
+
+		<!-- wipe data -->
+		<string name="wipe_data_hdr">Alle Daten löschen</string>
+		<string name="wipe_data_warnning">Nur Daten im Systemspeicher des Telefons löschen und Audio-, Video- und andere Benutzerdaten erhalten</string>
+		<string name="factory_reset_tips">Warnung: Ein Ausnahmefehler ist aufgetreten. Das Gerät wird in Kürze auf die Werkseinstellungen zurückgesetzt. Anschließend sind alle Benutzerdaten gelöscht.</string>
+		<string name="format_data_warnning">Alle Benutzerdaten inklusive Musik, Fotos usw. werden gelöscht.</string>
+		<string name="wipe_data_running_commands">Löschen von Daten. Bitte benutzen Sie das Telefon nicht.</string>
+		<string name="wipedata_done_success">Erfolgreich gelöscht</string>
+		<string name="wipedata_success_tips">Alle Daten erfolgreich gelöscht</string>
+		<string name="wipedata_done_fail">Löschen fehlgeschlagen</string>
+		<string name="wipedata_fail_error">Löschen aller Daten fehlgeschlagen</string>
+		<!-- wipe cache -->
+		<string name="wipe_cache_hdr">Cache leeren</string>
+		<string name="wipe_cache_warnning">Nur Cache leeren. Telefoneinstellungen und Daten sind nicht betroffen.</string>
+		<string name="wipe_cache_running_commands">Löschen von Daten. Bitte benutzen Sie das Telefon nicht.</string>
+		<string name="wipecache_done_success">Erfolgreich gelöscht</string>
+		<string name="wipecache_success_tips">Daten im Cache erfolgreich gelöscht</string>
+		<string name="wipecache_done_fail">Löschen fehlgeschlagen</string>
+		<string name="wipecache_fail_error">Löschen der Cache-Daten fehlgeschlagen</string>
+		<!-- restore settings -->
+		<string name="rest_settings_hdr">Alle Einstellungen wiederherstellen</string>
+		<string name="rest_settings_warnning">Nur alle Einstellungen wiederherstellen. Es werden keine Daten oder Medien gelöscht.</string>
+		<string name="rest_settings_running_commands">Einstellungen werden wiederhergestellt. Bitte benutzen Sie das Telefon nicht.</string>
+		<string name="resettings_done_success">Erfolgreich wiederhergestellt</string>
+		<string name="resettings_success_tips">Alle Einstellungen erfolgreich wiederhergestellt</string>
+		<string name="resettings_done_fail">Wiederherstellung fehlgeschlagen</string>
+		<string name="resettings_fail_error">Wiederherstellung aller Einstellungen fehlgeschlagen</string>
+
+		<!-- restore settings -->
+		<string name="root_check_running_commands">Verifizierung läuft</string>
+		<string name="rootcheck_done_success">Überprüfung der Systemdateiintegrität erfolgreich</string>
+		<string name="rootcheck_done_fail">Überprüfung der Systemdateiintegrität fehlgeschlagen</string>
+		<string name="root_check_ok_btn">Empfangen</string>
+		<string name="root_check_fail_btn">Details anzeigen</string>
+		<string name="rootcheck_fail_hdr">Überprüfung der Systemdateiintegrität fehlgeschlagen</string>
+
+		<!-- view log -->
+		<string name="view_log_hdr">Upgrade-Protokoll anzeigen</string>
+
+		<!-- recovery  password string -->
+		<string name="password_pattern_tips">Bitte Entsperrungsmuster zeichnen</string>
+		<string name="password_input_tips">Bitte Entsperrungspasswort eingeben</string>
+		<string name="password_forbid_tips">Das Telefon wurde gesperrt.</string>
+		<string name="password_forbid_time">Bitte versuchen Sie es in %tt_password_forbid_time% Sekunden erneut.</string>
+		<string name="password_input_ok">Fertig</string>
+
+		<!-- =========================================== fastboot mode ================================================= -->
+		<string name="fastboot_mode">Fastboot</string>
+
+		<!-- ============================================= repair mode ================================================= -->
+		<string name="survival_mode">System reparieren</string>
+		<string name="repair_down_btn">Aktuelle Version herunterladen und installieren (Daten erhalten)</string>
+
+		<!-- wlan -->
+		<string name="wlan_network_hdr">Online aktualisieren</string>
+		<string name="wlan_repair_tips">Diese Funktion erfordert den Wechsel in den Systemreparaturmodus. Bitte schließen Sie das Ladegerät an.</string>
+		<string name="wlan_sel_hdr">WLAN</string>
+		<string name="wifi_selector_tips">Wi-Fi auswählen (Verbindung mit einem Wi-Fi, das Web-Authentifizierung erfordert, nicht möglich):</string>
+		<string name="wlan_scanning">Wi-Fi wird gesucht</string>
+		<string name="wlan_connectting">Verbindung mit Wi-Fi wird hergestellt</string>
+		<string name="wlan_checking">Es wird auf Aktualisierungen geprüft</string>
+		<string name="wlan_retry_btn">Wiederholen</string>
+		<string name="wlan_download_btn">Herunterladen und installieren</string>
+		<string name="wlan_change_btn">Wi-Fi wechseln</string>
+		<string name="wlan_no_newer_package">Keine Informationen zu neuer Version gefunden</string>
+		<string name="wlan_is_newest_package">Bereits die neueste Version</string>
+		<string name="wlan_newer_package_info">Aktuelle Version: vivo rev%tt_update_package_name%(%tt_update_package_size%MB)</string>
+		<string name="wlan_download_hdr">Download</string>
+		<string name="wlan_unlinked_tips">WLAN: Netzwerk getrennt</string>
+		<string name="wlan_linked_tips">WLAN: %tt_wlan_ssid%</string>
+		<string name="wlan_password_hdr">Passwort eingeben</string>
+		<string name="wlan_reconnect_tips">%tt_wlan_reconnect_tips%</string>
+		<string name="wlan_password_error">Falsches Passwort. Bitte nochmals eingeben.</string>
+		<string name="wlan_unkown_error">Ausnahmefehler bei Netzwerkverbindung. Bitte erneut versuchen.</string>
+		<string name="wlan_link_cancel">Abbrechen</string>
+		<string name="wlan_link_start">Verbinden</string>
+		<string name="wlan_passwd_input_tips">Bitte Passwort für "%tt_wifi%"eingeben:</string>
+		<string name="wlan_downloading_progress">Download-Fortschritt%tt_downloaded_progress%%</string>
+		<string name="wlan_downloading_infor">%tt_downloaded_size%MB/%tt_update_package_size%MB</string>
+		<string name="wlan_download_pause">Herunterladen anhalten</string>
+		<string name="wlan_download_continue">Download fortsetzen</string>
+		<string name="wlan_download_fail">Download fehlgeschlagen</string>
+		<string name="wlan_download_pause_ing">Stoppen Sie den Download</string>
+
+		<!-- storage space check -->
+		<string name="wlan_download_sp_err_hdr">Download nicht möglich</string>
+		<string name="wlan_sp_datamedia_tips">Unzureichender Speicherplatz. Bitte löschen Sie vor einem erneuten Versuch alle Daten.</string>
+		<string name="wlan_sp_nosdcard_tips">Unzureichender Speicherplatz. Bitte setzen Sie vor einem erneuten Versuch ein SD-Karte ein oder löschen Sie alle Daten.</string>
+		<string name="wlan_sp_change_sdcard_tips">Unzureichender Speicherplatz. Bitte tauschen Sie vor einem erneuten Versuch die SD-Karte gegen eine größere aus oder löschen Sie alle Daten.</string>
+		<string name="wlan_tips_ok_btn">Empfangen</string>
+		<string name="wlan_tips_wipe_btn">Löschen</string>
+		<string name="wlan_tips_cancel_btn">Abbrechen</string>
+	</resources>
+</language>

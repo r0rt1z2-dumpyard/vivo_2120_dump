@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+
+<language>
+	<display>Chinese (Simplified)</display>
+
+	<resources>
+		<!-- Font overrides - only change these if your language requires special characters -->
+		<resource name="font_l" type="fontoverride" filename="HYQiHei-EZS.ttf" size="31" />
+		<resource name="font_m" type="fontoverride" filename="HYQiHei-EZS.ttf" size="25" />
+		<resource name="font_s" type="fontoverride" filename="HYQiHei-EZS.ttf" size="22" />
+		<resource name="fixed"  type="fontoverride" filename="HYQiHei-EZS.ttf" size="18" />
+
+		<!-- recovery common -->
+		<string name="install_packege_btn">安装系统软件</string>
+		<string name="wipe_data_btn">清除数据</string>
+		<string name="check_system_btn">校验系统</string>
+		<string name="view_log_btn">查看升级log</string>
+		<string name="shutdown_btn">关机</string>
+		<string name="reboot_btn">重启</string>
+		<string name="reboot_recovery_btn">进入Recovery模式</string>
+		<string name="cancel_btn">取消</string>
+		<string name="ok_btn">确定</string>
+		<string name="wipe_all_data_btn">清除所有数据</string>
+
+		<string name="tips_shutdown">确定要关机？</string>
+		<string name="tips_reboot">确定要重启？</string>
+		<string name="has_root_tips">当前手机：已ROOT</string>
+		<string name="no_root_tips">当前手机：未ROOT</string>
+		<string name="back_btn">返回</string>
+		<string name="cancle_btn">取消</string>
+		<string name="symol_btn">符号</string>
+		<string name="compelte_btn">完成</string>
+		<string name="warnning_btn">警告</string>
+
+		<string name="key_hold_warning">请立即松开电源键，避免设备异常</string>
+
+		<!-- recovery  install string -->
+		<string name="install_image_hdr">安装系统软件</string>
+		<string name="install_menu_tips">安装非官方升级包存在安全风险，请谨慎操作。</string>
+		<string name="install_menu_media">手机存储</string>
+		<string name="install_menu_sd">SD卡</string>
+		<string name="install_menu_net">联网更新最新版本</string>
+		<string name="install_media_hdr">手机存储</string>
+		<string name="install_sd_hdr">SD卡</string>
+		<string name="install_image_tips">选择官方升级包进行升级：</string>
+		<string name="install_running_commands">正在安装升级包，请勿触碰手机按钮 完成后需熄屏优化，请耐心等候重启 </string>
+		<string name="install_done_success">升级包安装成功</string>
+		<string name="install_success_tips"> </string>
+		<string name="install_done_fail">升级包安装失败</string>
+		<string name="install_fail_apps">安装应用程序失败</string>
+		<string name="install_fail_oem">不支持的升级包</string>
+		<string name="install_fail_versionlow">安装的系统软件版本低于当前使用版本</string>
+		<string name="install_fail_error">数据损坏导致安装失败，需要重启后下载最新版本修复</string>
+		<string name="install_fail_corrupt">数据损坏导致安装失败，需要重启后下载最新版本修复</string>
+		<string name="install_fail_unknow">数据损坏导致安装失败，需要重启后下载最新版本修复</string>
+		<string name="battery_low_tips">剩余电量不足%tt_install_battery%%，请连接充电器</string>
+		<string name="install_battery_tips">请保持充电器的连接，电量达到%tt_install_battery%%将自动安装</string>
+		<string name="package_check_running_commands">加载升级包</string>
+		<string name="packagecheck_done_success">请通过官方网站，论坛下载指定的升级包，为了保护您手机的安全，非官方渠道升级包请勿升级。</string>
+		<string name="packagecheck_done_fail">请通过官方网站，论坛下载指定的升级包，为了保护您手机的安全，非官方渠道升级包请勿升级。</string>
+		<string name="package_check_install_btn">仍要升级</string>
+		<string name="package_check_ok_btn">知道了</string>
+
+		<!-- update app -->
+		<string name="update_app_running_commands">正在安装升级包，请勿触碰手机按钮 完成后需熄屏优化，请耐心等候重启 </string>
+
+		<!-- wipe page -->
+		<string name="wipe_common_hdr">清除数据</string>
+		<string name="wipe_menu_data">清除所有数据</string>
+		<string name="wipe_menu_cache">清除缓存</string>
+		<string name="wipe_menu_settings">还原所有设置</string>
+
+		<!-- wipe data -->
+		<string name="wipe_data_hdr">清除所有数据</string>
+		<string name="wipe_data_warnning">仅清除手机系统空间中的数据，保留音乐、图片和其他用户数据</string>
+		<string name="factory_reset_tips">警告：机器异常，将要恢复出厂设置，恢复完成后所有用户数据将清除。</string>
+		<string name="format_data_warnning">所有的用户数据将被删除，包括音乐、照片等其他用户数据将会丢失。</string>
+		<string name="wipe_data_running_commands">清除数据中，请勿操作手机</string>
+		<string name="wipedata_done_success">清除成功</string>
+		<string name="wipedata_success_tips">清除所有数据成功</string>
+		<string name="wipedata_done_fail">清除失败</string>
+		<string name="wipedata_fail_error">清除所有数据失败</string>
+		<!-- wipe cache -->
+		<string name="wipe_cache_hdr">清除缓存</string>
+		<string name="wipe_cache_warnning">仅清除缓存，手机的设置和数据无影响 </string>
+		<string name="wipe_cache_running_commands">清除数据中，请勿操作手机</string>
+		<string name="wipecache_done_success">清除成功</string>
+		<string name="wipecache_success_tips">清除缓存数据成功</string>
+		<string name="wipecache_done_fail">清除失败</string>
+		<string name="wipecache_fail_error">清除缓存数据失败</string>
+		<!-- restore settings -->
+		<string name="rest_settings_hdr">还原所有设置</string>
+		<string name="rest_settings_warnning">仅还原所有设置，不会删除任何数据和媒体</string>
+		<string name="rest_settings_running_commands">还原设置中，请勿操作手机</string>
+		<string name="resettings_done_success">还原成功</string>
+		<string name="resettings_success_tips">还原所有设置成功</string>
+		<string name="resettings_done_fail">还原失败</string>
+		<string name="resettings_fail_error">还原所有设置失败</string>
+
+		<!-- restore settings -->
+		<string name="root_check_running_commands">正在校验</string>
+		<string name="rootcheck_done_success">系统文件完整性校验成功</string>
+		<string name="rootcheck_done_fail">系统文件完整性校验失败</string>
+		<string name="root_check_ok_btn">知道了</string>
+		<string name="root_check_fail_btn">查看详情</string>
+		<string name="rootcheck_fail_hdr">系统文件完整性校验失败</string>
+
+		<!-- view log -->
+		<string name="view_log_hdr">查看升级log</string>
+
+		<!-- recovery  password string -->
+		<string name="password_pattern_tips">请绘制解锁图案</string>
+		<string name="password_input_tips">请输入解锁密码</string>
+		<string name="password_forbid_tips">手机已锁定</string>
+		<string name="password_forbid_time">请 %tt_password_forbid_time% 秒后再试</string>
+		<string name="password_input_ok">完成</string>
+
+		<!-- =========================================== fastboot mode ================================================= -->
+		<string name="fastboot_mode">Fastboot</string>
+
+		<!-- ============================================= repair mode ================================================= -->
+		<string name="survival_mode">修复系统</string>
+		<string name="repair_down_btn">下载最新版本并安装(保留数据)</string>
+
+		<!-- wlan -->
+		<string name="wlan_network_hdr">联网更新</string>
+		<string name="wlan_repair_tips">该功能需进入系统修复模式，建议连接充电器。</string>
+		<string name="wlan_sel_hdr">WLAN</string>
+		<string name="wifi_selector_tips">选择WLAN：（无法连接需要网页认证的WLAN）</string>
+		<string name="wlan_scanning">正在检测WLAN</string>
+		<string name="wlan_connectting">正在连接WLAN</string>
+		<string name="wlan_checking">正在检测新版本</string>
+		<string name="wlan_retry_btn">重试</string>
+		<string name="wlan_download_btn">下载并安装</string>
+		<string name="wlan_change_btn">切换WLAN</string>
+		<string name="wlan_no_newer_package">未检测到新版本信息</string>
+		<string name="wlan_is_newest_package">当前已为最新版本</string>
+		<string name="wlan_newer_package_info">最新版本: vivo rev%tt_update_package_name%(%tt_update_package_size%MB)</string>
+		<string name="wlan_download_hdr">下载</string>
+		<string name="wlan_unlinked_tips">WLAN: 网络已断开</string>
+		<string name="wlan_linked_tips">WLAN: %tt_wlan_ssid%</string>
+		<string name="wlan_password_hdr">输入密码</string>
+		<string name="wlan_reconnect_tips">%tt_wlan_reconnect_tips%</string>
+		<string name="wlan_password_error">密码错误，请重新输入</string>
+		<string name="wlan_unkown_error">网络连接异常，请重试</string>
+		<string name="wlan_link_cancel">取消</string>
+		<string name="wlan_link_start">连接</string>
+		<string name="wlan_passwd_input_tips">请输入“%tt_wifi%”的密码：</string>
+		<string name="wlan_downloading_progress">下载进度%tt_downloaded_progress%%</string>
+		<string name="wlan_downloading_infor">%tt_downloaded_size%MB/%tt_update_package_size%MB</string>
+		<string name="wlan_download_pause">暂停下载</string>
+		<string name="wlan_download_continue">继续下载</string>
+		<string name="wlan_download_fail">下载失败</string>
+		<string name="wlan_download_pause_ing">正在暂停下载...</string>
+
+		<!-- storage space check -->
+		<string name="wlan_download_sp_err_hdr">无法下载</string>
+		<string name="wlan_sp_datamedia_tips">存储空间不足，请先清除所有数据后再试</string>
+		<string name="wlan_sp_nosdcard_tips">存储空间不足，建议插入SD卡或者清除所有数据后再试</string>
+		<string name="wlan_sp_change_sdcard_tips">存储空间不足，建议更换更大容量的SD卡或者清除所有数据后再试</string>
+		<string name="wlan_tips_ok_btn">知道了</string>
+		<string name="wlan_tips_wipe_btn">清除</string>
+		<string name="wlan_tips_cancel_btn">取消</string>
+	</resources>
+</language>

@@ -1,0 +1,149 @@
+on early-init
+    mkdir /vendor/firmware_mnt
+    symlink /vendor/firmware_mnt /firmware
+    mkdir /mnt/vendor
+    mkdir /mnt/vendor/persist
+    chown root system /mnt/vendor/persist
+    chmod 0771 /mnt/vendor/persist
+    symlink /mnt/vendor/persist /persist
+    mkdir /system/etc/selinux
+    symlink /plat_keystore2_key_contexts /system/etc/selinux/plat_keystore2_key_contexts
+
+on init
+    start servicemanager
+    start hwservicemanager
+    start vndservicemanager
+    start ashmemd
+
+on load_oem_props_action
+    load_recovery_props oem
+    setprop recovery.oem_properties.loaded 1
+
+on load_vgc_props_action
+    load_recovery_props vgc
+    setprop recovery.vgc_properties.loaded 1
+
+on load_build_props_action
+    load_recovery_props build_props
+    setprop recovery.build_properties.loaded 1
+
+on load_product_props_action
+    load_recovery_props product_props
+    setprop recovery.product_properties.loaded 1
+
+on load_vf_props_action
+    load_recovery_props /vfprop.default
+    setprop recovery.vf_properties.loaded 1
+
+on property:recovery.load.persist_props=1
+    load_recovery_props persist
+    setprop recovery.persist_properties.loaded 1
+
+on property:recovery.load.props=1
+    trigger load_oem_props_action
+    trigger load_vgc_props_action
+    trigger load_product_props_action
+    trigger load_build_props_action
+    trigger load_vf_props_action
+    setprop recovery.properties.loaded 1
+
+on property:recovery.load.backup_props=1
+    load_recovery_props /cache/recovery/oem.prop
+    load_recovery_props /cache/recovery/vgc.prop
+    load_recovery_props build_props
+    setprop recovery.backup_props.loaded 1
+
+on post-fs-data && property:ro.debuggable=1
+    mkdir /data/tombstones 0777 root root
+    mkdir /data/anr 0777 root root
+    mkdir /data/debug 0777 root root
+    start tombstoned
+
+on late-init
+    # Load properties from /system/ + /factory after fs mount. Place
+    # this in another action so that the load will be scheduled after the prior
+    # issued fs triggers have completed.
+
+service logd /system/bin/logd
+    socket logd stream 0666 logd logd
+    socket logdr seqpacket 0666 logd logd
+    socket logdw dgram+passcred 0222 logd logd
+    file /proc/kmsg r
+    file /dev/kmsg w
+    user root
+    group root logd system package_info readproc
+    capabilities SYSLOG AUDIT_CONTROL
+    priority 10
+    writepid /dev/cpuset/system-background/tasks
+    seclabel u:r:recovery:s0
+
+service logd-reinit /system/bin/logd --reinit
+    oneshot
+    disabled
+    seclabel u:r:recovery:s0
+
+service ashmemd /system/bin/ashmemd
+    disabled
+    user root
+    group root
+    seclabel u:r:recovery:s0
+
+service servicemanager /system/bin/servicemanager
+    disabled
+    user root
+    seclabel u:r:recovery:s0
+
+service hwservicemanager /system/bin/hwservicemanager
+    disabled
+    user root
+    onrestart setprop hwservicemanager.ready false
+    writepid /dev/cpuset/system-background/tasks
+    seclabel u:r:recovery:s0
+
+service tombstoned /system/bin/tombstoned
+    user root
+    group root
+    socket tombstoned_crash seqpacket 0666 system system
+    socket tombstoned_intercept seqpacket 0666 system system
+    socket tombstoned_java_trace seqpacket 0666 system system
+    writepid /dev/cpuset/system-background/tasks
+    seclabel u:r:recovery:s0
+
+service flash_light /system/bin/little_buddy --light_tips
+    disabled
+    user root
+    group root
+    seclabel u:r:recovery:s0
+
+on property:recovery.emergent_mode=1
+    start flash_light
+
+service mem_info /system/bin/little_buddy --mem_info
+    disabled
+    user root
+    group root
+    onrestart setprop recovery.svc.start.mem_info 0
+    seclabel u:r:recovery:s0
+
+on property:recovery.svc.start.mem_info=1
+    start mem_info
+
+service ufs_info /system/bin/little_buddy --ufs_info
+    disabled
+    user root
+    group root
+    onrestart setprop recovery.svc.start.ufs_info 0
+    seclabel u:r:recovery:s0
+
+on property:recovery.svc.start.ufs_info=1
+    start ufs_info
+
+service crash_log /system/bin/little_buddy --crash_log
+    disabled
+    user root
+    group root
+    onrestart setprop recovery.svc.start.copy_log 0
+    seclabel u:r:recovery:s0
+
+on property:recovery.svc.start.copy_log=1
+    start crash_log
