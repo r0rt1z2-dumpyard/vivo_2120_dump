@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<config version="1.0">
+  <mapping name="carrier">
+    <!-- ID Smartfren -->
+    <siminfo>
+        <property name="mcc_mnc">51028</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">51028V01</property>
+    </siminfo>
+
+    <!-- ID Smartfren -->
+    <siminfo>
+        <property name="mcc_mnc">51009</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">51009V01</property>
+    </siminfo>
+
+    <!-- ID XL -->
+    <siminfo>
+        <property name="mcc_mnc">51011</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">51011V01</property>
+    </siminfo>
+
+    <!-- ID XL -->
+    <siminfo>
+        <property name="mcc_mnc">51008</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">51008V01</property>
+    </siminfo>
+
+    <!-- ID Telkomsel -->
+    <siminfo>
+        <property name="mcc_mnc">51010</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">51010V01</property>
+    </siminfo>
+
+    <!-- TH True -->
+    <siminfo>
+        <property name="mcc_mnc">52099</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">52099V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">52004</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">52004V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">52000</property>
+        <property name="gid1">01</property>
+        <property name="rule">0x11</property>
+        <property name="map_key">52000V01</property>
+    </siminfo>
+
+    <!-- TH AIS -->
+    <siminfo>
+        <property name="mcc_mnc">52001</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">52001V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">52003</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">52003V01</property>
+    </siminfo>
+
+    <!-- PH Smart -->
+    <siminfo>
+        <property name="mcc_mnc">51503</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">51503V01</property>
+    </siminfo>
+
+    <!-- PH Globe -->
+    <siminfo>
+        <property name="mcc_mnc">51502</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">51502V01</property>
+    </siminfo>
+
+    <!-- MY Unifi -->
+    <siminfo>
+        <property name="mcc_mnc">50211</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">50211V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">502153</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">502153V01</property>
+    </siminfo>
+
+    <!-- MY U-Moblie -->
+    <siminfo>
+        <property name="mcc_mnc">50218</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">50218V01</property>
+    </siminfo>
+
+    <!-- MY DiGi -->
+    <siminfo>
+        <property name="mcc_mnc">50216</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">50216V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">502146</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">502146V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">502143</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">502143V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">50210</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">50210V01</property>
+    </siminfo>
+
+    <!-- MY Maxis -->
+    <siminfo>
+        <property name="mcc_mnc">50217</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">50217V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">50212</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">50212V01</property>
+    </siminfo>
+
+    <!-- MY Celcom -->
+    <siminfo>
+        <property name="mcc_mnc">50219</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">50219V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">50213</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">50213V01</property>
+    </siminfo>
+
+    <!-- VN Gmobile -->
+    <siminfo>
+        <property name="mcc_mnc">45207</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">45207V01</property>
+    </siminfo>
+
+    <!-- VN Mobifone -->
+    <siminfo>
+        <property name="mcc_mnc">45201</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">45201V01</property>
+    </siminfo>
+
+    <!-- VN Vietel -->
+    <siminfo>
+        <property name="mcc_mnc">45204</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">45204V01</property>
+    </siminfo>
+
+    <!-- VN Vinaphone -->
+    <siminfo>
+        <property name="mcc_mnc">45202</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">45202V01</property>
+    </siminfo>
+
+    <!-- ID INDOSAT -->
+    <siminfo>
+        <property name="mcc_mnc">51001</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">51001V01</property>
+    </siminfo>
+
+    <!-- ID MyIM3 -->
+    <siminfo>
+        <property name="mcc_mnc">51021</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">51021V01</property>
+    </siminfo>
+
+    <!-- PLAY -->
+    <siminfo>
+        <property name="mcc_mnc">26006</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">26006V01</property>
+    </siminfo>
+
+    <!-- 3AT -->
+    <siminfo>
+        <property name="mcc_mnc">23210</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">23210V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">23205</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">23205V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">23214</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">23214V01</property>
+    </siminfo>
+
+    <!-- DTAC TH -->
+    <siminfo>
+        <property name="mcc_mnc">52047</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">52047V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">52005</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">52005V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">52018</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">52018V01</property>
+    </siminfo>
+
+    <!-- BYT FR -->
+    <siminfo>
+        <property name="mcc_mnc">20820</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">20820V01</property>
+    </siminfo>
+
+    <!-- CN for Test -->
+    <siminfo>
+        <property name="mcc_mnc">46000</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">46000V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">46002</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">46002V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">46007</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">46007V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">46003</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">46003V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">46005</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">46005V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">46009</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">46009V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">46006</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">46006V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">46001</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">46001V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">46008</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">46008V01</property>
+    </siminfo>
+    <siminfo>
+        <property name="mcc_mnc">46011</property>
+        <property name="rule">0x01</property>
+        <property name="map_key">46011V01</property>
+    </siminfo>
+
+    <siminfo>
+      <property name="rule">0x1</property>
+      <property name="mcc_mnc">208.*</property>
+      <property name="map_key">208</property>
+    </siminfo>
+  </mapping>
+</config>

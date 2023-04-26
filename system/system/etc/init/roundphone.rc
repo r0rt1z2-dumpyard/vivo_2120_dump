@@ -1,0 +1,7 @@
+service roundphone /system/bin/roundphone
+    class core
+    user graphics
+    group graphics
+    disabled
+    critical
+    writepid /dev/stune/top-app/tasks

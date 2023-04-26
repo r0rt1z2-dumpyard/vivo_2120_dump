@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <string name="call_record_policy">remove_all</string>
+    <string name="settings_default_region">SA</string>
+    <string name="setupwizard_default_language">ar_EG</string>
+<!-- auto add vivo config -->
+</config>

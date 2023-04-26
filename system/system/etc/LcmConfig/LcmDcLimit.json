@@ -1,0 +1,8 @@
+[
+	{
+		"dc_limit":true,
+		"activities":[
+			"com.tencent.mm.plugin.shake.ui.ShakeReportUI"
+		]
+	}
+]

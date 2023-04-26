@@ -1,0 +1,6 @@
+service media.vivocodec /system/bin/mediavivocodec
+    class main
+    user mediacodec
+    group camera drmrpc mediadrm
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks

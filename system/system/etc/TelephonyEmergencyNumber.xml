@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+1.
+emer_rule defines which conditions(sim state and service state) are emergency number.
+sim_insert       1  1  0  0
+service          1  0  1  0
+
+StrinsPosition   0  1  2  3
+example          1  0  0  0
+For example, if emer_rule=1000, means this situation(sim insert and full service) need to add emergency number:
+
+
+
+2.
+display_rule defines which conditions(service state) are display_only, -1 if no display rules.
+Full_service(0 or 1)    Limited_service(0 or 1)
+
+e.g
+<emergencys>
+    <emergency1>
+        <mcc id="460">
+            <number num="110" emer_rule="1111" display_rule="-1"/>
+            <number num="112" emer_rule="0101" display_rule="01"/>
+            <number num="119" emer_rule="1010" display_rule="10"/>
+        </mcc>
+    </emergency1>
+
+    <emergency2>
+        <mccmnc id="45402">
+            <number num="110" emer_rule="0000" display_rule="11"/>
+        </mccmnc>
+    </emergency2>
+</emergencys>
+ -->
+<emergencys>
+    <emergency1>
+        <!--Myanmar-->
+        <mcc id="460">
+            <number num="110" emer_rule="1101" display_rule="10"/>
+            <number num="119" emer_rule="1101" display_rule="10"/>
+            <number num="120" emer_rule="1101" display_rule="10"/>
+            <number num="112" emer_rule="1101" display_rule="00"/>
+            <number num="999" emer_rule="1101" display_rule="10"/>
+            <number num="122" emer_rule="1101" display_rule="10"/>
+            <number num="000" emer_rule="1101" display_rule="10"/>
+            <number num="08" emer_rule="1101" display_rule="10"/>
+            <number num="118" emer_rule="1101" display_rule="10"/>
+            <number num="911" emer_rule="1101" display_rule="00"/>
+        </mcc>
+        <mcc id="414">
+            <number num="191" emer_rule="1101" display_rule="10"/>
+            <number num="192" emer_rule="1101" display_rule="10"/>
+            <number num="199" emer_rule="1101" display_rule="10"/>
+            <number num="911" emer_rule="1101" display_rule="10"/>
+            <number num="999" emer_rule="1101" display_rule="10"/>
+        </mcc>
+        <!-- Turkey -->
+        <mcc id="286">
+            <number num="110" emer_rule="0001" display_rule="10"/>
+            <number num="112" emer_rule="1111" display_rule="00"/>
+            <number num="155" emer_rule="0001" display_rule="10"/>
+            <number num="156" emer_rule="0001" display_rule="10"/>
+            <number num="158" emer_rule="0001" display_rule="10"/>
+            <number num="177" emer_rule="0001" display_rule="10"/>
+        </mcc>
+        <!--India-->
+        <mcc id="404">
+            <number num="911" emer_rule="1101" display_rule="00"/>
+            <number num="112" emer_rule="1101" display_rule="00"/>
+        </mcc>
+         <mcc id="405">
+            <number num="911" emer_rule="1101" display_rule="00"/>
+            <number num="112" emer_rule="1101" display_rule="00"/>
+        </mcc>
+        <mcc id="406">
+            <number num="911" emer_rule="1101" display_rule="00"/>
+            <number num="112" emer_rule="1101" display_rule="00"/>
+        </mcc>
+        <!--Indonesia-->
+        <mcc id="510">
+            <number num="112" emer_rule="1111" display_rule="00"/>
+            <number num="911" emer_rule="1111" display_rule="00"/>
+            <number num="110" emer_rule="1101" display_rule="00"/>
+            <number num="113" emer_rule="1101" display_rule="00"/>
+            <number num="118" emer_rule="1101" display_rule="00"/>
+            <number num="119" emer_rule="1101" display_rule="10"/>
+            <number num="129" emer_rule="1101" display_rule="10"/>
+            <number num="999" emer_rule="0001" display_rule="10"/>
+        </mcc>
+        <!--Malaysia-->
+        <mcc id="502">
+            <number num="994" emer_rule="1101" display_rule="00"/>
+            <number num="999" emer_rule="1101" display_rule="00"/>
+        </mcc>
+        <!--Vietnam-->
+        <mcc id="452">
+            <number num="113" emer_rule="1101" display_rule="10"/>
+            <number num="114" emer_rule="1101" display_rule="10"/>
+            <number num="115" emer_rule="1101" display_rule="10"/>
+        </mcc>
+        <!--Thailand-->
+        <mcc id="520">
+            <number num="191" emer_rule="1101" display_rule="10"/>
+            <number num="199" emer_rule="1101" display_rule="10"/>
+            <number num="911" emer_rule="1101" display_rule="00"/>
+            <number num="1669" emer_rule="1101" display_rule="10"/>
+        </mcc>
+        <!--Philippines-->
+        <mcc id="515">
+            <number num="117" emer_rule="1101" display_rule="10"/>
+        </mcc>
+        <!--Pakistan-->
+        <mcc id="410">
+            <number num="15" emer_rule="1101" display_rule="11"/>
+            <number num="16" emer_rule="1101" display_rule="11"/>
+            <number num="115" emer_rule="1101" display_rule="11"/>
+        </mcc>
+        <!--Lao-->
+        <mcc id="457">
+            <number num="1199" emer_rule="1101" display_rule="10"/>
+            <number num="1190" emer_rule="1101" display_rule="10"/>
+            <number num="1191" emer_rule="1101" display_rule="10"/>
+            <number num="1623" emer_rule="1101" display_rule="10"/>
+            <number num="1169" emer_rule="1101" display_rule="10"/>
+            <number num="1195" emer_rule="1101" display_rule="10"/>
+        </mcc>
+        <!--Cambodia-->
+        <mcc id="456">
+            <number num="117" emer_rule="1101" display_rule="10"/>
+            <number num="118" emer_rule="1101" display_rule="10"/>
+            <number num="119" emer_rule="1101" display_rule="10"/>
+        </mcc>
+        <!--Sri Lanka-->
+        <mcc id="413">
+            <number num="118" emer_rule="1101" display_rule="10"/>
+            <number num="119" emer_rule="1101" display_rule="10"/>
+            <number num="110" emer_rule="1101" display_rule="10"/>
+            <number num="1919" emer_rule="1101" display_rule="10"/>
+        </mcc>
+        <!--Nepal-->
+        <mcc id="429">
+            <number num="100" emer_rule="1101" display_rule="10"/>
+            <number num="101" emer_rule="1101" display_rule="10"/>
+            <number num="102" emer_rule="1101" display_rule="10"/>
+            <number num="103" emer_rule="1101" display_rule="10"/>
+        </mcc>
+        <!--Budan-->
+        <mcc id="402">
+            <number num="110" emer_rule="1101" display_rule="10"/>
+            <number num="111" emer_rule="1101" display_rule="10"/>
+            <number num="112" emer_rule="1101" display_rule="10"/>
+            <number num="113" emer_rule="1101" display_rule="10"/>
+            <number num="219" emer_rule="1101" display_rule="10"/>
+        </mcc>
+        <!--Russian-->
+        <mcc id="250">
+            <number num="101" emer_rule="1101" display_rule="10"/>
+            <number num="102" emer_rule="1101" display_rule="10"/>
+            <number num="103" emer_rule="1101" display_rule="10"/>
+        </mcc>
+        <!--United Arab Emirates-->
+        <mcc id="424">
+            <number num="997" emer_rule="1101" display_rule="10"/>
+            <number num="998" emer_rule="1101" display_rule="10"/>
+            <number num="999" emer_rule="1101" display_rule="10"/>
+        </mcc>
+        <!--Singapore-->
+        <mcc id="525">
+            <number num="999" emer_rule="1101" display_rule="00"/>
+        </mcc>
+        <!--Taiwan-->
+        <mcc id="466">
+            <number num="110" emer_rule="1101" display_rule="10"/>
+            <number num="118" emer_rule="1101" display_rule="10"/>
+            <number num="119" emer_rule="1101" display_rule="10"/>
+            <number num="999" emer_rule="0001" display_rule="00"/>
+        </mcc>
+        <!--HongKong-->
+        <mcc id="454">
+            <number num="999" emer_rule="1101" display_rule="10"/>
+            <number num="120" emer_rule="0001" display_rule="00"/>
+        </mcc>
+        <!--Bangladesh-->
+        <mcc id="470">
+            <number num="199" emer_rule="1101" display_rule="10"/>
+            <number num="999" emer_rule="1101" display_rule="10"/>
+        </mcc>
+        <mcc id="604">
+            <number num="15" emer_rule="1101" display_rule="10"/>
+            <number num="19" emer_rule="1101" display_rule="10"/>
+            <number num="177" emer_rule="1101" display_rule="10"/>
+        </mcc>
+        <!--Kenya-->
+        <mcc id="639">
+            <number num="999" emer_rule="1101" display_rule="10"/>
+        </mcc>
+        <!--Tanzania-->
+        <mcc id="640">
+            <number num="112" emer_rule="1101" display_rule="00"/>
+            <number num="114" emer_rule="1101" display_rule="00"/>
+            <number num="115" emer_rule="1101" display_rule="00"/>
+        </mcc>
+        <!--Burundi-->
+        <mcc id="642">
+            <number num="112" emer_rule="1101" display_rule="00"/>
+            <number num="113" emer_rule="1101" display_rule="10"/>
+            <number num="114" emer_rule="1101" display_rule="10"/>
+            <number num="115" emer_rule="1101" display_rule="10"/>
+            <number num="117" emer_rule="1101" display_rule="10"/>
+            <number num="118" emer_rule="1101" display_rule="10"/>
+            <number num="119" emer_rule="1101" display_rule="10"/>
+        </mcc>
+        <!--Macao-->
+        <mcc id="455">
+            <number num="999" emer_rule="1101" display_rule="10"/>
+            <number num="120" emer_rule="1101" display_rule="10"/>
+        </mcc>
+        <!--United Kingdom-->
+        <mcc id="234">
+            <number num="999" emer_rule="1101" display_rule="10"/>
+        </mcc>
+        <mcc id="235">
+            <number num="999" emer_rule="1101" display_rule="10"/>
+        </mcc>
+        <!--Ghana-->
+        <mcc id="620">
+            <number num="999" emer_rule="1101" display_rule="10"/>
+        </mcc>
+    </emergency1>
+</emergencys>

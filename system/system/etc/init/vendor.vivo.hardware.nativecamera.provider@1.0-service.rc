@@ -1,0 +1,3 @@
+service hal_nativecamera_default /system/bin/hw/vendor.vivo.hardware.nativecamera.provider@1.0-service
+    class main
+    group media_rw sdcard_rw 1001023 1101023 1201023 1301023 everybody

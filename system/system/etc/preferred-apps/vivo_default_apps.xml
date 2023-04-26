@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferred-activities>
+
+    <item name="com.android.launcher3/.Launcher">
+        <filter>
+            <action name="android.intent.action.MAIN" />
+            <cat name="android.intent.category.HOME" />
+            <cat name="android.intent.category.DEFAULT" />
+        </filter>
+    </item>
+
+    <item name="com.vivo.browser/com.vivo.browser.ui.module.office.OfficeManager">
+        <filter>
+            <action name="android.intent.action.VIEW"/>
+            <cat name="android.intent.category.DEFAULT"/>
+            <type name="application/msword"/>
+            <type name="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+            <type name="application/vnd.ms-excel"/>
+            <type name="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+            <type name="application/vnd.ms-powerpoint"/>
+            <type name="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+            <type name="application/pdf"/>
+            <type name="text/plain"/>
+            <scheme name="content" />
+            <scheme name="file" />
+        </filter>
+    </item>
+
+    <item name="com.vivo.browser/com.vivo.browser.ui.module.office.OfficeManager">
+        <filter>
+            <action name="android.intent.action.VIEW" />
+            <cat name="android.intent.category.DEFAULT" />
+            <type name="text/plain" />
+            <scheme name="file" />
+        </filter>
+    </item>
+
+    <item name="com.vivo.browser/com.vivo.browser.ui.module.office.OfficeManager">
+        <filter>
+            <action name="android.intent.action.VIEW" />
+            <cat name="android.intent.category.DEFAULT" />
+            <type name="text/plain" />
+            <scheme name="content" />
+        </filter>
+    </item>
+
+    <item name="com.android.storagemanager/.deletionhelper.DeletionHelperActivity">
+        <filter>
+            <action name="android.os.storage.action.MANAGE_STORAGE" />
+            <cat name="android.intent.category.DEFAULT" />
+        </filter>
+    </item>
+
+</preferred-activities>

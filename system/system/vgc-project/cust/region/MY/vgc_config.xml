@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <bool name="daemon_vtrust_activate_enable">True</bool>
+    <bool name="vtrust_dynamic_activate_direct_work">True</bool>
+</config>

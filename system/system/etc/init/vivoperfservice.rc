@@ -1,0 +1,10 @@
+#
+# Copyright (c) 2018 vivo Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - vivo Technologies, Inc.
+#
+
+service vendor.vivoperfservice /system/bin/vivoperfservice
+    class main
+    user system
+    group system readproc

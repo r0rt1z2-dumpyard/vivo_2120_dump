@@ -1,0 +1,1455 @@
+#init.rc for vivo
+
+import /init.vivo.project.rc
+import /init.vivo.platform.rc
+import /init.vivo.soc.rc
+import /init.vivo.common.rc
+import /vgc/vgc.rc
+import /vendor/vgc/vgc.rc
+import /vendor/etc/init/hw/init.factory.rc
+
+import /init.${ro.vivo.project}.rc
+
+on init
+    # vivo yangyang add begin
+    write /sys/block/sda/queue/scheduler vkyber
+    write /sys/block/sdb/queue/scheduler vkyber
+    write /sys/block/sdc/queue/scheduler vkyber
+    write /sys/block/sdd/queue/scheduler vkyber
+    write /sys/block/sde/queue/scheduler vkyber
+    write /sys/block/sdf/queue/scheduler vkyber
+    # vivo yangyang add end
+
+on post-fs
+	# vivo longwei add for camera begin
+	mkdir /dev/cpuset/camera
+	chown camera camera /dev/cpuset/camera
+	chown camera camera /dev/cpuset/camera/tasks
+	chown camera camera /dev/cpuset/camera/cgroup.procs
+	chmod 0554 /dev/cpuset/camera
+	chmod 0664 /dev/cpuset/camera/tasks
+	chmod 0664 /dev/cpuset/camera/cgroup.procs
+	write /dev/cpuset/camera/cpus	0-7
+	write /dev/cpuset/camera/mems	0
+	
+	mkdir /dev/cpuset/camera/cpu0
+	chown camera camera /dev/cpuset/camera/cpu0
+	chown camera camera /dev/cpuset/camera/cpu0/tasks
+	chown camera camera /dev/cpuset/camera/cpu0/cgroup.procs
+	chmod 0554 /dev/cpuset/camera/cpu0
+	chmod 0664 /dev/cpuset/camera/cpu0/tasks
+	chmod 0664 /dev/cpuset/camera/cpu0/cgroup.procs
+	write /dev/cpuset/camera/cpu0/cpus	0 
+	write /dev/cpuset/camera/cpu0/mems	0
+	
+	mkdir /dev/cpuset/camera/cpu1
+	chown camera camera /dev/cpuset/camera/cpu1
+	chown camera camera /dev/cpuset/camera/cpu1/tasks
+	chown camera camera /dev/cpuset/camera/cpu1/cgroup.procs
+	chmod 0554 /dev/cpuset/camera/cpu1
+	chmod 0664 /dev/cpuset/camera/cpu1/tasks
+	chmod 0664 /dev/cpuset/camera/cpu1/cgroup.procs
+	write /dev/cpuset/camera/cpu1/cpus	1  
+	write /dev/cpuset/camera/cpu1/mems	0  
+	
+	mkdir /dev/cpuset/camera/cpu0-1
+	chown camera camera /dev/cpuset/camera/cpu0-1
+	chown camera camera /dev/cpuset/camera/cpu0-1/tasks
+	chown camera camera /dev/cpuset/camera/cpu0-1/cgroup.procs
+	chmod 0554 /dev/cpuset/camera/cpu0-1
+	chmod 0664 /dev/cpuset/camera/cpu0-1/tasks
+	chmod 0664 /dev/cpuset/camera/cpu0-1/cgroup.procs
+	write /dev/cpuset/camera/cpu0-1/cpus	0-1  
+	write /dev/cpuset/camera/cpu0-1/mems	0  
+	
+	mkdir /dev/cpuset/camera/cpu0-7
+	chown camera camera /dev/cpuset/camera/cpu0-7
+	chown camera camera /dev/cpuset/camera/cpu0-7/tasks
+	chown camera camera /dev/cpuset/camera/cpu0-7/cgroup.procs
+	chmod 0554 /dev/cpuset/camera/cpu0-7
+	chmod 0664 /dev/cpuset/camera/cpu0-7/tasks
+	chmod 0664 /dev/cpuset/camera/cpu0-7/cgroup.procs
+	write /dev/cpuset/camera/cpu0-7/cpus	0-7  
+	write /dev/cpuset/camera/cpu0-7/mems	0  
+	
+	mkdir /dev/cpuset/camera/cpu2-3
+	chown camera camera /dev/cpuset/camera/cpu2-3
+	chown camera camera /dev/cpuset/camera/cpu2-3/tasks
+	chown camera camera /dev/cpuset/camera/cpu2-3/cgroup.procs
+	chmod 0554 /dev/cpuset/camera/cpu2-3
+	chmod 0664 /dev/cpuset/camera/cpu2-3/tasks
+	chmod 0664 /dev/cpuset/camera/cpu2-3/cgroup.procs
+	write /dev/cpuset/camera/cpu2-3/cpus	2-3  
+	write /dev/cpuset/camera/cpu2-3/mems	0
+	
+	mkdir /dev/cpuset/camera/cpu1-6
+	chown camera camera /dev/cpuset/camera/cpu1-6
+	chown camera camera /dev/cpuset/camera/cpu1-6/tasks
+	chown camera camera /dev/cpuset/camera/cpu1-6/cgroup.procs
+	chmod 0554 /dev/cpuset/camera/cpu1-6
+	chmod 0664 /dev/cpuset/camera/cpu1-6/tasks
+	chmod 0664 /dev/cpuset/camera/cpu1-6/cgroup.procs
+	write /dev/cpuset/camera/cpu1-6/cpus	1-6  
+	write /dev/cpuset/camera/cpu1-6/mems	0  
+	
+	mkdir /dev/cpuset/camera/cpu2-6
+	chown camera camera /dev/cpuset/camera/cpu2-6
+	chown camera camera /dev/cpuset/camera/cpu2-6/tasks
+	chown camera camera /dev/cpuset/camera/cpu2-6/cgroup.procs
+	chmod 0554 /dev/cpuset/camera/cpu2-6
+	chmod 0664 /dev/cpuset/camera/cpu2-6/tasks
+	chmod 0664 /dev/cpuset/camera/cpu2-6/cgroup.procs
+	write /dev/cpuset/camera/cpu2-6/cpus	2-6  
+	write /dev/cpuset/camera/cpu2-6/mems	0  
+	
+	mkdir /dev/cpuset/camera/cpu4-6
+	chown camera camera /dev/cpuset/camera/cpu4-6
+	chown camera camera /dev/cpuset/camera/cpu4-6/tasks
+	chown camera camera /dev/cpuset/camera/cpu4-6/cgroup.procs
+	chmod 0554 /dev/cpuset/camera/cpu4-6
+	chmod 0664 /dev/cpuset/camera/cpu4-6/tasks
+	chmod 0664 /dev/cpuset/camera/cpu4-6/cgroup.procs
+	write /dev/cpuset/camera/cpu4-6/cpus	4-6  
+	write /dev/cpuset/camera/cpu4-6/mems	0  
+	
+	mkdir /dev/cpuset/camera/cpu4-5,7
+	chown camera camera /dev/cpuset/camera/cpu4-5,7
+	chown camera camera /dev/cpuset/camera/cpu4-5,7/tasks
+	chown camera camera /dev/cpuset/camera/cpu4-5,7/cgroup.procs
+	chmod 0554 /dev/cpuset/camera/cpu4-5,7
+	chmod 0664 /dev/cpuset/camera/cpu4-5,7/tasks
+	chmod 0664 /dev/cpuset/camera/cpu4-5,7/cgroup.procs
+	write /dev/cpuset/camera/cpu4,5,7/cpus	4-5,7  
+	write /dev/cpuset/camera/cpu4,5,7/mems	0  
+	
+	mkdir /dev/cpuset/camera/cpu6
+	chown camera camera /dev/cpuset/camera/cpu6
+	chown camera camera /dev/cpuset/camera/cpu6/tasks
+	chown camera camera /dev/cpuset/camera/cpu6/cgroup.procs
+	chmod 0554 /dev/cpuset/camera/cpu6
+	chmod 0664 /dev/cpuset/camera/cpu6/tasks
+	chmod 0664 /dev/cpuset/camera/cpu6/cgroup.procs
+	write /dev/cpuset/camera/cpu6/cpus	6  
+	write /dev/cpuset/camera/cpu6/mems	0  
+	
+	mkdir /dev/cpuset/camera/cpu7
+	chown camera camera /dev/cpuset/camera/cpu7
+	chown camera camera /dev/cpuset/camera/cpu7/tasks
+	chown camera camera /dev/cpuset/camera/cpu7/cgroup.procs
+	chmod 0554 /dev/cpuset/camera/cpu7
+	chmod 0664 /dev/cpuset/camera/cpu7/tasks
+	chmod 0664 /dev/cpuset/camera/cpu7/cgroup.procs
+	write /dev/cpuset/camera/cpu7/cpus	7  
+	write /dev/cpuset/camera/cpu7/mems	0  
+	# vivo longwei add for camera end
+	
+    # vivo zhuhequan add for rms begin
+    mkdir /dev/cpuset/l-background
+    mkdir /dev/cpuset/h-background
+    mkdir /dev/cpuset/l-foreground
+    copy /dev/cpuset/cpus /dev/cpuset/l-background/cpus
+    copy /dev/cpuset/mems /dev/cpuset/l-background/mems
+    copy /dev/cpuset/cpus /dev/cpuset/h-background/cpus
+    copy /dev/cpuset/mems /dev/cpuset/h-background/mems
+    copy /dev/cpuset/cpus /dev/cpuset/l-foreground/cpus
+    copy /dev/cpuset/mems /dev/cpuset/l-foreground/mems
+
+    chown system system /dev/cpuset/l-background
+    chown system system /dev/cpuset/h-background
+    chown system system /dev/cpuset/l-foreground
+
+    chown system system /dev/cpuset/l-background/tasks
+    chown system system /dev/cpuset/h-background/tasks
+    chown system system /dev/cpuset/l-foreground/tasks
+
+    chown system system /dev/cpuset/l-background/cpus
+    chown system system /dev/cpuset/h-background/cpus
+    chown system system /dev/cpuset/l-foreground/cpus
+    chown system system /dev/cpuset/foreground/cpus
+    chown system system /dev/cpuset/restricted/cpus
+    chown system system /dev/cpuset/background/cpus
+    chown system system /dev/cpuset/top-app/cpus
+    chown system system /dev/cpuset/system-background/cpus
+
+    chown system system /dev/cpuset/l-background/mems
+    chown system system /dev/cpuset/h-background/mems
+    chown system system /dev/cpuset/l-foreground/mems
+
+    chown system system /dev/cpuset/l-background/rsc_group
+    chown system system /dev/cpuset/h-background/rsc_group
+    chown system system /dev/cpuset/l-foreground/rsc_group
+
+    chmod 0664 /dev/cpuset/l-background/tasks
+    chmod 0664 /dev/cpuset/h-background/tasks
+    chmod 0664 /dev/cpuset/l-foreground/tasks
+
+    chmod 0664 /dev/cpuset/l-background/cpus
+    chmod 0664 /dev/cpuset/h-background/cpus
+    chmod 0664 /dev/cpuset/l-foreground/cpus
+
+    chmod 0664 /dev/cpuset/l-background/mems
+    chmod 0664 /dev/cpuset/h-background/mems
+    chmod 0664 /dev/cpuset/l-foreground/mems
+
+    chmod 0664 /dev/cpuset/l-background/rsc_group
+    chmod 0664 /dev/cpuset/h-background/rsc_group
+    chmod 0664 /dev/cpuset/l-foreground/rsc_group
+
+    chmod 0664 /dev/cpuset/l-background/cgroup.procs
+    chmod 0664 /dev/cpuset/h-background/cgroup.procs
+    chmod 0664 /dev/cpuset/l-foreground/cgroup.procs
+    chmod 0664 /dev/cpuset/background/cgroup.procs
+    chmod 0664 /dev/cpuset/top-app/cgroup.procs
+    chmod 0664 /dev/cpuset/foreground/cgroup.procs
+    chmod 0664 /dev/cpuset/system-background/cgroup.procs
+    chmod 0664 /dev/cpuset/restricted/cgroup.procs
+
+    chmod 0664 /dev/cpuctl/top-app/cgroup.procs
+    chmod 0664 /dev/cpuctl/foreground/cgroup.procs
+    chmod 0664 /dev/cpuctl/background/cgroup.procs
+
+    chown system system /dev/cpuctl/background/cgroup.procs
+    chown system system /dev/cpuctl/foreground/cgroup.procs
+    chown system system /dev/cpuctl/top-app/cgroup.procs
+
+    chown system system /dev/cpuset/l-background/cgroup.procs
+    chown system system /dev/cpuset/h-background/cgroup.procs
+    chown system system /dev/cpuset/l-foreground/cgroup.procs
+    chown system system /dev/cpuset/background/cgroup.procs
+    chown system system /dev/cpuset/top-app/cgroup.procs
+    chown system system /dev/cpuset/foreground/cgroup.procs
+    chown system system /dev/cpuset/system-background/cgroup.procs
+    chown system system /dev/cpuset/restricted/cgroup.procs
+
+    chown system system /dev/stune/top-app/cgroup.procs
+    chown system system /dev/stune/foreground/cgroup.procs
+    chown system system /dev/stune/background/cgroup.procs
+    chmod 0664 /dev/stune/top-app/cgroup.procs
+    chmod 0664 /dev/stune/foreground/cgroup.procs
+    chmod 0664 /dev/stune/background/cgroup.procs
+
+    write /dev/cpuset/l-background/rsc_group 3
+    write /dev/cpuset/h-background/rsc_group 1
+    write /dev/cpuset/l-foreground/rsc_group 0
+
+    mkdir /dev/blkio/bg
+    mkdir /dev/blkio/normal
+    mkdir /dev/blkio/fg
+    mkdir /dev/blkio/top
+    chown system system /dev/blkio
+    chown system system /dev/blkio/bg
+    chown system system /dev/blkio/normal
+    chown system system /dev/blkio/fg
+    chown system system /dev/blkio/top
+    chown system system /dev/blkio/tasks
+    chown system system /dev/blkio/bg/tasks
+    chown system system /dev/blkio/normal/tasks
+    chown system system /dev/blkio/fg/tasks
+    chown system system /dev/blkio/top/tasks
+    chown system system /dev/blkio/bg/cgroup.procs
+    chown system system /dev/blkio/normal/cgroup.procs
+    chown system system /dev/blkio/fg/cgroup.procs
+    chown system system /dev/blkio/top/cgroup.procs
+    chmod 0664 /dev/blkio/tasks
+    chmod 0664 /dev/blkio/bg/tasks
+    chmod 0664 /dev/blkio/normal/tasks
+    chmod 0664 /dev/blkio/fg/tasks
+    chmod 0664 /dev/blkio/top/tasks
+    chmod 0664 /dev/blkio/bg/cgroup.procs
+    chmod 0664 /dev/blkio/normal/cgroup.procs
+    chmod 0664 /dev/blkio/fg/cgroup.procs
+    chmod 0664 /dev/blkio/top/cgroup.procs
+    write /dev/blkio/blkio.weight 300
+    write /dev/blkio/bg/blkio.weight 100
+    write /dev/blkio/normal/blkio.weight 300
+    write /dev/blkio/fg/blkio.weight 400
+    write /dev/blkio/top/blkio.weight 1000
+    write /dev/blkio/blkio.group_idle 0
+    write /dev/blkio/bg/blkio.group_idle 0
+    write /dev/blkio/normal/blkio.group_idle 0
+    write /dev/blkio/fg/blkio.group_idle 0
+    write /dev/blkio/top/blkio.group_idle 0
+    write /dev/blkio/bg/blkio.bfq.weight 100
+    write /dev/blkio/normal/blkio.bfq.weight 300
+    write /dev/blkio/fg/blkio.bfq.weight 400
+    write /dev/blkio/top/blkio.bfq.weight 1000
+
+    write /dev/blkio/top/blkio.priority 1
+    write /dev/blkio/fg/blkio.priority 2
+    write /dev/blkio/normal/blkio.priority 3
+    write /dev/blkio/blkio.priority 4
+    write /dev/blkio/bg/blkio.priority 5
+
+    write /dev/blkio/top/blkio.vprio 1
+    write /dev/blkio/fg/blkio.vprio 2
+    write /dev/blkio/normal/blkio.vprio 3
+    write /dev/blkio/blkio.vprio 4
+    write /dev/blkio/bg/blkio.vprio 5
+    # vivo zhuhequan add for rms end
+
+
+    # for net_prio control start by vivo zhangzhangong
+    mkdir /dev/net_prio
+    mount cgroup none /dev/net_prio net_prio
+    mkdir /dev/net_prio/fg
+
+    chown system system /dev/net_prio
+    chown system system /dev/net_prio/fg
+
+    chown system system /dev/net_prio/tasks
+    chown system system /dev/net_prio/fg/tasks
+    chmod 0664 /dev/net_prio/fg/tasks
+    chmod 0664 /dev/net_prio/tasks
+
+    chown system system /dev/net_prio/cgroup.procs
+    chown system system /dev/net_prio/fg/cgroup.procs
+    chmod 0664 /dev/net_prio/fg/cgroup.procs
+    chmod 0664 /dev/net_prio/cgroup.procs
+    # for net_prio control end by vivo zhangzhangong
+
+on post-fs-data
+    mkdir /data/vgc 0755 system system encryption=None
+    mkdir /data/oem 0755 system system encryption=None
+    mkdir /data/custom 0777 system system encryption=None
+    mkdir /data/language 0755 system system encryption=None
+    mkdir /data/syslog 0777 system system encryption=None
+    mkdir /data/cota 0777 system system encryption=None
+    mkdir /data/cota/a 0777 system system encryption=None
+    mkdir /data/cota/b 0777 system system encryption=None
+    mkdir /data/vivo-common/fonts 0777 system system
+
+    #add theme/font start by liuquancai
+    mkdir /data/bbkcore 0777 root root encryption=Attempt
+    chmod 0777 /data/bbkcore
+    mkdir /data/bbkcore/theme 0777
+    chmod 0777 /data/bbkcore/theme
+    #add theme/font end by liuquancai
+
+    #add data/vfonts start by guoshujie
+    mkdir /data/vfonts 0777 system system encryption=None
+    #add data/vfonts e by guoshujie
+
+    #vivo xiechenggang add for VIVO_CUSTOM_SIMPLE begin
+    mkdir /cache/custom 0777 system system
+    mkdir /persist/custom 0777 system system
+    #vivo xiechenggang add for VIVO_CUSTOM_SIMPLE end
+
+    #vivo huqingsong add for BIGDATA begin
+    mkdir /data/vlog 0777 root root encryption=Attempt
+    #vivo huqingsong add for BIGDATA end
+
+    #vivo zhuhequan add for bbklog begin
+    mkdir /data/bbklog 0777 system system encryption=Attempt
+    #vivo zhuhequan add for bbklog end
+
+    #vivo mazhuangzhuang add for cirlog begin
+    mkdir /data/vivo-common/circulatedlog 0777 system system encryption=Attempt
+    #vivo mazhuangzhuang add for cirlog end
+
+    #vivo wangweiguo add for BSPTest begin
+    mkdir /data/vivo-common/BSPTest 0777 system system encryption=Attempt
+    #vivo wangweiguo add for BSPTest end
+
+    #vivo huqingsong add for cloud diagnosis begin
+    mkdir /data/logData 0777 root root encryption=Attempt
+    #vivo huqingsong add for cloud diagnosis end
+
+    #vivo zhangdaiding add for nfc cloud diagnosis begin
+    mkdir /data/logData/nfc 0777 nfc nfc encryption=Attempt
+    mkdir /data/logData/nfc/log 0777 nfc nfc encryption=Attempt
+    #vivo zhangdaiding add for nfc cloud diagnosis end
+
+    #vivo liaowenhao add for IFACE_TEST begin
+    mkdir /data/logIface 0777 root root encryption=Attempt
+    #vivo liaowenhao add for IFACE_TEST end
+
+    #vivo zhangxinwei add for surfaceflinger log begin
+    mkdir /data/sflog 0777 root root encryption=Attempt
+    mkdir /data/sflog/perf 0777
+    #vivo zhangxinwei add for surfaceflinger log end
+
+    #vivo xizhong add for tiotest begin
+    mkdir /data/~%~_91730_tiobench_155075~%~ 0777 root root encryption=Attempt
+    #vivo xizhong add for tiotest end
+
+    #vivo huqingsong add for pre install brush prevention begin
+    #mkdir /data/yzfswj 0777 system system encryption=Attempt
+    restorecon --recursive /data/yzfswj/
+    chmod 0777 /data/yzfswj/com.sankuai.meituan
+    chmod 0777 /data/yzfswj/com.sankuai.meituan/mtconfig.ini
+    chmod 0444 /data/yzfswj/another/vivo_alipay_antibrush
+    #vivo huqingsong add for pre install brush prevention end
+
+    #vivo sutonggui add for preInstall modify sepolicy of preload/config begin
+    restorecon --recursive /data/preload/config/
+    #vivo sutonggui add for preInstall modify sepolicy of preload/config end
+
+# vivo  miaoxu for vivo_abe_bigdata begin
+    mkdir /data/system/perfdata 0777 system system
+    mkdir /data/system/perfdata/boottime 0770 system system
+# vivo  miaoxu for vivo_abe_bigdata end
+
+    # add by liyangjie for vivo_abe begin
+    mkdir /data/system/abe 0770
+    chown system system /data/system/abe
+    # add by liyangjie for vivo_abe end
+
+    # vivo zhuangyan for dota_info begin
+    mkdir /data/vendor/dota_info 0777
+    chown root root /data/vendor/dota_info
+    # vivo zhuangyan for dota_info end
+
+    # vivo zhengguobing add for audio begin
+    mkdir /persist/audio 0777
+    chown system system /persist/audio
+    chown system system /persist/audio/smartamp.bin
+    chown system system /persist/audio/spkr_calibration.bin
+    chmod 0664 /persist/audio/smartamp.bin
+    chmod 0664 /persist/audio/spkr_calibration.bin
+    mkdir /mnt/vendor/persist/audio 0777
+    chown system system /mnt/vendor/persist/audio
+    chown system system /mnt/vendor/persist/audio/smartamp.bin
+    chown system system /mnt/vendor/persist/audio/spkr_calibration.bin
+    chmod 0664 /mnt/vendor/persist/audio/smartamp.bin
+    chmod 0664 /mnt/vendor/persist/audio/spkr_calibration.bin
+    mkdir /data/vendor/audio_hw_log 0770 system audio
+    # vivo zhengguobing add for audio end
+
+    #vivo zhaoxiaowen add for log_tag begin
+
+    # vivo zhangshuanglong add begin for face_detect
+    mkdir /data/facecache 0777 system system encryption=Attempt
+    # vivo zhangshuanglong add begin for face_detect
+    #vivo zhoujie add for TIMEZONE_MONITER begin
+    mkdir /data/offlinetz 0770 system system encryption=Attempt
+    #vivo zhoujie add for TIMEZONE_MONITER end
+
+    #vivo wanghai add for vivo_pem_save_bg_power_data begin
+    mkdir /data/system/pem 0770 system system
+    #vivo wanghai add for vivo_pem_save_bg_power_data end
+
+    #vivo xushuo add for tam begin
+    mkdir /mnt/vendor/persist/tam 0777 system system
+    mkdir /data/vendor/tam 0777 system system
+    #vivo xushuo add for tam end
+
+#vivo xiechenggang add for VIVO_CUSTOM_SIMPLE begin
+on post-fs-data && property:ro.crypto.state=unsupported
+    mkdir /data/custom 0777 system system
+
+on post-fs-data && property:ro.crypto.type=block
+    mkdir /data/custom 0777 system system
+#vivo xiechenggang add for VIVO_CUSTOM_SIMPLE end
+
+#vivo-sensor add for gsensor switch  and light ,algo-prox start
+on boot
+    chown system  system /sys/class/switch/gsensor/state
+    chmod 0644 /sys/class/switch/gsensor/state
+    chown system system /sys/class/leds/green/blink
+    chmod 0644 /sys/class/leds/green/blink
+    chown system system /sys/class/leds/red/blink
+    chmod 0644 /sys/class/leds/red/blink
+    chmod 0775 /persist/sensors
+    chown system system /persist/sensors
+    chmod 664 /persist/sensors/maglib_para
+    chown system system /persist/sensors/maglib_para
+    chmod 664 /sys/kernel/boot_adsp/rebootadsp
+    chown system system /sys/kernel/boot_adsp/rebootadsp
+    chown system system /sys/class/sarpower/sar-power/enable
+    chmod  0664 /sys/class/sarpower/sar-power/enable
+    chown system system /sys/class/sarpower/sar-power/state
+    chmod  0664 /sys/class/sarpower/sar-power/state
+    chown  system system /sys/devices/virtual/sarpower/sar-power/enable
+    chmod  0664 /sys/devices/virtual/sarpower/sar-power/enable
+    chown  system system /sys/devices/virtual/sarpower/sar-power/state
+    chmod  0664 /sys/devices/virtual/sarpower/sar-power/state
+    chmod  0664 /sys/bus/msm_subsys/devices/subsys1/restart_level
+    chmod  0664 /sys/kernel/debug/vivo_msm_subsys/adsp
+    chmod  0664 /sys/kernel/boot_slpi/ssr
+    chown  root system /sys/kernel/boot_slpi/ssr
+    chown  root system /sys/bus/msm_subsys/devices/subsys1/restart_level
+    chown  root system /sys/kernel/debug/vivo_msm_subsys/adsp
+    chown system system /sys/class/sensors/algo-prox/enable
+    chown system system /sys/class/sensors/algo-prox/name
+    chown system system /sys/class/sensors/algo-prox/poll_delay
+    chown system system /sys/class/sensors/algo-prox/flags
+    chmod 0644 /sys/class/sensors/algo-prox/enable
+    chmod 0644 /sys/class/sensors/algo-prox/name
+    chmod 0644 /sys/class/sensors/algo-prox/poll_delay
+    chmod 0644 /sys/class/sensors/algo-prox/flags
+    chown system system /sys/devices/virtual/sensors/algo-prox/enable
+    chown system system /sys/devices/virtual/sensors/algo-prox/name
+    chown system system /sys/devices/virtual/sensors/algo-prox/poll_delay
+    chown system system /sys/devices/virtual/sensors/algo-prox/flags
+    chmod 0644 /sys/devices/virtual/sensors/algo-prox/enable
+    chmod 0644 /sys/devices/virtual/sensors/algo-prox/name
+    chmod 0644 /sys/devices/virtual/sensors/algo-prox/poll_delay
+    chmod 0644 /sys/devices/virtual/sensors/algo-prox/flags
+    #vivo-sensor add for gsensor switch and light,algo-prox end
+
+    # vivo fuxi modify for FuelSummary
+    chown system system /sys/kernel/debug/fuelsummary/config
+    chown system system /sys/kernel/debug/fuelsummary/custom_input
+    chown system system /sys/kernel/debug/fuelsummary/custom_ibat
+    chown system system /sys/kernel/debug/fuelsummary/custom_volt
+    chown system system /sys/kernel/debug/fuelsummary/user_custom
+    chown system root /sys/class/cms_debug/debug
+    chmod 0664 /sys/class/cms_debug/debug
+    chown system root /sys/class/cms_class/cms_enable
+    chmod 0664 /sys/class/cms_class/cms_enable
+    chown system root /sys/class/cms_class/fixed_freq
+    chmod 0777 /sys/class/cms_class/fixed_freq
+    chown system root /sys/class/fuelsummary/custom_ibat
+    chown system root /sys/class/fuelsummary/custom_input
+    chown system root /sys/class/fuelsummary/custom_volt
+    chown system root /sys/class/fuelsummary/config
+    chown system root /sys/class/fuelsummary/fuelsummary_access
+    chown system root /sys/class/fuelsummary/user_custom
+    chown system root /sys/class/fuelsummary/tshell_scenes
+    chown system root /sys/class/fuelsummary/tshell_running
+    chown system root /sys/class/fuelsummary/tshell_delay_ms
+    chown system root /sys/class/fuelsummary/charge_type
+    chown system root /sys/class/fuelsummary/bat_current
+    chown system root /sys/class/fuelsummary/board_temp
+    chmod 0664 /sys/devices/platform/soc/soc:qcom,pmic_glink_log/soc:qcom,pmic_glink_log:qcom,battery_debug/qbg_context
+    chown system root /sys/devices/platform/soc/soc:qcom,pmic_glink_log/soc:qcom,pmic_glink_log:qcom,battery_debug/qbg_context
+    chmod 0664 /sys/class/spmi0-03/count
+    chown system root /sys/class/spmi0-03/count
+    chmod 0664 /sys/class/spmi0-03/address
+    chown system root /sys/class/spmi0-03/address
+    chmod 0664 /sys/class/spmi0-03/data
+    chown system root /sys/class/spmi0-03/data
+    chown system system /sys/kernel/debug/fg/sram/address
+    chmod 0644 /sys/kernel/debug/fg/sram/address
+    chown system system /sys/kernel/debug/fg/sram/count
+    chmod 0644 /sys/kernel/debug/fg/sram/count
+    chown system system /sys/kernel/debug/fg/sram/data
+    chmod 0644 /sys/kernel/debug/fg/sram/data
+	chown system system /sys/class/cms_class/keep_soc
+    chmod 0664 /sys/class/cms_class/keep_soc
+
+    #vivo jiangyingrui add for read .bt_nv.bin begin
+    mkdir /mnt/vendor/persist/bluetooth 0770 bluetooth bluetooth
+    #vivo jiangyingrui add for read .bt_nv.bin end
+
+    #vivo chenkairjyb add for led-blink start
+    chown system system /sys/class/leds/red/blink
+    chown system system /sys/class/leds/green/blink
+    #vivo chenkairjyb add for led-blink end
+
+    #vivo linear motor add by yangjianhua begin
+    chown system system /sys/class/timed_output/qti_haptics/vmax
+    chown system system /sys/class/timed_output/qti_haptics/f0_cont
+    chown system system /sys/class/timed_output/qti_haptics/enable
+    chown system system /sys/class/timed_output/qti_haptics/activate
+    chown system system /sys/class/timed_output/qti_haptics/playRoll
+
+    chmod 0644 /sys/class/timed_output/qti_haptics/vmax
+    chmod 0644 /sys/class/timed_output/qti_haptics/f0_cont
+    chmod 0644 /sys/class/timed_output/qti_haptics/enable
+    chmod 0644 /sys/class/timed_output/qti_haptics/activate
+    chmod 0644 /sys/class/timed_output/qti_haptics/playRoll
+    #vivo linear motor add by yangjianhua end
+
+    #vivo liubiao add for nightpearl start
+    chown system /sys/lcm/oled_hbm
+    chmod 0666 /sys/lcm/oled_hbm
+    chown system /sys/lcm/oled_acl
+    chmod 0644 /sys/lcm/oled_acl
+    chown system /sys/lcm/lcm_cabc
+    chmod 0644 /sys/lcm/lcm_cabc
+    chown system /sys/lcm/lcm_sre
+    chmod 0644 /sys/lcm/lcm_sre
+    chown system /sys/lcm/oled_ore
+    chmod 0644 /sys/lcm/oled_ore
+    chown system /sys/lcm/dimming_speed
+    chmod 0644 /sys/lcm/dimming_speed
+    chown system /sys/lcm/colour_gamut
+    chmod 0644 /sys/lcm/colour_gamut
+    chown system /sys/lcm1/colour_gamut
+    chmod 0644 /sys/lcm1/colour_gamut
+    chown system /sys/lcm/hdr10p_bl_remap
+    chmod 0644 /sys/lcm/hdr10p_bl_remap
+    chown system /sys/lcm/dc_dimming
+    chmod 0666 /sys/lcm/dc_dimming
+    chown system /sys/lcm/dc_dimming1
+    chmod 0644 /sys/lcm/dc_dimming1
+    chown system /sys/lcm/bl_level
+    chmod 0644 /sys/lcm/bl_level
+    chown system system /sys/lcm/aod_disp_info
+    chmod 0664 /sys/lcm/aod_disp_info
+    chown system /sys/lcm/vivo_esd_check_ps
+    chmod 0644 /sys/lcm/vivo_esd_check_ps
+    chown system /sys/lcm/vivo_esd_check_enable
+    chmod 0644 /sys/lcm/vivo_esd_check_enable
+    chown system /sys/lcm/sre_enable
+    chmod 0444 /sys/lcm/sre_enable
+    chown system /sys/lcm/hbm_max_brightness
+    chmod 0444 /sys/lcm/hbm_max_brightness
+
+    #liuchenfeng add for nvtchip
+    chown system /sys/lcm/esd_status
+    chmod 0444 /sys/lcm/esd_status
+    chown system /sys/lcm/vsync_timeout
+    chmod 0444 /sys/lcm/vsync_timeout
+    chown system /sys/lcm/esd_recovery
+    chmod 0644 /sys/lcm/esd_recovery
+    chown system /sys/lcm/extic_enable
+    chmod 0644 /sys/lcm/extic_enable
+
+    #xuhuicong add for panel te fail check
+    chown system /sys/lcm/error_code
+    chmod 0644 /sys/lcm/error_code
+
+    #huangzhihua add for panel 16k backlight
+    chown system /sys/lcm/panel_name
+    chmod 0444 /sys/lcm/panel_name
+
+    #zhuangwenlong add for wise_fps
+    chown system /sys/lcm/wise_fps
+    chmod 0644 /sys/lcm/wise_fps
+    chown system /sys/lcm/bl_16k_enable
+    chmod 0644 /sys/lcm/bl_16k_enable
+
+    #hujin add for frequency hopping
+    chown radio /d/decon/request_mk
+    chmod 0644 /d/decon/request_mk
+
+    #vivo muyongxing add for camera diming
+    chown system /sys/lcm/lcm_diming
+    chmod 0660 /sys/lcm/lcm_diming
+    #vivo liubiao add for nightpearl end
+
+    # vivo chenweibin add for app share begin
+    chown system /sys/lcm/bl_level
+    chmod 0644 /sys/lcm/bl_level
+    # vivo chenweibin add for app share end
+
+    # vivo caichangshui added for RMS begin
+    chown root system /sys/module/lowmemorykiller/parameters/vmpressure_file_min
+    chmod 0664 /sys/module/lowmemorykiller/parameters/vmpressure_file_min
+    chown root system /sys/module/lowmemorykiller/parameters/adj_max_shift
+    chmod 0664 /sys/module/lowmemorykiller/parameters/adj_max_shift
+    # vivo caichangshui added for RMS end
+
+    # vivo chenweibin add for face detect begin
+    mkdir /mnt/vendor/persist/camera 0777
+    chown cameraserver cameraserver /mnt/vendor/persist/camera
+    chmod 0664 /mnt/vendor/persist/camera/ir_id_sub
+    # vivo chenweibin add for face detect end
+
+    # vivo liangyouwen add for camera dump begin
+    mkdir /data/vendor/camera 0777 cameraserver cameraserver
+    mkdir /mnt/vendor/persist/camera/ledcal 0777 cameraserver cameraserver
+    # vivo liangyouwen add for camera dump begin
+
+    # vivo xym add for display_calibration begin
+    mkdir /mnt/vendor/persist/display/calibration 0770 system graphics
+    # vivo xym add for display_calibration end
+
+    # hope add for TMS8801 laser module start
+    mkdir /mnt/vendor/persist/firmware 0771 system system
+    chown system system /mnt/vendor/persist/firmware
+    chmod 0771 /mnt/vendor/persist/firmware
+    # hope add for TMS8801 laser module end
+
+    # vivo zhengguobing add for audio begin
+    chown system audio /dev/smartpa
+    chmod 0660 /dev/smartpa
+    chown system system /sys/kernel/audio-max20328/unuseirq
+    chmod 0664 /sys/kernel/audio-max20328/unuseirq
+    restorecon /sys/kernel/audio-max20328/unuseirq
+    # vivo zhengguobing add for audio end
+
+    # vivo hankecai add for bsp hung_ctl begin
+    # action on boot
+    chown system system /sys/kernel/hung_ctl/hung_task_enable
+    chmod 0644 /sys/kernel/hung_ctl/hung_task_enable
+    chown system system /sys/kernel/hung_ctl/hung_task_whitelist
+    chmod 0644 /sys/kernel/hung_ctl/hung_task_whitelist
+    chown system system /sys/kernel/hung_ctl/hung_task_keyword_whitelist
+    chmod 0644 /sys/kernel/hung_ctl/hung_task_keyword_whitelist
+    chown system system /sys/kernel/hung_ctl/hung_task_criticallist
+    chmod 0644 /sys/kernel/hung_ctl/hung_task_criticallist
+    chown system system /sys/kernel/hung_ctl/hung_task_keyword_criticallist
+    chmod 0644 /sys/kernel/hung_ctl/hung_task_keyword_criticallist
+    # vivo hankecai add for bsp hung_ctl end
+
+#vivo_daemon added by zhangmingkai
+service vivo_daemon /system/bin/vivo_daemon
+    class main
+
+#vivo EncodeService added by hupengxiang begin
+service EncodeService /vendor/bin/EncodeService
+	class main
+#vivo hupengxiagn add end
+
+# To enable samsung remosaic
+service remosaic_daemon /system/vendor/bin/remosaic_daemon
+    class late_start
+    user camera
+    group camera
+
+#settings_team added start
+service firewall /data/data/com.iqoo.secure.datausage/app_bin/droidwall.sh
+    disabled
+    user root
+    oneshot
+
+on property:sys.firewall=0
+    start firewall
+
+service reset_phone /system/bin/sh /system/etc/reset_phone.sh
+    disabled
+    oneshot
+#settings_team added end
+
+#settings_team add by liuzhaohui
+service backuprestore /system/bin/br_app_data_service
+    class main
+    socket backuprestore stream 0660 root sdcard_rw
+    user root
+#end settings_team by liuzhaohui
+
+
+on property:sys.qmitest.opt=1
+    start qmitest
+
+on property:sys.qmitest.opt=0
+    stop qmitest
+
+service qmitest /system/bin/qmitest
+    socket qmitest stream 660 radio system
+    class core
+    user root
+    group system
+    oneshot
+
+#@hankecai add for bbk_log begin {
+on property:persist.sys.ssr_ramdump=1
+    write /sys/module/subsystem_restart/parameters/enable_ramdumps 1
+
+on property:persist.sys.ssr_ramdump=0
+    write /sys/module/subsystem_restart/parameters/enable_ramdumps 0
+#add bbk_log end
+
+# vivo zhangjianping add begin for face_detect
+on property:sys.face.detect=1
+    start face_detect
+
+on property:sys.face.detect=0
+    stop face_detect
+
+service face_detect /system/bin/face_detect
+    user system
+    group system sdcard_rw
+    #class late_start
+    disabled
+# vivo zhangjianping add end for face_detect
+
+# vivo yanghanqiu add begin for alipay_service
+service alipay_service /system/bin/alipay_service
+    user system
+    group system sdcard_r
+    class late_start
+# vivo yanghanqiu add end for alipay_service
+
+# vivo xushenghua add for UNIFIED_CONFIG begin
+service getuk /system/bin/getuk
+    class main
+    user system
+    group system
+# vivo xushenghua add for UNIFIED_CONFIG end
+
+# vivo zhaofeihua add begin for vivo_attest_service
+service vivo_attest_service /system/bin/vivo_attest_service
+   user system
+   group system sdcard_r
+   class late_start
+# vivo zhaofeihua add end for vivo_attest_service
+
+#vivo yujingjiang add for bbklog to get 3rd APP logs begin
+on property:sys.bbklog.cp.wechatlog=1
+    exec u:r:shell:s0 -- /system/bin/cp -rf /data/data/com.tencent.mm/files/xlog /storage/emulated/0/wechatLog
+    exec u:r:shell:s0 -- /system/bin/cp -rf /data/data/com.tencent.mm/files/crash /storage/emulated/0/wechatLog
+    setprop sys.bbklog.cp.wechatlog 0
+#vivo yujingjiang add for bbklog to get 3rd APP logs end
+
+#vivo wuxuelong add for bbklog to get 3rd APP logs begin
+on property:sys.bbklog.cp.wechatlog=3
+    exec u:r:installd:s0 -- /system/bin/cp -rf /data/data/com.tencent.mm/files/xlog /storage/emulated/0/wechatLog
+    exec u:r:installd:s0 -- /system/bin/cp -rf /data/data/com.tencent.mm/files/crash /storage/emulated/0/wechatLog
+    setprop sys.bbklog.cp.wechatlog 0
+#vivo wuxuelong add for bbklog to get 3rd APP logs end
+
+#vivo zhudaozhuan add for logSystem to upload wx_xlog begin
+on property:sys.logsystem.upload.wdebug=1
+   start catch_xlog
+
+service catch_xlog  /system/bin/catch_xlog.sh
+    disabled
+    user root
+    oneshot
+    seclabel u:r:installd:s0
+
+on property:sys.logsystem.upload.wdebug=2
+   exec u:r:installd:s0 -- /system/bin/rm -rf /data/local/tmp/.wdebug.tar.gz
+   setprop sys.logsystem.upload.wdebug 0
+#vivo zhudaozhuan add for logSystem to upload wx_xlog end
+
+# vivo yanghanqiu add begin for simauth_service
+service simauth_service /system/bin/simauth_service
+    user system
+    group system sdcard_r
+    class late_start
+# vivo yanghanqiu add end for simauth_service
+
+# vivo guomin add for fdcheck begin
+on property:epm.fd.check.leak=1
+    start check_fdleak
+service check_fdleak /system/bin/check_fdleak.sh
+    disabled
+    user root
+    oneshot
+    seclabel u:r:dumpstate:s0
+# vivo guomin add for fdcheck end
+
+# vivo zhuangyan add begin for google news
+on property:vold.post_fs_data_done=1
+    start check_ex_att
+
+service check_ex_att /system/bin/check_ex_att.sh
+    disabled
+    oneshot
+    seclabel u:r:vivo_check:s0
+# vivo zhuangyan add end for google news
+
+# JuPengfei clearDumpLog add
+service clear_dump_log /system/bin/sh -c "rm -rf /data/vendor/audiohal/audio_dump/*"
+    disabled
+    user root
+    group root system
+    seclabel u:r:shell:s0
+    oneshot
+# end
+
+#vivo wuxuelong add for bbklog to delete aee log begin
+service clear_aee_log /system/bin/sh -c "rm -rf /data/vendor/aee_exp/*"
+    disabled
+    user root
+    group root system
+    seclabel u:r:shell:s0
+    oneshot
+#vivo wuxuelong add for bbklog to delete aee log end
+
+#vivo wuxuelong add for bbklog to setprop wifi coredump begin
+on property:sys.bbklog.coredump=on
+   setprop persist.vendor.connsys.coredump.mode 2
+
+on property:sys.bbklog.coredump=off
+   setprop persist.vendor.connsys.coredump.mode 0
+#vivo wuxuelong add for bbklog to setprop wifi coredump end
+
+#vivo wuxuelong add for bbklog to generate bugreport begin
+service bbklogReport /system/bin/dumpstate -S -d -z
+     socket dumpstate stream 0660 shell system
+     class main
+     disabled
+     oneshot
+
+service copy_bugreport_log /system/bin/sh -c "cp -rf /data/user_de/0/com.android.shell/files/bugreports /storage/emulated/0/bugreports;rm -rf /data/user_de/0/com.android.shell/files/bugreports/*"
+     disabled
+     user shell
+     group shell system
+     seclabel u:r:shell:s0
+     oneshot
+#vivo wuxuelong add for bbklog to generate bugreport end
+
+# JuPengfei CopyLog add
+on property:sys.bbklog.copy=1
+#Android R only
+   exec u:r:shell:s0 shell shell -- /system/bin/cp -r --preserve=timestamps /data/vendor/audiohal/audio_dump /sdcard/audio_dump
+   setprop sys.bbklog.copy 0
+
+on property:sys.bbklog.copy=2
+#Android R
+   exec u:r:shell:s0 shell shell -- /system/bin/cp -r --preserve=timestamps /data/vendor/aee_exp /sdcard/vendor_aee
+   exec u:r:shell:s0 shell shell -- /system/bin/cp -r --preserve=timestamps /data/aee_exp /sdcard/data_aee
+   setprop sys.bbklog.copy 0
+
+on property:sys.bbklog.copy=3
+   exec u:r:shell:s0 root system -- /system/bin/cp -r /data/vendor/tombstones/SDX50M /sdcard/SDX50M
+   exec u:r:shell:s0 root system -- /system/bin/cp -r /data/vendor/tombstones/SDX55M /sdcard/SDX55M
+   setprop sys.bbklog.copy 0
+
+on property:sys.bbklog.copy=4
+   exec u:r:shell:s0 root system -- /system/bin/cp -r /data/vendor/tombstones/SDX50M/OCIMEM.BIN /sdcard/OCIMEM.BIN
+   exec u:r:shell:s0 root system -- /system/bin/cp -r /data/vendor/tombstones/SDX55M/OCIMEM.BIN /sdcard/OCIMEM.BIN
+
+on property:sys.bbklog.copy=5
+    exec u:r:shell:s0 root system -- /system/bin/rm -r /data/vendor/tombstones/SDX50M/
+    exec u:r:shell:s0 root system -- /system/bin/rm -r /data/vendor/tombstones/SDX55M/
+
+on property:sys.bbklog.copy=6
+   exec u:r:system_server:s0 system root -- /system/bin/cp -rf --preserve=timestamps /data/system/dropbox /data/dropbox_tmp
+   setprop sys.bbklog.copy 0
+
+on property:sys.bbklog.copy=7
+   exec u:r:system_server:s0 system root -- /system/bin/rm -rf /data/dropbox_tmp
+   exec u:r:system_server:s0 system root -- /system/bin/rm -rf /data/bbklog/dropbox_tmp
+   setprop sys.bbklog.copy 0
+
+on property:sys.bbklog.copy=8
+   exec u:r:system_server:s0 system root -- /system/bin/cp -rf --preserve=timestamps /data/system/dropbox /data/bbklog/dropbox_tmp
+   setprop sys.bbklog.copy 0
+
+on property:sys.bbklog.copy=10
+   exec u:r:shell:s0 root system -- /system/bin/cp -r --preserve=timestamps /data/vendor/camera/dump /sdcard/dumpyuv
+   setprop sys.bbklog.copy 0
+
+on property:sys.bbklog.copy=9
+   exec u:r:shell:s0 root system -- /system/bin/rm -rf /data/vendor/camera/dump
+
+# MTK copy aee begin
+on property:sys.bbklog.copy=11
+    exec u:r:shell:s0 shell shell -- /system_ext/bin/aeedb cp ${sys.aee.db.type} ${sys.aee.db.path} ${sys.aee.db.time}
+    setprop sys.bbklog.copy 0
+# MTK copy aee end
+
+# end
+
+# vivo xushiming add for limit log size begin
+on property:sys.bbklog.limitsize=1
+    exec u:r:shell:s0 shell log -- /bin/sh /system/etc/vivo.bbklog.limitsize.sh
+    setprop sys.bbklog.limitsize 0
+
+on property:sys.bbklog.clearlog=1
+    exec u:r:shell:s0 shell log -- /bin/sh /system/etc/vivo.bbklog.clearlog.sh ${sys.bbklog.clear.keep_time}
+    setprop sys.bbklog.clearlog 0
+# vivo xushiming add for limit log size end
+
+# vivo linbailu add for PDPB
+on property:ro.vendor.have_aeev_feature=0 && property:sys.boot_completed=1
+   exec u:r:shell:s0 root system -- /system/bin/rm -rf /data/vendor/aee_exp
+   exec u:r:shell:s0 root system -- /system/bin/rm -rf /data/aee_exp
+# end
+
+# vivo jupengfei add for diag_mdlog begin
+on property:sys.mdlog.start=1
+   exec_background u:r:vendor_qlogd:s0 root system -- /vendor/bin/diag_mdlog ${sys.mdlog.start_param}
+   setprop sys.mdlog.start 0
+
+on property:sys.mdlog.start=2
+   exec_background u:r:vendor_qlogd:s0 root system -- /vendor/bin/diag_dci_sample_vendor_start
+   setprop sys.mdlog.start 0
+
+on property:sys.mdlog.stop=1
+   exec u:r:vendor_qlogd:s0 root system -- /vendor/bin/diag_mdlog ${sys.mdlog.stop_param}
+   setprop sys.mdlog.stop 0
+
+on property:sys.mdlog.stop=2
+   exec_background u:r:vendor_qlogd:s0 root system -- /vendor/bin/diag_dci_sample_vendor
+   setprop sys.mdlog.stop 0
+# vivo jupengfei add for diag_mdlog end
+
+
+# vivo luojiawei add for diag_mdlog begin
+on property:sys.nimdlog.start=1
+   exec_background u:r:vendor_qlogd:s0 root system -- /vendor/bin/diag_mdlog -t 2 -p 2 -d -c -o /storage/emulated/0/.networkstate/bbk_log/ -f /storage/emulated/0/.networkstate_config_file/diag.cfg
+   setprop sys.nimdlog.start 0
+
+on property:sys.nimdlog.start=2
+   exec_background u:r:vendor_qlogd:s0 root system -- /vendor/bin/diag_dci_sample_vendor_start
+   setprop sys.nimdlog.start 0
+
+on property:sys.nimdlog.stop=1
+   exec u:r:vendor_qlogd:s0 root system -- /vendor/bin/diag_mdlog ${sys.nimdlog.stop_param}
+   setprop sys.nimdlog.stop 0
+
+on property:sys.nimdlog.stop=2
+   exec_background u:r:vendor_qlogd:s0 root system -- /vendor/bin/diag_dci_sample_vendor
+   setprop sys.nimdlog.stop 0
+
+on property:sys.nimdlog.stop=3
+   exec_background u:r:vendor_qlogd:s0 root system -- /vendor/bin/diag_mdlog -p 2 -k
+   setprop sys.nimdlog.stop 0
+# vivo luojiawei add for diag_mdlog end
+
+# vivo linbailu add for PDPB
+on property:ro.vendor.have_aee_feature=0 && property:sys.boot_completed=1
+   start check_pdpb
+
+service check_pdpb /system/bin/check_pdpb.sh
+   disabled
+   user root
+   group root system
+   seclabel u:r:shell:s0
+   oneshot
+# end
+
+# fuxi add for vivo super FlashCharge
+on property:sys.battery.SocDecimal=*
+    write /sys/class/power_supply/battery/soc_decimal ${sys.battery.SocDecimal}
+#end
+
+# vivo wangjiewen add for vdtf service begin
+service vdtf /system/bin/vdtf
+    class main
+    socket vdtf dgram 666 system system
+# vivo wangjiewen add for vdtf service end
+
+# JuPengfei NetdDump add
+on property:sys.bbklog.dumpsys=netd
+   exec u:r:dumpstate:s0 -- /system/bin/sh -c "/system/bin/dumpsys netd trafficcontroller > /data/bbkcore/ipinfos"
+   setprop sys.bbklog.dumpsys done
+# end
+
+# vivo dongzhixiang add for set otp.status begin
+on property:vendor.camera.otp.status=*
+   setprop sys.camera.otp.status ${vendor.camera.otp.status}
+# vivo dongzhixiang add for set otp.status end
+
+# vivo xuxiaokun add for nfc feature storage
+   mkdir /vendor/etc/nfc/ 0755 system system
+# vivo pengzuo add for camera persist/camera begin
+   mkdir persist/camera 0777
+   chown cameraserver cameraserver persist/camera
+# vivo pengzuo add for camera persist/camera end
+
+# JuPengfei add WDSP {
+on property:sys.bbklog.wdsp=1
+    write /sys/kernel/debug/wdsp0/ramdump_enable Y
+    write /sys/kernel/debug/wdsp_mgr/panic_on_error Y
+
+on property:sys.bbklog.wdsp=0
+    write /sys/kernel/debug/wdsp0/ramdump_enable N
+    write /sys/kernel/debug/wdsp_mgr/panic_on_error N
+# }
+
+on property:sys.prop_flash_light_cali_flag=1
+  chmod 0777 /data/vendor/camera/dual_led_calib_result
+  chmod 0777 /data/vendor/camera/prop_rear_calib_result0
+  chmod 0777 /data/vendor/camera/prop_rear_calib_result1
+  chmod 0777 /data/vendor/camera/prop_rear_calib_result2
+  chmod 0777 /data/vendor/camera/prop_rear_calib_result3
+  chmod 0777 /data/vendor/camera/led2_result
+  chmod 0777 /data/vendor/camera/prop_front_calib_result
+  chmod 0777 /data/vendor/camera/prop_calib_result
+  chmod 0777 /data/vendor/camera/prop_calib_result2
+
+#vivo linyikai add for engineermode to read camera files begin
+on property:sys.engineermode.operate_camera_file=1
+  chmod 0777 persist/camera/sn_data_front_main
+  chmod 0777 persist/camera/sn_data_front_aux
+  chmod 0777 persist/camera/sn_data_rear_main
+  chmod 0777 persist/camera/sn_data_rear_aux
+  chmod 0777 persist/camera/sn_data_rear_rtb
+  chmod 0777 persist/camera/sn_data_rear_wide
+  chmod 0777 persist/camera/sn_data_rear_tele
+  chmod 0777 persist/camera/sn_data_rear_macro
+  chmod 0777 persist/camera/sn_data_rear_periscope
+  chmod 0777 persist/camera/sn_data_rear_portrait
+  chmod 0777 persist/camera/ir_id_sub
+
+  chmod 0777 persist/camera/rear_camera_main_sn
+  chmod 0777 persist/camera/rear_camera_wide_sn
+  chmod 0777 persist/camera/rear_camera_rtb_sn
+  chmod 0777 persist/camera/rear_camera_tele_sn
+  chmod 0777 persist/camera/rear_camera_periscope_sn
+  chmod 0777 persist/camera/rear_camera_macro_sn
+  chmod 0777 persist/camera/front_camera_main_sn
+  chmod 0777 persist/camera/front_camera_rtb_sn
+  chmod 0777 persist/camera/front_camera_wide_sn
+  chmod 0777 persist/camera/front_camera_periscope_sn
+#vivo linyikai add for engineermode to read camera files end
+
+# qinhoupu add for AMS8801 node attribute start
+    chown system camera /sys/bus/platform/devices/tof8801-ams/request_ram_patch
+    chown system camera /sys/bus/platform/devices/tof8801-ams/app0/capture
+    chown system camera /sys/bus/platform/devices/tof8801-ams/app0/period
+    chown system camera /sys/bus/platform/devices/tof8801-ams/app0/alg_setting
+    chown system camera /sys/bus/platform/devices/tof8801-ams/app0/app0_apply_fac_calib
+    chown system camera /sys/bus/platform/devices/tof8801-ams/app0/app0_read_peak_crosstalk
+    chown system camera /sys/bus/platform/devices/tof8801-ams/app0/iterations
+    chown system camera /sys/bus/platform/devices/tof8801-ams/app0/app0_clk_iterations
+    chown system camera /sys/bus/platform/devices/tof8801-ams/app0/app0_clk_trim_set
+    chown system camera /sys/bus/platform/devices/tof8801-ams/app0/app0_get_fac_calib
+    chown system camera /sys/bus/platform/devices/tof8801-ams/app0/clk_trim_firmware_download
+    chown system camera /sys/bus/platform/devices/tof8801-ams/app0/crosstalk_firmware_download
+
+
+
+    chmod 0664 /sys/bus/platform/devices/tof8801-ams/request_ram_patch
+    chmod 0664 /sys/bus/platform/devices/tof8801-ams/app0/capture
+    chmod 0664 /sys/bus/platform/devices/tof8801-ams/app0/period
+    chmod 0664 /sys/bus/platform/devices/tof8801-ams/app0/alg_setting
+    chmod 0664 /sys/bus/platform/devices/tof8801-ams/app0/app0_apply_fac_calib
+    chmod 0664 /sys/bus/platform/devices/tof8801-ams/app0/app0_read_peak_crosstalk
+    chmod 0664 /sys/bus/platform/devices/tof8801-ams/app0/app0_clk_trim_set
+    chmod 0664 /sys/bus/platform/devices/tof8801-ams/app0/app0_get_fac_calib
+    chmod 0664 /sys/bus/platform/devices/tof8801-ams/app0/clk_trim_firmware_download
+    chmod 0664 /sys/bus/platform/devices/tof8801-ams/app0/crosstalk_firmware_download
+
+# qinhoupu add for AMS8801 node attribute end
+
+# luzhi add begin for TMF8801 node attribute on QCOM platform
+    chown system camera /sys/bus/platform/devices/soc:tof8801-ams/request_ram_patch
+    chown system camera /sys/bus/platform/devices/soc:tof8801-ams/app0/capture
+    chown system camera /sys/bus/platform/devices/soc:tof8801-ams/app0/period
+    chown system camera /sys/bus/platform/devices/soc:tof8801-ams/app0/alg_setting
+    chown system camera /sys/bus/platform/devices/soc:tof8801-ams/app0/app0_apply_fac_calib
+    chown system camera /sys/bus/platform/devices/soc:tof8801-ams/app0/app0_read_peak_crosstalk
+    chown system camera /sys/bus/platform/devices/soc:tof8801-ams/app0/app0_clk_trim_set
+    chown system camera /sys/bus/platform/devices/soc:tof8801-ams/app0/app0_get_fac_calib
+    chown system camera /sys/bus/platform/devices/soc:tof8801-ams/app0/clk_trim_firmware_download
+    chown system camera /sys/bus/platform/devices/soc:tof8801-ams/app0/crosstalk_firmware_download
+    chown system camera /sys/bus/platform/devices/soc:tof8801_ams/app0/iterations
+    chown system camera /sys/bus/platform/devices/soc:tof8801_ams/app0/app0_clk_iterations
+    chmod 0664 /sys/bus/platform/devices/soc:tof8801-ams/request_ram_patch
+    chmod 0664 /sys/bus/platform/devices/soc:tof8801-ams/app0/capture
+    chmod 0664 /sys/bus/platform/devices/soc:tof8801-ams/app0/period
+    chmod 0664 /sys/bus/platform/devices/soc:tof8801-ams/app0/alg_setting
+    chmod 0664 /sys/bus/platform/devices/soc:tof8801-ams/app0/app0_apply_fac_calib
+    chmod 0664 /sys/bus/platform/devices/soc:tof8801-ams/app0/app0_read_peak_crosstalk
+    chmod 0664 /sys/bus/platform/devices/soc:tof8801-ams/app0/app0_clk_trim_set
+    chmod 0664 /sys/bus/platform/devices/soc:tof8801-ams/app0/app0_get_fac_calib
+    chmod 0664 /sys/bus/platform/devices/soc:tof8801-ams/app0/clk_trim_firmware_download
+    chmod 0664 /sys/bus/platform/devices/soc:tof8801-ams/app0/crosstalk_firmware_download
+    chmod 0666 /sys/bus/platform/devices/soc:tof8801_ams/app0/iterations
+    chmod 0666 /sys/bus/platform/devices/soc:tof8801_ams/app0/app0_clk_iterations
+# luzhi add end for TMF8801 node attribute on QCOM platform
+
+# vivo wumengxiang added for networkstate sp begin
+on property:persist.vivo.networkstateprop.imsdebuglog=1
+    setprop persist.vendor.ims.disableADBLogs 0
+    setprop persist.vendor.ims.disableDebugLogs 0
+    setprop persist.vendor.ims.disableQXDMLogs 0
+    setprop persist.vendor.ims.disableIMSLogs 0
+    setprop persist.vendor.ims.vt.enableadb 3
+    setprop persist.vendor.ims.rtp.enableqxdm 3
+    setprop persist.vendor.ims.loglevel 255
+    setprop persist.vendor.cne.logging.qxdm 3974
+    setprop persist.vendor.net.logmask adb
+    setprop persist.vendor.data.qmi.adb_logmask 3
+    setprop persist.vivo.networkstateprop.imsdebuglog 0
+
+on property:persist.vivo.networkstateprop.imsdebuglog=2
+    setprop persist.vendor.ims.disableADBLogs ""
+    setprop persist.vendor.ims.disableDebugLogs ""
+    setprop persist.vendor.ims.disableQXDMLogs ""
+    setprop persist.vendor.ims.disableIMSLogs ""
+    setprop persist.vendor.ims.vt.enableadb ""
+    setprop persist.vendor.ims.rtp.enableqxdm ""
+    setprop persist.vendor.ims.loglevel ""
+    setprop persist.vendor.cne.logging.qxdm ""
+    setprop persist.vendor.net.logmask ""
+    setprop persist.vendor.data.qmi.adb_logmask ""
+    setprop persist.vivo.networkstateprop.imsdebuglog 0
+# vivo wumengxiang added for networkstate sp end
+
+on property:sys.vivo.disable_charge=*
+	write /sys/class/cms_class/disable_charge ${sys.vivo.disable_charge}
+	write /sys/class/power_supply/cms/disable_charge ${sys.vivo.disable_charge}
+# vivo chg add
+
+# vivo zhengguobing added stop adsprpcd on charger begin
+on charger
+    stop vendor.adsprpcd
+    stop vendor.adsprpcd_audiopd
+    stop vendor.cdsprpcd
+# vivo zhengguobing added stop adsprpcd on charger end
+
+# vivo luojiawei 20191207 copymdlog for samsung add begin
+on property:sys.mdrslog.copy=1
+    exec u:r:shell:s0 root system -- /system/bin/cp -r /data/vendor/slog /sdcard/.networkstate/bbk_log/
+    setprop sys.mdrslog.copy 0
+
+on property:sys.mdrslog.copy=2
+    exec u:r:shell:s0 root system -- /system/bin/rm -r /data/vendor/slog
+    mkdir /data/vendor/slog 0771  system log
+    setprop sys.mdrslog.copy 0
+    # vivo luojiawei 20191207 copymdlog for samsung add end
+
+    # vivo lidongzhi add /data/vendor/touchscreen/
+    mkdir /data/vendor/touchscreen 0777
+    chown system system /data/vendor/touchscreen
+    # vivo lidongzhi add /data/vendor/touchscreen/
+
+#vivo fengmingli add for usbdbgd begin
+service usbdbgd /system/bin/usbdbgd
+    user root
+    group system
+    seclabel u:r:usbdbgd:s0
+    disabled
+    oneshot
+
+on property:persist.vivo.usbdbgd=1
+    start usbdbgd
+#vivo fengmingli add for usbdbgd end
+
+# vivo guoyanxiao add for MTK OTA update begin
+on property:persist.vivo.networkstateprop.otaUpdate=1
+    exec u:r:shell:s0 -- /system/bin/cp -r -p /data/misc/radio/networkstate/otaUpdate/. /mnt/vendor/nvcfg/mdota/
+    chmod 0770 /mnt/vendor/nvcfg/mdota
+    setprop persist.vivo.networkstateprop.otaUpdate 0
+# vivo guoyanxiao add for MTK OTA update end
+
+# vivo wushangze add for unionpay begin
+on property:sys.unionpay.cp.ta=1
+    exec u:r:dumpstate:s0 -- /system/bin/cp -rf /data/user/0/com.unionpay.mobileposservice/app_vivota /data/bbkcore/
+    chmod 0777 /data/bbkcore/app_vivota
+    chmod 0777 /data/bbkcore/app_vivota/upmPos.b00
+    chmod 0777 /data/bbkcore/app_vivota/upmPos.b01
+    chmod 0777 /data/bbkcore/app_vivota/upmPos.b02
+    chmod 0777 /data/bbkcore/app_vivota/upmPos.b03
+    chmod 0777 /data/bbkcore/app_vivota/upmPos.b04
+    chmod 0777 /data/bbkcore/app_vivota/upmPos.b05
+    chmod 0777 /data/bbkcore/app_vivota/upmPos.b06
+    chmod 0777 /data/bbkcore/app_vivota/upmPos.b07
+    chmod 0777 /data/bbkcore/app_vivota/upmPos.mdt
+    chmod 0777 /data/bbkcore/app_vivota/upmPos.mbn
+    setprop sys.unionpay.cp.ta 0
+# vivo wushangze add for unionpay end
+
+# vivo zhangjianqin add, if in stability test, corefile limit for open coredump.
+on property:persist.vivo.stability.debug=1
+   write /proc/sys/kernel/core_pattern "|/system/bin/vivo_coredump %E %p %e"
+
+# vivo zhangshuanglong add for superreolution begin
+service superreolution /system/bin/superreolution
+    user system
+    group system sdcard_r
+    class late_start
+# vivo zhangshuanglong add for superreolution end
+
+# vivo wumengxiang add for SAMSUNG OTA update begin
+on property:persist.vivo.net_mbnota_exynosbegincopy=1
+    chown root /mnt/vendor/efs
+    chown root root /mnt/vendor/efs/tcsonline
+    chmod 0777 /mnt/vendor/efs/tcsonline
+    chown root root /mnt/vendor/efs/tcsonline/CHN09.bin
+    chown root root /mnt/vendor/efs/tcsonline/CHN20.bin
+    chown root root /mnt/vendor/efs/tcsonline/CHN22.bin
+    setprop persist.vivo.net_mbnota_exynosbegincopy 0
+# vivo wumengxiang add for SAMSUNG OTA update end
+
+# vivo wumengxiang add for SAMSUNG OTA update begin
+on property:persist.vivo.net_mbnota_exynosendcopy=1
+    chown radio /mnt/vendor/efs
+    chmod 0777 /mnt/vendor/efs/tcsonline
+    chmod 0644 /mnt/vendor/efs/tcsonline/CHN09.bin
+    chown radio radio /mnt/vendor/efs/tcsonline/CHN09.bin
+    chmod 0644 /mnt/vendor/efs/tcsonline/CHN20.bin
+    chown radio radio /mnt/vendor/efs/tcsonline/CHN20.bin
+    chmod 0644 /mnt/vendor/efs/tcsonline/CHN22.bin
+    chown radio radio /mnt/vendor/efs/tcsonline/CHN22.bin
+    setprop persist.vivo.net_mbnota_exynosendcopy 0
+# vivo wumengxiang add for SAMSUNG OTA update end
+
+# vivo wumengxiang add for SAMSUNG OTA update begin
+on property:persist.vivo.net_creat_tcsonline=true
+    mkdir /mnt/vendor/efs/tcsonline 0777 system system
+    setprop persist.vivo.net_creat_tcsonline false
+# vivo wumengxiang add for SAMSUNG OTA update end
+
+# vivo lixingxing add for nfc feature storage begin
+mkdir /vendor/etc/nfc/ 0755 system system
+# vivo lixingxing add for nfc feature storage end
+
+# vivo fuxi add for demo phone suppress charging begin
+on property:ro.device.demo=1
+    write /sys/class/power_supply/battery/keep_chg_soc 60
+    write /sys/class/power_supply/battery/exhibition_mode 1
+    write /sys/class/power_supply/cms/exhibition_mode 1
+    write /sys/class/cms_class/keep_chg_soc 60
+    write /sys/class/cms_class/exhibition_mode 1
+
+on property:sys.demo.no_charge_protect=1
+    write /sys/class/power_supply/battery/keep_chg_soc 100
+    write /sys/class/power_supply/battery/exhibition_mode 0
+    write /sys/class/power_supply/cms/exhibition_mode 0
+    write /sys/class/cms_class/keep_chg_soc 100
+    write /sys/class/cms_class/exhibition_mode 0
+
+on property:persist.sys.mtbf.test=1
+    write /sys/kernel/debug/cms/debug "LG4"
+    write /sys/class/cms_debug/debug "LG4"
+
+on property:persist.vivo.calling_state=*
+    write /sys/class/cms_class/calling_state ${persist.vivo.calling_state}
+    write /sys/class/power_supply/cms/calling_state ${persist.vivo.calling_state}
+
+on property:persist.vivo.weixin_calling_state=*
+    write /sys/class/cms_class/weixin_calling_state ${persist.vivo.weixin_calling_state}
+    write /sys/class/power_supply/cms/weixin_calling_state ${persist.vivo.weixin_calling_state}
+
+on property:sys.vivo.pkg_state=*
+	write /sys/class/cms_class/pkg_state ${sys.vivo.pkg_state}
+	write /sys/class/power_supply/cms/pkg_state ${sys.vivo.pkg_state}
+
+on property:sys.fuelsummary.user_custom=*
+    write /sys/class/fuelsummary/user_custom ${sys.fuelsummary.user_custom}
+
+on property:vendor.fuelsummary.user_custom=*
+    write /sys/class/fuelsummary/user_custom ${vendor.fuelsummary.user_custom}
+
+on property:persist.vivo.wpc_tx=*
+	write /sys/class/cms_class/wpc_tx ${persist.vivo.wpc_tx}
+
+on property:sys.vivo.enable_reverse_wireless_charge=*
+	write /sys/class/cms_class/wpc_tx ${sys.vivo.enable_reverse_wireless_charge}
+# vivo fuxi add for demo phone suppress charging end
+
+# vivo sensor add
+service vendor.sensors.logger /vendor/bin/sensors.logger
+    class core
+    user system
+    group system input
+    disabled
+    oneshot
+on property:persist.vendor.sensors.logger.enabled=1
+    start vendor.sensors.logger
+on property:persist.vendor.sensors.logger.enabled=0
+    stop vendor.sensors.logger
+# vivo sensor add end
+
+# vivo luzhi add for laser service begin
+service vl53l1_daemon /system/bin/vl53l1_daemon_main
+    class late_start
+    user root
+    group root
+    socket vl53l1_daemon stream 660 root system
+# vivo luzhi add for laser service end
+
+# vivo wangjiewen add for zram writeback begin
+on property:init.svc.qcom-post-boot=stopped
+    chmod 0666 /sys/block/zram0/writeback_limit
+    chmod 0666 /sys/block/zram0/writeback_limit_enable
+    chmod 0666 /sys/block/zram0/zram_wb/stat
+    chmod 0666 /sys/block/zram0/zram_wb/enable
+    chmod 0666 /sys/block/zram0/zram_wb/pids_protect
+
+on property:init.svc.kernel-post-boot=stopped
+    chmod 0666 /sys/block/zram0/writeback_limit
+    chmod 0666 /sys/block/zram0/writeback_limit_enable
+    chmod 0666 /sys/block/zram0/zram_wb/stat
+    chmod 0666 /sys/block/zram0/zram_wb/enable
+    chmod 0666 /sys/block/zram0/zram_wb/pids_protect
+# vivo wangjiewen add for zram writeback end
+
+# vivo luzhuang [B210430-773] add
+on property:service.bootanim.exit=1
+     start modify_app
+
+service modify_app /system/bin/sh  /system/bin/modify.sh cust/vivo/change.txt
+     disabled
+     user system
+     group system
+     oneshot
+     seclabel u:r:shell:s0
+# vivo luzhuang [B210430-773] end
+
+# vivo dengzhiyong [B210514-1599] add
+on post-fs-data
+    setprop sys.yzfsj.symlink 1
+
+on property:sys.yzfsj.symlink=1 && property:ro.build.version.group=V2.0
+    rm data/yzfswj/another
+    symlink /data/preload/config /data/yzfswj/another
+    chmod 0771 /data/yzfswj
+# vivo dengzhiyong [B210514-1599] add
+
+# Zhangjing MiniDump add
+on property:persist.vivo.networkstate.minidump=1
+   setprop persist.vendor.ril.crash_handling_mode 1
+   setprop persist.vivo.networkstate.minidump 0
+
+on property:persist.vivo.networkstate.minidump=2
+   setprop persist.vendor.ril.crash_handling_mode 2
+   setprop persist.vivo.networkstate.minidump 0
+# end
+
+# vivo wuzengshun add to cryptfs uses the cache or logdata partition
+on post-fs-data && property:ro.virtual_ab.enabled=true
+    mkdir /data/vivo-common/temps_app 0777 system system
+    mkdir /data/vivo-common/vota 0777 root system
+    mkdir /data/vivo-common/vota/device 0777 root system
+    mkdir /data/vivo-common/vota/update_data 0777 root system
+    mkdir /data/vivo-common/dyn 0771 system system
+
+on post-fs && property:ro.virtual_ab.enabled=true
+    mkdir /logdata/recovery 0770 system cache
+    chown system cache /logdata
+    chmod 0770 /logdata
+    restorecon_recursive /logdata
+    mkdir /logdata/cryptfs 0770 system cache
+    mkdir /logdata/recovery 0770 system cache
+    mkdir /logdata/recovery/update_engine_log 0770 system cache
+    mkdir /metadata/vota 0700 root system
+    mkdir /metadata/vota/snapshots 0700 root system
+    mkdir /metadata/vota/misc 0700 root system
+    mkdir /metadata/vota/misc/message 0700 root system
+    mkdir /metadata/vota/transfer 0700 root system
+    # vivo lizhijiao add for engineermode in v-ab
+    mkdir /logdata/engineer 0774
+    mkdir /logdata/engineer/recovery 0774
+    chown system system /logdata/engineer
+    restorecon /logdata/engineer
+    #symlink /logdata/engineer /cache/recovery
+    chmod /cache/recovery 0774
+    chown system system /cache/recovery
+    restorecon /cache/recovery
+
+on post-fs && property:ro.virtual_ab.enabled=""
+    mkdir /cache/recovery 0770 system cache
+    mkdir /cache/cryptfs 0770 system cache
+    # miaoqiang add for create a file in /cache/recovery, case system_app will rm /cache/recovery
+    write /cache/recovery/last_test 1
+
+# vivo linpeilin add for vgc update in virtual_ab begin
+on post-fs-data && property:ro.virtual_ab.enabled=true && property:sys.vgc_ex.mount=1
+    mount ext4 loop@/data/vivo-common/vota/update_data/vgc_ex${ro.boot.slot_suffix}.img /vendor/vgc ro relatime discard
+# vivo linpeilin add for vgc update in virtual_ab end
+
+# vivo linpeilin add for restore remounted device begin
+on property:ro.virtual_ab.enabled=true && property:sys.restore_remount=1
+    rm /metadata/gsi/remount/lp_metadata
+    rm /metadata/gsi/remount/scratch.status
+    setprop sys.restore_remount 0
+# vivo linpeilin add for restore remounted device end
+
+# vivo wuzengshun add for custom repair begin
+on property:ro.crypto.type=file && property:sys.fbe_copy=1
+    inithook customrepair
+
+on property:ro.crypto.type=block && property:sys.boot_completed=1 && property:vold.encrypt_progress=100
+    inithook customrepair
+# vivo wuzengshun add for custom repair end
+
+# vivo linpeilin add for restart update_engine begin
+on property:ro.virtual_ab.enabled=true && property:sys.vivo.restart.update_engine=1
+    restart update_engine
+# vivo linpeilin add for restart update_engine end
+
+# vivo zhuangyan add for dota_info begin
+on property:sys.user.0.ce_available=true && property:ro.vivo.product.overseas=no
+    exec - root -- /system/vendor/bin/vota_client dota_info
+    setprop sys.vivo.dota_code ${persist.vendor.vivo.dota_code}
+    setprop sys.vivo.dota_info0 ${persist.vendor.vivo.dota_info0}
+    setprop sys.vivo.dota_info1 ${persist.vendor.vivo.dota_info1}
+    setprop sys.vivo.dota_info2 ${persist.vendor.vivo.dota_info2}
+    setprop sys.vivo.dota_info3 ${persist.vendor.vivo.dota_info3}
+    setprop sys.vivo.dota_info4 ${persist.vendor.vivo.dota_info4}
+    setprop sys.vivo.dota_info5 ${persist.vendor.vivo.dota_info5}
+# vivo zhuangyan add for dota_info end
+
+# vivo 11070486 add for logsystem start	
+on property:persist.vivo.logsystem.cpke=1
+	exec u:r:shell:s0 system system -- /system/bin/cp -r --preserve=timestamps /data/vendor/aee_exp /data/logData
+	setprop persist.vivo.logsystem.cpke 0
+	
+on property:persist.vivo.logsystem.cpke=2
+	exec u:r:shell:s0 system system -- /system/bin/chmod 777 -R /data/logData/aee_exp/
+	setprop persist.vivo.logsystem.cpke 0
+# vivo 11070486 add for logsystem end
+

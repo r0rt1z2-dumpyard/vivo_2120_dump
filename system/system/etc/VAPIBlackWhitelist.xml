@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content>
+    <version>1</version>
+
+    <api_name name="setMode">
+        <app_pkg_info app_ver="0" pkg_name="im.yixin" />
+    </api_name>
+
+    <api_name name="setSpeakerphoneOn">
+        <app_pkg_info app_ver="0" pkg_name="com.duowan.mobile" />
+		<app_pkg_info pkg_name="com.c2vl.kgamebox" app_ver = "0" />
+	</api_name>
+
+	<api_name name="pom_new">
+
+      <!-- 调试和默认时间 -->
+      <app_pkg_info pkg_name="others" app_ver = "30000" />                      <!-- 名单外APP默认时间 -->
+      <app_pkg_info pkg_name="com.vivo.pom_1" app_ver = "5000" />               <!-- 调试APK -->
+      <app_pkg_info pkg_name="com.vivo.pom" app_ver = "5000" />                 <!-- 调试APK -->
+      <app_pkg_info pkg_name="com.vivo.mediatune" app_ver = "5000" />           <!-- 调试APK -->
+      <!-- 内销 -->
+      <app_pkg_info pkg_name="com.tencent.mm" app_ver = "20000" />              <!-- 微信 -->
+      <app_pkg_info pkg_name="com.tencent.mobileqq:video" app_ver = "20000" />  <!-- QQ -->
+      <app_pkg_info pkg_name="com.tencent.mobileqq" app_ver = "20000" />        <!-- QQ -->
+      <app_pkg_info pkg_name="com.duowan.mobile" app_ver = "20000" />           <!-- YY -->
+      <app_pkg_info pkg_name="com.duowan.makefriends" app_ver = "50000" />      <!-- 欢狼大作战 -->
+      <app_pkg_info pkg_name="com.c2vl.kgamebox" app_ver = "50000" />           <!-- 狼人杀 -->
+      <app_pkg_info pkg_name="im.yixin" app_ver = "20000" />                    <!-- 易信 -->
+      <app_pkg_info pkg_name="com.p1.mobile.putong" app_ver = "20000" />        <!-- 探探 -->
+      <app_pkg_info pkg_name="com.tencent.qqlite" app_ver = "20000" />          <!-- QQ轻聊版 -->
+      <app_pkg_info pkg_name="com.alibaba.mobileim" app_ver = "20000" />        <!-- 钉钉 -->
+      <app_pkg_info pkg_name="com.ifreetalk.ftalk" app_ver = "20000" />         <!-- 派派 -->
+      <app_pkg_info pkg_name="com.cootek.smartdialer" app_ver = "20000" />      <!-- 触宝电话 -->
+      <app_pkg_info pkg_name="com.immomo.momo" app_ver = "20000" />             <!-- MOMO陌陌 -->
+      <app_pkg_info pkg_name="com.weihua.superphone" app_ver = "20000" />       <!-- 微话 -->
+      <app_pkg_info pkg_name="com.sina.weibo" app_ver = "20000" />              <!-- 微博 -->
+      <app_pkg_info pkg_name="com.tencent.tmgp.sgame" app_ver = "20000" />      <!-- 王者荣耀 -->
+      <!-- 外销 -->
+      <app_pkg_info pkg_name="com.imo.android.imoim" app_ver = "20000" />       <!-- 易信 -->
+      <app_pkg_info pkg_name="com.facebook.orca" app_ver = "20000" />           <!-- 易信 -->
+      <app_pkg_info pkg_name="com.bbm" app_ver = "20000" />                     <!-- 易信 -->
+      <app_pkg_info pkg_name="com.zing.zalo" app_ver = "20000" />               <!-- 易信 -->
+      <app_pkg_info pkg_name="com.viber.voip" app_ver = "20000" />              <!-- 易信 -->
+      <app_pkg_info pkg_name="com.whatsapp" app_ver = "20000" />                <!-- 易信 -->
+      <app_pkg_info pkg_name="jp.naver.line.android" app_ver = "20000" />       <!-- 易信 -->
+    </api_name>
+
+    <api_name name="setBluetoothScoOn"></api_name>
+
+</content>

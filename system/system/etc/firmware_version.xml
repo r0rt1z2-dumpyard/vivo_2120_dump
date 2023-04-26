@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<firmwareItems>
+	<!--Hynix 2D MLC, SMI-->
+	<firmwareItem id="0" type="eMMC" product_name="HAG4a2" version="000000a5" no_check=""/>
+	<firmwareItem id="1" type="eMMC" product_name="HBG4a2" version="000000a5" no_check=""/>
+	<!--Hynix 2D MLC, Jade+-->
+	<firmwareItem id="2" type="eMMC" product_name="hB8aP>" version="35303030" no_check=""/>
+	<firmwareItem id="3" type="eMMC" product_name="hC8aP>" version="35303030" no_check=""/>
+	<!--Hynix 3D 72L MLC, Jade-->
+	<firmwareItem id="4" type="eMMC" product_name="hDEaP3" version="36303030" no_check=""/>
+	<!--Samsung 3D 64GB 64L TLC, Vincent-->
+	<firmwareItem id="5" type="eMMC" product_name="GP6BMB" version="00000005" no_check=""/>
+	<firmwareItem id="6" type="eMMC" product_name="RP64MB" version="00000005" no_check=""/>
+	<!--Micron 3D 128GB 64L TLC, phison-->
+	<firmwareItem id="7" type="eMMC" product_name="S0J9K9" version="00000004" no_check=""/>
+	<!--Micron 3D 64GB 64L TLC, phison-->
+	<firmwareItem id="8" type="eMMC" product_name="S0J9J8" version="00000005" no_check=""/>
+	<!--Samsung 2D 16GB MLC, Vincent-->
+	<firmwareItem id="9" type="eMMC" product_name="QE63MB" version="00000006" no_check=""/>
+	<firmwareItem id="10" type="eMMC" product_name="GE6BMB" version="00000006" no_check=""/>
+	<!--Samsung 3D 32GB 64L MLC, Vincent-->
+	<firmwareItem id="11" type="eMMC" product_name="QD63MB" version="00000003" no_check=""/>
+	<!--Samsung 3D 32GB 48L MLC, Vincent-->
+	<firmwareItem id="12" type="eMMC" product_name="GD6BMB" version="00000008" no_check=""/>
+	<firmwareItem id="13" type="eMMC" product_name="RD64MB" version="00000008" no_check=""/>
+	<!--Samsung 3D 64GB 48L MLC, Vincent-->
+	<firmwareItem id="14" type="eMMC" product_name="RH64AB" version="00000015" no_check=""/>
+	<firmwareItem id="15" type="eMMC" product_name="DH6DMB" version="00000015" no_check=""/>
+	<firmwareItem id="16" type="eMMC" product_name="3H6CMB" version="00000015" no_check=""/>
+	<firmwareItem id="17" type="eMMC" product_name="RH64MB" version="00000015" no_check=""/>
+	<firmwareItem id="18" type="eMMC" product_name="CKTM4R" version="00000015" no_check=""/>
+	<!--Hynix 3D 36L MLC, Venus-->
+	<firmwareItem id="19" type="eMMC" product_name="HCG8a4" version="000000a2" no_check=""/>
+	<!--Samsung 3D 64GB 64L MLC, Vincent-->
+	<firmwareItem id="20" type="eMMC" product_name="DH6DAB" version="00000008" no_check=""/>
+	<firmwareItem id="21" type="eMMC" product_name="3H6CAB" version="00000008" no_check=""/>
+	<!--Samsung 3D 128GB 64L TLC, Vincent-->
+	<firmwareItem id="22" type="eMMC" product_name="DV6DMB" version="00000003" no_check=""/>
+	<firmwareItem id="23" type="eMMC" product_name="3V6CMB" version="00000003" no_check=""/>
+	<!--Samsung 3D 64GB 64L MLC, Saturn, UFS2.1-->
+	<firmwareItem id="24" type="UFS" product_name="KM5H7001DM-B424" version="0600" no_check=""/>
+	<firmwareItem id="25" type="UFS" product_name="KM2H7001CM-B518" version="0600" no_check=""/>
+	<!--Hynix 3D 64GB 76L MLC, Columbus, UFS2.1-->
+	<firmwareItem id="26" type="UFS" product_name="H9HQ53ACPMMDAR" version="0007" no_check=""/>
+	<firmwareItem id="27" type="UFS" product_name="H9HQ53AECMMDAR" version="0007" no_check=""/>
+	<!--Samsung 3D 128GB 64L TLC, Saturn, UFS2.1-->
+	<firmwareItem id="28" type="UFS" product_name="KM5V7001DM-B621" version="0900" no_check=""/>
+	<!--Hynix 3D 128GB 72L 	TLC, Columbus, UFS2.1-->
+	<firmwareItem id="29" type="UFS" product_name="H9HQ16ACPMMDAR" version="A102" no_check=""/>
+	<firmwareItem id="30" type="UFS" product_name="H9HQ16AECMMDAR" version="A110" no_check=""/>
+	<firmwareItem id="31" type="UFS" product_name="H9HQ16AFAMMDAR" version="A110" no_check=""/>
+	<!--Hynix 3D 256GB 72L 	TLC, Columbus, UFS2.1-->
+	<firmwareItem id="32" type="UFS" product_name="H9HQ22AECMMDAR" version="A110" no_check=""/>
+	<firmwareItem id="33" type="UFS" product_name="H9HQ22AFAMMDAR" version="A110" no_check=""/>
+	<!--Samsung 3D 128GB 64L TLC, Saturn, UFS2.1-->
+	<firmwareItem id="34" type="UFS" product_name="KM2V7001CM-B706" version="0900" no_check=""/>
+	<!--Samsung 3D 128GB 96L TLC, Santos, UFS2.1-->
+	<firmwareItem id="35" type="UFS" product_name="KM2V8001CM-B707" version="1500" no_check=""/>
+	<!--Samsung 3D 128GB 64L TLC, Saturn, UFS2.1-->
+	<firmwareItem id="36" type="UFS" product_name="KM8V7001JM-B810" version="0900" no_check=""/>
+	<firmwareItem id="37" type="UFS" product_name="KM8V7001JA-B813" version="0900" no_check=""/>
+	<!--Samsung 3D 256GB 64L TLC, Santos, UFS2.1-->
+	<firmwareItem id="38" type="UFS" product_name="KM2B8001CM-BB01" version="1100" no_check=""/>
+	<firmwareItem id="39" type="UFS" product_name="KM8B8001JM-BC01" version="1100" no_check=""/>
+	<!--Samsung 3D 64GB 64L MLC, SAMSUNG, UFS2.1-->
+	<firmwareItem id="40" type="UFS" product_name="KLUCG2K1EA-B0C1" version="0600" no_check=""/>
+	<!--Samsung 3D 128GB 64L TLC, SAMSUNG, UFS2.1-->
+	<firmwareItem id="41" type="UFS" product_name="KLUDG4U1EA-B0C1" version="0900" no_check=""/>
+	<!--Samsung 3D 128GB 96L TLC, Santos, UFS2.1-->
+	<firmwareItem id="42" type="UFS" product_name="KLUDG4U1FB-B0C1" version="1500" no_check=""/>
+	<!--Samsung 3D 512GB 64L TLC, SAMSUNG, UFS2.1-->
+	<firmwareItem id="43" type="UFS" product_name="KLUFG8R1EM-B0C1" version="0300" no_check=""/>
+	<!--Samsung 3D 128GB 96L TLC, Selen, UFS3.0-->
+	<firmwareItem id="44" type="UFS" product_name="KLUDG4UHDB-B2D1" version="0900" no_check=""/>
+	<!--Samsung 3D 256GB 96L TLC, Selen, UFS3.0-->
+	<firmwareItem id="45" type="UFS" product_name="KLUEG8UHDB-C2D1" version="0900" no_check=""/>
+	<!--Samsung 3D 512GB 96L TLC, Selen, UFS3.0-->
+	<firmwareItem id="46" type="UFS" product_name="KLUFG8RHDA-B2D1" version="0100" no_check=""/>
+	<!--Samsung uMCP 128G-->
+	<firmwareItem id="47" type="UFS" product_name="KM8V8001JM-B813" version="1500" no_check=""/>
+	<!--Samsung 3D 256GB 64L TLC, SAMSUNG, UFS2.1-->
+	<firmwareItem id="48" type="UFS" product_name="KLUEG8U1EA-B0C1" version="0900" no_check=""/>
+	<firmwareItem id="49" type="UFS" product_name="H9HQ15AFAMADAR" version="A102" no_check=""/>
+	<firmwareItem id="50" type="UFS" product_name="H9HQ21AFAMZDAR" version="A102" no_check=""/>
+	<!--Samsung  SAMSUNG, eMMC-4.1 -->
+	<firmwareItem id="51" type="eMMC" product_name="DD68MB" version="00000008" no_check=""/>
+	<!--SKHynix   eMMC-3 0810034未升0x32303030-->
+	<firmwareItem id="52" type="eMMC" product_name="hC9aP3" version="00000000" no_check=""/>
+	<!--Samsung  SAMSUNG, eMMC-4.1 0810033未找到固件兼容版本-->
+	<firmwareItem id="53" type="eMMC" product_name="DP68MB" version="00000000" no_check=""/>
+	<!--Samsung 3D 256GB 64L TLC, SAMSUNG, Santos 0810047需要升到0500 -->
+	<firmwareItem id="54" type="UFS" product_name="KM8F8001JM-B813" version="0500" no_check=""/>
+	<firmwareItem id="55" type="UFS" product_name="KM8V8001JM-B813" version="1500" no_check=""/>
+	<!--Micron 128GB + 32Gb	uMCP 32Gb -->
+	<firmwareItem id="56" type="UFS" product_name="MT128GASAO4U21" version="00000000" no_check=""/>
+	<!--Micron eMMC -->
+	<firmwareItem id="57" type="eMMC" product_name="G1J9S9" version="00000204" no_check=""/>
+	<firmwareItem id="58" type="eMMC" product_name="G1J9Q9" version="00000204" no_check=""/>
+	<firmwareItem id="59" type="eMMC" product_name="G1J9P8" version="00000204" no_check=""/>
+	<firmwareItem id="60" type="eMMC" product_name="G1J9R8" version="00000204" no_check=""/>
+	<firmwareItem id="61" type="UFS" product_name="KM8F8001MM-B813" version="0500" no_check=""/>
+	<firmwareItem id="62" type="UFS" product_name="H9HQ15AECMADAR" version="A102" no_check=""/>
+	<firmwareItem id="63" type="UFS" product_name="H9HQ21AECMZDAR" version="A102" no_check=""/>
+	<firmwareItem id="64" type="UFS" product_name="H9HQ15ACPMADAR" version="A102" no_check=""/>
+	<firmwareItem id="65" type="UFS" product_name="KM5V8001DM-B622" version="1500" no_check=""/>
+	<!--SAMSUNG 0810038 0810064 -->
+	<firmwareItem id="66" type="eMMC" product_name="DX68MB" version="00000009" no_check=""/>
+	<firmwareItem id="67" type="eMMC" product_name="4X6KMB" version="00000000" no_check=""/>
+	<!--SAMSUNG 0810071 -->
+	<firmwareItem id="68" type="UFS" product_name="KM5H80018M-B424" version="0002" no_check=""/>
+	<firmwareItem id="69" type="UFS" product_name="H9HQ53ADAMMDAR" version="0007" no_check=""/>
+	<firmwareItem id="70" type="UFS" product_name="H9HQ21AFAMADAR" version="0000" no_check=""/>
+	<firmwareItem id="71" type="UFS" product_name="KLUDG4UHDC-B0E1" version="0200" no_check=""/>
+	<firmwareItem id="72" type="UFS" product_name="KLUEG8UHDC-B0E1" version="0200" no_check=""/>
+	<firmwareItem id="73" type="UFS" product_name="KLUFG8RHDB-B0E1" version="0200" no_check=""/>
+	<firmwareItem id="74" type="eMMC" product_name="KMGP6001BA-B514" version="0000" no_check=""/>
+	<firmwareItem id="75" type="UFS" product_name="HN8T05BZGKX015" version="0000" no_check=""/>
+	<firmwareItem id="76" type="UFS" product_name="HN8T15BZGKX016" version="0000" no_check=""/>
+	<firmwareItem id="77" type="eMMC" product_name="H9HP27ABUMMDAR" version="0000" no_check=""/>
+	<firmwareItem id="78" type="eMMC" product_name="H9HP27ADAMADAR" version="0000" no_check=""/>
+	<firmwareItem id="79" type="UFS" product_name="H9HQ15ACPMBDAR" version="A002" no_check=""/>
+	<!--SAMSUNG 0810032 0810076 0810052 0810075-->
+	<firmwareItem id="80" type="eMMC" product_name="DV6DAB" version="00000002" no_check=""/>
+	<firmwareItem id="81" type="eMMC" product_name="DP6DAB" version="00000002" no_check=""/>
+	<firmwareItem id="82" type="eMMC" product_name="GX6BAB" version="00000000" no_check=""/>
+	<firmwareItem id="83" type="eMMC" product_name="GP6BAB" version="00000000" no_check=""/>
+	<firmwareItem id="84" type="UFS" product_name="H9HQ15AFAMBDAR" version="A002" no_check=""/>
+	<firmwareItem id="85" type="UFS" product_name="H9HQ15AECMBDAR" version="A002" no_check=""/>
+	<firmwareItem id="86" type="UFS" product_name="H9HQ54AECMMDAR" version="A002" no_check=""/>
+	<!--MICRON 0810094 -->
+	<firmwareItem id="87" type="UFS" product_name="MT064GASAO2U21" version="0109" no_check=""/>
+	<!--SAMSUNG SELEN 0810113 0810114 0810115 0810117 0810093 0810092-->
+	<firmwareItem id="88" type="UFS" product_name="KM8V9001JM-B813" version="0100" no_check=""/>
+	<firmwareItem id="89" type="UFS" product_name="KM2L9001CM-B518" version="0100" no_check=""/>
+	<firmwareItem id="90" type="UFS" product_name="KM5L9001DM-B424" version="0100" no_check=""/>
+	<firmwareItem id="91" type="UFS" product_name="KMJS9001RM-BG01" version="0200" no_check=""/>
+	<firmwareItem id="92" type="UFS" product_name="KMAS9001PM-BC02" version="0200" no_check=""/>
+	<firmwareItem id="93" type="UFS" product_name="KMAG9001PM-B814" version="0200" no_check=""/>
+	<!--Micron eMMC 0810110-->
+	<firmwareItem id="94" type="eMMC" product_name="G1C12L" version="00000204" no_check=""/>
+	<!--KIOXIA UFS 0810066-->
+	<firmwareItem id="95" type="UFS" product_name="THGJFAT1T84BAIRB" version="1001" no_check=""/>
+	<firmwareItem id="96" type="eMMC" product_name="3V6CAB" version="00000002" no_check=""/>
+	<firmwareItem id="97" type="eMMC" product_name="WV6JMB" version="00000000" no_check=""/>
+	<firmwareItem id="98" type="UFS" product_name="H9HR21JFA3MEVR" version="0000" no_check=""/>
+	<firmwareItem id="99" type="UFS" product_name="KLUEG8UHGC-B0E1" version="0000" no_check=""/>
+	<firmwareItem id="100" type="UFS" product_name="KM8F9001JM-B813" version="0000" no_check=""/>
+	<firmwareItem id="101" type="UFS" product_name="H9HR21JFA3MEVR" version="A002" no_check=""/>
+	<!--SAMSUNG SELEN 0810092 0810093 0810117-->
+	<firmwareItem id="102" type="UFS" product_name="KMAG9001PM-B814" version="0200" no_check=""/>
+	<firmwareItem id="103" type="UFS" product_name="KMAS9001PM-BC02" version="0200" no_check=""/>
+	<firmwareItem id="104" type="UFS" product_name="KMJS9001RM-BG01" version="0200" no_check=""/>
+	<firmwareItem id="105" type="UFS" product_name="MT256GAXAT4U31" version="0101" no_check=""/>
+	<!--SAMSUNG Solvit 0810144 0810145-->
+	<firmwareItem id="106" type="UFS" product_name="KLUEG8UHGC-B0E1" version="0300" no_check=""/>
+	<firmwareItem id="107" type="UFS" product_name="KLUFG8RHGB-B0E1" version="0100" no_check=""/>
+	<firmwareItem id="108" type="UFS" product_name="MT128GAXAU2U228C" version="0000" no_check=""/>
+</firmwareItems>

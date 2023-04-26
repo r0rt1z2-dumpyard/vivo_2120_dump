@@ -1,0 +1,17 @@
+<thirdpartyincoming-policy version="1">
+<itemList>
+
+<!-- Line -->
+<item_ex pkg="jp.naver.line.android" cls="com.linecorp.voip.ui.base.VoIPServiceActivity" policy="NOTICE"/>
+
+<!-- WhatsApp -->
+<item_ex pkg="com.whatsapp" cls="com.whatsapp.voipcalling.VoipActivityV2" policy="NOTICE"/>
+
+<!-- Messenger -->
+<item_ex pkg="com.facebook.orca" cls="com.facebook.rtc.activities.WebrtcIncallFragmentHostActivity" policy="NOTICE"/>
+<item_ex pkg="com.facebook.orca" cls="com.facebook.rtc.activities.WebrtcSingleTaskIncallFragmentHostActivity" policy="NOTICE"/>
+<item_ex pkg="com.facebook.orca" cls="com.facebook.rtc.activities.WebrtcResizeableIncallFragmentHostActivity" policy="NOTICE"/>
+<item_ex pkg="com.facebook.orca" act="com.facebook.rtc.fbwebrtc.intent.action.HOSTED_FRAGMENT_INCOMING_CALL" policy="NOTICE"/>
+
+</itemList>
+</thirdpartyincoming-policy>

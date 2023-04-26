@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--testsim_support="0/1" 1表示配置白卡锁下天线-->
+<!--receiver_Support="0/1" 1表示配置听筒锁下天线-->
+<!--version="1.0/2.0" 仅听筒锁配置需要(1.0表示老方案，2.0表示兼容不同硬件分版的听筒锁下方案)-->
+<!--hardwareId="101011 "0、1组成的硬件识别码可以区分不同的硬件分版-->
+<!--lockCountry="IN,PK" 听筒锁下天线的国家列表 -->
+<!--gsmBand="3,4" (GSM850/900/1800/1900 分别对应band5/8/3/2，AT参数config 1,2,3,4)分band 锁下天线需要配置的GSM band -->
+<!--wcdmaBand="3,4" (WCDMA band number就是对应的频段编号B1->1)分band 锁下天线需要配置的WCMDA band -->
+<!--lteBand="1,3,7" (LTE band number就是对应的频段编号B1->1)分band 锁下天线需要配置的LTE band -->
+<!--cdma="0" (CDMA band number 一般外销仅支持BC0，number为0)分band 锁下天线需要配置的CDMA band -->
+<!--nrBand="" (NR band number 目前不支持)分band 锁下天线需要配置的NR band -->
+<config>
+  <item model="PD2186" testsim_support="1"/>
+
+  <item model="PD2166" testsim_support="1"/>
+
+  <item model="PD2164" testsim_support="1"/>
+
+  <item model="PD2162" testsim_support="1"/>
+
+  <item model="PD2166F_EX" testsim_support="1"/>
+
+  <item model="PD2167F_EX" testsim_support="1"/>
+
+  <item model="PD2102" testsim_support="1"/>
+
+  <item model="PD2159F_EX" testsim_support="1"/>
+
+  <item model="PD2140IF_EX" testsim_support="1"/>
+
+  <item model="PD2163F_EX" testsim_support="1"/>
+
+  <item model="PD2163" testsim_support="1"/>
+
+  <item model="PD2156F_EX" testsim_support="1"/>
+
+  <item model="PD2156" testsim_support="1"/>
+
+  <item model="PD2140F_EX" testsim_support="1"/>
+
+  <item model="PD2149" testsim_support="1"/>
+
+  <item model="PD2135" testsim_support="1"/>
+
+  <item model="PD2133" testsim_support="1"/>
+
+  <item model="PD2131" testsim_support="1"/>
+
+  <item model="PD2130" testsim_support="1"/>
+
+  <item model="PD2069" testsim_support="1"/>
+
+  <item model="PD2123" testsim_support="1"/>
+
+  <item model="PD2121" testsim_support="1"/>
+
+  <item model="PD2120" testsim_support="1"/>
+
+  <item model="PD2085" testsim_support="1"/>
+
+  <item model="PD2080" testsim_support="1"/>
+
+  <item model="PD2061" testsim_support="1"/>
+
+  <item model="PD2057" testsim_support="1"/>
+
+  <item model="PD2048" testsim_support="1"/>
+
+  <item model="PD2069F_EX" testsim_support="1"/>
+
+  <item model="PD2074F_EX" testsim_support="1"/>
+
+  <item model="PD2133F_EX" testsim_support="1"/>
+
+  <item model="PD2150F_EX" testsim_support="1"/>
+
+  <item model="PD2078F_EX" testsim_support="1" receiver_Support="1" version="1.0">
+     <bandList lockCountry="IN" gsmBand="3,4" wcdmaBand="1" lteBand="1,3,38,40,41" cdmaBand="" nrBand="" />
+  </item>
+
+  <item model="PD2083F_EX" testsim_support="1" receiver_Support="1" version="1.0">
+     <bandList lockCountry="IN,PK,PE,CL,MX,CO" gsmBand="3,4" wcdmaBand="1,2,4" lteBand="1,2,3,4,7,38,39,40,41,66" cdmaBand="" nrBand="" />
+  </item>
+
+  <item model="PD2103F_EX" testsim_support="1" receiver_Support="1" version="1.0">
+     <bandList lockCountry="IN,PE,CL,MX,CO,TR" gsmBand="3,4" wcdmaBand="1,2,4" lteBand="1,2,3,4,7,38,40,41,66" cdmaBand="" nrBand="" />
+  </item>
+
+  <item model="PD2104F_EX" testsim_support="1" receiver_Support="1" version="1.0">
+     <bandList lockCountry="IN,PE,CL,MX,CO,TR" gsmBand="3,4" wcdmaBand="1,2,4" lteBand="1,2,3,4,7,38,40,41,66" cdmaBand="" nrBand="" />
+  </item>
+
+  <item model="PD2102F_EX" testsim_support="1" receiver_Support="1" version="1.0">
+     <bandList lockCountry="IN" gsmBand="3,4" wcdmaBand="1,2,4" lteBand="1,2,3,4,38,40,41" cdmaBand="" nrBand="" />
+  </item>
+
+  <item model="PD2135F_EX" testsim_support="1" receiver_Support="1" version="1.0">
+     <bandList lockCountry="IN" gsmBand="3,4" wcdmaBand="1,2,4" lteBand="1,2,3,4,7,34,38,39,40,41" cdmaBand="" nrBand="" />
+  </item>
+
+  <item model="PD2138F_EX" testsim_support="1" receiver_Support="1" version="2.0">
+     <rev_item hardwareId="0001" rf_bit_index = "11,12,13,14">
+         <bandList lockCountry="CO,PE,CL,MX" gsmBand="1,4" wcdmaBand="2,4,5" lteBand="2,4,5,7,12,17,38,40,41,66" cdmaBand="" nrBand="" />
+     </rev_item>
+
+     <rev_item hardwareId="1111" rf_bit_index = "11,12,13,14">
+         <bandList lockCountry="IN" gsmBand="3,4" wcdmaBand="1" lteBand="1,3,38,40,41" cdmaBand="" nrBand="" />
+     </rev_item>
+  </item>
+
+  <item model="PD2139F_EX" testsim_support="1" receiver_Support="1" version="2.0">
+     <rev_item hardwareId="0000" rf_bit_index = "0,1,2,4">
+         <bandList lockCountry="CO,PE,CL,MX" gsmBand="4" wcdmaBand="2,4" lteBand="2,4,7,38,40,41,66" cdmaBand="" nrBand="" />
+     </rev_item>
+
+     <rev_item hardwareId="1101" rf_bit_index = "0,1,2,4">
+         <bandList lockCountry="IN" gsmBand="3" wcdmaBand="1" lteBand="1,3,38,40,41" cdmaBand="" nrBand="" />
+     </rev_item>
+  </item>
+
+  <item model="PD2147F_EX" testsim_support="1" receiver_Support="1" version="2.0">
+     <rev_item hardwareId="0001" rf_bit_index = "11,12,13,14">
+         <bandList lockCountry="CO,PE,CL,MX" gsmBand="1,4" wcdmaBand="2,4,5" lteBand="2,4,5,7,12,17,38,40,41,66" cdmaBand="" nrBand="" />
+     </rev_item>
+
+     <rev_item hardwareId="1111" rf_bit_index = "11,12,13,14">
+         <bandList lockCountry="IN" gsmBand="3,4" wcdmaBand="1" lteBand="1,3,38,40,41" cdmaBand="" nrBand="" />
+     </rev_item>
+  </item>
+
+</config>

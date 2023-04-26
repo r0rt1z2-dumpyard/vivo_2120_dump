@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<CheckItems>
+	<!--check ufs writebooster or turbowrite settings-->
+	<!--if type is all_enable:1.enable the check of all projects on the platform;-->
+	<!--if type is part_enable:1.just enable the check of projects field on the platform;-->
+	<!--if type is part_disable:1.just disable the check of projects field on the platform;-->
+	<CheckItem platform="SM8450" type="all_enable" projects="" reserve=""/>
+	<CheckItem platform="SM8350" type="all_enable" projects="" reserve=""/>
+	<CheckItem platform="MTK6833" type="part_enable" projects="PD2102F_EX PD2102 PD2156F_EX" reserve=""/>
+	<CheckItem platform="MTK6853" type="part_enable" projects="PD2061,PD2083F_EX" reserve=""/>
+	<CheckItem platform="MTK6891" type="part_enable" projects="PD2072,PD2085,PD2063,PD2121,PD2162" reserve=""/>
+	<CheckItem platform="MTK6893" type="part_enable" projects="PD2120,PD2133,PD2135,PD2133F_EX,PD2135F_EX,PD2085B PD2149 PD2163F_EX" reserve=""/>
+	<CheckItem platform="ERD9815" type="all_enable" projects="" reserve=""/>
+	<CheckItem platform="SM8250" type="all_enable" projects="" reserve=""/>
+	<CheckItem platform="SM7250" type="part_enable" projects="PD2073,PD2073F_EX" reserve=""/>
+	<CheckItem platform="MTK6877" type="part_enable" projects="TD2011,PD2123,PD2131,PD2130" reserve=""/>
+	<CheckItem platform="MTK6781" type="part_enable" projects="PD2150F_EX" reserve=""/>
+	<CheckItem platform="SM7325" type="part_enable" projects="TD2101,PD2148,PD2148F_EX,PD2115" reserve=""/>
+	<CheckItem platform="MTK6983" type="all_enable" projects="" reserve=""/>
+	<CheckItem platform="MTK6895" type="all_enable" projects="" reserve=""/>
+	<!--CheckItem platform="E98x" type="part_enable" projects="PD2088,PD2089,PD2090" reserve=""-->
+	<!--CheckItem platform="E98x" type="part_disable" projects="PD2091,PD2092" reserve=""-->
+</CheckItems>

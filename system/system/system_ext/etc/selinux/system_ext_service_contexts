@@ -1,0 +1,293 @@
+#line 1 "vendor/vivo/system/sepolicy/common/private/service_contexts"
+# vivo hujin add for VIVO_SEPOLICY begin
+dcdiming                       u:object_r:dcdiming_service:s0
+# vivo hujin add for VIVO_SEPOLICY end
+# vivo tangdexi add for VIVO_SEPOLICY begin
+media.servicehub                          u:object_r:audioserver_service:s0
+media.features                          u:object_r:audioserver_service:s0
+media.parameters                          u:object_r:audioserver_service:s0
+# vivo tangdexi add for VIVO_SEPOLICY end
+
+vivo_daemon.service                       u:object_r:vivo_daemon_service:s0
+
+# vivo shenmingzhi add for secure_inputmethod begin
+input_method_secure                       u:object_r:input_method_service:s0
+# vivo shenmingzhi add for secure_inputmethod end
+
+# vivo qinhaichao add for vivo_common_service begin
+vivo_common_service                       u:object_r:vivo_common_service:s0
+# vivo qinhaichao add for vivo_common_service end
+
+# vivo qinhaichao add for configuration_service begin
+configuration_service                       u:object_r:configuration_service:s0
+# vivo qinhaichao add for configuration_service end
+
+# vivo gonghaibo add for _VIVO_PERMISSION_ begin
+vivo_permission                           u:object_r:vivo_permission_service:s0
+vivo_permission_service                   u:object_r:vivo_permissions_service:s0
+# vivo gonghaibo add for _VIVO_PERMISSION_ end
+
+#vivo sensor team add begin
+vivo_prox_cali_service                   u:object_r:vivo_prox_cali_service:s0
+vivo_sar_power_state_service             u:object_r:vivo_sar_power_state_service:s0
+vivo_sensorhub_service                   u:object_r:vivo_sensorhub_service:s0
+motion_manager                           u:object_r:motion_manager:s0
+#vivo sensor team add end
+
+#vivo dengweicheng add for VIVO_SEPOLICY begin
+night_pearl_service                     u:object_r:night_pearl_service:s0
+# vivo dengweicheng add for VIVO_SEPOLICY end
+
+#vivo engineermode add begin
+engineer_utile      u:object_r:engineer_utile_service:s0
+#vivo engineermode add end
+
+#add for touchscreen chenpeng
+bbk_touch_screen_service                        u:object_r:bbk_touch_screen_service:s0
+#end
+
+#add for capacity key qiujie
+capacitykey_service                        u:object_r:capacitykey_service:s0
+#end
+
+# vivo zhangjianping add for VIVO_SEPOLICY face detect service
+face_detect                                    u:object_r:facedetectserver_service:s0
+face_detect_service                            u:object_r:facedetect_service:s0
+
+#vivo caichangshui added for RMS10 begin
+rms u:object_r:rms:s0
+sps u:object_r:sps:s0
+sps_rms u:object_r:sps_rms:s0
+#vivo caichangshui added for RMS10 end
+
+# vivo zhuhequan add for bigdata collect start
+rms_statistics    u:object_r:rms_statistics:s0
+# vivo zhuhequan add for bigdata collect end
+
+# vivo xushenghua add for game server start
+gamewatch_server    u:object_r:gamewatch_server:s0
+# vivo xushenghua add for game server end
+
+#vivo lijianhao add for vivoBackup begin
+vivo_backup_service                               u:object_r:vivo_backup_service:s0
+#vivo lijianhao add for vivoBackup end
+
+# vivo huangxiaodong add for vivo_anrmanager start
+vivo_anrmanager    u:object_r:vivo_anrmanager:s0
+# vivo huangxiaodong add for vivo_anrmanager end
+
+# vivo <liushaoling> add for PHONE_BOOK begin{T1803301001}
+vivosimphonebook                              u:object_r:radio_service:s0
+# vivo <liushaoling> add for PHONE_BOOK end{T1803301001}
+
+# vivo fingerprint_team
+analysis                 u:object_r:analysis_service:s0
+fingerprintui            u:object_r:fingerprintui_service:s0
+
+# vivo cuiyu add for MultiDisplay start
+multidisplay                       u:object_r:multidisplay_service:s0
+# vivo lujing add for MultiDisplay end
+
+# vivo qinhaichao add for EPM_SERVICE begin
+epm                       u:object_r:epm_service:s0
+epmd                      u:object_r:epmd_service:s0
+# vivo qinhaichao add for EPM_SERVICE end
+
+# vivo qinhaichao add for POPUP_CAMERA_SERVICE begin
+popup_camera_service                       u:object_r:popup_camera_service:s0
+# vivo qinhaichao add for POPUP_CAMERA_SERVICE end
+
+# vivo lyuepeng add for circle_light_service start
+circle_light_service    u:object_r:circle_light_service:s0
+# vivo lyuepeng add for circle_light_service end
+
+# vivo luobin add for multidisplay state control begin
+vivo_display_state                    u:object_r:vivo_display_state_service:s0
+# vivo luobin add for multidisplay state control end
+
+#vivo zhoujie add for TZ_MONITER begin
+tz_moniter                   u:object_r:tz_moniter_service:s0
+#vivo zhoujie add for TZ_MONITER end
+
+# vivo zhanglei add for vivo_light_service start
+vivo_light_service    u:object_r:vivo_light_service:s0
+# vivo zhanglei add for vivo_light_service end
+
+#vivo pengbaohua add for NIGHT_MODE begin
+nightmode                    u:object_r:nightmode_service:s0
+#vivo pengbaohua add for NIGHT_MODE end
+
+# vivo qianyu add for vivo_behavior_service begin
+vivo_behavior_service                       u:object_r:vivo_behavior_service:s0
+# vivo qianyu add for vivo_behavior_service end
+
+# vivo xushenghua add for aiengine_server start
+aiengine_server    u:object_r:aiengine_server:s0
+# vivo xushenghua add for aiengine_server end
+
+# vivo zhudaozhuan add for system_defence begin
+system_defence_service    u:object_r:system_defence_service:s0
+# vivo zhudaozhuan add for system_defence end
+# vivo miaoxu add for vivoperfservice start
+vendor.vivoperfservice   u:object_r:vendor_vivoperf_service:s0
+# vivo miaoxu add for vivoperfservice end
+
+# vivo lifei add for bsptestserver start
+bsptestserver   u:object_r:bsptest_service:s0
+# vivo lifei add for bsptestserver end
+
+# vivo hupengxiang add for vivocameraserver start
+media.vivocamera    u:object_r:vivocameraserver_service:s0
+# vivo hupengxiang add for vivocameraserver end
+
+# vivo xiezhulin add for vcode <begin May 05, 2019
+vcode u:object_r:vcode:s0
+# vivo xiezhulin add for vcode end>
+
+# vivo xionghongliang add for vivo_vcode_hal_transfer_service begin
+vivo_vcode_hal_transfer_service    u:object_r:vivo_vcode_hal_transfer_service:s0
+# vivo xionghongliang modify for vivo_vcode_hal_transfer_service end
+
+# vivo yuanjianchun add for vivo_vgc begin
+vgc_service    u:object_r:vgc_service:s0
+cbs_service    u:object_r:cbs_service:s0
+# vivo yuanjianchun add for vivo_vgc end
+
+# vivo zhaojinbin add for vivo_phonelock begin
+phonelock_service    u:object_r:phonelock_service:s0
+# vivo zhaojinbin add for vivo_phonelock end
+
+# vivo wangdong add for FEATURE_ART++ v2.0 begin
+vivo_art_keeper_service                       u:object_r:vivo_art_keeper_service:s0
+# vivo wangdong add for FEATURE_ART++ v2.0 end
+
+# vivo face_team add for face detection begin
+faceui    u:object_r:faceui_service:s0
+# vivo face_team add for face detection end
+
+# vivo WangGuoquan add for icon management begin
+theme_icon_service                    u:object_r:theme_icon_service:s0
+# vivo WangGuoquan add for icon management end
+
+# vivo xujiawei add for input_policy begin
+system_auto_recover_service    u:object_r:system_auto_recover_service:s0
+# vivo xujiawei add for input_policy end
+# vivo liwanxing add for super resolution begin
+vivo_super_resolution_service u:object_r:vivo_super_resolution_service:s0
+# vivo liwanxing add for super resolution end
+
+# vivo zhangshuanglong add for superreolution begin
+superreolution                                    u:object_r:superreolutionserver_service:s0
+superreolution_service                            u:object_r:superreolution_service:s0
+# vivo zhangshuanglong add for superreolution end
+# vivo hujin add for eye protection begin
+vivo_color_manager_service  u:object_r:vivo_color_manager_service:s0
+# vivo hujin add for eye protection end
+
+# vivo panpeng add for VIVO_4D_GAME_VIBRATOR begin
+vivo_4d_game_vibrator_service                        u:object_r:vivo_4d_game_vibrator_service:s0
+# vivo panpeng add for VIVO_4D_GAME_VIBRATOR end
+
+# vivo zhanglei add for memc begin
+vivo_memc_service                    u:object_r:vivo_memc_service:s0
+# vivo zhanglei add for memc end
+
+# vivo wangGuoquan add for PHYSICAL_FLING begin
+physical_fling_service                    u:object_r:physical_fling_service:s0
+# vivo wangGuoquan add for PHYSICAL_FLING begin
+
+# vivo wangqin add for vapc begin
+vivoaudiopolicy                           u:object_r:vivoaudiopolicy:s0
+# vivo wangqin add for vapc end
+
+# vivo hujin add for display enhance begin
+vivo_display_enhance  u:object_r:vivo_display_enhance:s0
+# vivo hujin add for display enhance end
+
+# vivo chenyidian add for VIVO_SEPOLICY begin
+vivo_cast_service u:object_r:vivo_cast_service:s0
+# vivo chenyidian add for VIVO_SEPOLICY end
+
+# vivo linpeilin add for virtual_ab update begin
+upgrade_engine u:object_r:update_engine_service:s0
+# vivo linpeilin add for virtual_ab update end
+
+# vivo wangsensen add for VIVO_SEPOLICY begin
+hq_sarcontroller_service             u:object_r:hq_sarcontroller_service:s0
+# vivo wangsensen team add for VIVO_SEPOLICY end
+
+# vivo linjintian add for mediaresourceService start
+vivo_media_resource_service  u:object_r:VivoMediaResource_service:s0
+# vivo linjintian add for mediaresourceService end
+
+# vivo liweihong add for customcenter begin
+customcenter u:object_r:vivo_customcenter_service:s0
+# vivo liweihong add for customcenter end
+
+#line 1 "device/mediatek/sepolicy/basic/plat_private/service_contexts"
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+memory_dumper u:object_r:mediaserver_service:s0
+imsa          u:object_r:radio_service:s0
+mtkIms        u:object_r:radio_service:s0
+GbaService    u:object_r:radio_service:s0
+
+#line 1 "device/mediatek/sepolicy/bsp/plat_private/service_contexts"
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+anrmanager                                              u:object_r:mtk_anrmanager_service:s0
+permrecords                                             u:object_r:mtk_permrecords_service:s0
+media.mmsdk                                             u:object_r:mtk_advcamserver_service:s0
+media.advcam                                            u:object_r:mtk_advcamserver_service:s0
+AAL                                                     u:object_r:aal_service:s0
+terservice                                              u:object_r:terservice_service:s0
+mtk-perfservice                                         u:object_r:mtk_perf_service:s0
+power_hal_mgr_service                                   u:object_r:mtk_power_hal_mgr_service:s0
+phoneEx                                                 u:object_r:mtk_radio_service:s0
+telephony.mtkregistry                                   u:object_r:mtk_registry_service:s0
+iphonesubinfoEx                                         u:object_r:mtk_phonesubinfo_service:s0
+mtk_telecom                                             u:object_r:mtk_telecom_service:s0
+mtksimphonebook                                         u:object_r:mtk_simphonebook_service:s0
+data_shaping                                            u:object_r:mtk_data_shaping_service:s0
+mtkconnmetrics                                          u:object_r:mtk_connmetrics_service:s0
+duraspeed                                               u:object_r:mtk_duraspeed_service:s0
+capctrl                                                 u:object_r:mtk_radio_service:s0
+autoboot                                                u:object_r:mtk_autoboot_service:s0
+smartratswitch                                          u:object_r:mtk_radio_service:s0
+GoogleOtaBinder                                         u:object_r:ota_agent_service:s0
+GpuAppSpectatorService                                  u:object_r:gas_srv_service:s0
+FpsPolicyService                                        u:object_r:fpspolicy-server_service:s0
+isubstub                                                u:object_r:radio_service:s0
+wfo                                                     u:object_r:radio_service:s0
+imtksms                                                 u:object_r:radio_service:s0
+carrierexpress                                          u:object_r:mtk_carrierexpress_service:s0
+media.VTS                                               u:object_r:vtservice_service:s0
+mwis                                                    u:object_r:radio_service:s0
+PPLAgent                                                u:object_r:ppl_agent_service:s0
+nfc.st_ext                                              u:object_r:nfc_service:s0
+nfc_settings                                            u:object_r:nfc_service:s0
+gwsd                                                    u:object_r:mtk_gwsd_service:s0
+ctanetworkdatacontroller                                u:object_r:cta_networkdatacontroller_service:s0
+vodata                                                  u:object_r:mtk_vodata_service:s0
+vendor.trustonic.teeservice.ITeeService                 u:object_r:tee_service:s0
+vendor.trustonic.teeregistryservice.ITeeRegistryService u:object_r:teeregistry_service:s0
+mediatek.campostalgo                                    u:object_r:camerapostalgo_service:s0
+NvRAMAgent                                              u:object_r:nvram_agent_service:s0
+mobile                                                  u:object_r:mtk_mobile_service:s0
+msgmonitorservice                                       u:object_r:mtk_msg_monitor_service:s0
+epdg_service                                            u:object_r:mtk_epdg_service:s0
+rns                                                     u:object_r:mtk_rns_service:s0
+search_engine_service                                   u:object_r:mtk_search_engine_service:s0
+omadm_service                                           u:object_r:mtk_omadm_service:s0
+fm_radio_service                                        u:object_r:mtk_fm_radio_service:s0
+vow_bridge                                              u:object_r:mtk_vowbridge_service:s0
+appdetection                                            u:object_r:mtk_appdetection_service:s0
+media.VTS.HiDL                                          u:object_r:vtservice_hidl_service:s0
+
+# MICROTRUST Policy Rule
+# for ifaa upgrade on android O
+ifaa_service     u:object_r:teei_ifaa_service:s0

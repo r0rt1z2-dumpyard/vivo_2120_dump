@@ -1,0 +1,30 @@
+service uncrypt /system/bin/uncrypt
+    class main
+    socket uncrypt stream 600 system system
+    disabled
+    oneshot
+
+service setup-bcb /system/bin/uncrypt --setup-bcb
+    class main
+    socket uncrypt stream 600 system system
+    disabled
+    oneshot
+
+service clear-bcb /system/bin/uncrypt --clear-bcb
+    class main
+    socket uncrypt stream 600 system system
+    disabled
+    oneshot
+
+# vivo wuzengshun add for system upgrade begin
+service recovery_travel /system/bin/uncrypt --travel-sync-records
+    class main
+    disabled
+    oneshot
+
+on property:sys.boot_completed=1 && property:ro.vivo.recovery.last_action=ota-upgrade
+    start recovery_travel
+
+on property:sys.boot_completed=1 && property:ro.vivo.recovery.last_action=upgrade
+    start recovery_travel
+# vivo wuzengshun add for system upgrade end

@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<operators version="1">
+    <operator carrier="Test PLMN 1-1" shortName="Test1-1" mcc="001" mnc="01"/>
+    <operator carrier="Test PLMN 1-2" shortName="Test1-2" mcc="001" mnc="02"/>
+    <operator carrier="Test PLMN 2-1" shortName="Test2-1" mcc="002" mnc="01"/>
+    <operator carrier="GR COSMOTE" shortName="C-OTE" mcc="202" mnc="01"/>
+    <operator carrier="vodafone GR" shortName="voda GR" mcc="202" mnc="05"/>
+    <operator carrier="WIND GR" shortName="WIND" mcc="202" mnc="09"/>
+    <operator carrier="WIND GR" shortName="WIND" mcc="202" mnc="10"/>
+    <operator carrier="Tele2 NL" shortName="Tele2" mcc="204" mnc="02"/>
+    <operator carrier="Rabo Mobiel" shortName="KPN" mcc="204" mnc="03"/>
+    <operator carrier="NL KPN" shortName="NL KPN" mcc="204" mnc="08"/>
+    <operator carrier="NS Railinfrabeheer B.V." shortName="NS Railinfrabeheer B.V." mcc="204" mnc="21"/>
+    <operator carrier="vodafone NL" shortName="voda NL" mcc="204" mnc="04"/>
+    <operator carrier="NL Telfort" shortName="NL Tlfrt" mcc="204" mnc="12"/>
+    <operator carrier="T-Mobile NL" shortName="TMO NL" mcc="204" mnc="16"/>
+    <operator carrier="Orange NL" shortName="Orange" mcc="204" mnc="20"/>
+    <operator carrier="Proximus" shortName="Proximus" mcc="206" mnc="01"/>
+    <operator carrier="Orange B" shortName="OBE" mcc="206" mnc="10"/>
+    <operator carrier="BASE" shortName="BASE" mcc="206" mnc="20"/>
+    <operator carrier="Orange F" shortName="Orange" mcc="208" mnc="01"/>
+    <operator carrier="F-Contact" shortName="Contact" mcc="208" mnc="02"/>
+    <operator carrier="Globalstar Europe" shortName="Globalstar Europe" mcc="208" mnc="05,06,07"/>
+    <operator carrier="F SFR" shortName="SFR" mcc="208" mnc="09"/>
+    <operator carrier="F SFR" shortName="SFR" mcc="208" mnc="10"/>
+    <operator carrier="SFR FEMTO" shortName="SFRFEMTO" mcc="208" mnc="11"/>
+    <operator carrier="F - Contact" shortName="Contact" mcc="208" mnc="13"/>
+    <operator carrier="Free" shortName="Free" mcc="208" mnc="15,16,35,36"/>
+    <operator carrier="Bouygues Telecom" shortName="Bouygues" mcc="208" mnc="20"/>
+    <operator carrier="Bouygues Telecom" shortName="Bouygues" mcc="208" mnc="21"/>
+    <operator carrier="Coriolis Télécom" shortName="Coriolis Télécom" mcc="208" mnc="27"/>
+    <operator carrier="F - Contact" shortName="Contact" mcc="208" mnc="88"/>
+    <operator carrier="vala" shortName="vala" mcc="212" mnc="01"/>
+    <operator carrier="Monaco" shortName="MONACO" mcc="212" mnc="10"/>
+    <operator carrier="AndorraTelecom" shortName="AndorraT" mcc="213" mnc="03"/>
+    <operator carrier="vodafone ES" shortName="voda ES" mcc="214" mnc="01"/>
+    <operator carrier="Orange SP" shortName="ESPRT" mcc="214" mnc="03"/>
+    <operator carrier="YOIGO" shortName="YOIGO" mcc="214" mnc="04"/>
+    <operator carrier="Telefonica Moviles Espana" shortName="TME" mcc="214" mnc="05"/>
+    <operator carrier="Vodafone Spain" shortName="Vodafone" mcc="214" mnc="06"/>
+    <operator carrier="Movistar" shortName="Movistar" mcc="214" mnc="07"/>
+    <operator carrier="France Telcom Espana SA" shortName="Orange" mcc="214" mnc="09"/>
+    <operator carrier="Telenor HU" shortName="TelenorH" mcc="216" mnc="01"/>
+    <operator carrier="Digi.Mobil HU" shortName="Digi HU" mcc="216" mnc="03"/>
+    <operator carrier="Pannon" shortName="Pannon" mcc="216" mnc="20"/>
+    <operator carrier="Telekom HU" shortName="THU"  mcc="216" mnc="30"/>
+    <operator carrier="vodafone HU" shortName="voda HU" mcc="216" mnc="70"/>
+    <operator carrier="HT ERONET" shortName="HTERONET" mcc="218" mnc="03"/>
+    <operator carrier="m:tel" shortName="m:tel" mcc="218" mnc="05"/>
+    <operator carrier="BH Mobile" shortName="BHMOBILE" mcc="218" mnc="90"/>
+    <operator carrier="HT HR" shortName="HT HR" mcc="219" mnc="01"/>
+    <operator carrier="Tele2 HR" shortName="Tele2 HR" mcc="219" mnc="02"/>
+    <operator carrier="A1 HR" shortName="A1 HR" mcc="219" mnc="10"/>
+    <operator carrier="Telenor SRB" shortName="Telenor" mcc="220" mnc="01"/>
+    <operator carrier="mt:s" shortName="MTS" mcc="220" mnc="03"/>
+    <operator carrier="T-Mobile CG" shortName="TMO CG" mcc="220" mnc="04"/>
+    <operator carrier="A1 SRB" shortName="A1 SRB" mcc="220" mnc="05"/>
+    <operator carrier="vala" shortName="vala" mcc="221" mnc="01"/>
+    <operator carrier="IPKO" shortName="IPKO" mcc="221" mnc="02"/>
+    <operator carrier="I TIM" shortName="I TIM" mcc="222" mnc="01"/>
+    <operator carrier="Elsacom" shortName="Elsacom" mcc="222" mnc="02"/>
+    <operator carrier="vodafone IT" shortName="voda IT" mcc="222" mnc="10"/>
+    <operator carrier="Rete  Ferroviaria Italiana" shortName="RRI" mcc="222" mnc="30"/>
+    <operator carrier="ILIAD" shortName="ILIAD" mcc="222" mnc="50"/>
+    <operator carrier="WINDTRE" shortName="WINDTRE" mcc="222" mnc="88"/>
+    <operator carrier="WINDTRE" shortName="WINDTRE" mcc="222" mnc="99"/>
+    <operator carrier="Vodafone RO" shortName="VF-RO" mcc="226" mnc="01"/>
+    <operator carrier="Telekom.RO" shortName="TELEKOM" mcc="226" mnc="03"/>
+    <operator carrier="Telekom.RO" shortName="TELEKOM" mcc="226" mnc="06"/>
+    <operator carrier="RO Digi.Mobil" shortName="Digi" mcc="226" mnc="05"/>
+    <operator carrier="RO ORANGE" shortName="ORANGE" mcc="226" mnc="10"/>
+    <operator carrier="RO 2K Telecom" shortName="RO 2KT" mcc="226" mnc="15"/>
+    <operator carrier="Swisscom" shortName="Swisscom" mcc="228" mnc="01"/>
+    <operator carrier="Sunrise" shortName="Sunrise" mcc="228" mnc="02"/>
+    <operator carrier="Salt" shortName="Salt" mcc="228" mnc="03"/>
+    <operator carrier="In&amp;Phone" shortName="In&amp;Phone" mcc="228" mnc="07"/>
+    <operator carrier="CHE  Tele2 Switzerland" shortName="T2" mcc="228" mnc="08"/>
+    <operator carrier="T-Mobile CZ" shortName="TMO CZ" mcc="230" mnc="01"/>
+    <operator carrier="O2 - CZ" shortName="O2 - CZ" mcc="230" mnc="02"/>
+    <operator carrier="Vodafone CZ" shortName="Vodafone" mcc="230" mnc="03"/>
+    <operator carrier="CZDC s.o." shortName="CZDC s.o." mcc="230" mnc="98"/>
+    <operator carrier="Orange SK" shortName="Orange" mcc="231" mnc="01"/>
+    <operator carrier="Telekom SK" shortName="Telekom" mcc="231" mnc="02"/>
+    <operator carrier="SWAN SK" shortName="SWAN SK" mcc="231" mnc="03"/>
+    <operator carrier="T-Mobile Slovensko" shortName="T-Mobile" mcc="231" mnc="04"/>
+    <operator carrier="O2 - SK" shortName="O2 - SK" mcc="231" mnc="06"/>
+    <operator carrier="A1" shortName="A1" mcc="232" mnc="01"/>
+    <operator carrier="Magenta-T-" shortName="MagentaT" mcc="232" mnc="03"/>
+    <operator carrier="3 AT" shortName="3 AT" mcc="232" mnc="05"/>
+    <operator carrier="Telering" shortName="Telering" mcc="232" mnc="07"/>
+    <operator carrier="3 AT" shortName="3 AT" mcc="232" mnc="10"/>
+    <operator carrier="Bob" shortName="Bob" mcc="232" mnc="11"/>
+    <operator carrier="Yesss" shortName="Yesss" mcc="232" mnc="12"/>
+    <operator carrier="Magenta-T-" shortName="MagentaT" mcc="232" mnc="13"/>
+    <operator carrier="3 AT" shortName="3 AT" mcc="232" mnc="14"/>
+    <operator carrier="British Telecom" shortName="BT" mcc="234" mnc="00"/>
+    <operator carrier="UK01" shortName="UK01" mcc="234" mnc="01"/>
+    <operator carrier="O2" shortName="O2" mcc="234" mnc="02"/>
+    <operator carrier="Airtel-Vodafone" shortName="ATL-VOD" mcc="234" mnc="03"/>
+    <operator carrier="Cable&amp;Wireless UK" shortName="C&amp;W UK" mcc="234" mnc="07"/>
+    <operator carrier="BT OnePhone" shortName="BTOP" mcc="234" mnc="08"/>
+    <operator carrier="PMN UK" shortName="PMN" mcc="234" mnc="09"/>
+    <operator carrier="O2 - UK" shortName="O2 - UK" mcc="234" mnc="10"/>
+    <operator carrier="Telefonica Europe" shortName="o2" mcc="234" mnc="11"/>
+    <operator carrier="Network Rail Infrastructure Ltd" shortName="Railtrack" mcc="234" mnc="12"/>
+    <operator carrier="vodafone UK" shortName="vodafone UK" mcc="234" mnc="15"/>
+    <operator carrier="Opal UK" shortName="Opal UK" mcc="234" mnc="16"/>
+    <operator carrier="Wire9 Telecom plc" shortName="Cloud9" mcc="234" mnc="18"/>
+    <operator carrier="Telaware plc" shortName="Telaware" mcc="234" mnc="19"/>
+    <operator carrier="3 UK" shortName="3 UK" mcc="234" mnc="20"/>
+    <operator carrier="Marathon" shortName="Marathon" mcc="234" mnc="28"/>
+    <operator carrier="EE" shortName="EE" mcc="234" mnc="30,33"/>
+    <operator carrier="Virgin Mobile" shortName="Virgin" mcc="234" mnc="31"/>
+    <operator carrier="Orange PCS Ltd" shortName="Orange" mcc="234" mnc="34"/>
+    <operator carrier="JT" shortName="JT" mcc="234" mnc="50"/>
+    <operator carrier="Sure" shortName="Sure" mcc="234" mnc="55"/>
+    <operator carrier="Manx Telecom" shortName="MANX" mcc="234" mnc="58"/>
+    <operator carrier="Inquam Telecom" shortName="Inquam" mcc="234" mnc="75"/>
+    <operator carrier="TDC" shortName="TDC" mcc="238" mnc="01"/>
+    <operator carrier="Telenor DK" shortName="TelenoDK" mcc="238" mnc="02"/>
+    <operator carrier="Telia DK" shortName="Telia" mcc="238" mnc="20"/>
+    <operator carrier="Telia Nattjanster Norden AB" shortName="Telia" mcc="238" mnc="30"/>
+    <operator carrier="Telenor" shortName="Tele2" mcc="238" mnc="70"/>
+    <operator carrier="3 DK" shortName="3 DK" mcc="238" mnc="06"/>
+    <operator carrier="Telia-Telenor DK" shortName="TT DK" mcc="238" mnc="66"/>
+    <operator carrier="Telenor DK" shortName="TelenoDK" mcc="238" mnc="77"/>
+    <operator carrier="TELIA S" shortName="TELIA" mcc="240" mnc="01"/>
+    <operator carrier="3 SE" shortName="3 SE" mcc="240" mnc="02"/>
+    <operator carrier="SWEDEN" shortName="SWE" mcc="240" mnc="04"/>
+    <operator carrier="Sweden 3G" shortName="Sweden3G" mcc="240" mnc="05"/>
+    <operator carrier="Telenor" shortName="Telenor" mcc="240" mnc="06"/>
+    <operator carrier="Banverket" shortName="Banverket" mcc="240" mnc="21"/>
+    <operator carrier="Tele2" shortName="Tele2 SE" mcc="240" mnc="07"/>
+    <operator carrier="Telenor SE" shortName="TelenorS" mcc="240" mnc="08"/>
+    <operator carrier="SpringMobil SE" shortName="Spring" mcc="240" mnc="10"/>
+    <operator carrier="Sweden Mobile" shortName="MobileS" mcc="240" mnc="24"/>
+    <operator carrier="N Telenor" shortName="TELENOR" mcc="242" mnc="01"/>
+    <operator carrier="N NetCom" shortName="NetCom" mcc="242" mnc="02"/>
+    <operator carrier="MTU" shortName="MTU" mcc="242" mnc="03"/>
+    <operator carrier="Network Norway" shortName="Network Norway" mcc="242" mnc="05"/>
+    <operator carrier="Jernbaneverket AS" shortName="Jernbaneverket AS" mcc="242" mnc="20"/>
+    <operator carrier="N ice" shortName="ice" mcc="242" mnc="14"/>
+    <operator carrier="Tampnet" shortName="Tampnet" mcc="242" mnc="99"/>
+    <operator carrier="FI DNA" shortName="DNA" mcc="244" mnc="03"/>
+    <operator carrier="FI elisa" shortName="elisa" mcc="244" mnc="05"/>
+    <operator carrier="FI DNA" shortName="DNA" mcc="244" mnc="12"/>
+    <operator carrier="FI AMT" shortName="FI AMT" mcc="244" mnc="14"/>
+    <operator carrier="FI elisa" shortName="elisa" mcc="244" mnc="21"/>
+    <operator carrier="DNA - Sonera FI" shortName="SuomenYV" mcc="244" mnc="36"/>
+    <operator carrier="Telia FI" shortName="Telia" mcc="244" mnc="91"/>
+    <operator carrier="Telia LT" shortName="Telia" mcc="246" mnc="01"/>
+    <operator carrier="LT BITE GSM" shortName="BITE" mcc="246" mnc="02"/>
+    <operator carrier="Tele2 LT" shortName="Tele2 LT" mcc="246" mnc="03"/>
+    <operator carrier="LV LMT" shortName="LMT" mcc="247" mnc="01"/>
+    <operator carrier="Tele2 LV" shortName="Tele2 LV" mcc="247" mnc="02"/>
+    <operator carrier="BITE LV" shortName="BITE LV" mcc="247" mnc="05"/>
+    <operator carrier="Telia" shortName="Telia" mcc="248" mnc="01"/>
+    <operator carrier="Elisa EE" shortName="ELISA" mcc="248" mnc="02"/>
+    <operator carrier="Tele2 EE" shortName="Tele2 EE" mcc="248" mnc="03"/>
+    <operator carrier="MTS RUS" shortName="MTS RUS" mcc="250" mnc="01"/>
+    <operator carrier="MegaFon RUS" shortName="MegaFon" mcc="250" mnc="02"/>
+    <operator carrier="NCC" shortName="NCC" mcc="250" mnc="03"/>
+    <operator carrier="Yeniseytelecom" shortName="ETK" mcc="250" mnc="05"/>
+    <operator carrier="SIBCHALLENGE RUS" shortName="RUS_SCN" mcc="250" mnc="04"/>
+    <operator carrier="RUS 07, RUS SMARTS" shortName="SMARTS" mcc="250" mnc="07"/>
+    <operator carrier="RUS DTC" shortName="DTC" mcc="250" mnc="10"/>
+    <operator carrier="YOTA" shortName="YOTA" mcc="250" mnc="11"/>
+    <operator carrier="Baykalwstern" shortName="Baykalwstern" mcc="250" mnc="12"/>
+    <operator carrier="RUS Kuban-GSM" shortName="KUGSM" mcc="250" mnc="13"/>
+    <operator carrier="SMARTS Ufa" shortName="SMARTS" mcc="250" mnc="14"/>
+    <operator carrier="NTC" shortName="NTC" mcc="250" mnc="16"/>
+    <operator carrier="JSC Uralsvyazinform" shortName="Utel" mcc="250" mnc="17"/>
+    <operator carrier="INDIGO" shortName="INDIGO" mcc="250" mnc="19"/>
+    <operator carrier="Tele2 RU" shortName="Tele2" mcc="250" mnc="20"/>
+    <operator carrier="Mobicom - Novosibirsk" shortName="Mobicom - Novosibirsk" mcc="250" mnc="23"/>
+    <operator carrier="LETAI" shortName="LETAI" mcc="250" mnc="27"/>
+    <operator carrier="voda" shortName="voda" mcc="250" mnc="28"/>
+    <operator carrier="MOTIV" shortName="MOTIV" mcc="250" mnc="35"/>
+    <operator carrier="Uralsvyazinform" shortName="Utel" mcc="250" mnc="39"/>
+    <operator carrier="Beeline" shortName="Beeline" mcc="250" mnc="99"/>
+    <operator carrier="VODAFONE" shortName="VODAFONE" mcc="255" mnc="01"/>
+    <operator carrier="Beeline UA" shortName="Beeline" mcc="255" mnc="02"/>
+    <operator carrier="UA-KYIVSTAR" shortName="UA-KS" mcc="255" mnc="03"/>
+    <operator carrier="Intertelecom" shortName="Intertelecom" mcc="255" mnc="04"/>
+    <operator carrier="Golden Telecom" shortName="Golden Telecom" mcc="255" mnc="05"/>
+    <operator carrier="lifecell" shortName="lifecell" mcc="255" mnc="06"/>
+    <operator carrier="TriMob" shortName="TriMob" mcc="255" mnc="07"/>
+    <operator carrier="A1 BY" shortName="A1 BY" mcc="257" mnc="01"/>
+    <operator carrier="MTS BY" shortName="MTS BY" mcc="257" mnc="02"/>
+    <operator carrier="life:) BY" shortName="life:)BY" mcc="257" mnc="04"/>
+    <operator carrier="Orange MD" shortName="Orange" mcc="259" mnc="01"/>
+    <operator carrier="Moldcell" shortName="Moldcell" mcc="259" mnc="02"/>
+    <operator carrier="MDA EVENTIS" shortName="EVENTIS" mcc="259" mnc="04"/>
+    <operator carrier="UNITE" shortName="UNITE" mcc="259" mnc="05"/>
+    <operator carrier="IDC" shortName="IDC" mcc="259" mnc="15"/>
+    <operator carrier="Plus" shortName="PLUS" mcc="260" mnc="01"/>
+    <operator carrier="T-Mobile.pl" shortName="T-Mobile.pl" mcc="260" mnc="02"/>
+    <operator carrier="Orange" shortName="Orange" mcc="260" mnc="03"/>
+    <operator carrier="Play" shortName="Play" mcc="260" mnc="06"/>
+    <operator carrier="Cyfrowy Polsat" shortName="Cyfrowy Polsat" mcc="260" mnc="12"/>
+    <operator carrier="Sferia" shortName="Sferia" mcc="260" mnc="14"/>
+    <operator carrier="Telekom.de" shortName="Telekom.de" mcc="262" mnc="01"/>
+    <operator carrier="Vodafone.de" shortName="Vodafone" mcc="262" mnc="02"/>
+    <operator carrier="o2 - de" shortName="o2 - de" mcc="262" mnc="03"/>
+    <operator carrier="Vodafone.de" shortName="Vodafone" mcc="262" mnc="04,09"/>
+    <operator carrier="o2 - de" shortName="o2 - de" mcc="262" mnc="05"/>
+    <operator carrier="T-Mobile" shortName="T-Mobile" mcc="262" mnc="06"/>
+    <operator carrier="o2 - de" shortName="o2 - de" mcc="262" mnc="07,08"/>
+    <operator carrier="Arcor AG &amp; Co" shortName="Arcor AG &amp; Co" mcc="262" mnc="10"/>
+    <operator carrier="o2 - de" shortName="o2 - de" mcc="262" mnc="11"/>
+    <operator carrier="Airdata" shortName="Airdata" mcc="262" mnc="15"/>
+    <operator carrier="DB Telematik" shortName="DB Telematik" mcc="262" mnc="60"/>
+    <operator carrier="Siemens AG" shortName="Siemens AG" mcc="262" mnc="76"/>
+    <operator carrier="o2 - de" shortName="o2 - de" mcc="262" mnc="77"/>
+    <operator carrier="GIBTEL" shortName="GIBTEL" mcc="266" mnc="01"/>
+    <operator carrier="vodafone P" shortName="voda P" mcc="268" mnc="01"/>
+    <operator carrier="NOS" shortName="NOS" mcc="268" mnc="03"/>
+    <operator carrier="MEO" shortName="MEO" mcc="268" mnc="06"/>
+    <operator carrier="POST" shortName="POST" mcc="270" mnc="01"/>
+    <operator carrier="L TANGO" shortName="TANGO" mcc="270" mnc="77"/>
+    <operator carrier="L Orange-LU" shortName="Orange" mcc="270" mnc="99"/>
+    <operator carrier="vodafone IE" shortName="voda IE" mcc="272" mnc="01"/>
+    <operator carrier="3" shortName="3" mcc="272" mnc="02"/>
+    <operator carrier="IRL - METEOR" shortName="METEOR" mcc="272" mnc="03"/>
+    <operator carrier="3" shortName="3" mcc="272" mnc="05"/>
+    <operator carrier="IS SIMINN" shortName="SIMINN" mcc="274" mnc="01"/>
+    <operator carrier="Vodafone" shortName="Vodafone" mcc="274" mnc="02"/>
+    <operator carrier="Viking" shortName="Viking" mcc="274" mnc="04"/>
+    <operator carrier="IceCell" shortName="IceCell" mcc="274" mnc="07"/>
+    <operator carrier="IS OnWaves" shortName="OnWaves" mcc="274" mnc="08"/>
+    <operator carrier="NOVA IS" shortName="NOVA" mcc="274" mnc="11"/>
+    <operator carrier="IS TAL" shortName="TAL" mcc="274" mnc="12"/>
+    <operator carrier="Telekom.al" shortName="T.al" mcc="276" mnc="01"/>
+    <operator carrier="Voda AL" shortName="Voda AL" mcc="276" mnc="02"/>
+    <operator carrier="ALBtelecom" shortName="ATmobile" mcc="276" mnc="03"/>
+    <operator carrier="PLUS AL" shortName="PLUS AL" mcc="276" mnc="04"/>
+    <operator carrier="vodafone MT" shortName="voda MT" mcc="278" mnc="01"/>
+    <operator carrier="go mobile" shortName="gomobile" mcc="278" mnc="21"/>
+    <operator carrier="Melita Mobile" shortName="Melita" mcc="278" mnc="77"/>
+    <operator carrier="Cyta-Voda" shortName="CytaVoda" mcc="280" mnc="01"/>
+    <operator carrier="epic" shortName="epic" mcc="280" mnc="10"/>
+    <operator carrier="PrimeTel PLC" shortName="PrimeTel" mcc="280" mnc="20"/>
+    <operator carrier="GEO-GEOCELL" shortName="GCELL" mcc="282" mnc="01"/>
+    <operator carrier="MAGTI-GSM-GEO" shortName="MAGTI" mcc="282" mnc="02"/>
+    <operator carrier="BEELINE" shortName="BEE" mcc="282" mnc="04"/>
+    <operator carrier="Aquafon" shortName="Aquafon" mcc="282" mnc="67"/>
+    <operator carrier="A-Mobile" shortName="A-Mobile" mcc="282" mnc="88"/>
+    <operator carrier="ARM MTS" shortName="MTS Arm" mcc="283" mnc="00"/>
+    <operator carrier="Beeline AM" shortName="Beeline" mcc="283" mnc="01"/>
+    <operator carrier="MTS ARM" shortName="MTS Arm" mcc="283" mnc="05"/>
+    <operator carrier="Ucom AM" shortName="Ucom" mcc="283" mnc="10"/>
+    <operator carrier="A1 BG" shortName="A1 BG" mcc="284" mnc="01"/>
+    <operator carrier="Vivacom BG" shortName="Vivacom" mcc="284" mnc="03"/>
+    <operator carrier="Telenor BG" shortName="Telenor" mcc="284" mnc="05"/>
+    <operator carrier="Turkcell" shortName="Turkcell" mcc="286" mnc="01"/>
+    <operator carrier="vodafone TR" shortName="VF-TR" mcc="286" mnc="02"/>
+    <operator carrier="Turk Telekom" shortName="Turk Telekom" mcc="286" mnc="03"/>
+    <operator carrier="Foroya Tele" shortName="FT-GSM" mcc="288" mnc="01"/>
+    <operator carrier="VODAFONE FO" shortName="VODAFONE" mcc="288" mnc="02"/>
+    <operator carrier="TELE Greenland" shortName="TELE GRL" mcc="290" mnc="01"/>
+    <operator carrier="SMT" shortName="SMT" mcc="292" mnc="01"/>
+    <operator carrier="A1 SI" shortName="A1 SI" mcc="293" mnc="40"/>
+    <operator carrier="MOBITEL" shortName="MOBITEL" mcc="293" mnc="41"/>
+    <operator carrier="T-2" shortName="T-2" mcc="293" mnc="64"/>
+    <operator carrier="TELEMACH" shortName="TELEMACH" mcc="293" mnc="70"/>
+    <operator carrier="Telekom MK" shortName="MKT MK" mcc="294" mnc="01"/>
+    <operator carrier="Cosmofon" shortName="Cosmofon" mcc="294" mnc="02"/>
+    <operator carrier="A1 MK" shortName="A1 MK" mcc="294" mnc="03"/>
+    <operator carrier="SwisscomFL" shortName="Swiss FL" mcc="295" mnc="01"/>
+    <operator carrier="Salt.li" shortName="Salt.li" mcc="295" mnc="02"/>
+    <operator carrier="FL1" shortName="FL1" mcc="295" mnc="05"/>
+    <operator carrier="LI TANGO" shortName="TANGO" mcc="295" mnc="77"/>
+    <operator carrier="Telenor" shortName="Telenor" mcc="297" mnc="01"/>
+    <operator carrier="Telekom.me" shortName="T.me" mcc="297" mnc="02"/>
+    <operator carrier="MTEL" shortName="MTEL" mcc="297" mnc="03"/>
+    <operator carrier="Bell" shortName="Bell" mcc="302" mnc="64"/>
+    <operator carrier="MTS" shortName="MTS" mcc="302" mnc="66"/>
+    <operator carrier="ROGERS" shortName="ROGERS" mcc="302" mnc="72"/>
+    <operator carrier="CANST" shortName="SaskTel" mcc="302" mnc="68"/>
+    <operator carrier="Xplore" shortName="Xplore" mcc="302" mnc="130"/>
+    <operator carrier="TELUS" shortName="TELUS" mcc="302" mnc="86,220"/>
+    <operator carrier="Eastlink" shortName="Eastlink" mcc="302" mnc="270"/>
+    <operator carrier="Mobilicity" shortName="Mobilici" mcc="302" mnc="320"/>
+    <operator carrier="Execulink Telecom" shortName="ETI" mcc="302" mnc="340"/>
+    <operator carrier="CANFN" shortName="FIRST" mcc="302" mnc="350"/>
+    <operator carrier="Fido" shortName="Fido" mcc="302" mnc="370"/>
+    <operator carrier="KNET" shortName="KNET" mcc="302" mnc="380"/>
+    <operator carrier="SSi" shortName="SSi" mcc="302" mnc="480"/>
+    <operator carrier="Freedom" shortName="Freedom" mcc="302" mnc="490"/>
+    <operator carrier="Videotron" shortName="CANVT" mcc="302" mnc="500,520"/>
+    <operator carrier="Bell" shortName="Bell" mcc="302" mnc="610"/>
+    <operator carrier="Ice Wireless Inc" shortName="Ice" mcc="302" mnc="620"/>
+    <operator carrier="MTS" shortName="MTS" mcc="302" mnc="660"/>
+    <operator carrier="CAN TerreStar Solutions" shortName="TStarSol" mcc="302" mnc="730"/>
+    <operator carrier="Rogers Wireless" shortName="ROGERS" mcc="302" mnc="720"/>
+    <operator carrier="RuralCom" shortName="CANRU" mcc="302" mnc="770"/>
+    <operator carrier="SaskTel" shortName="SaskTel" mcc="302" mnc="780"/>
+    <operator carrier="FastRoam" shortName="FastRoam" mcc="302" mnc="880"/>
+    <operator carrier="Wightman" shortName="Wightman" mcc="302" mnc="940"/>
+    <operator carrier="SPM AMERIS" shortName="AMERIS" mcc="308" mnc="01"/>
+    <operator carrier="NEP Wireless" shortName="NEPW" mcc="310" mnc="00,02,09"/>
+    <operator carrier="US - Union Telephone" shortName="UnionTel" mcc="310" mnc="20"/>
+    <operator carrier="T-Mobile" shortName="T-Mobile" mcc="310" mnc="26"/>
+    <operator carrier="AT&amp;T" shortName="AT&amp;T" mcc="310" mnc="30,38"/>
+    <operator carrier="T-Mobile" shortName="T-Mobile" mcc="310" mnc="31"/>
+    <operator carrier="IT&amp;E" shortName="IT&amp;E" mcc="310" mnc="32"/>
+    <operator carrier="Cellular One" shortName="Cellular One" mcc="310" mnc="40"/>
+    <operator carrier="USA SIMMETRY" shortName="SIMMETRY" mcc="310" mnc="46"/>
+    <operator carrier="DIGICEL" shortName="JAM DC" mcc="310" mnc="50"/>
+    <operator carrier="GCI" shortName="GCI" mcc="310" mnc="50"/>
+    <operator carrier="Inland Cellular" shortName="IC" mcc="310" mnc="58"/>
+    <operator carrier="AT&amp;T" shortName="AT&amp;T" mcc="310" mnc="70"/>
+    <operator carrier="Iowa Wireless US" shortName="IWS" mcc="310" mnc="77"/>
+    <operator carrier="Corr" shortName="Corr" mcc="310" mnc="80"/>
+    <operator carrier="AT&amp;T" shortName="AT&amp;T" mcc="310" mnc="90"/>
+    <operator carrier="US PLATEAU" shortName="PLATEAU" mcc="310" mnc="100"/>
+    <operator carrier="IT&amp;E" shortName="IT&amp;E" mcc="310" mnc="110"/>
+    <operator carrier="Sprint" shortName="Sprint" mcc="310" mnc="120"/>
+    <operator carrier="GTA" shortName="GTA" mcc="310" mnc="140"/>
+    <operator carrier="AT&amp;T" shortName="AT&amp;T" mcc="310" mnc="150"/>
+    <operator carrier="T-Mobile" shortName="T-Mobile" mcc="310" mnc="160"/>
+    <operator carrier="AT&amp;T" shortName="AT&amp;T" mcc="310" mnc="170"/>
+    <operator carrier="West Central Wireless" shortName="WCW" mcc="310" mnc="180"/>
+    <operator carrier="USA Dutch Harbor" shortName="D-HARBOR" mcc="310" mnc="190"/>
+    <operator carrier="T-Mobile" shortName="T-Mobile" mcc="310" mnc="200,210,220,230,240,250,260,270"/>
+    <operator carrier="AT&amp;T" shortName="AT&amp;T" mcc="310" mnc="280"/>
+    <operator carrier="NEP Wireless" shortName="NEPW" mcc="310" mnc="290"/>
+    <operator carrier="BigSkyUS" shortName="Big Sky" mcc="310" mnc="300"/>
+    <operator carrier="T-Mobile" shortName="T-Mobile" mcc="310" mnc="310"/>
+    <operator carrier="Farmers Wireless" shortName="Farmers Wireless" mcc="310" mnc="311"/>
+    <operator carrier="USA - CellularOne" shortName="Cell" mcc="310" mnc="320"/>
+    <operator carrier="Cellular One" shortName="Cell One" mcc="310" mnc="330"/>
+    <operator carrier="Limitless Mobile" shortName="LMUSA" mcc="310" mnc="340"/>
+    <operator carrier="Carolina Phone" shortName="Carolina" mcc="310" mnc="350"/>
+    <operator carrier="DOCOMO PACIFIC" shortName="DPAC" mcc="310" mnc="370"/>
+    <operator carrier="AT&amp;T" shortName="AT&amp;T" mcc="310" mnc="380"/>
+    <operator carrier="USA_iCAN" shortName="iCAN_GSM" mcc="310" mnc="400"/>
+    <operator carrier="AT&amp;T" shortName="AT&amp;T" mcc="310" mnc="410"/>
+    <operator carrier="Cincinnati Bell" shortName="Cincinnati Bell" mcc="310" mnc="420"/>
+    <operator carrier="Alaska Digitel" shortName="Alaska Digitel" mcc="310" mnc="430"/>
+    <operator carrier="Cell One of NE Colorado" shortName="NECCI" mcc="310" mnc="450"/>
+    <operator carrier="USA1L" shortName="USA1L" mcc="310" mnc="460"/>
+    <operator carrier="DOCOMO PACIFIC" shortName="DPAC" mcc="310" mnc="470"/>
+    <operator carrier="iCONNECT ADVANCED" shortName="iConnect" mcc="310" mnc="480"/>
+    <operator carrier="T-Mobile" shortName="T-Mobile" mcc="310" mnc="490"/>
+    <operator carrier="Iowa Wireless USA" shortName="IWS" mcc="310" mnc="530"/>
+    <operator carrier="Oklahoma Western" shortName="Oklahoma Western" mcc="310" mnc="540"/>
+    <operator carrier="AT&amp;T" shortName="AT&amp;T" mcc="310" mnc="560"/>
+    <operator carrier="Cell One" shortName="Cell One" mcc="310" mnc="570"/>
+    <operator carrier="Alltel" shortName="Alltel" mcc="310" mnc="590"/>
+    <operator carrier="Epic Touch" shortName="EpicTouch" mcc="310" mnc="610"/>
+    <operator carrier="Coleman County Telecom" shortName="Coleman County Telecom" mcc="310" mnc="620"/>
+    <operator carrier="USA AmeriLink" shortName="AMERLINK" mcc="310" mnc="630"/>
+    <operator carrier="Airadigim" shortName="Airadigim" mcc="310" mnc="640"/>
+    <operator carrier="Jasper" shortName="Jasper" mcc="310" mnc="650"/>
+    <operator carrier="T-Mobile" shortName="T-Mobile" mcc="310" mnc="660"/>
+    <operator carrier="Wireless 2000 PCS" shortName="W 2000 PCS" mcc="310" mnc="670"/>
+    <operator carrier="AT&amp;T" shortName="AT&amp;T" mcc="310" mnc="680"/>
+    <operator carrier="Limitless Mobile" shortName="LMUSA" mcc="310" mnc="690"/>
+    <operator carrier="USABIGFOOT" shortName="BIGFOOT" mcc="310" mnc="700"/>
+    <operator carrier="USA ASTAC" shortName="ASTAC" mcc="310" mnc="710"/>
+    <operator carrier="U.S.Cellular" shortName="USCC" mcc="310" mnc="730"/>
+    <operator carrier="USA OTZ" shortName="OTZ" mcc="310" mnc="740"/>
+    <operator carrier="PTSI" shortName="PTSI" mcc="310" mnc="760"/>
+    <operator carrier="Iowa Wireless USA" shortName="IWS" mcc="310" mnc="770"/>
+    <operator carrier="AirLink PCS" shortName="AirLink" mcc="310" mnc="780"/>
+    <operator carrier="Pinpoint" shortName="Pinpoint" mcc="310" mnc="790"/>
+    <operator carrier="T-Mobile" shortName="T-Mobile" mcc="310" mnc="800"/>
+    <operator carrier="telna Mobile" shortName="telna" mcc="310" mnc="840"/>
+    <operator carrier="Aeris" shortName="Aeris" mcc="310" mnc="850"/>
+    <operator carrier="US" shortName="PACE" mcc="310" mnc="870"/>
+    <operator carrier="USAACSI" shortName="ACSIAC" mcc="310" mnc="880"/>
+    <operator carrier="Verizon" shortName="Verizon" mcc="310" mnc="890"/>
+    <operator carrier="Texas Cellular" shortName="TXCELL" mcc="310" mnc="900"/>
+    <operator carrier="First Cellular" shortName="First Cellular" mcc="310" mnc="910"/>
+    <operator carrier="USA XIT Wireless" shortName="XIT" mcc="310" mnc="950"/>
+    <operator carrier="Globalstar" shortName="Globalstar" mcc="310" mnc="970"/>
+    <operator carrier="AT&amp;T" shortName="AT&amp;T" mcc="310" mnc="980"/>
+    <operator carrier="Worldcall" shortName="Evolve" mcc="310" mnc="990"/>
+    <operator carrier="USA Mid-Tex Cellular  Ltd" shortName="Mid-Tex" mcc="311" mnc="00"/>
+    <operator carrier="Wilkes USA" shortName="WILKES" mcc="311" mnc="01,05"/>
+    <operator carrier="Chariton Valley" shortName="Chariton Valley" mcc="311" mnc="10"/>
+    <operator carrier="Missouri RSA 5 Partnership" shortName="Missouri RSA 5 Partnership" mcc="311" mnc="20"/>
+    <operator carrier="Indigo" shortName="Indigo" mcc="311" mnc="30"/>
+    <operator carrier="USA - Commnet" shortName="Commnet" mcc="311" mnc="40"/>
+    <operator carrier="Wikes Cellular" shortName="Wikes Cellular" mcc="311" mnc="50"/>
+    <operator carrier="Farmers Cellular" shortName="Farmers Cellular" mcc="311" mnc="60"/>
+    <operator carrier="USAEC" shortName="EASTER" mcc="311" mnc="70"/>
+    <operator carrier="USA Proximiti" shortName="ProxMo" mcc="311" mnc="73"/>
+    <operator carrier="Pine Cellular" shortName="PINECell" mcc="311" mnc="80"/>
+    <operator carrier="USASXLP" shortName="SXLP" mcc="311" mnc="90"/>
+    <operator carrier="High Plains" shortName="HPW" mcc="311" mnc="100,110"/>
+    <operator carrier="Cell One Amarillo" shortName="C1AMARIL" mcc="311" mnc="130"/>
+    <operator carrier="Sprocket" shortName="Sprocket" mcc="311" mnc="140"/>
+    <operator carrier="Wilkes USA" shortName="WILKES" mcc="311" mnc="150"/>
+    <operator carrier="Tampnet" shortName="Tampnet" mcc="311" mnc="170"/>
+    <operator carrier="AT&amp;T" shortName="AT&amp;T" mcc="311" mnc="180"/>
+    <operator carrier="USAC1ECI" shortName="C1ECI" mcc="311" mnc="190"/>
+    <operator carrier="FARMERS" shortName="FARMERS" mcc="311" mnc="210"/>
+    <operator carrier="C Spire" shortName="C Spire" mcc="311" mnc="230"/>
+    <operator carrier="USACWCI" shortName="CWCI" mcc="311" mnc="240"/>
+    <operator carrier="USA i CAN" shortName="iCAN_GSM" mcc="311" mnc="250"/>
+    <operator carrier="SLO Cellular" shortName="SLO Cellular" mcc="311" mnc="260"/>
+    <operator carrier="Verizon" shortName="Verizon" mcc="311" mnc="270"/>
+    <operator carrier="Lamar Cellular" shortName="LamarCel" mcc="311" mnc="310"/>
+    <operator carrier="USANCW" shortName="NCW" mcc="311" mnc="311"/>
+    <operator carrier="BTW" shortName="BTW" mcc="311" mnc="330"/>
+    <operator carrier="Stelera Wireless" shortName="STELERA" mcc="311" mnc="360"/>
+    <operator carrier="GCI" shortName="GCI" mcc="311" mnc="370"/>
+    <operator carrier="Verizon" shortName="Verizon" mcc="311" mnc="480"/>
+    <operator carrier="MOSAIC" shortName="MOSAIC" mcc="311" mnc="500"/>
+    <operator carrier="USANW" shortName="USANW" mcc="311" mnc="530"/>
+    <operator carrier="USA Proximiti" shortName="ProxMo" mcc="311" mnc="540"/>
+    <operator carrier="U.S.Cellular" shortName="USCC" mcc="311" mnc="580"/>
+    <operator carrier="Limitless Mobile" shortName="LMUSA" mcc="311" mnc="600"/>
+    <operator carrier="C Spire" shortName="C Spire" mcc="311" mnc="630"/>
+    <operator carrier="Metro PCS" shortName="MPCS" mcc="311" mnc="660"/>
+    <operator carrier="Northeast Wireless" shortName="NEWN" mcc="311" mnc="710"/>
+    <operator carrier="USA Proximiti" shortName="ProxMo" mcc="311" mnc="730"/>
+    <operator carrier="TCI" shortName="TCI" mcc="311" mnc="740"/>
+    <operator carrier="Bluegrass Wireless" shortName="BW" mcc="311" mnc="810"/>
+    <operator carrier="VTW US" shortName="VTW" mcc="311" mnc="990"/>
+    <operator carrier="CoverageCo" shortName="CvgCo" mcc="312" mnc="60"/>
+    <operator carrier="Limitless Mobile" shortName="LMUSA" mcc="312" mnc="180"/>
+    <operator carrier="SRT Wireless" shortName="SRTW" mcc="312" mnc="230"/>
+    <operator carrier="USACL" shortName="USACL" mcc="312" mnc="260"/>
+    <operator carrier="Pioneer" shortName="CNP" mcc="312" mnc="280"/>
+    <operator carrier="Strata Networks USA" shortName="Strata" mcc="312" mnc="290"/>
+    <operator carrier="Nex-Tech Wireless USA" shortName="NTW" mcc="312" mnc="420"/>
+    <operator carrier="Nemont" shortName="Nemont" mcc="312" mnc="480"/>
+    <operator carrier="NetGenuity" shortName="NetGenui" mcc="312" mnc="630"/>
+    <operator carrier="Southern Linc" shortName="SLINC" mcc="312" mnc="720"/>
+    <operator carrier="GigSky" shortName="GigSky" mcc="312" mnc="870"/>
+    <operator carrier="MNSHub" shortName="MNSHub" mcc="313" mnc="70"/>
+    <operator carrier="OptimERA" shortName="OptimERA" mcc="313" mnc="380"/>
+    <operator carrier="PR Claro" shortName="Claro" mcc="330" mnc="11,110"/>
+    <operator carrier="Open Mob PRI" shortName="Open Mob" mcc="330" mnc="120"/>
+    <operator carrier="Blue Sky" shortName="Blue Sky" mcc="332" mnc="11"/>
+    <operator carrier="movistar" shortName="movistar" mcc="334" mnc="03"/>
+    <operator carrier="TELCEL" shortName="TELCEL" mcc="334" mnc="20"/>
+    <operator carrier="movistar" shortName="movistar" mcc="334" mnc="30"/>
+    <operator carrier="AT&amp;T" shortName="AT&amp;T" mcc="334" mnc="50,70,90"/>
+    <operator carrier="ALTAN" shortName="ALTAN" mcc="334" mnc="140"/>
+    <operator carrier="Cable &amp; Wireless" shortName="Cable &amp; Wireless" mcc="338" mnc="20"/>
+    <operator carrier="Digicel" shortName="Digicel" mcc="338" mnc="50"/>
+    <operator carrier="CLARO" shortName="ClaroJam" mcc="338" mnc="70"/>
+    <operator carrier="FLOW" shortName="FLOW" mcc="338" mnc="180"/>
+    <operator carrier="F-Orange" shortName="Orange" mcc="340" mnc="01"/>
+    <operator carrier="SFR" shortName="SFR" mcc="340" mnc="02"/>
+    <operator carrier="Teleceli" shortName="Teleceli" mcc="340" mnc="03"/>
+    <operator carrier="Dauphin Telecom" shortName="MIO GSM" mcc="340" mnc="08"/>
+    <operator carrier="Digicel" shortName="DigicelF" mcc="340" mnc="20"/>
+    <operator carrier="FLOW" shortName="FLOW" mcc="342" mnc="600"/>
+    <operator carrier="DIGICEL" shortName="DIGICEL" mcc="342" mnc="750"/>
+    <operator carrier="APUA inet" shortName="inet" mcc="344" mnc="03"/>
+    <operator carrier="APUA imobile" shortName="imobile" mcc="344" mnc="30"/>
+    <operator carrier="FLOW" shortName="FLOW" mcc="344" mnc="920"/>
+    <operator carrier="Cingular" shortName="Cingular" mcc="344" mnc="930"/>
+    <operator carrier="Digicel" shortName="Digicel" mcc="346" mnc="50"/>
+    <operator carrier="FLOW" shortName="FLOW" mcc="346" mnc="140"/>
+    <operator carrier="FLOW" shortName="FLOW" mcc="348" mnc="170"/>
+    <operator carrier="CCT Boatphone" shortName="CCTBVI" mcc="348" mnc="570"/>
+    <operator carrier="CELLONE" shortName="CELLONE" mcc="350" mnc="00"/>
+    <operator carrier="Digicel Bermuda" shortName="Digicel Bermuda" mcc="350" mnc="01"/>
+    <operator carrier="BTC MOBILITY LTD." shortName="MOBILITY" mcc="350" mnc="02"/>
+    <operator carrier="Cingular" shortName="Cingular" mcc="350" mnc="10"/>
+    <operator carrier="Digicel" shortName="Digicel" mcc="350" mnc="38"/>
+    <operator carrier="DIGICEL" shortName="DIGICEL" mcc="352" mnc="30"/>
+    <operator carrier="FLOW" shortName="FLOW" mcc="352" mnc="110"/>
+    <operator carrier="FLOW" shortName="FLOW" mcc="354" mnc="860"/>
+    <operator carrier="FLOW" shortName="FLOW" mcc="356" mnc="110"/>
+    <operator carrier="DIGICEL" shortName="DIGICEL" mcc="358" mnc="50"/>
+    <operator carrier="FLOW" shortName="FLOW" mcc="358" mnc="110"/>
+    <operator carrier="DIGICEL" shortName="DIGICEL" mcc="360" mnc="70"/>
+    <operator carrier="FLOW" shortName="FLOW" mcc="360" mnc="110"/>
+    <operator carrier="Telcell GSM" shortName="Telcell" mcc="362" mnc="51"/>
+    <operator carrier="Digicel" shortName="Digicel" mcc="362" mnc="69"/>
+    <operator carrier="Kla" shortName="Kla" mcc="362" mnc="78"/>
+    <operator carrier="CHIPPIE" shortName="CHIPPIE" mcc="362" mnc="91"/>
+    <operator carrier="SETAR" shortName="SETAR" mcc="363" mnc="01"/>
+    <operator carrier="AW Digicel" shortName="Digicel" mcc="363" mnc="02"/>
+    <operator carrier="Digicell" shortName="Digicell" mcc="363" mnc="20"/>
+    <operator carrier="aliv" shortName="aliv" mcc="364" mnc="49"/>
+    <operator carrier="BTC" shortName="BTC" mcc="364" mnc="39,390"/>
+    <operator carrier="Weblinks Limited" shortName="Weblinks Limited" mcc="365" mnc="10"/>
+    <operator carrier="FLOW" shortName="FLOW" mcc="365" mnc="840"/>
+    <operator carrier="Cingular" shortName="Cingular" mcc="366" mnc="20"/>
+    <operator carrier="FLOW" shortName="FLOW" mcc="366" mnc="110"/>
+    <operator carrier="CUBACEL" shortName="CUBACEL" mcc="368" mnc="01"/>
+    <operator carrier="ALTICE" shortName="ALTICE" mcc="370" mnc="01"/>
+    <operator carrier="CLARO DOM" shortName="ClaroDOM" mcc="370" mnc="02"/>
+    <operator carrier="Viva DO" shortName="Viva" mcc="370" mnc="04"/>
+    <operator carrier="Wind Telecom DO" shortName="Wind" mcc="370" mnc="05"/>
+    <operator carrier="Natcom" shortName="Natcom" mcc="372" mnc="03"/>
+    <operator carrier="Voila" shortName="Voila" mcc="372" mnc="10"/>
+    <operator carrier="Digicel" shortName="Digicel" mcc="372" mnc="50"/>
+    <operator carrier="TSTT" shortName="TSTT" mcc="374" mnc="12"/>
+    <operator carrier="Digicel" shortName="Digicel" mcc="374" mnc="13,130"/>
+    <operator carrier="FLOW" shortName="FLOW" mcc="376" mnc="350"/>
+    <operator carrier="IslandCom TCI" shortName="ICOM TCI" mcc="376" mnc="352"/>
+    <operator carrier="IslandCom TCI" shortName="Islandco" mcc="376" mnc="360"/>
+    <operator carrier="AZEAC" shortName="Azercell" mcc="400" mnc="01"/>
+    <operator carrier="BAKCELL AZ" shortName="BAKCELL" mcc="400" mnc="02"/>
+    <operator carrier="AZ Nar" shortName="Nar" mcc="400" mnc="04"/>
+    <operator carrier="Beeline KZ" shortName="Beeline" mcc="401" mnc="01"/>
+    <operator carrier="Kcell" shortName="Kcell" mcc="401" mnc="02"/>
+    <operator carrier="ALTEL" shortName="ALTEL" mcc="401" mnc="07"/>
+    <operator carrier="Tele2" shortName="Tele2" mcc="401" mnc="77"/>
+    <operator carrier="BT B-Mobile" shortName="B-Mobile" mcc="402" mnc="11"/>
+    <operator carrier="TASHICELL" shortName="TASHICELL" mcc="402" mnc="77"/>
+    <operator carrier="BPL Mobile Mumbai" shortName="BPL Mobile Mumbai" mcc="404" mnc="21"/>
+    <operator carrier="Vodafone IN" shortName="Vodafone" mcc="404" mnc="01,05,11,13,15,20,27,30,43,46,60,84,86,88"/>
+    <operator carrier="airtel" shortName="airtel" mcc="404" mnc="02,03,10,16,31,40,41,45,49,70,90,92,93,94,95,96,97,98"/>
+    <operator carrier="IDEA" shortName="IDEA" mcc="404" mnc="04,07,12,19,22,24,44,56,78,82,87,89"/>
+    <operator carrier="Vi India" shortName="Vi India" mcc="404" mnc="14"/>
+    <operator carrier="Reliance" shortName="RELIANCE" mcc="404" mnc="09,18,36,50,52,67,83,85"/>
+    <operator carrier="CellOne" shortName="CellOne" mcc="404" mnc="34,38,51,53,54,55"/>
+    <operator carrier="AIRCEL" shortName="AIRCEL" mcc="404" mnc="17,25,28,29,35,37,41,42,91"/>
+    <operator carrier="CellOne" shortName="CellOne" mcc="404" mnc="57,58,59"/>
+    <operator carrier="CellOne" shortName="CellOne" mcc="404" mnc="62,64,66"/>
+    <operator carrier="IN-DOLPHIN" shortName="DOLPHIN" mcc="404" mnc="68,69"/>
+    <operator carrier="CellOne" shortName="CellOne" mcc="404" mnc="71,72,73,74,75,76,77"/>
+    <operator carrier="CellOne" shortName="CellOne" mcc="404" mnc="79,80,81"/>
+    <operator carrier="Reliance" shortName="Reliance" mcc="405" mnc="01,05,06,07,08,09,10,11,12,13,14,15,17,18,19,20,21,22"/>
+    <operator carrier="TATA DOCOMO" shortName="TATA DO" mcc="405" mnc="25,27,29,30,31,32,34,35,36,37,38,39,41,42,43,44,45,46,47"/>
+    <operator carrier="TATA DOCOMO" shortName="TATA DO" mcc="405" mnc="025,034,036,039,042,044,045,046,812"/>
+    <operator carrier="Indian Railways" shortName="Indian Railways" mcc="405" mnc="48"/>
+    <operator carrier="Reliance" shortName="RELIANCE" mcc="405" mnc="50"/>
+    <operator carrier="airtel" shortName="airtel" mcc="405" mnc="51,52,53,54,55,56"/>
+    <operator carrier="Vodafone IN" shortName="Vodafone" mcc="405" mnc="66,67"/>
+    <operator carrier="IDEA" shortName="IDEA" mcc="405" mnc="70"/>
+    <operator carrier="Vodafone IN" shortName="Vodafone" mcc="405" mnc="750,751,752,753,754,755,756"/>
+    <operator carrier="IDEA" shortName="IDEA" mcc="405" mnc="799"/>
+    <operator carrier="Aircel" shortName="Aircel" mcc="405" mnc="800,801,802,803,804,805,806,810,811"/>
+    <operator carrier="IN Telenor" shortName="Telenor" mcc="405" mnc="818,819"/>
+    <operator carrier="VIDEOCON" shortName="VIDEOCON" mcc="405" mnc="823,824,825,827,828,829,830,831,832,833,834,835,836,837,838,839,932"/>
+    <operator carrier="Jio 4G" shortName="Jio 4G" mcc="405" mnc="840"/>
+    <operator carrier="VIDEOCON" shortName="VIDEOCON" mcc="405" mnc="841,842,843"/>
+    <operator carrier="IDEA" shortName="IDEA" mcc="405" mnc="845,846,848,849,850,852,853"/>
+    <operator carrier="Jio 4G" shortName="Jio 4G" mcc="405" mnc="854,855,856,857,858,859,860,861,862,863,864,865,866,867,868,869,870,871,872,873,874"/>
+    <operator carrier="IN Telenor" shortName="Telenor" mcc="405" mnc="875,876,879"/>
+    <operator carrier="STEL" shortName="STEL" mcc="405" mnc="882"/>
+    <operator carrier="etisalat" shortName="etisalat" mcc="405" mnc="912,913,914,915,916,917,918,919,920,921,922,923,924"/>
+    <operator carrier="IN Telenor" shortName="Telenor" mcc="405" mnc="927,929"/>
+    <operator carrier="Mobilink" shortName="Mobilink" mcc="410" mnc="01"/>
+    <operator carrier="Ufone" shortName="Ufone" mcc="410" mnc="03"/>
+    <operator carrier="ZONG" shortName="ZONG" mcc="410" mnc="04"/>
+    <operator carrier="SCOM-PK" shortName="SCOM" mcc="410" mnc="05"/>
+    <operator carrier="Telenor" shortName="TELENOR" mcc="410" mnc="06"/>
+    <operator carrier="WaridTel" shortName="WaridTel" mcc="410" mnc="07"/>
+    <operator carrier="AF AWCC" shortName="AWCC" mcc="412" mnc="01"/>
+    <operator carrier="ROSHAN" shortName="ROSHAN" mcc="412" mnc="20"/>
+    <operator carrier="MTN AF" shortName="MTN" mcc="412" mnc="40"/>
+    <operator carrier="Etisalat" shortName="Etisalat" mcc="412" mnc="50"/>
+    <operator carrier="Mobitel" shortName="Mobitel" mcc="413" mnc="01"/>
+    <operator carrier="DIALOG" shortName="DIALOG" mcc="413" mnc="02"/>
+    <operator carrier="Etisalat" shortName="Etisalat" mcc="413" mnc="03"/>
+    <operator carrier="Lanka Bell" shortName="Lanka Bell" mcc="413" mnc="04"/>
+    <operator carrier="airtel" shortName="airtel" mcc="413" mnc="05"/>
+    <operator carrier="Hutch" shortName="Hutch" mcc="413" mnc="08,09"/>
+    <operator carrier="Dialog Broadband" shortName="Dialog Broadband" mcc="413" mnc="11"/>
+    <operator carrier="SLT" shortName="SLT" mcc="413" mnc="12"/>
+    <operator carrier="MPT" shortName="MPT" mcc="414" mnc="01"/>
+    <operator carrier="Ooredoo" shortName="Ooredoo" mcc="414" mnc="05"/>
+    <operator carrier="Telenor" shortName="TNM" mcc="414" mnc="06"/>
+    <operator carrier="MYTEL" shortName="MYTEL" mcc="414" mnc="09"/>
+    <operator carrier="ananda 4G+" shortName="ananda 4G+" mcc="414" mnc="20"/>
+    <operator carrier="alfa" shortName="alfa" mcc="415" mnc="01"/>
+    <operator carrier="touch" shortName="touch" mcc="415" mnc="03"/>
+    <operator carrier="LBN OGERO Mobile" shortName="OM" mcc="415" mnc="05"/>
+    <operator carrier="Zain JO" shortName="Zain JO" mcc="416" mnc="01"/>
+    <operator carrier="UMNIAH" shortName="UMNIAH" mcc="416" mnc="03"/>
+    <operator carrier="Orange JO" shortName="OrangeJO" mcc="416" mnc="77"/>
+    <operator carrier="SYRIATEL" shortName="SYRIATEL" mcc="417" mnc="01"/>
+    <operator carrier="MTN" shortName="MTN" mcc="417" mnc="02"/>
+    <operator carrier="SYR MOBILE SYR" shortName="MOBILE" mcc="417" mnc="09"/>
+    <operator carrier="ASIACELL" shortName="ASIACELL" mcc="418" mnc="00,05"/>
+    <operator carrier="zain IQ" shortName="zain IQ" mcc="418" mnc="20"/>
+    <operator carrier="IRAQNA" shortName="IRAQNA" mcc="418" mnc="30"/>
+    <operator carrier="KOREK" shortName="KOREK" mcc="418" mnc="40"/>
+    <operator carrier="Zain KW" shortName="zain KW" mcc="419" mnc="02"/>
+    <operator carrier="Ooredoo" shortName="Ooredoo" mcc="419" mnc="03"/>
+    <operator carrier="stc Kuwait" shortName="stc" mcc="419" mnc="04"/>
+    <operator carrier="STC" shortName="STC" mcc="420" mnc="01"/>
+    <operator carrier="Mobily-KSA" shortName="Mobily" mcc="420" mnc="03"/>
+    <operator carrier="Zain KSA" shortName="Zain KSA" mcc="420" mnc="04"/>
+    <operator carrier="SabaFon" shortName="SABAFON" mcc="421" mnc="01"/>
+    <operator carrier="MTN" shortName="MTN" mcc="421" mnc="02"/>
+    <operator carrier="Yemen Mobile" shortName="Yemen Mobile" mcc="421" mnc="03"/>
+    <operator carrier="Y-Telecom" shortName="Y" mcc="421" mnc="04"/>
+    <operator carrier="Omantel" shortName="Omantel" mcc="422" mnc="02"/>
+    <operator carrier="Ooredoo Oman" shortName="Ooredoo" mcc="422" mnc="03"/>
+    <operator carrier="ETISALAT" shortName="ETISALAT" mcc="424" mnc="02"/>
+    <operator carrier="du" shortName="du" mcc="424" mnc="03"/>
+    <operator carrier="Partner IL" shortName="Partner" mcc="425" mnc="01"/>
+    <operator carrier="Cellcom" shortName="Cellcom" mcc="425" mnc="02"/>
+    <operator carrier="IL Pelephone" shortName="PCL" mcc="425" mnc="03"/>
+    <operator carrier="JAWWAL-PALESTINE" shortName="JAWWAL" mcc="425" mnc="05"/>
+    <operator carrier="Ooredoo Palestine" shortName="Ooredoo" mcc="425" mnc="06"/>
+    <operator carrier="Hot Mobile Ltd." shortName="HOT IL" mcc="425" mnc="07"/>
+    <operator carrier="Golan IL" shortName="Golan T" mcc="425" mnc="08"/>
+    <operator carrier="Hot Mobile Ltd." shortName="Israel" mcc="425" mnc="28"/>
+    <operator carrier="BATELCO" shortName="BATELCO" mcc="426" mnc="01"/>
+    <operator carrier="Zain BH" shortName="Zain BH" mcc="426" mnc="02"/>
+    <operator carrier="stc" shortName="stc" mcc="426" mnc="04"/>
+    <operator carrier="Ooredoo" shortName="Ooredoo" mcc="427" mnc="01"/>
+    <operator carrier="vodafone" shortName="VF-QA" mcc="427" mnc="02"/>
+    <operator carrier="Skytel MN" shortName="Skytel" mcc="428" mnc="01"/>
+    <operator carrier="GMOBILE_MN" shortName="GMOBILE" mcc="428" mnc="06"/>
+    <operator carrier="MONGOLIA UNITEL LLC" shortName="UNTLMN" mcc="428" mnc="88"/>
+    <operator carrier="MN MobiCom" shortName="MobiCom" mcc="428" mnc="99"/>
+    <operator carrier="Ncell" shortName="Ncell" mcc="429" mnc="02"/>
+    <operator carrier="Nepal Telecom" shortName="NT" mcc="429" mnc="01"/>
+    <operator carrier="UTL" shortName="UTL" mcc="429" mnc="03"/>
+    <operator carrier="SmartCell" shortName="ST" mcc="429" mnc="04"/>
+    <operator carrier="IR-TCI" shortName="IR-TCI" mcc="432" mnc="11"/>
+    <operator carrier="IR KISH" shortName="KFZO" mcc="432" mnc="14"/>
+    <operator carrier="IR MTCE" shortName="MTCE" mcc="432" mnc="19"/>
+    <operator carrier="IRN 20" shortName="IRN 20" mcc="432" mnc="20"/>
+    <operator carrier="Iran Taliya" shortName="Taliya" mcc="432" mnc="32"/>
+    <operator carrier="MTN Irancell" shortName="Irancell" mcc="432" mnc="35"/>
+    <operator carrier="Beeline UZ" shortName="Beeline" mcc="434" mnc="04"/>
+    <operator carrier="UZB Ucell" shortName="Ucell" mcc="434" mnc="05"/>
+    <operator carrier="Perfectum" shortName="Perfectum" mcc="434" mnc="06"/>
+    <operator carrier="UMS-UZB" shortName="UMS" mcc="434" mnc="07"/>
+    <operator carrier="UzMobile" shortName="UzMobile" mcc="434" mnc="08"/>
+    <operator carrier="EVO" shortName="EVO" mcc="434" mnc="09"/>
+    <operator carrier="TCELL" shortName="TCELL" mcc="436" mnc="01,02"/>
+    <operator carrier="MegaFon TJK" shortName="MegaFon" mcc="436" mnc="03"/>
+    <operator carrier="Babilon-M" shortName="Babilon" mcc="436" mnc="04"/>
+    <operator carrier="ZET-MOBILE" shortName="Z-MOBILE" mcc="436" mnc="05"/>
+    <operator carrier="INDIGO-3G" shortName="INDIGO-T" mcc="436" mnc="12"/>
+    <operator carrier="Beeline KG" shortName="Beeline" mcc="437" mnc="01"/>
+    <operator carrier="MegaCom" shortName="MegaCom" mcc="437" mnc="05"/>
+    <operator carrier="O!" shortName="O!" mcc="437" mnc="09"/>
+    <operator carrier="MTS TM" shortName="MTS TM" mcc="438" mnc="01"/>
+    <operator carrier="TM CELL" shortName="TM CELL" mcc="438" mnc="02"/>
+    <operator carrier="Ymobile" shortName="Ymobile" mcc="440" mnc="00"/>
+    <operator carrier="DoCoMo" shortName="DoCoMo" mcc="440" mnc="01,02,03"/>
+    <operator carrier="SoftBank" shortName="SoftBank" mcc="440" mnc="04,06"/>
+    <operator carrier="NTT DOCOMO" shortName="DOCOMO" mcc="440" mnc="10"/>
+    <operator carrier="SoftBank" shortName="SoftBank" mcc="440" mnc="20"/>
+    <operator carrier="KDDI" shortName="KDDI" mcc="440" mnc="50,51"/>
+    <operator carrier="KOR SK Telecom" shortName="SKT" mcc="450" mnc="05"/>
+    <operator carrier="KOR LG Uplus" shortName="LG U+" mcc="450" mnc="06"/>
+    <operator carrier="KT" shortName="KT" mcc="450" mnc="08"/>
+    <operator carrier="KOR LG Uplus" shortName="LG U+" mcc="450" mnc="10"/>
+    <operator carrier="VN Mobifone" shortName="Mobifone" mcc="452" mnc="01"/>
+    <operator carrier="VN VINAPHONE" shortName="GPC" mcc="452" mnc="02"/>
+    <operator carrier="VIETTEL" shortName="VIETTEL" mcc="452" mnc="04"/>
+    <operator carrier="Vietnamobile" shortName="VNMOBILE" mcc="452" mnc="05"/>
+    <operator carrier="Gmobile" shortName="Gmobile" mcc="452" mnc="07"/>
+    <operator carrier="CSL" shortName="CSL" mcc="454" mnc="00,02"/>
+    <operator carrier="CITIC Telecom 1616" shortName="CITIC Telecom 1616" mcc="454" mnc="01"/>
+    <operator carrier="3" shortName="3" mcc="454" mnc="03"/>
+    <operator carrier="3(2G)" shortName="3(2G)" mcc="454" mnc="04"/>
+    <operator carrier="SmarTone HK" shortName="SMC HK" mcc="454" mnc="06"/>
+    <operator carrier="China Unicom" shortName="China Unicom" mcc="454" mnc="07"/>
+    <operator carrier="Trident" shortName="Trident" mcc="454" mnc="08"/>
+    <operator carrier="China Motion Telecom" shortName="China Motion Telecom" mcc="454" mnc="09"/>
+    <operator carrier="CSL" shortName="CSL" mcc="454" mnc="10"/>
+    <operator carrier="China-HongKong Telecom" shortName="China-HongKong Telecom" mcc="454" mnc="11"/>
+    <operator carrier="China Mobile HK" shortName="CMHK" mcc="454" mnc="12,13"/>
+    <operator carrier="Hutchison Telecom" shortName="Hutchison Telecom" mcc="454" mnc="14"/>
+    <operator carrier="SmarTone HK" shortName="SMC HK" mcc="454" mnc="15"/>
+    <operator carrier="CSL" shortName="CSL" mcc="454" mnc="16"/>
+    <operator carrier="SmarTone HK" shortName="SMC HK" mcc="454" mnc="17"/>
+    <operator carrier="CSL" shortName="CSL" mcc="454" mnc="18"/>
+    <operator carrier="CSL" shortName="CSL" mcc="454" mnc="19,20"/>
+    <operator carrier="vave" shortName="vave" mcc="454" mnc="21"/>
+    <operator carrier="SmarTone MAC" shortName="SMC MAC" mcc="455" mnc="00"/>
+    <operator carrier="CTM" shortName="CTM" mcc="455" mnc="01"/>
+    <operator carrier="CT Macao" shortName="CT Macao" mcc="455" mnc="02"/>
+    <operator carrier="3 Macau" shortName="3 Macau" mcc="455" mnc="03"/>
+    <operator carrier="CTM" shortName="CTM" mcc="455" mnc="04"/>
+    <operator carrier="3 Macau" shortName="3 Macau" mcc="455" mnc="05"/>
+    <operator carrier="China Telecom" shortName="CT" mcc="455" mnc="07"/>
+    <operator carrier="Cellcard" shortName="Cellcard" mcc="456" mnc="01"/>
+    <operator carrier="Smart" shortName="Smart" mcc="456" mnc="02"/>
+    <operator carrier="qb" shortName="qb" mcc="456" mnc="04"/>
+    <operator carrier="Smart" shortName="Smart" mcc="456" mnc="05,06"/>
+    <operator carrier="Metfone" shortName="Metfone" mcc="456" mnc="08"/>
+    <operator carrier="KH SEATEL" shortName="SEATEL" mcc="456" mnc="11"/>
+    <operator carrier="Kingtel" shortName="Kingtel" mcc="456" mnc="15"/>
+    <operator carrier="Lao Telecom" shortName="Lao Telecom" mcc="457" mnc="01"/>
+    <operator carrier="ETL MOBILE NETWORK" shortName="ETLMNW" mcc="457" mnc="02"/>
+    <operator carrier="Unitel" shortName="UNITEL" mcc="457" mnc="03"/>
+    <operator carrier="BEELINE LAO" shortName="BEELINE" mcc="457" mnc="08"/>
+    <operator carrier="CHN-UNICOM" shortName="UNICOM" mcc="460" mnc="01,06,09,30"/>
+    <operator carrier="CHINA MOBILE" shortName="CMCC" mcc="460" mnc="00,02,04,07,08"/>
+    <operator carrier="CHN-CT" shortName="CT" mcc="460" mnc="03,11"/>
+    <operator carrier="Far EasTone" shortName="FET" mcc="466" mnc="01"/>
+    <operator carrier="GT 4G" shortName="GT 4G" mcc="466" mnc="05"/>
+    <operator carrier="Tuntex Telecom" shortName="Tuntex" mcc="466" mnc="06"/>
+    <operator carrier="TWN APT" shortName="APT" mcc="466" mnc="12"/>
+    <operator carrier="KGT-Online" shortName="KGT" mcc="466" mnc="88"/>
+    <operator carrier="T Star" shortName="T Star" mcc="466" mnc="89"/>
+    <operator carrier="Chunghwa Telecom" shortName="Chunghwa" mcc="466" mnc="92"/>
+    <operator carrier="TWN MOBITAI" shortName="TW MOB" mcc="466" mnc="93"/>
+    <operator carrier="TW Mobile" shortName="TWM" mcc="466" mnc="97"/>
+    <operator carrier="TWM TransAsi" shortName="TWM TAT" mcc="466" mnc="99"/>
+    <operator carrier="KP SUN" shortName="SUNNET" mcc="467" mnc="03"/>
+    <operator carrier="Koryolink" shortName="KL-DPRK" mcc="467" mnc="05,193"/>
+    <operator carrier="Grameenphone" shortName="Grameen" mcc="470" mnc="01"/>
+    <operator carrier="Robi" shortName="Robi" mcc="470" mnc="02"/>
+    <operator carrier="Banglalink" shortName="BL" mcc="470" mnc="03"/>
+    <operator carrier="bMobile" shortName="bMobile" mcc="470" mnc="04"/>
+    <operator carrier="Citycell" shortName="Citycell" mcc="470" mnc="06"/>
+    <operator carrier="Airtel" shortName="Airtel" mcc="470" mnc="07"/>
+    <operator carrier="BGD-BIEL" shortName="BIEL 4G" mcc="470" mnc="09"/>
+    <operator carrier="Banglalion" shortName="Banglalion" mcc="470" mnc="10"/>
+    <operator carrier="DHIRAAGU" shortName="DHIRAAGU" mcc="472" mnc="01"/>
+    <operator carrier="Ooredoo Maldives PVT LTD" shortName="Ooredoo" mcc="472" mnc="02"/>
+    <operator carrier="TIME3G" shortName="TIME3G" mcc="502" mnc="00,01"/>
+    <operator carrier="unifi" shortName="unifi" mcc="502" mnc="11"/>
+    <operator carrier="MY MAXIS" shortName="MY MAXIS" mcc="502" mnc="12,17"/>
+    <operator carrier="MY CELCOM 3G" shortName="CELCOM" mcc="502" mnc="13,150"/>
+    <operator carrier="MY CELCOM" shortName="CELCOM" mcc="502" mnc="13,19,150"/>
+    <operator carrier="Digi" shortName="Digi" mcc="502" mnc="10,16"/>
+    <operator carrier="U MOBILE" shortName="U MOBILE" mcc="502" mnc="18"/>
+    <operator carrier="Yes 4G" shortName="Yes 4G" mcc="502" mnc="152"/>
+    <operator carrier="unifi" shortName="unifi" mcc="502" mnc="153"/>
+    <operator carrier="MYSALTEL" shortName="ALTEL" mcc="502" mnc="156"/>
+    <operator carrier="Telstra Mobile" shortName="Telstra" mcc="505" mnc="01"/>
+    <operator carrier="Optus AU" shortName="Optus" mcc="505" mnc="02"/>
+    <operator carrier="Vodafone AU" shortName="Vodafone AU" mcc="505" mnc="03"/>
+    <operator carrier="Vodafone AU" shortName="Vodafone AU" mcc="505" mnc="06"/>
+    <operator carrier="Norfolk Telecom" shortName="NT" mcc="505" mnc="10"/>
+    <operator carrier="Pivotel" shortName="Pivotel" mcc="505" mnc="50"/>
+    <operator carrier="Telstra Mobile" shortName="Telstra" mcc="505" mnc="71,72"/>
+    <operator carrier="Singtel Optus Ltd" shortName="YES OPTUS" mcc="505" mnc="90"/>
+    <operator carrier="INDOSAT" shortName="INDOSAT" mcc="510" mnc="01"/>
+    <operator carrier="AXIS" shortName="AXIS" mcc="510" mnc="08"/>
+    <operator carrier="Smartfren" shortName="SF" mcc="510" mnc="09"/>
+    <operator carrier="TELKOMSEL" shortName="TELKOMSEL" mcc="510" mnc="10,20"/>
+    <operator carrier="XL" shortName="XL" mcc="510" mnc="11"/>
+    <operator carrier="INDOSAT" shortName="INDOSAT" mcc="510" mnc="21"/>
+    <operator carrier="Smartfren" shortName="SF" mcc="510" mnc="28"/>
+    <operator carrier="Hinet" shortName="Hinet" mcc="510" mnc="78"/>
+    <operator carrier="BoltSuper4G" shortName="Bolt-ID" mcc="510" mnc="68,88"/>
+    <operator carrier="3" shortName="3" mcc="510" mnc="89"/>
+    <operator carrier="TLS-TC" shortName="TCEL" mcc="514" mnc="01"/>
+    <operator carrier="TLS-TT" shortName="TT" mcc="514" mnc="02"/>
+    <operator carrier="ISLACOM" shortName="ISLACOM" mcc="515" mnc="01"/>
+    <operator carrier="GLOBE" shortName="GLOBE" mcc="515" mnc="02,24"/>
+    <operator carrier="SMART" shortName="SMART" mcc="515" mnc="03,11"/>
+    <operator carrier="SUN" shortName="SUN" mcc="515" mnc="05"/>
+    <operator carrier="CURE" shortName="CURE" mcc="515" mnc="18"/>
+    <operator carrier="DITO" shortName="DITO" mcc="515" mnc="66"/>
+    <operator carrier="TH 3G+" shortName="TH 3G+" mcc="520" mnc="00"/>
+    <operator carrier="AIS" shortName="AIS" mcc="520" mnc="01,03"/>
+    <operator carrier="TRUE 3G+" shortName="TRUE 3G+" mcc="520" mnc="04"/>
+    <operator carrier="dtac" shortName="dtac" mcc="520" mnc="05,18"/>
+    <operator carrier="dtac-T" shortName="dtac-T" mcc="520" mnc="47"/>
+    <operator carrier="TOT3G" shortName="TOT3G" mcc="520" mnc="15"/>
+    <operator carrier="TH GSM 1800" shortName="GSM 1800" mcc="520" mnc="23"/>
+    <operator carrier="TRUE" shortName="TRUE" mcc="520" mnc="99"/>
+    <operator carrier="Singtel" shortName="Singtel" mcc="525" mnc="01,02"/>
+    <operator carrier="M1" shortName="M1" mcc="525" mnc="03"/>
+    <operator carrier="StarHub" shortName="StarHub" mcc="525" mnc="05"/>
+    <operator carrier="SGP Call Zone" shortName="CallZone" mcc="525" mnc="07"/>
+    <operator carrier="StarHub" shortName="StarHub" mcc="525" mnc="08"/>
+    <operator carrier="StarHub" shortName="StarHub" mcc="525" mnc="02"/>
+    <operator carrier="StarHub" shortName="StarHub" mcc="525" mnc="09"/>
+    <operator carrier="TPG Telecom" shortName="TPG" mcc="525" mnc="10"/>
+    <operator carrier="PCSB" shortName="PCSB" mcc="528" mnc="02"/>
+    <operator carrier="BRU-DSTCom" shortName="DSTCom" mcc="528" mnc="09,11"/>
+    <operator carrier="vodafone NZ" shortName="voda NZ" mcc="530" mnc="01"/>
+    <operator carrier="Woosh" shortName="Woosh" mcc="530" mnc="03"/>
+    <operator carrier="Spark NZ" shortName="Spark NZ" mcc="530" mnc="05"/>
+    <operator carrier="2degrees" shortName="2degrees" mcc="530" mnc="24"/>
+    <operator carrier="PacCell" shortName="PacCell" mcc="536" mnc="01"/>
+    <operator carrier="bmobile" shortName="bmobile" mcc="537" mnc="01"/>
+    <operator carrier="Telikom PNG" shortName="TM" mcc="537" mnc="02"/>
+    <operator carrier="DIGICEL" shortName="DIGICEL" mcc="537" mnc="03"/>
+    <operator carrier="U-CALL" shortName="U-CALL" mcc="539" mnc="01"/>
+    <operator carrier="Digicel Tonga" shortName="Digicel" mcc="539" mnc="88"/>
+    <operator carrier="Our Telekom" shortName="Telekom" mcc="540" mnc="01"/>
+    <operator carrier="bmobile" shortName="bmobile" mcc="540" mnc="02"/>
+    <operator carrier="VUT SMILE" shortName="SMILE" mcc="541" mnc="01"/>
+    <operator carrier="Digicel" shortName="Digicel" mcc="541" mnc="05"/>
+    <operator carrier="FJ VODAFONE" shortName="VODAFONE" mcc="542" mnc="01"/>
+    <operator carrier="DIGICEL" shortName="DIGICEL" mcc="542" mnc="02"/>
+    <operator carrier="Manuia" shortName="Manuia" mcc="543" mnc="01"/>
+    <operator carrier="Blue Sky" shortName="Blue Sky" mcc="544" mnc="11"/>
+    <operator carrier="Bluesky Communications" shortName="BLUESKY" mcc="544" mnc="110"/>
+    <operator carrier="Blue Sky Communications" shortName="BSKY" mcc="544" mnc="544"/>
+    <operator carrier="Kiribati Frigate" shortName="Kiribati Frigate" mcc="545" mnc="09"/>
+    <operator carrier="NCL MOBILIS" shortName="MOBNCL" mcc="546" mnc="01"/>
+    <operator carrier="VITI" shortName="VITI" mcc="547" mnc="05"/>
+    <operator carrier="VODAFONE PF" shortName="VODAFONE" mcc="547" mnc="15"/>
+    <operator carrier="F-VINI" shortName="VINI" mcc="547" mnc="20"/>
+    <operator carrier="CK KOKANET" shortName="KOKANET" mcc="548" mnc="01"/>
+    <operator carrier="DIGICEL" shortName="DIGICEL" mcc="549" mnc="00,01"/>
+    <operator carrier="Bluesky" shortName="Bluesky" mcc="549" mnc="27"/>
+    <operator carrier="FSM Telecom" shortName="FSM Tele" mcc="550" mnc="01"/>
+    <operator carrier="MH-NTA" shortName="NTA" mcc="551" mnc="01"/>
+    <operator carrier="PalauCel" shortName="PalauCel" mcc="552" mnc="01"/>
+    <operator carrier="Palau Mobile" shortName="Palau Mobile" mcc="552" mnc="80"/>
+    <operator carrier="FSM Telecom" shortName="FSM Tele" mcc="553" mnc="01"/>
+    <operator carrier="Teletok" shortName="TTOK" mcc="554" mnc="01"/>
+    <operator carrier="Orange EG" shortName="Orange" mcc="602" mnc="01"/>
+    <operator carrier="vodafone EG" shortName="voda EG" mcc="602" mnc="02"/>
+    <operator carrier="Etisalat" shortName="Etisalat" mcc="602" mnc="03"/>
+    <operator carrier="EGYwe" shortName="we" mcc="602" mnc="04"/>
+    <operator carrier="CellMapper" shortName="CellMapper" mcc="602" mnc="10"/>
+    <operator carrier="ALG Mobilis" shortName="Mobilis" mcc="603" mnc="01"/>
+    <operator carrier="Djezzy" shortName="Djezzy" mcc="603" mnc="02"/>
+    <operator carrier="ooredoo Algeria" shortName="Ooredoo" mcc="603" mnc="03"/>
+    <operator carrier="Orange MA" shortName="Orange" mcc="604" mnc="00"/>
+    <operator carrier="MOR IAM" shortName="IAM" mcc="604" mnc="01"/>
+    <operator carrier="inwi" shortName="inwi" mcc="604" mnc="02"/>
+    <operator carrier="Orange TN" shortName="OrangeTN" mcc="605" mnc="01"/>
+    <operator carrier="TUNISIE TELECOM" shortName="TUNTEL" mcc="605" mnc="02"/>
+    <operator carrier="TUNISIANA" shortName="TUNISIAN" mcc="605" mnc="03"/>
+    <operator carrier="Libyana" shortName="Libyana" mcc="606" mnc="00"/>
+    <operator carrier="Al Madar" shortName="Al Madar" mcc="606" mnc="01"/>
+    <operator carrier="Almadar" shortName="ALMADAR" mcc="606" mnc="91,218"/>
+    <operator carrier="GAMCEL" shortName="GAMCEL" mcc="607" mnc="01"/>
+    <operator carrier="AFRICELL" shortName="AFRICELL" mcc="607" mnc="02"/>
+    <operator carrier="GM COMIUM" shortName="GMCOMIUM" mcc="607" mnc="03"/>
+    <operator carrier="Qcell" shortName="QC" mcc="607" mnc="04"/>
+    <operator carrier="Orange SN" shortName="OrangeSN" mcc="608" mnc="01"/>
+    <operator carrier="SEN" shortName="TIGO" mcc="608" mnc="02"/>
+    <operator carrier="SEN expresso" shortName="Expresso" mcc="608" mnc="03"/>
+    <operator carrier="MR MATTEL" shortName="MATTEL" mcc="609" mnc="01"/>
+    <operator carrier="MR Expresso" shortName="EMR" mcc="609" mnc="02"/>
+    <operator carrier="MAURITEL" shortName="MAURITEL" mcc="609" mnc="10"/>
+    <operator carrier="MALITEL ML" shortName="MALITEL" mcc="610" mnc="01"/>
+    <operator carrier="ORANGE ML" shortName="OML" mcc="610" mnc="02"/>
+    <operator carrier="TELECEL ML" shortName="TELECEL" mcc="610" mnc="03"/>
+    <operator carrier="Orange GN" shortName="ORANGEGN" mcc="611" mnc="01"/>
+    <operator carrier="GN LAGUI" shortName="LAGUI" mcc="611" mnc="02"/>
+    <operator carrier="Telecel Guinee" shortName="Telecel Guinee" mcc="611" mnc="03"/>
+    <operator carrier="GNMTN" shortName="GNAreeba" mcc="611" mnc="04"/>
+    <operator carrier="GINCL" shortName="Cellcom" mcc="611" mnc="05"/>
+    <operator carrier="MOOV CI" shortName="MOOV" mcc="612" mnc="02"/>
+    <operator carrier="Orange" shortName="Orange" mcc="612" mnc="03"/>
+    <operator carrier="KoZ" shortName="KoZ" mcc="612" mnc="04"/>
+    <operator carrier="MTN CI" shortName="MTN CI" mcc="612" mnc="05"/>
+    <operator carrier="ORICEL" shortName="ORICEL" mcc="612" mnc="06"/>
+    <operator carrier="ONATEL" shortName="ONATEL" mcc="613" mnc="01"/>
+    <operator carrier="Orange BF" shortName="Orange" mcc="613" mnc="02"/>
+    <operator carrier="Telecel Faso" shortName="Telecel Faso" mcc="613" mnc="03"/>
+    <operator carrier="SAHELCOM" shortName="SAHELCOM" mcc="614" mnc="01"/>
+    <operator carrier="Airtel" shortName="Airtel" mcc="614" mnc="02"/>
+    <operator carrier="ETISALAT NER" shortName="ETISALAT" mcc="614" mnc="03"/>
+    <operator carrier="Orange" shortName="Orange" mcc="614" mnc="04"/>
+    <operator carrier="TG-TOGO CELL" shortName="TGCELL" mcc="615" mnc="01"/>
+    <operator carrier="ETISALAT TOGO" shortName="ETISALAT" mcc="615" mnc="03"/>
+    <operator carrier="Telecel Togo" shortName="Telecel" mcc="615" mnc="05"/>
+    <operator carrier="BBCOM" shortName="BBCOM" mcc="616" mnc="00"/>
+    <operator carrier="ETISALAT BENIN" shortName="ETISALAT" mcc="616" mnc="02"/>
+    <operator carrier="MTN BENIN" shortName="MTNBENIN" mcc="616" mnc="03"/>
+    <operator carrier="BELL BENIN COMMUNICATION" shortName="BBCOM" mcc="616" mnc="04"/>
+    <operator carrier="GloBenin" shortName="GloBenin" mcc="616" mnc="05"/>
+    <operator carrier="CELLPLUS-MRU" shortName="my.t" mcc="617" mnc="01"/>
+    <operator carrier="MTML" shortName="MTML" mcc="617" mnc="03"/>
+    <operator carrier="EMTEL-MRU" shortName="EMTEL" mcc="617" mnc="10"/>
+    <operator carrier="LBR Lonestar Cell" shortName="LoneStar" mcc="618" mnc="01"/>
+    <operator carrier="Novafone 4G" shortName="Novafone" mcc="618" mnc="04"/>
+    <operator carrier="Orange LBR" shortName="Orange L" mcc="618" mnc="07"/>
+    <operator carrier="Orange SL" shortName="OrangeSL" mcc="619" mnc="01"/>
+    <operator carrier="MILLICOM SL" shortName="MILLICOM" mcc="619" mnc="02"/>
+    <operator carrier="Africell" shortName="Africell" mcc="619" mnc="05"/>
+    <operator carrier="QCell" shortName="QC" mcc="619" mnc="07"/>
+    <operator carrier="GH MTN" shortName="MTN" mcc="620" mnc="01"/>
+    <operator carrier="GH Vodafone" shortName="Vodafone" mcc="620" mnc="02"/>
+    <operator carrier="AirtelTigo" shortName="ATL-TIGO" mcc="620" mnc="03"/>
+    <operator carrier="AirtelTigo" shortName="ATL-TIGO" mcc="620" mnc="06"/>
+    <operator carrier="Glo Ghana" shortName="GloGhana" mcc="620" mnc="07"/>
+    <operator carrier="Glo Ghana" shortName="Glo Ghana" mcc="620" mnc="620"/>
+    <operator carrier="Airtel" shortName="Airtel" mcc="621" mnc="20"/>
+    <operator carrier="Smilecoms" shortName="Smilecoms" mcc="621" mnc="27"/>
+    <operator carrier="MTN - NG" shortName="MTN-NG" mcc="621" mnc="30"/>
+    <operator carrier="ntel" shortName="ntel" mcc="621" mnc="40"/>
+    <operator carrier="Glo NG" shortName="glo" mcc="621" mnc="50"/>
+    <operator carrier="9mobile" shortName="9mobile" mcc="621" mnc="60"/>
+    <operator carrier="Airtel" shortName="Airtel" mcc="622" mnc="01"/>
+    <operator carrier="Tigo TD" shortName="Tigo" mcc="622" mnc="03"/>
+    <operator carrier="ETISALAT RCA" shortName="ETISALAT" mcc="623" mnc="01"/>
+    <operator carrier="Telecel" shortName="Telecel" mcc="623" mnc="02"/>
+    <operator carrier="Orange RCA" shortName="Orange" mcc="623" mnc="03"/>
+    <operator carrier="Orange RCA" shortName="Orange" mcc="623" mnc="04"/>
+    <operator carrier="MTN CAM" shortName="MTN CAM" mcc="624" mnc="01"/>
+    <operator carrier="Orange CM" shortName="Orange" mcc="624" mnc="02"/>
+    <operator carrier="Nexttel" shortName="Nexttel" mcc="624" mnc="04"/>
+    <operator carrier="CVMOVEL" shortName="CVMOVEL" mcc="625" mnc="01"/>
+    <operator carrier="Unitel T+" shortName="UnitelT+" mcc="625" mnc="02"/>
+    <operator carrier="STP CSTmovel" shortName="CSTmovel" mcc="626" mnc="01"/>
+    <operator carrier="Unitel STP" shortName="Unitel" mcc="626" mnc="02"/>
+    <operator carrier="GETESA" shortName="GETESA" mcc="627" mnc="01"/>
+    <operator carrier="GNQ-Muni" shortName="Muni-GQ" mcc="627" mnc="03"/>
+    <operator carrier="LIBERTIS" shortName="LIBERTIS" mcc="628" mnc="01"/>
+    <operator carrier="ETISALAT GAB" shortName="ETISALAT" mcc="628" mnc="02"/>
+    <operator carrier="Airtel" shortName="Airtel" mcc="628" mnc="03"/>
+    <operator carrier="AZUR" shortName="AZUR" mcc="628" mnc="04"/>
+    <operator carrier="Airtel" shortName="Airtel" mcc="629" mnc="01,07"/>
+    <operator carrier="COG MTN" shortName="MTN-CG" mcc="629" mnc="10"/>
+    <operator carrier="Vodacom Congo" shortName="VODACOM" mcc="630" mnc="01"/>
+    <operator carrier="Airtel" shortName="Airtel" mcc="630" mnc="02"/>
+    <operator carrier="Supercell SPRL" shortName="Supercell" mcc="630" mnc="05"/>
+    <operator carrier="Orange RDC" shortName="Orange" mcc="630" mnc="86"/>
+    <operator carrier="CD Smart" shortName="Smart" mcc="630" mnc="88"/>
+    <operator carrier="TIGO DRC" shortName="TIGO" mcc="630" mnc="89"/>
+    <operator carrier="Africell RDC" shortName="AFRICELL" mcc="630" mnc="90"/>
+    <operator carrier="UNITEL" shortName="UNITEL" mcc="631" mnc="02"/>
+    <operator carrier="MOVICEL" shortName="AGOMV" mcc="631" mnc="04"/>
+    <operator carrier="MTN" shortName="MTN" mcc="632" mnc="02"/>
+    <operator carrier="Orange GB" shortName="OrangeGB" mcc="632" mnc="03"/>
+    <operator carrier="GTM" shortName="GTM" mcc="632" mnc="07"/>
+    <operator carrier="C&amp;W SEY" shortName="C&amp;W SEY" mcc="633" mnc="01"/>
+    <operator carrier="Mdeiatech International" shortName="Mdeiatech International" mcc="633" mnc="02"/>
+    <operator carrier="Airtel" shortName="Airtel" mcc="633" mnc="10"/>
+    <operator carrier="Zain SDN" shortName="Zain SD" mcc="634" mnc="01"/>
+    <operator carrier="MTN" shortName="MTN" mcc="634" mnc="02"/>
+    <operator carrier="Vivacell" shortName="Vivacell" mcc="634" mnc="05"/>
+    <operator carrier="Zain SD" shortName="Zain SD" mcc="634" mnc="06"/>
+    <operator carrier="RWAAR" shortName="AR" mcc="635" mnc="01,04"/>
+    <operator carrier="MTN RWANDA" shortName="MTN" mcc="635" mnc="10"/>
+    <operator carrier="RWTEL" shortName="RWTEL" mcc="635" mnc="12"/>
+    <operator carrier="TIGO RWANDA" shortName="TIGO RW" mcc="635" mnc="13"/>
+    <operator carrier="Airtel" shortName="Airtel" mcc="635" mnc="14"/>
+    <operator carrier="ETH MTN" shortName="ET-MTN" mcc="636" mnc="01"/>
+    <operator carrier="SO Telesom" shortName="Tele" mcc="637" mnc="01"/>
+    <operator carrier="SOMAFONE" shortName="SOMAFONE" mcc="637" mnc="04"/>
+    <operator carrier="Nationalink" shortName="Nationalink" mcc="637" mnc="10"/>
+    <operator carrier="Hormuud" shortName="Hormuud" mcc="637" mnc="10"/>
+    <operator carrier="Som Golis" shortName="Golis" mcc="637" mnc="30"/>
+    <operator carrier="Hormuud Telecom" shortName="Hormuud" mcc="637" mnc="50"/>
+    <operator carrier="Telcom Mobile" shortName="Telcom Mobile" mcc="637" mnc="62,65"/>
+    <operator carrier="Telsom" shortName="Telsom" mcc="637" mnc="82"/>
+    <operator carrier="DJ EVATIS" shortName="EVATIS" mcc="638" mnc="01"/>
+    <operator carrier="Safaricom" shortName="SAF-COM" mcc="639" mnc="02"/>
+    <operator carrier="Airtel" shortName="Airtel" mcc="639" mnc="03"/>
+    <operator carrier="Telkom" shortName="Telkom" mcc="639" mnc="07"/>
+    <operator carrier="FAIBA" shortName="FAIBA" mcc="639" mnc="10"/>
+    <operator carrier="TIGO - TZ" shortName="TIGO" mcc="640" mnc="02"/>
+    <operator carrier="ZANTEL-TZ" shortName="ZANTEL" mcc="640" mnc="03"/>
+    <operator carrier="VodaCom" shortName="VodaCom" mcc="640" mnc="04"/>
+    <operator carrier="Airtel" shortName="Airtel" mcc="640" mnc="05"/>
+    <operator carrier="TTCL" shortName="TTCL" mcc="640" mnc="07"/>
+    <operator carrier="Smart" shortName="Smart" mcc="640" mnc="08"/>
+    <operator carrier="Halotel" shortName="Halotel" mcc="640" mnc="09"/>
+    <operator carrier="SmileCom" shortName="SmileCom" mcc="640" mnc="11"/>
+    <operator carrier="Airtel" shortName="Airtel" mcc="641" mnc="01"/>
+    <operator carrier="UG TANG" shortName="TANG" mcc="641" mnc="04"/>
+    <operator carrier="MTN-UGANDA" shortName="MTN-UG" mcc="641" mnc="10"/>
+    <operator carrier="Uganda Telecom" shortName="UTL" mcc="641" mnc="11"/>
+    <operator carrier="Africell Uganda" shortName="AUL" mcc="641" mnc="14"/>
+    <operator carrier="Suretelcom" shortName="suretel" mcc="641" mnc="18"/>
+    <operator carrier="Airtel" shortName="Airtel" mcc="641" mnc="22"/>
+    <operator carrier="Spacetel" shortName="Spacetel" mcc="642" mnc="01"/>
+    <operator carrier="BDI TEMPO-AFRICELL" shortName="TEMPO-AF" mcc="642" mnc="02"/>
+    <operator carrier="ONATEL BDI" shortName="ONATEL" mcc="642" mnc="03"/>
+    <operator carrier="SMART" shortName="SMART" mcc="642" mnc="07"/>
+    <operator carrier="Lumitel" shortName="Lumitel" mcc="642" mnc="08"/>
+    <operator carrier="TELECEL-BDI" shortName="BDITL" mcc="642" mnc="82"/>
+    <operator carrier="MOZ - mCel" shortName="mCel" mcc="643" mnc="01"/>
+    <operator carrier="MOVITEL" shortName="MOVITEL" mcc="643" mnc="03"/>
+    <operator carrier="VodaCom-MZ" shortName="VodaCom" mcc="643" mnc="04"/>
+    <operator carrier="Airtel" shortName="Airtel" mcc="645" mnc="01"/>
+    <operator carrier="MTN ZM" shortName="MTN ZM" mcc="645" mnc="02"/>
+    <operator carrier="ZAMTEL" shortName="ZAMTEL" mcc="645" mnc="03"/>
+    <operator carrier="Airtel" shortName="Airtel" mcc="646" mnc="01"/>
+    <operator carrier="Orange" shortName="Orange" mcc="646" mnc="02"/>
+    <operator carrier="TELMA" shortName="TELMA" mcc="646" mnc="04"/>
+    <operator carrier="Bip" shortName="Bip" mcc="646" mnc="05"/>
+    <operator carrier="Orange re" shortName="Orange" mcc="647" mnc="00"/>
+    <operator carrier="MAORE MOBILE" shortName="MMOBILE" mcc="647" mnc="01"/>
+    <operator carrier="TELCO OI" shortName="TELCO OI" mcc="647" mnc="02"/>
+    <operator carrier="FREE MOBILE RE" shortName="FREE RE" mcc="647" mnc="03"/>
+    <operator carrier="ZEOP" shortName="ZEOP" mcc="647" mnc="04"/>
+    <operator carrier="SRR" shortName="SRR" mcc="647" mnc="10"/>
+    <operator carrier="ZW NET*ONE" shortName="NETONE" mcc="648" mnc="01"/>
+    <operator carrier="TELECEL ZW" shortName="TELECEL" mcc="648" mnc="03"/>
+    <operator carrier="ZW ECONET" shortName="ECONET" mcc="648" mnc="04"/>
+    <operator carrier="MTC NAMIBIA" shortName="MTCNAM" mcc="649" mnc="01"/>
+    <operator carrier="tnmobile" shortName="tnmobile" mcc="649" mnc="03"/>
+    <operator carrier="TNM" shortName="TNM" mcc="650" mnc="01"/>
+    <operator carrier="Airtel" shortName="Airtel" mcc="650" mnc="10"/>
+    <operator carrier="Vodacom Lesotho" shortName="VODACOM" mcc="651" mnc="01"/>
+    <operator carrier="LS-ETL" shortName="ETL" mcc="651" mnc="02"/>
+    <operator carrier="BW MASCOM" shortName="MASCOM" mcc="652" mnc="01"/>
+    <operator carrier="Orange" shortName="Orange" mcc="652" mnc="02"/>
+    <operator carrier="beMOBILE" shortName="beMOBILE" mcc="652" mnc="04"/>
+    <operator carrier="Swazi Mobile" shortName="Swazi Mo" mcc="653" mnc="02"/>
+    <operator carrier="Swazi-MTN" shortName="SwaziMTN" mcc="653" mnc="10"/>
+    <operator carrier="HURI" shortName="HURI" mcc="654" mnc="01"/>
+    <operator carrier="TELCO" shortName="COMTM" mcc="654" mnc="02"/>
+    <operator carrier="Vodacom" shortName="Vodacom" mcc="655" mnc="01"/>
+    <operator carrier="TelkomSA" shortName="Telkom" mcc="655" mnc="02"/>
+    <operator carrier="TelkomSA-R" shortName="Telkom-R" mcc="655" mnc="05"/>
+    <operator carrier="Cell C" shortName="Cell C" mcc="655" mnc="07"/>
+    <operator carrier="MTN-SA" shortName="MTN" mcc="655" mnc="10"/>
+    <operator carrier="Rain" shortName="Rain" mcc="655" mnc="19"/>
+    <operator carrier="rain" shortName="rain" mcc="655" mnc="38,73"/>
+    <operator carrier="Eritel" shortName="Eritel" mcc="657" mnc="01"/>
+    <operator carrier="Sure" shortName="Sure" mcc="658" mnc="01"/>
+    <operator carrier="MTN" shortName="MTN" mcc="659" mnc="02"/>
+    <operator carrier="Gemtel" shortName="Gemtel" mcc="659" mnc="03"/>
+    <operator carrier="Vivacell" shortName="Vivacell" mcc="659" mnc="04"/>
+    <operator carrier="ZAIN SS" shortName="ZAIN SS" mcc="659" mnc="06"/>
+    <operator carrier="BTL" shortName="BTL" mcc="702" mnc="67"/>
+    <operator carrier="INTELCO" shortName="INTELCO" mcc="702" mnc="68"/>
+    <operator carrier="Smart" shortName="Smart" mcc="702" mnc="69"/>
+    <operator carrier="CLARO GTM" shortName="CLAROGTM" mcc="704" mnc="01"/>
+    <operator carrier="TIGO" shortName="TIGO" mcc="704" mnc="02"/>
+    <operator carrier="CLARO GTM" shortName="CLAROGTM" mcc="704" mnc="03"/>
+    <operator carrier="CLARO SLV" shortName="ClaroSLV" mcc="706" mnc="01"/>
+    <operator carrier="Digicel" shortName="DIGICEL" mcc="706" mnc="02"/>
+    <operator carrier="Tigo SV" shortName="Tigo" mcc="706" mnc="03"/>
+    <operator carrier="Movistar" shortName="Movistar" mcc="706" mnc="04"/>
+    <operator carrier="ESV PERSONAL" shortName="PERSONAL" mcc="706" mnc="10"/>
+    <operator carrier="CLARO HND" shortName="ClaroHND" mcc="708" mnc="01"/>
+    <operator carrier="TIGOHND" shortName="TIGO" mcc="708" mnc="02"/>
+    <operator carrier="DIGICEL" shortName="DIGICEL" mcc="708" mnc="04"/>
+    <operator carrier="HND" shortName="HT - 200" mcc="708" mnc="30"/>
+    <operator carrier="CLARO NIC" shortName="ClaroNIC" mcc="710" mnc="21,73"/>
+    <operator carrier="Movistar" shortName="Movistar" mcc="710" mnc="30"/>
+    <operator carrier="Movistar" shortName="Movistar" mcc="710" mnc="330"/>
+    <operator carrier="I.C.E." shortName="I.C.E." mcc="712" mnc="00,01,02"/>
+    <operator carrier="CLARO CR" shortName="CLARO CR" mcc="712" mnc="03"/>
+    <operator carrier="Movistar" shortName="Movistar" mcc="712" mnc="04"/>
+    <operator carrier="+Movil - C&amp;W PAN" shortName="PANCW" mcc="714" mnc="01"/>
+    <operator carrier="Movistar" shortName="Movistar" mcc="714" mnc="02"/>
+    <operator carrier="CLARO PA" shortName="CLARO PA" mcc="714" mnc="03"/>
+    <operator carrier="DIGICEL" shortName="DIGICEL" mcc="714" mnc="04"/>
+    <operator carrier="Movistar" shortName="Movistar" mcc="714" mnc="20"/>
+    <operator carrier="movistar" shortName="movistar" mcc="716" mnc="06"/>
+    <operator carrier="CLARO PER" shortName="ClaroPER" mcc="716" mnc="10"/>
+    <operator carrier="Viettel Peru" shortName="VTP" mcc="716" mnc="15"/>
+    <operator carrier="Entel" shortName="Entel" mcc="716" mnc="17"/>
+    <operator carrier="AR - Movistar" shortName="Movistar" mcc="722" mnc="07"/>
+    <operator carrier="AR - TEFMVNO" shortName="TEFMVNO" mcc="722" mnc="10"/>
+    <operator carrier="AR PERSONAL" shortName="AR TP" mcc="722" mnc="34,36"/>
+    <operator carrier="Movistar" shortName="Movistar" mcc="722" mnc="70"/>
+    <operator carrier="CLARO ARGENTINA" shortName="CLARO AR" mcc="722" mnc="310,320,330"/>
+    <operator carrier="Personal" shortName="Personal" mcc="722" mnc="340"/>
+    <operator carrier="Nextel" shortName="Nextel" mcc="724" mnc="00"/>
+    <operator carrier="Brasil Telecom" shortName="CRT Cellular" mcc="724" mnc="01"/>
+    <operator carrier="TIM BRA" shortName="TIM" mcc="724" mnc="02,03,04"/>
+    <operator carrier="Claro BRA" shortName="Claro" mcc="724" mnc="05,38"/>
+    <operator carrier="VIVO" shortName="VIVO" mcc="724" mnc="06"/>
+    <operator carrier="CTBC Telecom" shortName="CTBC Telecom" mcc="724" mnc="07"/>
+    <operator carrier="Telecom Italia Mobile" shortName="TIM" mcc="724" mnc="08"/>
+    <operator carrier="Telepar Cel" shortName="Telepar Cel" mcc="724" mnc="09"/>
+    <operator carrier="VIVO" shortName="VIVO" mcc="724" mnc="10,11"/>
+    <operator carrier="Americel" shortName="Americel" mcc="724" mnc="12"/>
+    <operator carrier="Telesp Cel" shortName="Telesp Cel" mcc="724" mnc="13"/>
+    <operator carrier="Maxitel BA" shortName="Maxitel BA" mcc="724" mnc="14"/>
+    <operator carrier="Ceterp Cel" shortName="Ceterp Cel" mcc="724" mnc="17"/>
+    <operator carrier="Norte Brasil Tel" shortName="Norte Brasil Tel" mcc="724" mnc="18"/>
+    <operator carrier="Telemig Cel" shortName="Telemig Cel" mcc="724" mnc="19"/>
+    <operator carrier="Telerj Cel" shortName="Telerj Cel" mcc="724" mnc="21"/>
+    <operator carrier="Telebrasilia Cel" shortName="Telebrasilia Cel" mcc="724" mnc="25"/>
+    <operator carrier="Telegoias Cel" shortName="Telegoias Cel" mcc="724" mnc="27"/>
+    <operator carrier="Telemat Cel" shortName="Telemat Cel" mcc="724" mnc="29"/>
+    <operator carrier="BRA SCTL" shortName="SCTL" mcc="724" mnc="15"/>
+    <operator carrier="Oi" shortName="Oi" mcc="724" mnc="16"/>
+    <operator carrier="VIVO" shortName="VIVO" mcc="724" mnc="23"/>
+    <operator carrier="Oi" shortName="Oi" mcc="724" mnc="24,31"/>
+    <operator carrier="Algar Telecom" shortName="Algar" mcc="724" mnc="32,33,34"/>
+    <operator carrier="Telebahia Cel" shortName="Telebahia Cel" mcc="724" mnc="35"/>
+    <operator carrier="Unicel do Brasil" shortName="aeiou" mcc="724" mnc="37"/>
+    <operator carrier="Nextel Brasil" shortName="Nextel" mcc="724" mnc="39"/>
+    <operator carrier="Telpe Cel" shortName="Telpe Cel" mcc="724" mnc="41"/>
+    <operator carrier="Telepisa Cel" shortName="Telepisa Cel" mcc="724" mnc="43"/>
+    <operator carrier="Telpa Cel" shortName="Telpa Cel" mcc="724" mnc="45"/>
+    <operator carrier="Telern Cel" shortName="Telern Cel" mcc="724" mnc="47"/>
+    <operator carrier="Teleceara Cel" shortName="Teleceara Cel" mcc="724" mnc="48"/>
+    <operator carrier="Telma Cel" shortName="Telma Cel" mcc="724" mnc="51"/>
+    <operator carrier="Telepara Cel" shortName="Telepara Cel" mcc="724" mnc="53"/>
+    <operator carrier="Teleamazon Cel" shortName="Teleamazon Cel" mcc="724" mnc="55"/>
+    <operator carrier="Teleamapa Cel" shortName="Teleamapa Cel" mcc="724" mnc="57"/>
+    <operator carrier="Telaima Cel" shortName="Telaima Cel" mcc="724" mnc="59"/>
+    <operator carrier="ENTEL PCS" shortName="ENTEL" mcc="730" mnc="01"/>
+    <operator carrier="movistar" shortName="movistar" mcc="730" mnc="02"/>
+    <operator carrier="CLARO CHL" shortName="CLARO CHL" mcc="730" mnc="03,23"/>
+    <operator carrier="movistar" shortName="movistar" mcc="730" mnc="07"/>
+    <operator carrier="CHL VTR" shortName="VTR" mcc="730" mnc="08"/>
+    <operator carrier="WOM" shortName="WOM" mcc="730" mnc="04,09"/>
+    <operator carrier="ENTEL PCS" shortName="ENTEL" mcc="730" mnc="10"/>
+    <operator carrier="CHL Movistar" shortName="movistar" mcc="730" mnc="730"/>
+    <operator carrier="Claro" shortName="Claro" mcc="732" mnc="101"/>
+    <operator carrier="TIGO" shortName="TIGO" mcc="732" mnc="103,111"/>
+    <operator carrier="Bellsouth Colombia" shortName="Movistar" mcc="732" mnc="102"/>
+    <operator carrier="movistar" shortName="movistar" mcc="732" mnc="123"/>
+    <operator carrier="Avantel" shortName="Avantel" mcc="732" mnc="130"/>
+    <operator carrier="ETB 4G" shortName="ETB" mcc="732" mnc="187"/>
+    <operator carrier="WOM" shortName="WOM" mcc="732" mnc="360"/>
+    <operator carrier="DIGITEL" shortName="DIGITEL" mcc="734" mnc="01,02,03"/>
+    <operator carrier="Movistar" shortName="Movistar" mcc="734" mnc="04"/>
+    <operator carrier="VE_MOVILNET" shortName="Movilnet" mcc="734" mnc="06"/>
+    <operator carrier="VIVA" shortName="VIVA" mcc="736" mnc="01"/>
+    <operator carrier="BOMOV" shortName="EMOVIL" mcc="736" mnc="02"/>
+    <operator carrier="TIGO" shortName="TIGO" mcc="736" mnc="03"/>
+    <operator carrier="Digicel"  shortName="Digicel" mcc="738" mnc="01"/>
+    <operator carrier="GUY GTT + Do More" shortName="GTT+" mcc="738" mnc="02"/>
+    <operator carrier="Movistar" shortName="Movistar" mcc="740" mnc="00"/>
+    <operator carrier="CLARO" shortName="CLARO" mcc="740" mnc="01"/>
+    <operator carrier="CNT" shortName="CNT" mcc="740" mnc="02"/>
+    <operator carrier="HOLA PARAGUAY S.A." shortName="HPGYSA" mcc="744" mnc="01"/>
+    <operator carrier="CLARO PY" shortName="CLARO PY" mcc="744" mnc="02"/>
+    <operator carrier="TIGO PY" shortName="TIGO" mcc="744" mnc="04"/>
+    <operator carrier="PY Personal" shortName="Personal" mcc="744" mnc="05"/>
+    <operator carrier="SR.TELESUR.GSM" shortName="TeleG" mcc="746" mnc="02"/>
+    <operator carrier="DIGICEL" shortName="DIGICEL" mcc="746" mnc="03"/>
+    <operator carrier="Antel" shortName="Antel" mcc="748" mnc="01"/>
+    <operator carrier="Movistar" shortName="Movistar" mcc="748" mnc="07"/>
+    <operator carrier="CLARO URUGUAY" shortName="CLARO UY" mcc="748" mnc="10"/>
+    <operator carrier="Sure FLK" shortName="Sure" mcc="750" mnc="01"/>
+    <operator carrier="TM CELL" shortName="TM CELL" mcc="795" mnc="02"/>
+    <operator carrier="ICO" shortName="ICO" mcc="901" mnc="01"/>
+    <operator carrier="Sense Communications International" shortName="Sense Communications International" mcc="901" mnc="02"/>
+    <operator carrier="Iridium" shortName="Iridium" mcc="901" mnc="03"/>
+    <operator carrier="GlobalStar" shortName="GlobalStar" mcc="901" mnc="04"/>
+    <operator carrier="Thuraya RMSS Network" shortName="Thuraya RMSS Network" mcc="901" mnc="05,06"/>
+    <operator carrier="Ellipso" shortName="Ellipso" mcc="901" mnc="07"/>
+    <operator carrier="Tele1 Europe" shortName="Tele1 Europe" mcc="901" mnc="09"/>
+    <operator carrier="ACeS" shortName="ACeS" mcc="901" mnc="10"/>
+    <operator carrier="Inmarsat" shortName="INX" mcc="901" mnc="11"/>
+    <operator carrier="Telenor Maritime" shortName="TelenorM" mcc="901" mnc="12"/>
+    <operator carrier="GSM.AQ" shortName="GSM.AQ" mcc="901" mnc="13"/>
+    <operator carrier="AeroMobile" shortName="AeroMob" mcc="901" mnc="14"/>
+    <operator carrier="OnAir" shortName="OnAir" mcc="901" mnc="15"/>
+    <operator carrier="Jasper Systems" shortName="Jasper Systems" mcc="901" mnc="16"/>
+    <operator carrier="Navitas" shortName="Navitas" mcc="901" mnc="17"/>
+    <operator carrier="Cingular Wireless" shortName="Cingular Wireless" mcc="901" mnc="18"/>
+    <operator carrier="Vodafone Malta Maritime" shortName="Vodafone Malta Maritime" mcc="901" mnc="19"/>
+    <operator carrier="TIM@sea" shortName="TIM@sea" mcc="901" mnc="26"/>
+    <operator carrier="AISatSea" shortName="AISatSea" mcc="901" mnc="45"/>
+</operators>

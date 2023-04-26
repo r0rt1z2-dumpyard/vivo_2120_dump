@@ -1,0 +1,25 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.system_ext.brand=vivo
+ro.product.system_ext.device=2120
+ro.product.system_ext.manufacturer=vivo
+ro.product.system_ext.model=V2134
+ro.product.system_ext.name=2134T
+ro.system_ext.build.date=Tue Apr 26 20:04:55 CST 2022
+ro.system_ext.build.date.utc=1650974695
+ro.system_ext.build.fingerprint=vivo/2134T/2120:12/SP1A.210812.003/compiler04262006:user/release-keys
+ro.system_ext.build.id=SP1A.210812.003
+ro.system_ext.build.tags=release-keys
+ro.system_ext.build.type=user
+ro.system_ext.build.version.incremental=compiler04262006
+ro.system_ext.build.version.release=12
+ro.system_ext.build.version.release_or_codename=12
+ro.system_ext.build.version.sdk=31
+####################################
+# from variable PRODUCT_SYSTEM_EXT_PROPERTIES
+####################################
+# Auto-added by post_process_props.py
+persist.sys.usb.config=none
+# end of file

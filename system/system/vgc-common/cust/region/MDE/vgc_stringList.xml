@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <list name="vgc_region_limit_list">
+        <item value="SA"/>
+        <item value="AE"/>
+    </list>
+<!-- auto add vivo config -->
+</config>

@@ -1,0 +1,9 @@
+on post-fs-data
+    mkdir /data/bbklog/fileobs
+    copy /data/system/packages.list /data/bbklog/fileobs/packages.list
+    chmod 0777 /data/bbklog/fileobs/packages.list
+
+service dr /system/bin/dr
+    class main
+    user root
+    group system package_info readproc

@@ -1,0 +1,72 @@
+#init.rc for vivo
+
+on boot
+    # vivo nielichao add for camera begin
+    mkdir /mnt/vendor/nvcfg/camera 0777 system system
+    # vivo nielichao add for camera end
+
+    # vivo gaoyongjing add for camera begin
+    mkdir /data/vendor/camera 0777 system system
+    # vivo gaoyongjing add for camera end
+
+    # vivo wangjiewen add for zram begin
+    mkdir /data/vendor/swap 0770 root system
+    # vivo wangjiewen add for zram end
+
+# vivo wumengxiang add for MTK TCP/IP PARA begin
+on property:persist.vivo.mtk.networkstate_tcp_parameter.enable=true
+    write /proc/sys/net/ipv4/tcp_orphan_retries 3
+# vivo wumengxiang add for MTK TCP/IP PARA end
+
+# vivo wangjiewen add for zram begin
+on post-fs-data
+    mkdir /data/vendor/swap 0770
+
+service reconfig_zramsize /vendor/bin/zramsize_reconfig.sh
+    class main
+    user root
+    group root
+    oneshot
+
+on property:init.svc.reconfig_zramsize=stopped
+    chmod 0666 /sys/block/zram0/writeback_limit
+    chmod 0666 /sys/block/zram0/writeback_limit_enable
+    chmod 0666 /sys/block/zram0/zram_wb/stat
+    chmod 0666 /sys/block/zram0/zram_wb/enable
+    chmod 0666 /sys/block/zram0/zram_wb/pids_protect
+    chmod 0666 /sys/block/zram0/zram_wb/reclaim_enable
+    chmod 0666 /sys/block/zram0/zram_wb/readahead_enable
+    chmod 0666 /sys/block/zram0/zram_wb/memcg_reclaim_enable
+# vivo wangjiewen add for zram end
+
+# vivo fuxi add for charger begin
+on property:sys.vivo.carlife_state=*
+    write /sys/class/cms_class/carlife_state ${sys.vivo.carlife_state}
+    write /sys/class/power_supply/cms/carlife_state ${sys.vivo.carlife_state}
+
+on property:sys.vivo.pkg_state=*
+	write /sys/class/cms_class/pkg_state ${sys.vivo.pkg_state}
+	write /sys/class/power_supply/cms/pkg_state ${sys.vivo.pkg_state}
+
+#service charger /system/bin/charger
+#    class charger
+#    user system
+#    group system graphics input
+#    capabilities SYS_BOOT
+#    seclabel u:r:charger:s0
+#    file /dev/kmsg w
+# vivo fuxi add for charger end
+
+# vivo laifeilong add for agps property begin
+on property:vendor.vivo.gnss.agps.restart=true
+    restart agpsd
+    setprop vendor.vivo.gnss.agps.restart false
+# vivo laifeilong add for agps property end
+
+# vivo caizheng add for connsys coredump begin
+on property:persist.bluetooth.coredump=0
+    setprop persist.vendor.connsys.coredump.mode 0
+
+on property:persist.bluetooth.coredump=2
+    setprop persist.vendor.connsys.coredump.mode 2
+# vivo caizheng add for connsys coredump end

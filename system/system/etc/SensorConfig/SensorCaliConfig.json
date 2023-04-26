@@ -1,0 +1,18 @@
+{
+ "UseOpticsCali": 0,
+ "DoubleUnderProx": 0,
+ "SendNVDelay": 2000,
+ "SingleUnderProx": 0,
+ "DoubleScreenUnderProx": 0,
+ "UseSectionCali": 0,
+ "UseCCTCali": 0,
+ "SectionCaliWriteBackToNv": 0,
+ "SendPsOffset": 0,
+ "ExpectPsOffsetValue": -1,
+ "DefaultLongBaseValueFrontValue": 4000,
+ "DefaultLongBaseValueBackValue": 4000,
+ "DefaultShortBaseValueFrontValue": 8000,
+ "DefaultShortBaseValueBackValue": 8000,
+ "DefaultBaseLowValue": 300,
+ "DefaultBaseValue": 300
+}

@@ -1,0 +1,10 @@
+on post-fs-data
+    mkdir /data/mdl 0775 system system encryption=Attempt
+    mkdir /data/debuglogger 0777 shell log encryption=Attempt
+
+service mdlogger /system/system_ext/bin/mdlogger
+  #  class main
+    user shell
+    group shell system radio sdcard_rw inet sdcard_r media_rw
+    disabled
+    oneshot

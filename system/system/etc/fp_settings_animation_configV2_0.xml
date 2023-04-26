@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config version="2.0">
+    <project-config>
+        <item projects="PD2038,PD2039,PD2067,PD2107,PD2078" animation-list="100,17,16,15,12,13,8,7,10" icon-list="2,6,3,1,5,4" enter-animation="300"/>
+        <item projects="PD2046,PD2049,PD2055,PD2056,PD2059,PD2083,PD2102" animation-list="100,17,16,15,12,13,8,7,10" icon-list="2,6,3,1,5,4" enter-animation="300"/>
+        <item projects="PD2172" animation-list="100,19,20,18,17,16,15,12,13,8,7,10" icon-list="18,19" enter-animation="300"/>
+        <item projects="default" animation-list="100,17,16,15,12,13,8,7,10" icon-list="11,12,13,14,15,16,17" enter-animation="300"/>
+    </project-config>
+</config>

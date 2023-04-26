@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<ddritems>
+    <ddritem name="RD_EYE_W" min="18" max="40" />
+    <ddritem name="WR_EYE_W" min="18" max="40" />
+    <ddritem name="WR_EYE_H" min="70" max="90" />
+    <ddritem name="WR_TOP_W" min="15" max="40" />
+    <ddritem name="WR_TOP_C" min="27" max="60" />
+    <ddritem name="WR_BOT_W" min="10" max="40" />
+    <ddritem name="WR_BOT_C" min="15" max="50" />
+    <ddritem name="RD_D_DCC" min="-20" max="20" />
+    <ddritem name="WR_DS_DC" min="0" max="10" />
+    <ddritem name="WR_+60_W" min="10" max="40" />
+    <ddritem name="WR_+60_C" min="40" max="70" />
+    <ddritem name="WR_-60_W" min="10" max="40" />
+    <ddritem name="WR_-60_C" min="5" max="40" />
+</ddritems>

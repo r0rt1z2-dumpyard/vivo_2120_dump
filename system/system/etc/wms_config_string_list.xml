@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lists>
+    <list name="foldable_rotation_list">
+        <item value="com.bbk.launcher2"/>
+        <item value="com.vivo.childrenmode"/>
+        <item value="com.android.mms"/>
+        <item value="com.bbk.appstore"/>
+        <item value="com.android.settings"/>
+        <item value="com.bbk.calendar"/>
+        <item value="com.vivo.hiboard"/>
+        <item value="com.vivo.Tips"/>
+        <item value="com.vivo.easyshare"/>
+        <item value="com.vivo.agent"/>
+        <item value="com.vivo.videoeditor"/>
+        <item value="com.vivo.familycare"/>
+        <item value="com.vivo.wallet"/>
+        <item value="com.android.filemanager"/>
+        <item value="com.bbk.account"/>
+        <item value="com.vivo.gallery"/>
+        <item value="com.vivo.translator"/>
+        <item value="com.bbk.iqoo.feedback"/>
+        <item value="com.vivo.vtouch"/>
+        <item value="com.vivo.assistant"/>
+        <item value="com.vivo.newsreader"/>
+        <item value="com.vivo.remoteassistant"/>
+        <item value="com.vivo.favorite"/>
+        <item value="com.vivo.weather"/>
+        <item value="com.android.bips"/>
+        <item value="com.android.printspooler"/>
+        <item value="com.vivo.space"/>
+        <item value="com.vivo.upslide"/>
+        <item value="com.vivo.globalanimation"/>
+        <item value="com.bbk.updater"/>
+        <item value="com.android.phone"/>
+        <item value="com.android.contacts"/>
+        <item value="com.vivo.email"/>
+        <item value="com.iqoo.secure"/>
+        <item value="com.android.providers.downloads.ui"/>
+        <item value="com.android.BBKCrontab"/>
+        <item value="com.android.bbksoundrecorder"/>
+        <item value="com.vivo.motionrecognition"/>
+        <item value="com.vivo.hybrid"/>
+        <item value="com.vivo.globalsearch"/>
+        <item value="com.iqoo.powersaving"/>
+        <item value="com.bbk.SuperPowerSave"/>
+    </list>
+
+    <list name="fold_state_change_skip_relaunch_list">
+    </list>
+
+</lists>

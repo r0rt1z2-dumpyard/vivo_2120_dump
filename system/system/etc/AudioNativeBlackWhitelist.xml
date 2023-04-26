@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content>
+    <version>9</version>
+    <list_name name="MCVSSupportApp">
+        <application name="com.netease.hyxd">
+            <values name="0"></values>
+        </application>
+        <application name="com.youku.phone">
+            <values name="0"></values>
+        </application>
+        <application name="com.tencent.qqlive">
+            <values name="0"></values>
+        </application>
+        <application name="com.netease.ko">
+            <values name="0"></values>
+        </application>
+        <application name="com.netease.hyxd.vivo">
+            <values name="0"></values>
+        </application>
+    </list_name>
+    <list_name name="SpecialPOSApp">
+        <application name="com.lakala.android">
+            <values name="0"></values>
+        </application>
+        <application name="com.sankuai.meituan.merchant">
+            <values name="0"></values>
+        </application>
+        <application name="com.epay.impay.ui.flinmen">
+            <values name="0"></values>
+        </application>
+        <application name="com.icbc">
+            <values name="0"></values>
+        </application>
+        <application name="com.icbc.wapc">
+            <values name="0"></values>
+        </application>
+        <application name="com.android.bankabc">
+            <values name="0"></values>
+        </application>
+    </list_name>
+    <!--Add HandsetSpkMode online control -->
+    <list_name name="HandsetSpk"></list_name>
+    <!--
+    2.Add BtSco connect control start
+    -->
+    <list_name name="BtScoConnectSupportApp">
+        <application name="com.tencent.mm">
+            <values name="0"></values>
+        </application>
+        <application name="com.tencent.mobileqq">
+            <values name="0"></values>
+        </application>
+        <application name="im.yixin">
+            <values name="0"></values>
+        </application>
+    </list_name>
+    <list_name name="VIVOTYPESupportAppSUB">
+        <application name="/system/bin/smartshot">
+            <values name="0"></values>
+        </application>
+        <application name="com.changba">
+            <values name="0"></values>
+        </application>
+        <application name="com.tencent.karaoke">
+            <values name="0"></values>
+        </application>
+        <application name="com.huajiao">
+            <values name="0"></values>
+        </application>
+        <application name="cn.banshenggua.aichang">
+            <values name="0"></values>
+        </application>
+        <application name="com.meelive.ingkee">
+            <values name="0"></values>
+        </application>
+        <application name="com.happyteam.dubbingshow">
+            <values name="0"></values>
+        </application>
+        <application name="com.xingguang.meme">
+            <values name="0"></values>
+        </application>
+    </list_name>
+    <!--3.Add VIVO TYPE end-->
+    <!--5.Add VIVO Special mic start-->
+    <list_name name="VIVOTYPESupportAppSPE">
+        <application name="com.tencent.tmgp.pubgmhd">
+            <values name="0"></values>
+        </application>
+        <application name="com.tencent.tmgp.sgame">
+            <values name="0"></values>
+        </application>
+    </list_name>
+    <list_name name="ACDBMODE">
+        <application name="acdbonline">
+            <values name="elevoc"></values>
+        </application>
+    </list_name>
+</content>

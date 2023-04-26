@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <string name="setupwizard_default_language">en_US</string>
+    <string name="settings_default_region">NG</string>
+</config>

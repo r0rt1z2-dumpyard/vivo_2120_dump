@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config version="1.0">
+  <mapping name="carrier">
+    <siminfo>
+      <property name="rule">0x1</property>
+      <property name="mcc_mnc">22001</property>
+      <property name="map_key">22001V01</property>
+    </siminfo>
+  </mapping>
+</config>

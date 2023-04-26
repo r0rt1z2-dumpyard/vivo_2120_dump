@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <custlist name="VGC_iccid_language_map">
+        <item name="966" value="ar_EG"/>
+        <item name="971" value="ar_EG"/>
+    </custlist>
+    <!-- auto add vivo config -->
+    <custlist name="setupwizard_language_with_iso_map">
+        <item name="SA" value="ar_EG"/>
+        <item name="AE" value="ar_EG"/>
+    </custlist>
+    <custlist name="setupwizard_default_area_with_language">
+        <item name="ar_EG" value="SA"/>
+    </custlist>
+</config>
