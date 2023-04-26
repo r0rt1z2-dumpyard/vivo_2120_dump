@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+
+<language>
+	<display>English</display>
+
+	<resources>
+		<!-- Font overrides - only change these if your language requires special characters -->
+		<resource name="font_l" type="fontoverride" filename="HYQiHei-EZS.ttf" size="31" />
+		<resource name="font_m" type="fontoverride" filename="HYQiHei-EZS.ttf" size="25" />
+		<resource name="font_s" type="fontoverride" filename="HYQiHei-EZS.ttf" size="22" />
+		<resource name="fixed"  type="fontoverride" filename="HYQiHei-EZS.ttf" size="18" />
+
+		<!-- recovery common -->
+		<string name="install_packege_btn">Install software</string>
+		<string name="wipe_data_btn">Clear data</string>
+		<string name="check_system_btn">Check system</string>
+		<string name="view_log_btn">View update log</string>
+		<string name="shutdown_btn">Shut down</string>
+		<string name="reboot_btn">Restart</string>
+		<string name="reboot_recovery_btn">Reboot to Recovery</string>
+		<string name="cancel_btn">Cancel</string>
+		<string name="ok_btn">OK</string>
+		<string name="wipe_all_data_btn">Clear all data</string>
+
+		<string name="tips_shutdown">Shut down your phone?</string>
+		<string name="tips_reboot">Restart your phone?</string>
+		<string name="has_root_tips">The phone: Rooted</string>
+		<string name="no_root_tips">The phone: Not rooted</string>
+		<string name="back_btn">Return</string>
+		<string name="cancle_btn">Cancel</string>
+		<string name="symol_btn">@?#</string>
+		<string name="compelte_btn">Done</string>
+		<string name="warnning_btn">Warnning</string>
+
+		<string name="key_hold_warning">Please release the power button immediately to avoid abnormal equipment</string>
+
+		<!-- recovery  install string -->
+		<string name="install_image_hdr">Install system software</string>
+		<string name="install_menu_tips">Non-official software is unsafe. Proceed with caution</string>
+		<string name="install_menu_media">Phone memory</string>
+		<string name="install_menu_sd">SD card</string>
+		<string name="install_menu_net">Networking update software</string>
+		<string name="install_media_hdr">Phone memory</string>
+		<string name="install_sd_hdr">SD card</string>
+		<string name="install_image_tips">Select an official update package to install:</string>
+		<string name="install_running_commands">Installing the update package. Don't press any button. After the upgrade, black screen optimization may take a while. Please wait.</string>
+		<string name="install_done_success">Update package installed</string>
+		<string name="install_success_tips"> </string>
+		<string name="install_done_fail">Failed to install update package</string>
+		<string name="install_fail_apps">Failed to install app</string>
+		<string name="install_fail_oem">Update package not supported</string>
+		<string name="install_fail_versionlow">The system software version installed is older than the current version.</string>
+		<string name="install_fail_error">Failed to install due to damaged data. Restart your phone and download the latest version to repair.</string>
+		<string name="install_fail_corrupt">Failed to install due to damaged data. Restart your phone and download the latest version to repair.</string>
+		<string name="install_fail_unknow">Failed to install due to damaged data. Restart your phone and download the latest version to repair.</string>
+		<string name="battery_low_tips">Less than %tt_install_battery%% battery remaining. Please connect to charger</string>
+		<string name="install_battery_tips">Stay connected to charger. When the battery is at %tt_install_battery%%, the installation will start automatically</string>
+		<string name="package_check_running_commands">Loading upgrade package</string>
+		<string name="packagecheck_done_success">Please download the specified upgrade package from the official website or forum. To protect your phone, do not use an upgrade package from non-official channels.</string>
+		<string name="packagecheck_done_fail">Please download the specified upgrade package from the official website or forum. To protect your phone, do not use an upgrade package from non-official channels.</string>
+		<string name="package_check_install_btn">Install</string>
+		<string name="package_check_ok_btn">OK</string>
+
+		<!-- update app -->
+		<string name="update_app_running_commands">Installing the update package. Don't press any button. After the upgrade, black screen optimization may take a while. Please wait.</string>
+
+		<!-- wipe page -->
+		<string name="wipe_common_hdr">Clear data</string>
+		<string name="wipe_menu_data">Clear all data</string>
+		<string name="wipe_menu_cache">Clear cache</string>
+		<string name="wipe_menu_settings">Restore all settings</string>
+
+		<!-- wipe data -->
+		<string name="wipe_data_hdr">Clear all data</string>
+		<string name="wipe_data_warnning">Only phone system data will be cleared. Music, photos and other user data will not be deleted.</string>
+		<string name="factory_reset_tips">Note: The machine is abnormal and will be restored to factory settings. All user data is cleared when the recovery is complete.</string>
+		<string name="format_data_warnning">All user data will be deleted, including music, photos and other user data will be lost.</string>
+		<string name="wipe_data_running_commands">Clearing data. Do not operate the device</string>
+		<string name="wipedata_done_success">Cleared</string>
+		<string name="wipedata_success_tips">All data cleared</string>
+		<string name="wipedata_done_fail">Failed to clear</string>
+		<string name="wipedata_fail_error">Failed to clear all data</string>
+		<!-- wipe cache -->
+		<string name="wipe_cache_hdr">Clear cache</string>
+		<string name="wipe_cache_warnning">Only cache will be cleared. Phone settings and data will be unaffected.</string>
+		<string name="wipe_cache_running_commands">Clearing data. Do not operate the device</string>
+		<string name="wipecache_done_success">Cleared</string>
+		<string name="wipecache_success_tips">Cache cleared</string>
+		<string name="wipecache_done_fail">Failed to clear</string>
+		<string name="wipecache_fail_error">Failed to clear cache</string>
+		<!-- restore settings -->
+		<string name="rest_settings_hdr">Restore all settings</string>
+		<string name="rest_settings_warnning">Only all settings will be restored. No data or media will be deleted.</string>
+		<string name="rest_settings_running_commands">Restoring settings. Do not operate the device</string>
+		<string name="resettings_done_success">Settings restored</string>
+		<string name="resettings_success_tips">All settings restored</string>
+		<string name="resettings_done_fail">Failed to restore settings</string>
+		<string name="resettings_fail_error">Failed to restore all settings</string>
+
+		<!-- restore settings -->
+		<string name="root_check_running_commands">Checking</string>
+		<string name="rootcheck_done_success">Integrity of system files checked</string>
+		<string name="rootcheck_done_fail">Failed to check integrity of system files</string>
+		<string name="root_check_ok_btn">OK</string>
+		<string name="root_check_fail_btn">View details</string>
+		<string name="rootcheck_fail_hdr">Failure information</string>
+
+		<!-- view log -->
+		<string name="view_log_hdr">View update log</string>
+
+		<!-- recovery  password string -->
+		<string name="password_pattern_tips">Draw unlock pattern</string>
+		<string name="password_input_tips">Enter password</string>
+		<string name="password_forbid_tips">Your phone has been locked.</string>
+		<string name="password_forbid_time">Please try again after %tt_password_forbid_time% seconds</string>
+		<string name="password_input_ok">Go</string>
+
+
+		<!-- =========================================== fastboot mode ================================================= -->
+		<string name="fastboot_mode">Fastboot Mode</string>
+
+		<!-- ============================================= repair mode ================================================= -->
+		<string name="survival_mode">Repair system</string>
+		<string name="repair_down_btn">Download and install(Retain data)</string>
+
+		<!-- wlan -->
+		<string name="wlan_network_hdr">Connect to the Internet to update</string>
+		<string name="wlan_repair_tips">Going into system repair mode, it's recommended to connect the charger</string>
+		<string name="wlan_sel_hdr">WiFi</string>
+		<string name="wifi_selector_tips">Select Wi-Fi: (Unable to connect to Wi-Fi hotspots that redirect to captive portals)</string>
+		<string name="wlan_scanning">Scanning Wi-Fi</string>
+		<string name="wlan_connectting">Connecting Wi-Fi</string>
+		<string name="wlan_checking">Checking for new version</string>
+		<string name="wlan_retry_btn">Retry</string>
+		<string name="wlan_download_btn">Download and install</string>
+		<string name="wlan_change_btn">Switch Wi-Fi</string>
+		<string name="wlan_no_newer_package">No new version found</string>
+		<string name="wlan_is_newest_package">Version is up to date</string>
+		<string name="wlan_newer_package_info">Latest version: vivo rev%tt_update_package_name%(%tt_update_package_size%MB)</string>
+		<string name="wlan_download_hdr">Download</string>
+		<string name="wlan_unlinked_tips">WiFi: Disconnected</string>
+		<string name="wlan_linked_tips">WiFi: %tt_wlan_ssid%</string>
+		<string name="wlan_password_hdr">Enter password</string>
+		<string name="wlan_reconnect_tips">%tt_wlan_reconnect_tips%</string>
+		<string name="wlan_password_error">Incorrect password. Please re-enter</string>
+		<string name="wlan_unkown_error">Network connection error. Please try again</string>
+		<string name="wlan_link_cancel">Cancel</string>
+		<string name="wlan_link_start">Connect</string>
+		<string name="wlan_passwd_input_tips">Enter "%tt_wifi%" password:</string>
+		<string name="wlan_downloading_progress">%tt_downloaded_progress%% downloaded</string>
+		<string name="wlan_downloading_infor">%tt_downloaded_size%MB/%tt_update_package_size%MB</string>
+		<string name="wlan_download_pause">Stop download</string>
+		<string name="wlan_download_continue">Continue download</string>
+		<string name="wlan_download_fail">Download failed</string>
+		<string name="wlan_download_pause_ing">Stop downloading...</string>
+
+		<!-- storage space check -->
+		<string name="wlan_download_sp_err_hdr">Unable to download</string>
+		<string name="wlan_sp_datamedia_tips">Insufficient storage. Clear all data and try again</string>
+		<string name="wlan_sp_nosdcard_tips">Insufficient storage. Insert an SD card or clear all data and try again</string>
+		<string name="wlan_sp_change_sdcard_tips">Insufficient storage. Insert a larger SD card or clear all data and try again</string>
+		<string name="wlan_tips_ok_btn">OK</string>
+		<string name="wlan_tips_wipe_btn">Clear</string>
+		<string name="wlan_tips_cancel_btn">Cancel</string>
+	</resources>
+</language>

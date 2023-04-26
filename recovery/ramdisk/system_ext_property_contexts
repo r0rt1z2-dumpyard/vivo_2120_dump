@@ -1,0 +1,527 @@
+#line 1 "vendor/vivo/system/sepolicy/common/private/property_contexts"
+#linchunsheng add for swt begin
+persist.system.crash.count u:object_r:system_prop:s0
+#linchunsheng add for swt end
+
+#vivo zhangjuguang add for getprop ro.config.size_override [B181107-1111] begin
+#ro.config.size_override u:object_r:exported2_config_prop:s0 exact string
+#vivo zhangjuguang add for getprop ro.config.size_override [B181107-1111] end
+
+#VIVO chenyidian add for fast_charge VIVO_SEPOLICY begin
+persist.vivo.          u:object_r:system_prop:s0
+##VIVO chenyidian add for fast_charge VIVO_SEPOLICY end
+
+#VIVO maoyuanze add for vowifi begin
+persist.vendor.vivo.wfc.delay_wifi          u:object_r:system_prop:s0
+#VIVO maoyuanze add for vowifi  end
+
+#VIVO huxiao add for HOME_RESTRICTION begin
+persist.home.   u:object_r:system_prop:s0
+#VIVO huxiao add for HOME_RESTRICTION end
+
+#vivo qinhaichao add for cms begin
+ro.cms.version               u:object_r:ctl_bootanim_prop:s0
+#vivo qinhaichao add for cms end
+
+#vivo qinhaichao add for roundphone begin
+ctl.roundphone            u:object_r:ctl_bootanim_prop:s0
+#vivo qinhaichao add for roundphone end
+
+#vivo qinhaichao add for VIVO_TIER begin
+ro.system.vivo.tierlevel     u:object_r:exported_default_prop:s0 exact string
+#vivo qinhaichao add for VIVO_TIER end
+
+#vivo kanglvshan add for VIVO_PROP begin
+ro.system.vivo.              u:object_r:exported_default_prop:s0
+persist.system.vivo.         u:object_r:exported_default_prop:s0
+#vivo kanglvshan add for VIVO_PROP end
+
+#vivo kanglvshan add for ro.vivo.warranty.license.number begin
+ro.vivo.warranty.license.number   u:object_r:exported_default_prop:s0 exact string
+#vivo kanglvshan add for ro.vivo.warranty.license.number end
+
+#viv qinhaichao add for exported_default_prop begin
+ro.vivo.product.model        u:object_r:exported_default_prop:s0 exact string
+ro.vivo.product.platform     u:object_r:exported_default_prop:s0 exact string
+ro.hardware.bbk              u:object_r:exported_default_prop:s0 exact string
+ro.vivo.hardware.version     u:object_r:exported_default_prop:s0 exact string
+ro.vivo.dyn.type             u:object_r:exported_default_prop:s0 exact string
+#viv qinhaichao add for exported_default_prop end
+ro.vivo.market.name          u:object_r:exported_default_prop:s0 exact string
+ro.vivo.internet.name        u:object_r:exported_default_prop:s0 exact string
+ro.vivo.project.ramsize      u:object_r:exported_default_prop:s0 exact string
+ro.vivo.rom.version          u:object_r:exported_default_prop:s0 exact string
+ro.product.model.bbk         u:object_r:exported_default_prop:s0 exact string
+
+#vivo lihaibo add for VIVO_PROP begin
+ro.vivo.os.version           u:object_r:exported_default_prop:s0
+#vivo lihaibo add for VIVO_PROP end
+
+#vivo wangjiewen add for zram writeback end
+ro.vivo.fist.os.version      u:object_r:exported_default_prop:s0
+ro.vivo.zramwb.default       u:object_r:exported_default_prop:s0
+#vivo wangjiewen add for zram writeback end
+
+#viv weiwei add for exported_default_prop begin
+ro.product.customize.bbk     u:object_r:exported_default_prop:s0 exact string
+ro.product.country.region    u:object_r:exported_default_prop:s0 exact string
+#viv weiwei add for exported_default_prop end
+# vivo jupengfei add for log filter begin
+persist.log.  u:object_r:system_prop:s0
+log.audit.enable       u:object_r:system_prop:s0
+
+# log ratelimit
+log.ratelimit.level    u:object_r:log_tag_prop:s0
+persist.log.ratelimit        u:object_r:logd_prop:s0
+persist.log.ratelimit.       u:object_r:logd_prop:s0
+persist.log.kernel.redirect  u:object_r:logd_prop:s0
+persist.sys.export           u:object_r:logd_prop:s0
+persist.sys.shipped          u:object_r:logd_prop:s0
+# vivo jupengfei add for log filter end
+
+#miaoxu  add for veprf begin
+ro.vivo.product.solution     u:object_r:exported_default_prop:s0 exact string
+#miaoxu  add for veprf end
+
+#yuanjianchun add for vgc begin
+persist.product.carrier.name u:object_r:system_prop:s0
+ro.vivo.vgc.activate         u:object_r:exported_default_prop:s0 exact string
+ro.vgc.                      u:object_r:exported_default_prop:s0
+ro.vivo.simtrigger.          u:object_r:exported_default_prop:s0
+ro.vivo.phonelock.           u:object_r:exported_default_prop:s0
+ro.build.ota.fbrollback      u:object_r:exported_default_prop:s0 exact string
+ro.com.google.acsa           u:object_r:exported_default_prop:s0 exact string
+ro.com.google.rlz_ap_whitelist u:object_r:exported_default_prop:s0 exact string
+ro.config.wallpaper_component u:object_r:exported_default_prop:s0 exact string
+ro.product.customize.comercial u:object_r:exported_default_prop:s0 exact string
+ro.vivo.sim_lock.needpw u:object_r:exported_default_prop:s0 exact string
+ro.vivo.simtrigger.activate       u:object_r:exported_default_prop:s0 exact string
+ro.cota.                     u:object_r:exported_default_prop:s0
+ro.com.google.clientidbase.   u:object_r:exported_default_prop:s0
+ro.build.gn.                 u:object_r:exported_default_prop:s0
+ro.vivo.cust.                u:object_r:exported_default_prop:s0
+#yuanjianchun add for vgc end
+
+# vivo wugaocheng add for bspservice begin
+ro.vivo.oem.name          u:object_r:exported_default_prop:s0
+ro.vivo.dyn.              u:object_r:exported_default_prop:s0
+ro.com.google.gmsversion  u:object_r:exported_default_prop:s0
+ro.build.version.group    u:object_r:exported_default_prop:s0
+# vivo wugaocheng add for bspservice end
+
+#vivo liujiang add for getprop ro.config.message_sound [B191203-2594] begin
+ro.config.message_sound u:object_r:systemsound_config_prop:s0 exact string
+#vivo liujiang add for getprop ro.config.message_sound [B191203-2594] end
+
+# vivo wangqin add for boot sound begin
+sys.boot.animaudio u:object_r:exported_system_prop:s0 exact int
+sys.boot.animshutdown u:object_r:exported_system_prop:s0 exact int
+# # # vivo wangqin add for boot sound end
+
+# vivo guomin add for epm begin
+debug.epm.              u:object_r:system_prop:s0
+epm.fd.                 u:object_r:system_prop:s0
+# vivo guomin add for epm begin
+
+# vivo guojunzheng add for device daemon begin
+ro.device.demo   u:object_r:system_prop:s0
+ro.rpmb.board    u:object_r:system_prop:s0
+ro.dp.level    u:object_r:system_prop:s0
+ro.pcba.control   u:object_r:system_prop:s0
+ro.imei_rpmb.status    u:object_r:system_prop:s0
+ro.imei_match.status    u:object_r:system_prop:s0
+ro.imei_match.recovery    u:object_r:system_prop:s0
+# vivo guojunzheng add for device daemon end
+
+#vivo qinxingxing add for display mode begin
+persist.sys.displaymode.state   u:object_r:display_state_prop:s0
+persist.sys.bluelight.minred    u:object_r:display_state_prop:s0
+persist.sys.bluelight.mingreen  u:object_r:display_state_prop:s0
+persist.sys.bluelight.minblue   u:object_r:display_state_prop:s0
+persist.sys.colortemp.maxred    u:object_r:display_state_prop:s0
+persist.sys.colortemp.maxgreen  u:object_r:display_state_prop:s0
+persist.sys.colortemp.maxblue   u:object_r:display_state_prop:s0
+persist.sys.colortemp.minred    u:object_r:display_state_prop:s0
+persist.sys.colortemp.mingreen  u:object_r:display_state_prop:s0
+persist.sys.colortemp.minblue   u:object_r:display_state_prop:s0
+persist.sys.bluelight.en.vivo   u:object_r:display_state_prop:s0
+persist.sys.colortemp.en.vivo   u:object_r:display_state_prop:s0
+persist.sys.bluelight.ui.vivo   u:object_r:display_state_prop:s0
+persist.sys.colortemp.ui.vivo   u:object_r:display_state_prop:s0
+#vivo qinxingxing add for display mode end
+
+#vivo zhuangxiaoliang add for colour gamut begin
+persist.sys.colourgamut.en.vivo u:object_r:colour_gamut_prop:s0
+#vivo zhuangxiaoliang add for colour gamut end
+
+
+# vivo hujin add for VIVO_SEPOLICY begin
+ctl.dcdiming            u:object_r:ctl_dcdiming_prop:s0
+#vivo hujin add for VIVO_SEPOLICY end
+
+#vivo chenyidian add for font begin
+persist.system.vivo.fontsize  u:object_r:vivo_font_prop:s0
+#vivo chenyidian add for font end
+
+# vivo wangbiying add for immerse_trace begin
+persist.navcolor.trace u:object_r:system_prop:s0
+# vivo wangbiying add for immerse_trace end
+
+#vivo wangbiying add for wallpaper begin
+ro.config.wallpaper u:object_r:system_prop:s0
+ro.config.lock.wallpaper u:object_r:system_prop:s0
+persist.sys.theme.color u:object_r:system_prop:s0
+persist.sys.vivo.product.cust u:object_r:exported_system_prop:s0
+#vivo wangbiying add for wallpaper end
+
+# vivo xiejiyuan add for vrt begin
+# .wait set by vusdb
+service.vrt.wait u:object_r:vusbd_root_prop:s0
+
+# .done/.result set by adbd/vrp
+service.vrt.done u:object_r:system_prop:s0
+service.vrt.result u:object_r:system_prop:s0
+service.vrt.result_extra u:object_r:system_prop:s0
+
+# wait timeout values read by adbd
+service.adb.vrp_start_delay u:object_r:shell_prop:s0
+service.adb.vrp_done_delay u:object_r:shell_prop:s0
+
+# whether privileges kept by vusbd
+sys.vusbd.root u:object_r:vusbd_root_prop:s0
+# vivo xiejiyuan add for vrt end
+
+# vivo zhangtaorjyb add for wifi sepolicy end
+persist.vivo.softap.maxsta          u:object_r:exported_system_prop:s0
+persist.vivo.sla.enabled            u:object_r:exported_system_prop:s0
+persist.vivo.support.dualwifi       u:object_r:exported_system_prop:s0
+persist.vivo.dualwifi.version       u:object_r:exported_system_prop:s0
+persist.vivo.wifi.concurrency       u:object_r:exported_system_prop:s0
+persist.sys.wifi.vivo.dualinterface u:object_r:exported_system_prop:s0
+# vivo zhangtaorjyb add for wifi sepolicy end
+
+# vivo fengmingli add for vusbd begin
+vendor.switch.vusbd u:object_r:shell_prop:s0
+# vivo fengmingli add for vusbd end
+
+#vivo tangdexi add for getprop ro.config.calendar_sound [B200422-3234] begin
+ro.config.calendar_sound u:object_r:systemsound_config_prop:s0 exact string
+ro.config.delete_sound u:object_r:systemsound_config_prop:s0 exact string
+ro.config.battery_sound2 u:object_r:systemsound_config_prop:s0 exact string
+#vivo tangdexi add for getprop ro.config.calendar_sound [B200422-3234] end
+
+#vivo luoyanbiao add for getprop ro.config.superx_a_sound [B201016-1006] begin
+ro.config.superx_a_sound u:object_r:systemsound_config_prop:s0 exact string
+ro.config.superx_b_sound u:object_r:systemsound_config_prop:s0 exact string
+ro.config.musicplayer_open u:object_r:systemsound_config_prop:s0 exact string
+ro.config.musicplayer_close u:object_r:systemsound_config_prop:s0 exact string
+ro.config.fos_use_tracktitle_sound u:object_r:systemsound_config_prop:s0 exact string
+#vivo luoyanbiao add for getprop ro.config.superx_a_sound [B201016-1006] end
+
+#vivo luoyanbiao add for getprop ro.config.superx_a_sound [B201028-2981] begin
+ro.config.alarm_component_sound u:object_r:systemsound_config_prop:s0 exact string
+#vivo luoyanbiao add for getprop ro.config.superx_a_sound [B201028-2981] end
+
+#vivo wuyuanhan add for anti flag begin
+ro.vivo.phonelock.enabled    u:object_r:exported_default_prop:s0 exact string
+ro.vivo.sim_lock             u:object_r:exported_default_prop:s0 exact string
+###vivo wuyuanhan add for anti flag end
+
+# vivo linpeilin add for virtual_ab update begin
+ro.vgc.update.mode u:object_r:ota_prop:s0
+sys.restore_remount u:object_r:ota_prop:s0
+sys.vivo.system_update u:object_r:ota_prop:s0
+sys.vivo.restart.update_engine u:object_r:ota_prop:s0
+ro.recovery.vab_done u:object_r:ota_prop:s0
+# vivo linpeilin add for virtual_ab update end
+
+# vivo zhuangyan add for dota begin
+ro.vivo.update.model                   u:object_r:exported_default_prop:s0 exact string
+ro.vivo.product.version.incremental    u:object_r:exported_default_prop:s0 exact string
+ro.vivo.product.version                u:object_r:exported_default_prop:s0 exact string
+ro.vgc.cust.name                       u:object_r:exported_default_prop:s0 exact string
+ro.vivo.os.name                        u:object_r:exported_default_prop:s0 exact string
+ro.vivo.system.region.version          u:object_r:exported_default_prop:s0 exact string
+ro.iqoo.os.build.display.id            u:object_r:exported_default_prop:s0 exact string
+ro.vivo.os.build.display.id            u:object_r:exported_default_prop:s0 exact string
+# vivo zhuangyan add for dota end
+
+# vivo fengmingli add for usb serialno begin
+sys.usb.vserialno          u:object_r:usb_control_prop:s0 exact string
+sys.usb.vserialno.state    u:object_r:usb_control_prop:s0 exact string
+sys.usb.vcar.mode          u:object_r:usb_control_prop:s0 exact int
+# vivo fengmingli add for usb serialno end
+
+# vivo linchunsheng add for stability begin
+vendor.vivo.iscrashed      u:object_r:theme_prop:s0
+# vivo linchunsheng add for stability end
+
+#line 1 "vendor/vivo/system/sepolicy/mtk-common/private/property_contexts"
+# vivo xiaoyi add for camera log
+persist.sys.camera.log         u:object_r:vivo_system_camera_prop:s0
+persist.camera.log.onlymainlog u:object_r:vivo_system_camera_prop:s0
+
+#VIVO niuzhenqi add for VIVO_SEPOLICY begin
+camera.vibrate.skip  u:object_r:vivo_system_camera_prop:s0
+#VIVO niuzhenqi add for VIVO_SEPOLICY end
+
+# vivo caibinchen add for nfc begin
+persist.vendor.vivo.nfc.                       u:object_r:system_prop:s0
+persist.vendor.vivo.support.ese                u:object_r:system_prop:s0
+persist.vendor.vivo.wallet.nfc.channel         u:object_r:system_prop:s0
+# vivo caibinchen add for nfc end
+#line 1 "device/mediatek/sepolicy/basic/plat_private/property_contexts"
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+ro.audio.usb.period_us u:object_r:exported_default_prop:s0 exact int
+
+persist.adb.nonblocking_ffs u:object_r:exported_default_prop:s0 exact int
+
+vendor.MB.logpost         u:object_r:system_mtk_mobile_log_post_prop:s0
+vendor.MB.logpost.        u:object_r:system_mtk_mobile_log_post_prop:s0
+persist.vendor.MB.logpost u:object_r:system_mtk_mobile_log_post_prop:s0
+
+vendor.mtklog         u:object_r:system_mtk_debug_mtklog_prop:s0
+persist.vendor.mtklog u:object_r:system_mtk_persist_mtklog_prop:s0
+vendor.netlog         u:object_r:system_mtk_debug_netlog_prop:s0
+
+vendor.mdlogger      u:object_r:system_mtk_debug_mdlogger_prop:s0
+vendor.mdl           u:object_r:system_mtk_mdl_prop:s0
+vendor.starting.mode u:object_r:system_mtk_mdl_start_prop:s0
+persist.vendor.mdl   u:object_r:system_mtk_persist_mdlog_prop:s0
+vendor.pullmdlog     u:object_r:system_mtk_mdl_pulllog_prop:s0
+
+vendor.debug.bq.dump u:object_r:system_mtk_debug_bq_dump_prop:s0
+
+persist.vendor.bootanim. u:object_r:system_mtk_bootani_prop:s0
+
+# mobile log property
+vendor.MB. u:object_r:system_mtk_mobile_log_prop:s0
+
+persist.vendor.radio.bgdata.disabled u:object_r:system_mtk_bgdata_disabled_prop:s0
+
+persist.vendor.radio.gprs.attach.type u:object_r:system_mtk_gprs_attach_type_prop:s0
+
+persist.vendor.mtk_rcs_single_reg_support u:object_r:system_mtk_rcs_single_reg_support_prop:s0
+
+vendor.ril.test.poweroffmd u:object_r:system_mtk_power_off_md_prop:s0
+vendor.ril.testmode        u:object_r:system_mtk_power_off_md_prop:s0
+
+# sim config property
+vendor.gsm.sim.operator.default-name u:object_r:system_mtk_sim_system_prop:s0
+
+vendor.connsysfw u:object_r:system_mtk_connsysfw_prop:s0
+
+vendor.bthcisnoop u:object_r:system_mtk_vendor_bluetooth_prop:s0
+
+# xcap rawurl config
+persist.vendor.mtk.xcap.rawurl u:object_r:system_mtk_persist_xcap_rawurl_prop:s0
+
+ctl.mdlogger   u:object_r:system_mtk_ctl_mdlogger_prop:s0
+ctl.emdlogger1 u:object_r:system_mtk_ctl_emdlogger1_prop:s0
+ctl.emdlogger2 u:object_r:system_mtk_ctl_emdlogger2_prop:s0
+ctl.emdlogger3 u:object_r:system_mtk_ctl_emdlogger3_prop:s0
+
+init.svc.emdlogger1 u:object_r:system_mtk_init_svc_emdlogger1_prop:s0
+
+#=============mtk wifi driver log property====================
+persist.vendor.wlan.standalone.log        u:object_r:system_mtk_wifisa_log_prop:s0
+
+# mtk audio log and dump property
+vendor.af.mixer.pcm           u:object_r:system_mtk_audio_prop:s0
+vendor.af.track.pcm           u:object_r:system_mtk_audio_prop:s0
+vendor.af.offload.write.raw   u:object_r:system_mtk_audio_prop:s0
+vendor.af.resampler.pcm       u:object_r:system_mtk_audio_prop:s0
+vendor.af.mixer.end.pcm       u:object_r:system_mtk_audio_prop:s0
+vendor.af.record.dump.pcm     u:object_r:system_mtk_audio_prop:s0
+vendor.af.effect.pcm          u:object_r:system_mtk_audio_prop:s0
+vendor.af.mixer.drc.pcm       u:object_r:system_mtk_audio_prop:s0
+vendor.af.dumplog             u:object_r:system_mtk_audio_prop:s0
+vendor.aaudio.pcm             u:object_r:system_mtk_audio_prop:s0
+vendor.af.audioflinger.log    u:object_r:system_mtk_audio_prop:s0
+vendor.af.track.log           u:object_r:system_mtk_audio_prop:s0
+vendor.af.policy.debug        u:object_r:system_mtk_audio_prop:s0
+vendor.af.audioserver.restart u:object_r:system_mtk_audio_prop:s0
+
+# mtk display driver log property
+vendor.debug.sf.log_repaint      u:object_r:system_mtk_sf_debug_prop:s0
+vendor.debug.sf.log_transaction  u:object_r:system_mtk_sf_debug_prop:s0
+vendor.debug.sf.restart          u:object_r:system_mtk_sf_debug_prop:s0
+#line 1 "device/mediatek/sepolicy/bsp/plat_private/property_contexts"
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+ctl.atcid-daemon-u                    u:object_r:system_mtk_ctl_atcid_daemon_u_prop:s0
+persist.vendor.radio.port_index       u:object_r:system_mtk_atci_sys_prop:s0
+vendor.ril.atci.flightmode            u:object_r:system_mtk_atci_sys_prop:s0
+persist.vendor.service.atci.autostart u:object_r:system_mtk_atci_sys_prop:s0
+persist.vendor.service.atci.usermode  u:object_r:system_mtk_atci_sys_prop:s0
+
+vendor.ril.capctrl_loaded             u:object_r:system_mtk_capctrl_sys_prop:s0
+
+persist.vendor.sys.aal. u:object_r:system_mtk_aal_prop:s0
+
+vendor.moms.permission.control.policy.set u:object_r:system_mtk_permission_control_prop:s0
+
+persist.vendor.ter u:object_r:system_mtk_terservice_prop:s0
+vendor.ter.service u:object_r:system_mtk_terservice_prop:s0
+
+ro.vendor.mtk_cta_set u:object_r:system_mtk_cta_set_prop:s0
+
+ro.sys.current_rsc_path     u:object_r:system_mtk_rsc_sys_prop:s0
+ro.product.current_rsc_path u:object_r:system_mtk_rsc_sys_prop:s0
+ro.sys_ext.current_rsc_path u:object_r:system_mtk_rsc_sys_prop:s0
+
+# Restrict access to starting/stopping campostalgo
+ctl.start$camerapostalgo   u:object_r:system_mtk_ctl_campostalgo_prop:s0
+ctl.stop$camerapostalgo    u:object_r:system_mtk_ctl_campostalgo_prop:s0
+ctl.restart$camerapostalgo u:object_r:system_mtk_ctl_campostalgo_prop:s0
+
+persist.vendor.radio.telecom.vibrate u:object_r:system_mtk_telecom_vibrate_prop:s0
+
+ro.vendor.graphiclowlatency.version u:object_r:system_mtk_graphics_sf_gll_ro_prop:s0
+vendor.debug.sf.                    u:object_r:system_mtk_debug_sf_prop:s0
+vendor.debug.bq.                    u:object_r:system_mtk_debug_bq_prop:s0
+
+# CT SelfRegister property
+persist.vendor.radio.selfreg u:object_r:system_mtk_selfreg_prop:s0
+
+# USB tethering property for auto test
+persist.vendor.net.tethering u:object_r:system_mtk_usb_tethering_prop:s0
+
+# android log much detect
+persist.vendor.logmuch u:object_r:system_mtk_logmuch_prop:s0
+
+persist.vendor.entitlement_enabled u:object_r:system_mtk_wfc_entitlement_prop:s0
+persist.vendor.entitlement.sesurl  u:object_r:system_mtk_wfc_entitlement_prop:s0
+persist.vendor.net.wo.epdg_fqdn    u:object_r:system_mtk_wfc_entitlement_prop:s0
+
+persist.vendor.mtk_wfc_opt_in    u:object_r:system_mtk_wfc_opt_in_prop:s0
+persist.vendor.opt-in.url        u:object_r:system_mtk_opt_in_url_prop:s0
+persist.vendor.apptoken.required u:object_r:system_mtk_apptoken_required_prop:s0
+
+# common data releated property
+persist.vendor.radio.default.data.selected u:object_r:system_mtk_common_data_prop:s0
+persist.vendor.radio.mobile.mtu            u:object_r:system_mtk_common_data_prop:s0
+vendor.radio.dsda.state                    u:object_r:system_mtk_common_data_prop:s0
+
+# carrier express (cxp)
+persist.vendor.operator.optr_1 u:object_r:system_mtk_usp_srv_prop:s0
+persist.vendor.operator.spec_1 u:object_r:system_mtk_usp_srv_prop:s0
+persist.vendor.operator.seg_1  u:object_r:system_mtk_usp_srv_prop:s0
+persist.vendor.mtk_usp         u:object_r:system_mtk_usp_srv_prop:s0
+
+persist.vendor.update_finished u:object_r:system_mtk_update_prop:s0
+persist.vendor.previous_slot   u:object_r:system_mtk_update_prop:s0
+
+vendor.media.wfd.             u:object_r:system_mtk_media_wfd_prop:s0
+vendor.media.wfd.portrait     u:object_r:system_mtk_media_wfd_prop:s0
+vendor.media.wfd.video-format u:object_r:system_mtk_media_wfd_prop:s0
+
+vendor.gsm.disable.sim.dialog u:object_r:system_mtk_vsim_sys_prop:s0
+
+# supplementary service property
+vendor.gsm.radio.ss.sc                u:object_r:system_mtk_supp_serv_prop:s0
+vendor.gsm.radio.ss.imsdereg          u:object_r:system_mtk_supp_serv_prop:s0
+persist.vendor.radio.cfu.iccid.       u:object_r:system_mtk_supp_serv_prop:s0
+persist.vendor.radio.cfu.change.      u:object_r:system_mtk_supp_serv_prop:s0
+persist.vendor.radio.cfu_over_ims     u:object_r:system_mtk_supp_serv_prop:s0
+persist.vendor.radio.cfu.sync_for_ota u:object_r:system_mtk_supp_serv_prop:s0
+persist.vendor.radio.cfu.mode         u:object_r:system_mtk_supp_serv_prop:s0
+persist.vendor.radio.cfu.timeslot.    u:object_r:system_mtk_supp_serv_prop:s0
+persist.vendor.radio.cfu.querytype    u:object_r:system_mtk_supp_serv_prop:s0
+persist.vendor.suppserv.              u:object_r:system_mtk_supp_serv_prop:s0
+vendor.suppserv.                      u:object_r:system_mtk_supp_serv_prop:s0
+
+vendor.bluetooth.         u:object_r:system_mtk_bluetooth_prop:s0
+persist.vendor.bluetooth. u:object_r:system_mtk_bluetooth_prop:s0
+
+# tel log property
+persist.vendor.log.tel_dbg u:object_r:system_mtk_em_tel_log_prop:s0
+
+# ims config property
+vendor.ril.imsconfig.force.notify u:object_r:system_mtk_imsconfig_prop:s0
+
+# mtk duraspeed property
+persist.vendor.sys.vm.drop_caches u:object_r:system_mtk_duraspeed_drop_caches_prop:s0
+
+ro.vendor.mtk_system_update_support u:object_r:system_mtk_update_support_prop:s0
+
+# AMS dynamic enable log property
+persist.vendor.sys.activitylog u:object_r:system_mtk_amslog_prop:s0
+
+# AMS-aal dynamic enable property
+persist.vendor.sys.mtk_app_aal_support u:object_r:system_mtk_amsaal_prop:s0
+
+# MTK CDMA Less property
+persist.vendor.vzw_device_type u:object_r:system_mtk_persist_vendor_vzw_device_type_prop:s0
+
+persist.vendor.mtk_rtt_support u:object_r:system_mtk_rtt_prop:s0
+
+persist.vendor.ctm_slot_flag u:object_r:system_mtk_ctmslot_prop:s0
+
+persist.vendor.mtk_uce_support u:object_r:system_mtk_uce_support_prop:s0
+
+persist.vendor.mtk_clientapi_support u:object_r:system_mtk_clientapi_support_prop:s0
+
+vendor.cdma.icc.operator.mcc u:object_r:system_mtk_cdma_prop:s0
+
+# ECBM property
+vendor.ril.cdma.inecmmode_by_slot u:object_r:system_mtk_cdma_ecm_prop:s0
+
+persist.vendor.mtk_rcs_support u:object_r:system_mtk_rcs_support_prop:s0
+
+# MTK World Phone property
+persist.vendor.radio.wm_selectmode u:object_r:system_mtk_world_phone_prop:s0
+persist.vendor.radio.wm_fddtimer   u:object_r:system_mtk_world_phone_prop:s0
+
+# MTK Capability Switch property
+persist.vendor.radio.unlock           u:object_r:system_mtk_capability_switch_prop:s0
+persist.vendor.radio.unlock.roaming   u:object_r:system_mtk_capability_switch_prop:s0
+persist.vendor.radio.wait.imsi        u:object_r:system_mtk_capability_switch_prop:s0
+persist.vendor.radio.waitimsi.roaming u:object_r:system_mtk_capability_switch_prop:s0
+persist.vendor.radio.sim.status       u:object_r:system_mtk_capability_switch_prop:s0
+persist.vendor.radio.new.sim.slot     u:object_r:system_mtk_capability_switch_prop:s0
+vendor.ril.imsi.status.               u:object_r:system_mtk_capability_switch_prop:s0
+persist.vendor.radio.simswitchstate   u:object_r:system_mtk_capability_switch_prop:s0
+
+persist.vendor.subsidylock.connectivity_status u:object_r:system_mtk_subsidylock_connect_prop:s0
+persist.vendor.subsidylock                     u:object_r:system_mtk_subsidylock_prop:s0
+
+persist.vendor.mtk_acs_version u:object_r:system_mtk_acs_version_prop:s0
+persist.vendor.mtk_acs_support u:object_r:system_mtk_acs_support_prop:s0
+persist.vendor.mtk_acs_url     u:object_r:system_mtk_acs_url_prop:s0
+
+# Modem Monitor property===========
+persist.vendor.mdmmonitor u:object_r:config_prop:s0
+
+init.svc.mtk_pkm_service u:object_r:system_mtk_pkm_init_prop:s0
+
+# MDM init control property
+init.svc.md_monitor u:object_r:system_mtk_init_svc_md_monitor_prop:s0
+
+# netflix HD property
+ro.netflix.bsp_rev u:object_r:netflix_bsp_rev_prop:s0
+
+service.ctm.slot_flag u:object_r:system_mtk_ctm_prop:s0
+
+vendor.sf.gll.istarget u:object_r:system_mtk_graphics_sf_gll_prop:s0
+vendor.sf.gll.q2l      u:object_r:system_mtk_graphics_sf_gll_prop:s0
+vendor.sf.gll.avgl2p   u:object_r:system_mtk_graphics_sf_gll_prop:s0
+
+ro.vendor.mtk_gwsd_support u:object_r:system_mtk_gwsd_prop:s0
+
+ro.vendor.vodata_support u:object_r:system_mtk_vodata_prop:s0
+
+# fastdormancy property
+persist.vendor.fd.on.charge         u:object_r:system_mtk_fd_prop:s0
+persist.vendor.fd.screen.off.only   u:object_r:system_mtk_fd_prop:s0
+#line 1 "device/mediatek/sepolicy/basic/debug/plat_private/property_contexts"
+persist.vendor.mtk.aee. u:object_r:system_mtk_persist_mtk_aee_prop:s0
+persist.vendor.aee.     u:object_r:system_mtk_persist_aee_prop:s0
+vendor.debug.mtk.aee.   u:object_r:system_mtk_debug_mtk_aee_prop:s0
+ro.vendor.aee.basic     u:object_r:system_mtk_aee_basic_prop:s0
+init.svc.aee_aedv   u:object_r:system_mtk_init_svc_aee_aedv_prop:s0

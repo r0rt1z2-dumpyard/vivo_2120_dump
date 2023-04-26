@@ -1,0 +1,16 @@
+kernel=kernel
+ramdisk=ramdisk
+page_size=2048
+dt=dtb.img
+kernel_size=14180606
+ramdisk_size=1216106
+dtb_offset=0x07808000
+dtb_size=109992
+base_addr=0x40078000
+kernel_offset=0x00008000
+ramdisk_offset=0x11a88000
+tags_offset=0x07808000
+dtbo_offset=0xbff88000
+cmd_line='bootopt=64S3,32N2,64N2 product.version=PD2140IF_EX_A_6.19.4 fingerprint.abbr=12/SP1A.210812.003 region_ver=W20 product.solution=MTK buildvariant=user'
+board=""
+format=gzip

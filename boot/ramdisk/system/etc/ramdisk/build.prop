@@ -1,0 +1,22 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.bootimage.brand=vivo
+ro.product.bootimage.device=2120
+ro.product.bootimage.manufacturer=vivo
+ro.product.bootimage.model=V2134
+ro.product.bootimage.name=2134T
+ro.bootimage.build.date=Tue Apr 26 20:04:55 CST 2022
+ro.bootimage.build.date.utc=1650974695
+ro.bootimage.build.fingerprint=vivo/2134T/2120:12/SP1A.210812.003/compiler04262006:user/release-keys
+ro.bootimage.build.id=SP1A.210812.003
+ro.bootimage.build.tags=release-keys
+ro.bootimage.build.type=user
+ro.bootimage.build.version.incremental=compiler04262006
+ro.bootimage.build.version.release=12
+ro.bootimage.build.version.release_or_codename=12
+ro.bootimage.build.version.sdk=31
+# Auto-added by post_process_props.py
+persist.sys.usb.config=none
+# end of file

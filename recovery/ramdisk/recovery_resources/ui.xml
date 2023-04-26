@@ -1,0 +1,654 @@
+<?xml version="1.0"?>
+<recovery>
+	<details>
+		<resolution width="1080" height="2160"/>
+		<author>zengshun.wu@foxmail.com</author>
+		<title>recovery ui</title>
+		<description>recovery ui</description>
+		<themeversion>1</themeversion>
+	</details>
+
+	<include>
+		<xmlfile name="portrait.xml"/>
+	</include>
+
+	<resources>
+		<font name="font_x" filename="HYQiHei-EZS.ttf" size="81"/>
+		<font name="font_h" filename="HYQiHei-EZS.ttf" size="60"/>
+		<font name="font_l" filename="HYQiHei-EZS.ttf" size="51"/>
+		<font name="font_m" filename="HYQiHei-EZS.ttf" size="42"/>
+		<font name="font_s" filename="HYQiHei-EZS.ttf" size="36"/>
+		<font name="fixed"  filename="DroidSansMono.ttf" size="30"/>
+
+		<font name="keylabel"           filename="HYQiHei-EZS.ttf" size="64"/>
+		<font name="keylabel-small"     filename="HYQiHei-EZS.ttf" size="46"/>
+		<font name="keylabel-longpress" filename="HYQiHei-EZS.ttf" size="32"/>
+
+		<image name="backspace" filename="backspace" retainaspect="1"/>
+		<image name="shift" filename="shift" retainaspect="1"/>
+		<image name="shift_fill" filename="shift_fill" retainaspect="1"/>
+		<image name="space" filename="space" retainaspect="1"/>
+
+		<!-- new recovery  -->
+		<image name="logo" filename="logo" retainaspect="1"/>
+		<image name="back" filename="back" retainaspect="1"/>
+		<image name="vivo_warning" filename="vivo_warning" retainaspect="1"/>
+
+		<image name="button_main" filename="button_main" retainaspect="1"/>
+		<image name="button_main_highlight" filename="button_main_highlight" retainaspect="1"/>
+		<image name="button_round" filename="button_round" retainaspect="1"/>
+		<image name="button_round_highlight" filename="button_round_highlight" retainaspect="1"/>
+		<image name="button_round_long" filename="button_round_long" retainaspect="1"/>
+		<image name="button_round_highlight_long" filename="button_round_highlight_long" retainaspect="1"/>
+
+		<image name="icon_install" filename="icon_install" retainaspect="1"/>
+		<image name="icon_wipe"    filename="icon_wipe"    retainaspect="1"/>
+		<image name="icon_check"   filename="icon_check"   retainaspect="1"/>
+		<image name="icon_search"  filename="icon_search"  retainaspect="1"/>
+
+		<animation name="progress" filename="progress_anim"/>
+		<animation name="anim_chrysanthemum" filename="anim_chrysanthemum"/>
+		<animation name="vivo_battery" filename="vivo_battery"/>
+
+		<image name="progress_empty" filename="progress_empty"/>
+		<image name="progress_full" filename="progress_fill"/>
+
+		<image name="button_listbox" filename="button_listbox"/>
+
+		<image name="confirm_box_small_bg" filename="confirm_box_small_bg"/>
+		<image name="confirm_box_bg" filename="confirm_box_bg"/>
+		<image name="confirm_box_big_bg" filename="confirm_box_big_bg"/>
+
+		<image name="vivo_wifi_signal_lock_1" filename="vivo_wifi_signal_lock_1"/>
+		<image name="vivo_wifi_signal_lock_2" filename="vivo_wifi_signal_lock_2"/>
+		<image name="vivo_wifi_signal_lock_3" filename="vivo_wifi_signal_lock_3"/>
+		<image name="vivo_wifi_signal_lock_4" filename="vivo_wifi_signal_lock_4"/>
+		<image name="vivo_wifi_signal_1" filename="vivo_wifi_signal_1"/>
+		<image name="vivo_wifi_signal_2" filename="vivo_wifi_signal_2"/>
+		<image name="vivo_wifi_signal_3" filename="vivo_wifi_signal_3"/>
+		<image name="vivo_wifi_signal_4" filename="vivo_wifi_signal_4"/>
+		<image name="vivo_funtouch_logo" filename="vivo_funtouch_logo"/>
+		<image name="passwd_view" filename="passwd_view"/>
+		<image name="passwd_hide" filename="passwd_hide"/>
+	</resources>
+
+	<variables>
+		<variable name="tt_samsung_navbar" value="0" persist="1"/>
+
+		<variable name="tt_hide_kb" value="0"/>
+		<variable name="screen_width" value="1080"/>
+		<variable name="screen_height" value="2160"/>
+		<variable name="status_height" value="70"/>
+		<variable name="header_height" value="220"/>
+		<variable name="navbar_height" value="130"/>
+		<variable name="content_width" value="1008"/>
+		<variable name="content_overlay_width" value="936"/>
+		<variable name="dialog_height" value="704"/>
+		<variable name="back_button_x" value="240"/>
+		<variable name="console_button_x" value="840"/>
+		<variable name="col1_x_left" value="72"/>
+		<variable name="col1_x_header" value="184"/>
+		<variable name="col1_x_right" value="576"/>
+		<variable name="tab_height" value="96"/>
+		<variable name="tab_indicator_height" value="6"/>
+		<variable name="tab_y" value="304"/>
+		<variable name="tab3_width" value="360"/>
+		<variable name="tab4_width" value="270"/>
+		<variable name="tab5_width" value="216"/>
+		<variable name="tab3_col2_x" value="360"/>
+		<variable name="tab3_col3_x" value="720"/>
+		<variable name="tab4_col2_x" value="270"/>
+		<variable name="tab4_col4_x" value="810"/>
+		<variable name="tab5_col2_x" value="216"/>
+		<variable name="tab5_col3_x" value="432"/>
+		<variable name="tab5_col4_x" value="648"/>
+		<variable name="tab5_col5_x" value="864"/>
+		<variable name="tab5_centered_col1_x" value="108"/>
+		<variable name="tab5_centered_col2_x" value="324"/>
+		<variable name="tab5_centered_col4_x" value="756"/>
+		<variable name="tab5_centered_col5_x" value="972"/>
+		<variable name="btn3_col2_x" value="384"/>
+		<variable name="btn3_col3_x" value="732"/>
+		<variable name="btn4_col2_x" value="297"/>
+		<variable name="btn4_col3_x" value="558"/>
+		<variable name="btn4_col4_x" value="819"/>
+		<variable name="row1_header_y" value="4"/>
+		<variable name="row2_header_y" value="72"/>
+		<variable name="row3_header_y" value="90"/>
+		<variable name="row4_header_y" value="168"/>
+		<variable name="row1_y" value="256"/>
+		<variable name="row1a_y" value="288"/>
+		<variable name="row2_y" value="320"/>
+		<variable name="row2a_y" value="352"/>
+		<variable name="row_tab_y" value="346"/>
+		<variable name="row2_input_y" value="381"/>
+		<variable name="row3_y" value="384"/>
+		<variable name="row3_input_y" value="413"/>
+		<variable name="row3a_y" value="416"/>
+		<variable name="row4_y" value="448"/>
+		<variable name="row4_input_y" value="477"/>
+		<variable name="row4a_y" value="480"/>
+		<variable name="row5_y" value="512"/>
+		<variable name="row5a_y" value="544"/>
+		<variable name="row6_y" value="576"/>
+		<variable name="row6a_y" value="608"/>
+		<variable name="row7_y" value="640"/>
+		<variable name="row7a_y" value="672"/>
+		<variable name="row8_y" value="704"/>
+		<variable name="row8a_y" value="736"/>
+		<variable name="row9_y" value="768"/>
+		<variable name="row9a_y" value="800"/>
+		<variable name="row10_y" value="832"/>
+		<variable name="row10a_y" value="864"/>
+		<variable name="row11_y" value="896"/>
+		<variable name="row11a_y" value="928"/>
+		<variable name="row12_y" value="960"/>
+		<variable name="row12a_y" value="992"/>
+		<variable name="row13_y" value="1024"/>
+		<variable name="row13a_y" value="1056"/>
+		<variable name="row14_y" value="1088"/>
+		<variable name="row14a_y" value="1120"/>
+		<variable name="row15_y" value="1152"/>
+		<variable name="row15a_y" value="1184"/>
+		<variable name="row16_y" value="1216"/>
+		<variable name="row16a_y" value="1248"/>
+		<variable name="row17_y" value="1280"/>
+		<variable name="row17a_y" value="1312"/>
+		<variable name="row18_y" value="1344"/>
+		<variable name="row18a_y" value="1376"/>
+		<variable name="row19_y" value="1408"/>
+		<variable name="row19a_y" value="1440"/>
+		<variable name="row20_y" value="1472"/>
+		<variable name="row20a_y" value="1504"/>
+		<variable name="row21_y" value="1536"/>
+		<variable name="row21a_y" value="1568"/>
+		<variable name="row22_y" value="1600"/>
+		<variable name="row22a_y" value="1632"/>
+		<variable name="row23_y" value="1664"/>
+		<variable name="row23a_y" value="1696"/>
+		<variable name="row24_y" value="1728"/>
+		<variable name="row24a_y" value="1760"/>
+		<variable name="row25_y" value="1792"/>
+		<variable name="navbar_y" value="1792"/>
+		<variable name="navbar_btn_y" value="1856"/>
+
+
+		<variable name="accent_color" value="#F6F6F6"/>
+		<variable name="accent_color_semitransparent" value="#0090CA30"/>
+
+		<variable name="warning" value="#F8F8A0"/>
+		<variable name="error" value="#FF0101"/>
+		<variable name="highlight" value="#0090CA"/>
+		<variable name="partitionlist_spacing" value="0"/>
+		<variable name="partitionlist_storage_height" value="544"/>
+		<variable name="partitionlist_flashimage_height" value="544"/>
+		<variable name="partitionlist_wipe_height" value="1088"/>
+		<variable name="partitionlist_mount_height" value="832"/>
+		<variable name="partitionlist_backup_height" value="768"/>
+		<variable name="listbox_timezone_height" value="756"/>
+		<variable name="listbox_settings_height" value="1050"/>
+		<variable name="slidervalue_lineh" value="3"/>
+		<variable name="slidervalue_padding" value="0"/>
+		<variable name="slidervalue_sliderw" value="72"/>
+		<variable name="slidervalue_sliderh" value="108"/>
+		<variable name="slideout_height" value="1686"/>
+		<variable name="slideout_bg_height" value="1720"/>
+		<variable name="input_height" value="64"/>
+		<variable name="input_line_width" value="3"/>
+		<variable name="console_height" value="960"/>
+		<variable name="console_terminal_height" value="950"/>
+		<variable name="dialog_button_x" value="696"/>
+
+		<!-- vivo ui header start  -->
+		<variable name="header_text_y" value="90"/>
+		<!-- vivo main menu pos start  -->
+		<variable name="menu_separator_height" value="50"/>
+		<variable name="main_menulist_x" value="0"/>
+		<variable name="main_menulist_y" value="300"/>								<!-- header_height+menu_separator_height -->
+		<variable name="main_menulist_item_height" value="200"/>
+		<variable name="main_menulist_total_height" value="1200"/>
+		<variable name="separator_line_color" value="#4D4D4D"/>
+		<!-- vivo ui confirm box start  -->
+		<variable name="confirm_box_indent" value="25"/>
+		<variable name="confirm_box_indent_right" value="25"/>
+		<variable name="confirm_box_y" value="1267"/>
+		<variable name="confirm_box_w" value="1030"/>								<!-- screen_width-2*confirm_box_indent -->
+		<variable name="confirm_box_h" value="500"/>
+		<variable name="confirm_box_header_y" value="1267"/>
+		<variable name="confirm_box_content_x" value="50"/>
+		<variable name="confirm_box_content_y" value="1417"/>
+
+		<variable name="confirm_box_btn1_x" value="190"/>
+		<variable name="confirm_box_btn2_x" value="590"/>
+		<variable name="confirm_box_btn_y" value="1627"/>
+		<variable name="confirm_box_btn_split_y" value="1660"/>
+		<variable name="confirm_box_btn_split_h" value="50"/>
+		<variable name="confirm_box_btn_highlight_color" value="#0090CA"/>
+
+		<!-- recovery  common   -->
+		<variable name="header_y" value="102"/>
+		<variable name="back_btn_x" value="47"/>
+		<variable name="header_separator_y" value="237"/>
+		<variable name="header_separator_h" value="1"/>
+		<variable name="battery_pos_x" value="850"/>
+		<variable name="battery_pos_wakong_screen_x" value="700"/>
+		<variable name="battery_text_x" value="785"/>
+		<variable name="battery_text_y" value="12"/>
+
+		<variable name="logo_x" value="282"/>
+		<variable name="logo_y" value="434"/>
+		<variable name="logo_title_y" value="591"/>  <!-- 65.67 -->
+
+		<variable name="center_x" value="540"/>
+		<variable name="center_x1" value="600"/>
+		<variable name="center_y" value="1080"/>
+		<variable name="indent"   value="60"/>
+		<variable name="indent_right" value="1020"/>
+		<variable name="separator_line_height" value="1"/>
+
+		<variable name="content_width" value="1008"/>
+		<variable name="content_overlay_width" value="936"/>
+
+		<variable name="fastscroll_w" value="2"/>
+		<variable name="fastscroll_linew" value="1"/>
+		<variable name="fastscroll_rectw" value="2"/>
+		<variable name="fastscroll_recth" value="108"/>
+
+		<variable name="console_fastscroll_w" value="2"/>
+		<variable name="console_fastscroll_rectw" value="2"/>
+		<variable name="console_fastscroll_recth" value="150"/>
+
+		<variable name="progress_logo_y" value="957"/>                                                  <!-- 91.77dp  -->
+		<variable name="progress_warning_y" value="1300"/>                                              <!-- 91.77dp  -->
+		<variable name="progress_txt_y" value="1547"/>                                                  <!-- 155.33dp  -->
+		<variable name="progress_txt_w" value="984"/>                                                   <!-- 155.33dp  -->
+		<variable name="progress_txt_h" value="200"/>                                                   <!-- 155.33dp  -->
+		<variable name="progress_bar_y" value="1672"/>                                                  <!-- 170dp  -->
+		<variable name="progress_anima_y" value="1833"/>                                                <!-- 190dp  -->
+
+		<variable name="separator_line_h" value="1"/>                                                  <!-- 0.33dp  -->
+		<variable name="separator_line_color" value="#4D4D4D"/>
+
+		<variable name="menulist_tips_y" value="300"/>                                                 <!-- 23.33dp  -->
+		<variable name="menulist_tips_separator_y" value="390"/>                                       <!-- 40.33dp  -->
+		<variable name="menulist_x" value="50"/>
+		<variable name="menulist_y" value="395"/>
+		<variable name="menulist_w" value="1025"/>
+		<variable name="menulist_h" value="1600"/>
+		<variable name="menuitem_h" value="141"/>                                                     <!-- 15.67dp  -->
+		<variable name="menuitem_spacing" value="0"/>
+
+		<variable name="menulist_wipe_y" value="285"/>                                                <!-- 31.67dp  -->
+
+		<variable name="background_color" value="#000000"/>
+		<variable name="black_color" value="#000000"/>
+		<variable name="white_color" value="#FFFFFF"/>
+		<variable name="red_color" value="#FF0000"/>
+		<variable name="txt_tips_color" value="#ACACAC"/>
+		<variable name="highlight_color" value="#2999F9"/>
+		<variable name="caps_highlight_color" value="#DFDFDF"/>
+		<variable name="text_color" value="#FFFFFF"/>
+		<variable name="text_button_color" value="#FFFFFF"/>
+		<variable name="text_success_color" value="#76FF03"/>
+		<variable name="text_fail_color" value="#FF0101"/>
+
+		<variable name="confirmbox_y"  value="1970"/>                                            <!-- 219dp  -->
+		<variable name="confirmbox_txt_tips_y"  value="1884"/>                                    <!-- 209.43dp  -->
+		<variable name="confirmbox_btn_y"  value="1996"/>                                         <!-- 221.87dp  -->
+		<variable name="confirmbox_btn_w"  value="417"/>                                          <!-- 46.33dp  -->
+		<variable name="confirmbox_btn_h"  value="60"/>                                           <!-- 6.67dp  -->
+		<variable name="confirmbox_btn1_x" value="96"/>                                          <!-- 10.67dp  -->
+		<variable name="confirmbox_btn2_x" value="564"/>                                         <!-- 62.67dp  -->
+
+		<variable name="confirmbox_big_y"  value="1903"/>                                             <!-- 219dp    -->
+		<variable name="confirmbox_big_txt_hdr_y"  value="1720"/>                                      <!-- 209.43dp  -->
+		<variable name="confirmbox_big_txt_tips_y"  value="1800"/>                                    <!-- 209.43dp  -->
+		<variable name="confirmbox_big_btn_y"  value="2004"/>                                         <!-- 221.87dp  -->
+		<variable name="confirmbox_big_btn_w"  value="417"/>                                          <!-- 46.33dp  -->
+		<variable name="confirmbox_big_btn_h"  value="60"/>                                           <!-- 6.67dp  -->
+		<variable name="confirmbox_big_btn1_x" value="96"/>                                           <!-- 10.67dp  -->
+		<variable name="confirmbox_big_btn2_x" value="564"/>                                          <!-- 62.67dp  -->
+		<variable name="confirmbox_big_w" value="867"/>
+		<variable name="confirmbox_big_h" value="200"/>
+		<variable name="confirmbox_bg_color" value="#F6F6F6"/>
+
+		<variable name="action_box_y" value="1095"/>
+		<variable name="action_box_tips_y" value="1064"/>
+		<variable name="action_box_anim_x" value="300"/>
+
+		<variable name="transparent" value="#FFFFFF00"/>
+		<variable name="semi_transparent" value="#00000044"/>
+
+		<variable name="txt_console_x" value="20"/>
+		<variable name="txt_console_y" value="225"/>         <!-- 25dp  -->
+		<variable name="txt_console_w" value="1040"/>
+		<variable name="txt_console_h" value="1900"/>
+
+		<variable name="root_tip_y" value="2049"/>
+		<!-- recovery  main page   -->
+		<variable name="main_btn_row1_x" value="60"/>
+		<variable name="main_btn_row2_x" value="561"/>
+		<variable name="main_btn_col1_y" value="819"/>  												<!-- 91dp  -->
+		<variable name="main_btn_col2_y" value="1170"/>												    <!-- 130.33dp  -->
+		<variable name="round_btn_row1_x" value="90"/>
+		<variable name="round_btn_row2_x" value="585"/>
+		<variable name="round_btn_col1_y" value="1704"/> 												<!-- 189.33dp  -->
+		<variable name="round_btn_col2_y" value="1884"/>
+		<!-- recovery  install   -->
+		<variable name="fileselector_linecolor" value="#4D4D4D"/>
+		<variable name="fileselector_highlight_color" value="#4D4D4D"/>
+		<variable name="fileselector_separatorheight" value="1"/>
+		<variable name="fileselector_spacing" value="0"/>
+
+		<variable name="package_install_tips_y" value="270"/>
+		<variable name="package_install_tips_separator_y" value="360"/>
+		<variable name="package_fileselector_x" value="50"/>
+		<variable name="package_fileselector_y" value="365"/>
+		<variable name="package_fileselector_w" value="1025"/>
+		<variable name="package_fileselector_h" value="1692"/>
+
+
+		<!-- <variable name="fileselector_install_height" value="1152"/> -->
+		<!-- <variable name="fileselector_filemanager_height" value="1376"/> -->
+
+		<!-- recovery action complete page  -->
+		<variable name="complete_txt_header_y" value="375"/>  											  <!-- 41.67dp  -->
+		<variable name="complete_txt_tips_y"   value="528"/>                                              <!-- 58.67dp  -->
+		<variable name="complete_btn_col1_y"   value="816"/>  											  <!-- 90.67dp  -->
+		<variable name="complete_btn_col2_y"   value="1170"/>
+		<variable name="complete_txt_box_y"    value="1128"/>                                             <!-- 125.4dp  -->
+		<variable name="complete_tips_w" value="984"/>
+		<variable name="complete_tips_h" value="200"/>
+		<variable name="complete_separator_y" value="1086"/>												  <!-- 120.67dp  -->
+		<variable name="complete_separator_w" value="983"/>                                               <!-- 109.33dp  -->
+		<!-- recovery password common  -->
+		<variable name="btn_pswd_cancle_y"    value="1827"/>                                              <!-- 203dp  -->
+		<variable name="btn_pswd_cancle_x"    value="90"/>
+		<variable name="btn_pswd_enter_x"        value="585"/>
+		<!-- recovery pattern password page  -->
+		<variable name="pattern_tips_y"    value="747"/>
+		<variable name="pattern_x"    value="270"/>
+		<variable name="pattern_y"    value="1008"/>
+		<variable name="pattern_size"    value="540"/>
+		<variable name="pattern_dot_dia" value="20"/>
+		<variable name="pattern_line_w" value="9"/>
+		<variable name="pattern_line_color" value="#2999F9"/>
+		<variable name="pattern_dot_color"  value="#FFFFFF"/>
+		<variable name="pattern_dot_activecolor"  value="#FFFFFF"/>
+		<!-- recovery regular password page  -->
+		<variable name="password_tips_y"    value="660"/>   <!-- 73.33dp  -->
+		<variable name="password_tips_y2"    value="600"/>
+		<variable name="password_tips_y3"    value="351"/>
+		<variable name="password_input_y"   value="780"/>   <!-- 88.33dp  -->
+		<variable name="password_input_y2"   value="720"/>
+		<variable name="password_input_y3"   value="471"/>
+		<variable name="password_dot_color"  value="#FFFFFF"/>
+		<variable name="password_dot_activecolor"  value="#FFFFFF"/>
+		<variable name="password_dot_freecolor"  value="#000000"/>
+		<variable name="password_dot_dia"  value="12"/>
+		<variable name="password_dot_space"  value="48"/>
+		<variable name="password_dot_littlespace"  value="12"/>
+		<variable name="password_dot_thick"  value="2"/>
+
+		<variable name="digit_keyboard_y" value="924"/>  <!-- 102.67dp  -->
+		<variable name="digit_keyboard_w" value="732"/>  <!-- 81.33dp  -->
+		<variable name="digit_keyboard_h" value="745"/>  <!-- 62.67dp  -->
+
+		<variable name="compex_keyboard_y" value="770"/>  <!-- dp  -->
+		<variable name="compex_keyboard_w" value="1032"/>  <!-- 114.67.67dp  -->
+		<variable name="compex_keyboard_h" value="496"/>
+
+		<variable name="keyboard_y" value="1149"/>
+		<variable name="keyboard_terminal_y" value="1053"/>
+
+		<!-- =============================== fastboot mode ========================================  -->
+		<variable name="vivo_fastboot_btn1_y" value="1055"/>
+
+		<!-- ================================== repair mode ========================================  -->
+		<variable name="vivo_repair_btn_y" value="1055"/>        <!-- 117.33dp  -->
+		<!-- recovery wifi page  -->
+		<variable name="action_wifi_anim_x" value="280"/>
+		<variable name="vivo_funtouch_logo_y" value="612"/>   <!-- 68.07dp  -->
+		<variable name="vivo_funtouch_package_tips_y" value="774"/>   <!-- 86dp  -->
+		<variable name="vivo_package_checking_btn1_y" value="1203"/>   <!-- 133.67dp  -->
+		<variable name="vivo_package_checking_btn2_y" value="1467"/>    <!-- 163dp  -->
+		<variable name="vivo_downlaoding_btn1_y" value="280"/>    <!-- 163dp  -->
+		<variable name="vivo_downlaoding_btn2_y" value="280"/>    <!-- 163dp  -->
+		<variable name="vivo_wifi_tip_y" value="2049"/>
+		<variable name="vivo_wlan_passwd_input_tip_y" value="285"/>  <!-- 31.67dp  -->
+		<variable name="vivo_wlan_passwd_error_tip_y" value="630"/>  <!-- 70dp  -->
+		<variable name="vivo_wlan_passwd_box_tip_y" value="417"/>     <!-- 46.33dp  -->
+		<variable name="vivo_wlan_passwd_view_btn_x" value="918"/>     <!-- 102dp  -->
+		<variable name="vivo_wlan_passwd_view_btn_y" value="459"/>      <!-- 51dp  -->
+		<variable name="vivo_wlan_passwd_view_btn_w" value="63"/>     <!-- 6.67dp  -->
+		<variable name="vivo_wlan_passwd_view_btn_h" value="63"/>     <!-- 6.67dp  -->
+		<variable name="vivo_wlan_passwd_input_box_w" value="690"/>
+		<variable name="vivo_wlan_passwd_input_box_h" value="110"/>
+		<variable name="vivo_wlan_passwd_input_box_text_w" value="680"/>
+
+		<variable name="vivo_downloading_tips_y" value="1143"/>     <!-- 127dp  -->
+		<variable name="vivo_downloading_tips_x1" value="100"/>      <!-- 9dp  -->
+		<variable name="vivo_downloading_tips_x2" value="700"/>      <!--  -->
+		<variable name="vivo_install_battery_tips_y" value="1260"/>
+		<variable name="vivo_downloading_progress_bar_y" value="1251"/>          <!-- 139dp  -->
+		<variable name="vivo_downloading_progress_tips_y"   value="1309"/>
+		<variable name="vivo_downloading_progress_anima_y" value="1368"/>        <!-- 152dp  -->
+		<variable name="vivo_downloading_btn1_y" value="1557"/>        <!-- 173dp  -->
+		<variable name="vivo_downloading_btn2_y" value="1784"/>        <!-- 198.33dp  -->
+	</variables>
+
+	<templates>
+		<template name="page">
+			<background color="%background_color%"/>
+
+			<image>
+				<condition var1="g_current_page" op="!=" var2="main"/>
+				<condition var1="g_current_page" op="!=" var2="recovery"/>
+				<condition var1="g_current_page" op="!=" var2="survival"/>
+				<condition var1="g_current_page" op="!=" var2="fastboot"/>
+				<condition var1="tt_busy" var2="1"/>
+				<placement x="%back_btn_x%" y="%header_y%"/>
+				<image resource="back"/>
+			</image>
+
+			<button>
+				<condition var1="g_current_page" op="!=" var2="main"/>
+				<condition var1="g_current_page" op="!=" var2="recovery"/>
+				<condition var1="g_current_page" op="!=" var2="survival"/>
+				<condition var1="g_current_page" op="!=" var2="fastboot"/>
+				<condition var1="tt_busy" var2="0"/>
+				<placement x="%back_btn_x%" y="%header_y%"/>
+				<image resource="back"/>
+				<action function="key">back</action>
+			</button>
+
+			<batteryview>
+				<condition var1="property.recovery.state.screen_shape" op="!=" var2="two_holes_right"/>
+				<placement x="%battery_pos_x%" y="%row1_header_y%"/>
+				<resource name="vivo_battery"/>
+				<speed fps="3" render="2"/>
+				<loop frame="1"/>
+			</batteryview>
+
+			<batteryview>
+				<condition var1="property.recovery.state.screen_shape" op="=" var2="two_holes_right"/>
+				<placement x="%battery_pos_wakong_screen_x%" y="%row1_header_y%"/>
+				<resource name="vivo_battery"/>
+				<speed fps="3" render="2"/>
+				<loop frame="1"/>
+			</batteryview>
+		</template>
+
+		<template name="confirm_box_big_temp">
+			<image>
+				<image resource="confirm_box_big_bg"/>
+				<placement x="%center_x%" y="%confirmbox_big_y%" placement="4"/>
+			</image>
+
+			<text>
+				<placement x="%center_x%" y="%confirmbox_big_txt_hdr_y%"  placement="5"/>
+				<font resource="font_h" color="%black_color%"/>
+				<text>%tt_text1%</text>
+			</text>
+
+			<!-- <text>
+				<placement x="%center_x%" y="%confirmbox_big_txt_tips_y%"  placement="5"/>
+				<font resource="font_l" color="%black_color%"/>
+				<text>{@wlan_repair_tips=...}</text>
+			</text> -->
+
+			<textbox>
+				<placement x="%center_x%" y="%confirmbox_big_txt_tips_y%" w="%confirmbox_big_w%" h="%confirmbox_big_h%" placement="4"/>
+				<background color="%transparent%"/>
+				<font resource="font_l" spacing="%fileselector_spacing%" color="%black_color%"/>
+				<view_style x="%center_x%" placement="5"/>
+				<text>%tt_text2%</text>
+			</textbox>
+		</template>
+
+		<template name="progress_bar">
+			<xprogressbar>
+				<condition var1="tt_use_xprogressbar" op="!=" var2="0"/>
+				<placement x="%center_x%" y="%progress_bar_y%" placement="4"/>
+				<resource empty="progress_empty" full="progress_full"/>
+				<data name="ui_xprogress"/>
+			</xprogressbar>
+
+			<progressbar>
+				<condition var1="tt_use_xprogressbar" var2="0"/>
+				<placement x="%center_x%" y="%progress_bar_y%" placement="4"/>
+				<resource empty="progress_empty" full="progress_full"/>
+				<data name="ui_progress"/>
+			</progressbar>
+
+			<animation>
+				<placement x="%center_x%" y="%progress_anima_y%" placement="4"/>
+				<resource name="progress"/>
+				<speed fps="30" render="2"/>
+				<loop frame="1"/>
+			</animation>
+		</template>
+
+		<template name="console">
+			<console>
+				<placement x="%indent%" y="%row2_y%" w="%content_width%" h="%console_height%"/>
+			</console>
+
+			<fill color="%fileselector_linecolor%">
+				<placement x="%indent%" y="row2_y" w="%content_width%" h="input_line_width" placement="1"/>
+			</fill>
+
+			<fill color="%fileselector_linecolor%">
+				<placement x="%indent%" y="row17_y" w="%content_width%" h="input_line_width"/>
+			</fill>
+		</template>
+
+		<template name="vivodigitkeyboardtemplate">
+			<keyboard>
+				<condition var1="tt_hide_kb" var2="0"/>
+				<placement x="%center_x%" y="%digit_keyboard_y%" w="%digit_keyboard_w%" h="%digit_keyboard_h%" placement="4"/>
+				<keymargin x="8" y="8"/>
+				<background color="%background_color%"/>
+				<key-alphanumeric color="%background_color%" font="keylabel" textcolor="#EEEEEE"/>
+				<key-other color="%background_color%" font="keylabel-small" textcolor="#5b5b5bff"/>
+				<extra-prop rowseparationline="1" rowseparationcolor="%separator_line_color%" rowseparationheight="%separator_line_h%"/>
+				<!-- <longpress font="keylabel-longpress" textcolor="#5b5b5bff" x="12" y="0"/> -->
+				<!-- <keylabel key="0:c:8" text="Bksp" resource="backspace"/>
+				<keylabel key="0:action" text="Enter" resource="enter"/>
+				<keylabel key=" " text="Space" resource="space"/>  -->
+				<highlight color="#111111"/>
+				<capshighlight color="%highlight_color%"/>
+
+				<layout1>
+					<keysize height="186" width="243"/>
+					<row1 key01="1" key02="2" key03="3" />
+					<row2 key01="4" key02="5" key03="6" />
+					<row3 key01="7" key02="8" key03="9" />
+					<row4 key01="243:" key02="0" key03="243:" />
+				</layout1>
+			</keyboard>
+		</template>
+
+		<template name="vivodcompexkeyboardtemplate">
+			<keyboard>
+				<condition var1="tt_hide_kb" var2="0"/>
+				<placement x="%center_x%" y="%compex_keyboard_y%" w="%compex_keyboard_w%" h="%compex_keyboard_h%" placement="4"/>
+				<keymargin x="8" y="12"/>
+				<background color="%background_color%"/>
+				<key-alphanumeric color="%background_color%" font="keylabel" textcolor="#EEEEEE"/>
+				<key-other color="%background_color%" font="keylabel-small" textcolor="#EEEEEE"/>
+				<!-- <longpress font="keylabel-longpress" textcolor="#5b5b5bff" x="12" y="0"/> -->
+				<!-- <keylabel key="0:c:8" text="Bksp" resource="backspace"/>
+				<keylabel key="0:action" text="Enter" resource="enter"/>   -->
+				<keylabel key="0:c:8" text="Bksp" resource="backspace"/>
+				<highlight color="#4A4A4A"/>
+				<capshighlight color="%highlight_color%"/>
+				<extra-prop rowseparationline="0" rowseparationcolor="%separator_line_color%" rowseparationheight="%separator_line_h%" keyinbox='1'/>
+
+				<layout1>
+					<keysize height="124" width="103"/>
+					<row1 key01="1" key02="2" key03="3" key04="4" key05="5" key06="6" key07="7" key08="8" key09="9" key10="0"/>
+					<row2 key01="q" key02="w" key03="e" key04="r" key05="t" key06="y" key07="u" key08="i" key09="o" key10="p"/>
+					<row3 key01="47:" key02="a" key03="s" key04="d" key05="f" key06="g" key07="h" key08="j" key09="k" key10="l" key11="47:"/>
+					<row4 key01="141:layout2" key02="z" key03="x" key04="c"  key05="v"  key06="b"  key07="n"  key08="m" key09="141:c:8"/>
+					<keylabel key="0:layout2" text="Shift" resource="shift"/>
+				</layout1>
+				<layout2>
+					<keysize height="124" width="103" capslock="1" revert_layout="1"/>
+					<row1 key01="1" key02="2" key03="3" key04="4" key05="5" key06="6" key07="7" key08="8" key09="9" key10="0"/>
+					<row2 key01="Q" key02="W" key03="E" key04="R" key05="T" key06="Y" key07="U" key08="I" key09="O" key10="P"/>
+					<row3 key01="47:" key02="A" key03="S" key04="D" key05="F" key06="G" key07="H" key08="J" key09="K" key10="L" key11="47:"/>
+					<row4 key01="141:layout1" key02="Z" key03="X" key04="C"  key05="V"  key06="B"  key07="N"  key08="M" key09="141:c:8"/>
+					<keylabel key="0:layout1" text="Shift" resource="shift_fill"/>
+				</layout2>
+			</keyboard>
+		</template>
+
+		<template name="vivokeyboardtemplate">
+			<keyboard>
+				<condition var1="tt_hide_kb" var2="0"/>
+				<placement x="%center_x%" y="%compex_keyboard_y%" w="1032" h="805" placement="4"/>
+				<keymargin x="8" y="12"/>
+				<background color="%background_color%"/>
+				<key-alphanumeric color="%background_color%" font="keylabel" textcolor="#EEEEEE"/>
+				<key-other color="%background_color%" font="keylabel-small" textcolor="#EEEEEE"/>
+				<longpress font="keylabel-longpress" textcolor="#5b5b5bff" x="12" y="0"/>
+				<keylabel key="0:c:8" text="Bksp" resource="backspace"/>
+				<keylabel key="0:action" text="{@compelte_btn}"/>
+				<keylabel key=" " text="Space" resource="space"/>
+				<highlight color="#4A4A4A"/>
+				<capshighlight color="%highlight_color%"/>
+				<extra-prop rowseparationline="0" rowseparationcolor="%separator_line_color%" rowseparationheight="%separator_line_h%" keyinbox='1'/>
+				<layout1>
+					<keysize height="161" width="103"/>
+					<row1 key01="1" key02="2" key03="3" key04="4" key05="5" key06="6" key07="7" key08="8" key09="9" key10="0"/>
+					<row2 key01="q" key02="w" key03="e" key04="r" key05="t" key06="y" key07="u" key08="i" key09="o" key10="p"/>
+					<row3 key01="52:" key02="a" key03="s" key04="d" key05="f" key06="g" key07="h" key08="j" key09="k" key10="l" key11="52:"/>
+					<row4 key01="155:layout2" key02="z" key03="x" key04="c"  key05="v"  key06="b"  key07="n"  key08="m" key09="155:c:8"/>
+					<row5 key01="246:layout3"  key02="540: " key03="246:action"/>
+					<keylabel key="0:layout2" text="Shift" resource="shift"/>
+					<keylabel key="0:layout3" text="{@symol_btn}"/>
+				</layout1>
+				<layout2>
+					<keysize height="161" width="103" capslock="1" revert_layout="1"/>
+					<row1 key01="1" key02="2" key03="3" key04="4" key05="5" key06="6" key07="7" key08="8" key09="9" key10="0"/>
+					<row2 key01="Q" key02="W" key03="E" key04="R" key05="T" key06="Y" key07="U" key08="I" key09="O" key10="P"/>
+					<row3 key01="52:" key02="A" key03="S" key04="D" key05="F" key06="G" key07="H" key08="J" key09="K" key10="L" key11="52:"/>
+					<row4 key01="155:layout1" key02="Z" key03="X" key04="C"  key05="V"  key06="B"  key07="N"  key08="M" key09="155:c:8"/>
+					<row5 key01="246:layout3"  key02="540: " key03="246:action"/>
+					<keylabel key="0:layout1" text="Shift" resource="shift_fill"/>
+					<keylabel key="0:layout3" text="{@symol_btn}"/>
+				</layout2>
+				<layout3>
+					<keysize height="161" width="103"/>
+					<row1 key01="!" key02="@" key03="#" key04="$" key05="%" key06="^" key07="&amp;" key08="*" key09="(" key10=")"/>
+					<row2 key01="-" key02="_" key03="+" key04="=" key05=";" key06=":" key07="'" key08="103:c:34" key09="|" key10="/"/>
+					<row3 key01="52:" key02="," key03="." key04="?" key05="[" key06="]" key07="{" key08="}" key09="`" key10="~" key11="52:"/>
+					<row4 key01="155:" key02="103:" key03="103:" key04="103:" key05="103:"  key06="\"  key07="&lt;"  key08="&gt;" key09="155:c:8"/>
+					<row5 key01="246:layout1"  key02="540: " key03="246:action"/>
+					<keylabel key="0:layout1" text="abc"/>
+				</layout3>
+			</keyboard>
+		</template>
+	</templates>
+</recovery>
