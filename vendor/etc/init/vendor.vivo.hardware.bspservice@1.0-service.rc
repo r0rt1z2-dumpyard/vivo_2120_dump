@@ -1,0 +1,29 @@
+on early-init
+    setprop ro.vendor.defend.oem.name ${ro.vivo.oem.name}
+    setprop ro.vendor.defend.vgc.cust.name ${ro.vgc.cust.name}
+    setprop ro.vendor.defend.hardware.version ${ro.vivo.hardware.version}
+    setprop ro.vendor.defend.build.version.group ${ro.build.version.group}
+    setprop ro.vendor.defend.gmsversion ${ro.com.google.gmsversion}
+    setprop ro.vendor.defend.system.brand ${ro.product.system.brand}
+
+on early-fs
+    start bspservice-hal-1-0
+
+on post-fs-data
+    mkdir /data/vendor/bspservice 0770 system system
+
+on early-boot && property:ro.vivo.dyn.support=yes
+    setprop ro.vendor.defend.dyn.support ${ro.vivo.dyn.support}
+    setprop ro.vendor.defend.dyn.name ${ro.vivo.dyn.name}
+
+on property:persist.vendor.vivo.dyn.name=*
+    setprop persist.vivo.dyn.name ${persist.vendor.vivo.dyn.name}
+
+service bspservice-hal-1-0 /vendor/bin/hw/vendor.vivo.hardware.bspservice@1.0-service
+    class early_hal
+    user root
+    critical
+    group root system everybody cache media_rw shell sdcard_rw sdcard_r drmrpc
+    disabled # don't start when early_hal
+    # reboot_on_failure reboot,bspservice-failed
+

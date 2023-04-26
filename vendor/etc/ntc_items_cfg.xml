@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ntc_auto_test>
+	<common_items>
+		<iteminfo name = "NULL:0" operation="read" path="/sys/devices/platform/battery/usb_temp" value_type="%d" />
+		<!--9V2A方案小板温度检测,部分9V2A项目会使用，需要连接标配充电器测试-->
+		<iteminfo name = "SUB_CHARGER_ADC" path="/sys/class/power_supply/battery/parallel_board_temp" value_deal="/10" value_type="%.1f"/>
+		<iteminfo name = "SUB_BOARD_THERM" path="/sys/class/power_supply/battery/parallel_board_temp" value_deal="/10" value_type="%.1f"/>
+		<!--前摄伸缩模组温度检测,非充电状态可以直接获取温度值-->
+		<iteminfo name = "SDM_THERM" operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "sdm-therm"  	value_deal="/1000"	value_type="%.1f" />
+		<iteminfo name = "MOTOR_THERM" operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "sdm-therm"  	value_deal="/1000"	value_type="%.1f" />
+		<!--WIFI IC温度检测,非充电状态可以直接获取温度值-->
+		<iteminfo name = "WIFI_SKIN_THERM" operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "modem-wifi-usr" value_deal="/1000" value_type="%.1f" />
+		<iteminfo name = "WIFI_THERM" operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "modem-wifi-usr" value_deal="/1000" value_type="%.1f" />
+		<!--电池温度检测,非充电状态可以直接获取温度值-->
+		<iteminfo name = "BATT_THERM" operation="read"  path="/sys/class/power_supply/battery/temp" value_deal="/10" value_type="%.1f"/>
+
+		<iteminfo name = "BATT_THERM_ADC" operation="read"  path="/sys/class/power_supply/battery/temp" value_deal="/10" value_type="%.1f"/>
+		<iteminfo name = "QUIET_THERM_ADC" operation="read"  path="/sys/class/power_supply/battery/primary_board_temp" value_deal="/10"  value_type="%.1f"/>
+		<iteminfo name = "USB_CON_1_THERM" operation="read"  path="/sys/class/stm32_debug/usb_conn_temp1" value_deal="/10" value_type="%.1f"/>
+	</common_items>
+
+	<qualcomm_items>
+		<!--主板温度检测,非充电状态可以直接获取温度值-->
+		<iteminfo name = "QUIET_THERM" operation="read" path="/sys/class/power_supply/battery/primary_board_temp" value_deal="/10" value_type="%.1f"/>
+		<iteminfo name = "BOARD_THERM" operation="read" path="/sys/class/power_supply/battery/primary_board_temp" value_deal="/10" value_type="%.1f"/>
+		<!--4G PA温度检测,一般没有使用，NC状态，如果有项目使用，非充电状态可以直接获取温度值，建议待机的时候获取-->
+		<iteminfo name = "PA_THERM" operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "pa-therm1|pa-therm1-usr"  value_deal="/1000"	value_type="%.1f" />
+		<iteminfo name = "SDX55_PA_THERM" operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "modem-lte-sub6-pa1" value_deal="/1000" value_type="%.1f" repeat-times="6"/>
+		<iteminfo name = "4G_PA_THERM" operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "pa-therm1|pa-therm1-usr|modem-lte-sub6-pa1|4g-pa-therm-usr|ltepa_ntc"  value_deal="/1000"	value_type="%.1f" />
+		<!--5G PA温度检测,非充电状态可以获取，建议待机的时候获取-->
+		<iteminfo name = "5GPA_THERM1" operation="read"  basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "modem1-pa2-usr|pa-therm2-usr"  value_deal="/1000"	value_type="%.1f" repeat-times="6"/>
+		<iteminfo name = "SDX55_5GPA_THERM1" operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "modem-lte-sub6-pa2" value_deal="/1000" value_type="%.1f" repeat-times="6"/>
+		<iteminfo name = "5G_PA_THERM" operation="read"  basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "modem1-pa2-usr|pa-therm2-usr|modem-lte-sub6-pa2|modem-mmw-pa2-usr|nrpa_ntc"  value_deal="/1000"	value_type="%.1f" repeat-times="6"/>
+		<!--CPU温度检测,一般没有使用，NC状态，如果有项目使用，非充电状态可以直接获取温度值，建议待机的时候获取-->
+		<iteminfo name = "MSM_THERM" operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "skin-msm-therm|msm-skin-therm" value_deal="/1000" value_type="%.1f" />
+		<iteminfo name = "AP_THERM" operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "skin-msm-therm|msm-skin-therm|msm-s-therm-usr" value_deal="/1000" value_type="%.1f" />
+		<!--5G modem温度检测,非充电状态可以直接获取温度值-->
+		<iteminfo name = "SDX50_MDM_THERM" operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "modem1-pa0-usr|modem-0-usr" value_deal="/1000" value_type="%.1f" repeat-times="6"/>
+		<iteminfo name = "SDX55_MDM_THERM" operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "skin-therm-usr" value_deal="/1000" value_type="%.1f" repeat-times="6"/>
+		<iteminfo name = "5G_MODEM_THERM" operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "modem1-pa0-usr|modem-0-usr|skin-therm-usr" value_deal="/1000" value_type="%.1f" repeat-times="6"/>
+
+		<iteminfo name = "WIFI_PA_THERM" operation="read"  basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "modem-mmw-pa3-usr"  value_deal="/1000"	value_type="%.1f" repeat-times="6"/>
+
+		<!--USB接口温度检测,一般快充机型使用，需要连接标配充电器测试-->
+		<iteminfo name = "USB_CON_ADC" operation="read"  path="/sys/class/stm32_debug/usb_conn_temp" value_deal="/10" value_type="%.1f"/>
+		<iteminfo name = "USB_CON_THERM" operation="read"  path="/sys/class/stm32_debug/usb_conn_temp" value_deal="/10" value_type="%.1f"/>
+		<!--电池保护板温度检测,一般快充机型使用，需要连接标配充电器测试-->
+		<iteminfo name = "BAT_THERM_ADC" operation="read"  path="/sys/class/stm32_debug/bat_temp" value_deal="/10" value_type="%.1f"/>
+		<iteminfo name = "BAT_BOARD_THERM" operation="read"  path="/sys/class/stm32_debug/bat_temp" value_deal="/10" value_type="%.1f"/>
+		<!--主板电池连接器温度检测,快充机型使用，需要连接标配充电器测试-->
+		<iteminfo name = "BAT_BTB_ADC" operation="read" path="/sys/class/stm32_debug/bat_conn_temp" value_deal="/10"  value_type="%.1f"/>
+		<iteminfo name = "BAT_BTB_THERM" operation="read" path="/sys/class/stm32_debug/bat_conn_temp" value_deal="/10"  value_type="%.1f"/>
+		<!--双半压充电时，检测小板电池连接器温度,55W充电使用，需要连接标配充电器测试-->
+		<iteminfo name = "BAT_BTB_ADC_M" operation="read"  path="/sys/class/stm32_debug/master_bat_conn_temp" value_deal="/10" value_type="%.1f"/>
+		<iteminfo name = "BAT_BTB_THERM_M" operation="read"  path="/sys/class/stm32_debug/master_bat_conn_temp" value_deal="/10" value_type="%.1f"/>
+	</qualcomm_items>
+	<mtk_items>
+		<!--主板温度检测,非充电状态可以直接获取温度值-->
+		<iteminfo name = "QUIET_THERM" operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "mtktsAP" value_deal="/1000" value_type="%.1f" />
+		<iteminfo name = "BOARD_THERM" operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "mtktsAP|ap_ntc" value_deal="/1000" value_type="%.1f" />
+		<!--4G PA温度检测,一般没有使用，NC状态，如果有项目使用，非充电状态可以直接获取温度值，建议待机的时候获取-->
+		<iteminfo name = "PA_THERM"  operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "mtktsbtsmdpa"  value_deal="/1000"	value_type="%.1f" />
+		<iteminfo name = "4G_PA_THERM"  operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "mtktsbtsmdpa|ltepa_ntc"  value_deal="/1000"	value_type="%.1f" />
+		<!--5G PA温度检测,非充电状态可以获取，建议待机的时候获取-->
+		<iteminfo name = "5GPA_THERM1" operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "mtktsbtsnrpa"  value_deal="/1000"	value_type="%.1f" />
+		<iteminfo name = "5G_PA_THERM" operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "mtktsbtsnrpa|nrpa_ntc"  value_deal="/1000"	value_type="%.1f" />
+		<!--CPU温度检测,一般没有使用，NC状态，如果有项目使用，非充电状态可以直接获取温度值，建议待机的时候获取-->
+		<iteminfo name = "MSM_THERM" operation="read"  basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "mtktscpu" value_deal="/1000"	value_type="%.1f"/>
+		<iteminfo name = "AP_THERM" operation="read"  basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "mtktscpu|ap_ntc" value_deal="/1000"	value_type="%.1f"/>
+		<!--USB接口温度检测,一般快充机型使用，需要连接标配充电器测试-->
+		<iteminfo name = "USB_CON_ADC" operation="read"  path="/sys/class/stm32_debug/usb_conn_temp" value_deal="/10" value_type="%.1f"/>
+		<iteminfo name = "USB_CON_THERM" operation="read"  path="/sys/class/stm32_debug/usb_conn_temp" value_deal="/10" value_type="%.1f"/>
+		<!--电池保护板温度检测,一般快充机型使用，需要连接标配充电器测试-->
+		<iteminfo name = "BAT_THERM_ADC" operation="read"  path="/sys/class/stm32_debug/bat_temp" value_deal="/10" value_type="%.1f"/>
+		<iteminfo name = "BAT_BOARD_THERM" operation="read"  path="/sys/class/stm32_debug/bat_temp" value_deal="/10" value_type="%.1f"/>
+		<!--主板电池连接器温度检测,快充机型使用，需要连接标配充电器测试-->
+		<iteminfo name = "BAT_BTB_ADC" operation="read" path="/sys/class/stm32_debug/bat_conn_temp" value_deal="/10"  value_type="%.1f"/>
+		<iteminfo name = "BAT_BTB_THERM" operation="read" path="/sys/class/stm32_debug/bat_conn_temp" value_deal="/10"  value_type="%.1f"/>
+		<!--双半压充电时，检测小板电池连接器温度,55W充电使用，需要连接标配充电器测试-->
+		<iteminfo name = "BAT_BTB_ADC_M" operation="read"  path="/sys/class/stm32_debug/master_bat_conn_temp" value_deal="/10" value_type="%.1f"/>
+		<iteminfo name = "BAT_BTB_THERM_M" operation="read"  path="/sys/class/stm32_debug/master_bat_conn_temp" value_deal="/10" value_type="%.1f"/>
+		<iteminfo name = "FLASH_LIGHT_THERM" operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "mtkt_flash_light"  value_deal="/1000"	value_type="%.1f" />
+	</mtk_items>
+	<samsung_items>
+		<!--主板温度检测,非充电状态可以直接获取温度值-->
+		<iteminfo name = "QUIET_THERM" operation="read" path="/sys/class/power_supply/battery/primary_board_temp" value_deal="/10" value_type="%.1f"/>
+		<iteminfo name = "BOARD_THERM" operation="read" path="/sys/class/cms_class/primary_board_temp" value_deal="/10" value_type="%.1f"/>
+		<!--4G PA温度检测,一般没有使用，NC状态，如果有项目使用，非充电状态可以直接获取温度值，建议待机的时候获取-->
+		<iteminfo name = "PA_THERM" operation="atcommand" at_type="samsung-modem" atcommand="AT+VIVOTEMPERATURE=7" ack="VIVOTEMPERATURE:"  value_type="%.1f"/>
+		<iteminfo name = "4G_PA_THERM" operation="atcommand" at_type="samsung-modem" atcommand="AT+VIVOTEMPERATURE=7" ack="VIVOTEMPERATURE:"  value_type="%.1f"/>
+		<!--5G PA温度检测,非充电状态可以获取，建议待机的时候获取-->
+		<iteminfo name = "5GPA_THERM1" operation="atcommand" at_type="samsung-modem" atcommand="AT+VIVOTEMPERATURE=5" ack="VIVOTEMPERATURE:" value_type="%.1f"/>
+		<iteminfo name = "5G_PA_THERM" operation="atcommand" at_type="samsung-modem" atcommand="AT+VIVOTEMPERATURE=5" ack="VIVOTEMPERATURE:" value_type="%.1f"/>
+		<!--CPU温度检测,一般没有使用，NC状态，如果有项目使用，非充电状态可以直接获取温度值，建议待机的时候获取-->
+		<iteminfo name = "MSM_THERM" operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "SOC|quiet_therm" value_deal="/1000" value_type="%.1f" />
+		<iteminfo name = "AP_THERM" operation="read" basic_path="/sys/class/thermal/thermal_zone%d"  if_type = "SOC|quiet_therm" value_deal="/1000" value_type="%.1f" />
+		<!--USB接口温度检测,一般快充机型使用，需要连接标配充电器测试-->
+		<iteminfo name = "USB_CON_ADC" operation="read"  path="/sys/class/stm32_debug/usb_conn_temp" value_deal="/10" value_type="%.1f"/>
+		<iteminfo name = "USB_CON_THERM" operation="read"  path="/sys/class/stm32_debug/usb_conn_temp" value_deal="/10" value_type="%.1f"/>
+		<!--电池保护板温度检测,一般快充机型使用，需要连接标配充电器测试-->
+		<iteminfo name = "BAT_THERM_ADC" operation="read"  path="/sys/class/stm32_debug/bat_temp" value_deal="/10" value_type="%.1f"/>
+		<iteminfo name = "BAT_BOARD_THERM" operation="read"  path="/sys/class/stm32_debug/bat_temp" value_deal="/10" value_type="%.1f"/>
+		<!--主板电池连接器温度检测,快充机型使用，需要连接标配充电器测试-->
+		<iteminfo name = "BAT_BTB_ADC" operation="read" path="/sys/class/stm32_debug/bat_conn_temp" value_deal="/10"  value_type="%.1f"/>
+		<iteminfo name = "BAT_BTB_THERM" operation="read" path="/sys/class/stm32_debug/bat_conn_temp" value_deal="/10"  value_type="%.1f"/>
+		<!--双半压充电时，检测小板电池连接器温度,55W充电使用，需要连接标配充电器测试-->
+		<iteminfo name = "BAT_BTB_ADC_M" operation="read"  path="/d/stm32l011/master_bat_conn_temp" value_deal="/10" value_type="%.1f"/>
+		<iteminfo name = "BAT_BTB_THERM_M" operation="read"  path="/d/stm32l011/master_bat_conn_temp" value_deal="/10" value_type="%.1f"/>
+	</samsung_items>
+</ntc_auto_test>

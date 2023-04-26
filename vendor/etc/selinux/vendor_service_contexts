@@ -1,0 +1,28 @@
+#line 1 "device/mediatek/sepolicy/bsp/non_plat/service_contexts"
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+android.hardware.neuralnetworks.IDevice/mtk-gpu_shim    u:object_r:hal_neuralnetworks_service:s0
+android.hardware.neuralnetworks.IDevice/mtk-dsp_shim    u:object_r:hal_neuralnetworks_service:s0
+android.hardware.neuralnetworks.IDevice/mtk-mdla_shim   u:object_r:hal_neuralnetworks_service:s0
+android.hardware.neuralnetworks.IDevice/mtk-neuron_shim u:object_r:hal_neuralnetworks_service:s0
+#line 1 "vendor/vivo/system/sepolicy/common/vendor/service_contexts"
+# vivo fingerprint_team add for fingerprint begin
+fingerprint_analysis            u:object_r:fingerprint_analysis_service:s0
+# vivo fingerprint_team add for fingerprint end
+
+# vivo huangxiaodong add for anrmanager start
+# anrmanager                                u:object_r:anr_service:s0
+# vivo huangxiaodong add for anrmanager end
+
+# vivo wangjiewen add for vdtf begin
+vdtf.service u:object_r:vdtf_service:s0
+# vivo wangjiewen add for vdtf end
+
+# vivo corebsp add for bspservice begin
+hal_bspservice_service                              u:object_r:hal_bspservice_service:s0
+hal_bspservice_default                              u:object_r:hal_bspservice_service:s0
+vendor.vivo.hardware.bspservice::IBSPService        u:object_r:hal_bspservice_service:s0
+vendor.vivo.hardware.bspservice.IBSPService/default u:object_r:hal_bspservice_service:s0
+# vivo corebsp add for bspservice end

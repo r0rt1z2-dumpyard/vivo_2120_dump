@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--match_rule="0,4" 表示从第一位开始匹配前4位-->
+<!--match_rule="1,3" 表示从最后一位开始匹配后3位-->
+<!--match_rule="-1,-1" 表示没有固定的匹配规则，可以是任意不连续的几位GPIO组合表示支持BC0 -->
+<config>
+  <item model="PD1934F_EX" hw_id="0011,0001,0101" match_rule="0,4"/>
+  <item model="PD1934BF_EX" hw_id="0101" match_rule="0,4"/>
+  <item model="PD1987F_EX" hw_id="000,001,010,100" match_rule="1,3"/>
+  <item model="PD1987BF_EX" hw_id="000,001,010,100" match_rule="1,3"/>
+  <item model="PD2014F_EX" hw_id="**110***" match_rule="-1,-1"/>
+  <item model="PD2036F_EX" hw_id="**001*,**100*" match_rule="-1,-1"/>
+  <item model="PD2069F_EX" hw_id="*************" match_rule="-1,-1"/>
+  <item model="PD2074F_EX" hw_id="**001*,**100*" match_rule="-1,-1"/>
+</config>

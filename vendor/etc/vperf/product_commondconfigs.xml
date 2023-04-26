@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Supported XML tags with their fields.
+ * Major tag supports OpcodeValue.
+ * Minor tag supports OpcodeValue, Nodepath and Supported(Optional) fields.
+ * By default, all the resources are assumed as supported.
+ Supported field can be used to mark a resource as not supported.
+ * All the interactive nodes, ondemand nodes and some nodes of sched major
+ group which aren't being used are marked as Not supported by default and
+ can be enabled by using the target specific config files. -->
+
+<!-- For resources which update multiple nodes or which require speical
+acquire/release funcitons, need to mention the keyword SPECIAL_NODE
+in their node path field and accordingly their ApplyOts and ResetOpts
+functions need to be defined in the code.-->
+
+<!-- For adding a new resource, a new minor tag with all mandatory fields
+need to be added just before the end of it's major group.
+filter by product
+will match by MajorValue and   MinorValue ,if unmathed ,will skip this
+default  is support
+Supported="0"  means unsupport
+Supported="1"  means support this
+-->
+
+<ResourceConfigs>
+
+        <protocol product="product_demon">
+            <data MajorValue="0x1" MinorValue="0x1"  Node="/sys/rsc/AAA" Supported="1" />
+        </protocol>
+
+</ResourceConfigs>

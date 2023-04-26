@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Supported XML tags with their fields.
+ * Major tag supports OpcodeValue.
+ * Minor tag supports OpcodeValue, Nodepath and Supported(Optional) fields.
+ * By default, all the resources are assumed as supported.
+ Supported field can be used to mark a resource as not supported.
+ * All the interactive nodes, ondemand nodes and some nodes of sched major
+ group which aren't being used are marked as Not supported by default and
+ can be enabled by using the target specific config files. -->
+
+<!-- For resources which update multiple nodes or which require speical
+acquire/release funcitons, need to mention the keyword SPECIAL_NODE
+in their node path field and accordingly their ApplyOts and ResetOpts
+functions need to be defined in the code.-->
+
+<!-- For adding a new resource, a new minor tag with all mandatory fields
+need to be added just before the end of it's major group.
+Supported="":
+0x001 means support qcom
+0x010 means support mtk
+0x100 means support samsung
+0x111 means support all
+0x000 means support none
+nothing default support  support all
+-->
+
+<ResourceConfigs>
+    <PerfResources>
+
+    <!-- vivo cpu major start -->
+    <Major OpcodeValue="0x0" />
+        <Minor OpcodeValue="0x0" Node="/proc/sys/kernel/sched_min_granularity_ns"/>
+        <Minor OpcodeValue="0x1" Node="/sys/rsc/rsc_sched_boost_ctrl"/>
+        <Minor OpcodeValue="0x2" Node="/sys/class/devfreq/18590000.qcom,devfreq-l3:qcom,cpu7-cpu-l3-lat/min_freq" Supported="0x001"  />
+    <!-- vivo cpu major end -->
+
+    <!-- vivo sched major start -->
+    <Major OpcodeValue="0x1" />
+        <Minor OpcodeValue="0x0" Node="/proc/sys/kernel/sched_min_granularity_ns"/>
+        <Minor OpcodeValue="0x1" Node="/sys/rsc/rsc_sched_boost_ctrl" />
+        <Minor OpcodeValue="0x2" Node="/proc/sys/kernel/sched_boost" Supported="0x001"/>
+
+      <!-- vivo sched major end -->
+
+    <!-- vivo gpu start -->
+    <Major OpcodeValue="0x2" />
+        <Minor OpcodeValue="0x0" Node="/sys/class/devfreq/soc:qcom,kgsl-busmon/min_freq" Supported="0x001"/>
+        <!--E9815: /sys/devices/platform/18500000.mali/dvfs_min_lock-->
+        <Minor OpcodeValue="0x1" Node="initpath" Supported="0x100"/>
+    <!-- vivo gpu  major end -->
+
+
+    <!-- vivo memory ufs  start -->
+    <Major OpcodeValue="0x3" />
+        <Minor OpcodeValue="0x0" Node="reserverd-unsupported" />
+        <Minor OpcodeValue="0x1" Node="/proc/sys/vm/compact_memory" Supported="0x111" />
+    <!-- vivo memory ufs  major end -->
+
+
+    </PerfResources>
+</ResourceConfigs>

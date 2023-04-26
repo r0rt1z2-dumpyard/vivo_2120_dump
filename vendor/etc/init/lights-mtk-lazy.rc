@@ -1,0 +1,8 @@
+service vendor.light-default /vendor/bin/hw/android.hardware.lights-service.mediatek
+    interface aidl android.hardware.light.ILights/default
+    class hal
+    user system
+    group system
+    shutdown critical
+    disabled
+    oneshot

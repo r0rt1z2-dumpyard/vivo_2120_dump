@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dump_file>
+    <iteminfo path="/sys/devices/platform/soc/soc:reboot_reason/nokeyup_mode" value="1" />
+    <iteminfo path="/sys/module/msm_poweroff/parameters/nokeyup_mode" value="1" />
+    <iteminfo path="/sys/module/msm_poweroff/parameters/download_mode" value="1" />
+
+    <iteminfo path="/sys/class/spmi0-00/address" value="0x847" />
+    <iteminfo path="/sys/class/spmi0-00/data" value="0x0" />
+
+    <iteminfo path="/sys/class/spmi0-00/address" value="0x844" />
+    <iteminfo path="/sys/class/spmi0-00/data" value="0x1" />
+
+    <iteminfo path="/sys/class/spmi0-00/address" value="0x845" />
+    <iteminfo path="/sys/class/spmi0-00/data" value="0x0" />
+
+    <iteminfo path="/sys/class/spmi0-00/address" value="0x846" />
+    <iteminfo path="/sys/class/spmi0-00/data" value="0x1" />
+
+    <iteminfo path="/sys/class/spmi0-00/address" value="0x847" />
+    <iteminfo path="/sys/class/spmi0-00/data" value="0x80" />
+
+</dump_file>

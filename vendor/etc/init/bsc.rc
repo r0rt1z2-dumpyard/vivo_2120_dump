@@ -1,0 +1,14 @@
+on post-fs-data
+    exec - root -- /vendor/bin/bsc  bootevent post-fs-data
+
+on early-boot
+    exec - root -- /vendor/bin/bsc  bootevent early-boot
+
+on boot
+    exec - root -- /vendor/bin/bsc  bootevent boot
+
+on property:sys.boot_completed=1
+    exec - root -- /vendor/bin/bsc  bootevent boot-completed
+
+on property:sys.user.0.ce_available=true
+    exec - root -- /vendor/bin/bsc  bootevent boot-completed media-ready

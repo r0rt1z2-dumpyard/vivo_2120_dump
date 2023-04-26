@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vivoem_cmd_table>
+	<common_items>
+		<iteminfo name="aftersale_auth" function="aftersale_auth_handler"/>
+		<iteminfo name="read_policy_file" function="read_policy_file_handler"/>
+		<iteminfo name="write_policy_file" function="write_policy_file_handler"/>
+		<iteminfo name="button_light" function="button_light_test_handler"/>
+		<iteminfo name="motor_blocked_time" function="get_motor_blocked_time_handler"/>
+		<iteminfo name="get_nv_cali_val" function="get_ps_cali_data_handler"/>
+		<iteminfo name="master_clear" function="set_master_data_handler"/>
+		<iteminfo name="bk_oem_vgc" function="check_vgc_handler"/>
+		<iteminfo name="bkoem_opra" function="set_oem_convert_condition_handler"/>
+		<iteminfo name="bkrtall" function="at_restore_handler"/>
+		<iteminfo name="bklog" function="log_handler"/>
+		<iteminfo name="etst" function="version_info_handler"/>
+		<iteminfo name="bkdf" function="delete_needless_file_handler"/>
+		<iteminfo name="bk3g" function="set_3g_handler"/>
+		<iteminfo name="write_rpmb" function="imei_rpmb_handler"/>
+		<iteminfo name="get_property" function="property_get_handler"/>
+		<iteminfo name="adb_port" function="adb_port_handler"/>
+		<iteminfo name="reboot" function="reboot_handler"/>
+		<iteminfo name="get_chip_id" function="get_chip_id"/>
+		<iteminfo name="check_secure_boot" function="check_secure_boot_handler"/>
+		<iteminfo name="sdcard_size_on" function="sdcard_size_on_handler"/>
+		<iteminfo name="read_ram_capacity" function="read_ram_capacity_handle"/>
+		<iteminfo name="bk_sys_col" function="theme_color_handler"/>
+		<iteminfo name="bk_safe_lock" function="network_lock_handler"/>
+		<iteminfo name="secscreen" function="get_lcm_color_handler"/>
+		<iteminfo name="bkzsj" function="set_special_product_handler"/>
+		<iteminfo name="bkfeature" function="set_special_feature_handler"/>
+		<iteminfo name="eslp" function="eslp_handler"/>
+		<iteminfo name="bkroot" function="root_handler"/>
+		<iteminfo name="bkdzj" function="system_convert_handler"/>
+		<iteminfo name="infrared_data" function="set_ps_cali_data_handler"/>
+		<iteminfo name="light_sensor_data" function="set_als_cali_data_handler"/>
+		<iteminfo name="light_cct_sensor_data" function="set_als_cct_cali_data_handler"/>
+		<iteminfo name="brightness_test" function="brightness_test_handler"/>
+		<iteminfo name="operate_linear_motor" function="operate_linear_motor_handler"/>
+		<iteminfo name="camera_pop_cali" function="set_camera_pop_cali_handler"/>
+		<iteminfo name="write_policy_hex_file" function="write_policy_hex_file_cmd"/>
+		<iteminfo name="bkpkey_cali" function="sidekey_handler"/>
+		<iteminfo name="bk_lcm_barcode" function="lcm_barcode_handler"/>
+		<iteminfo name="bk_lcm_id" function="screen_id_handler"/>
+		<iteminfo name="bkbs" function="keep_screen_on_always_handler"/>
+		<iteminfo name="bkegmcdk" function="engineermode_calibration_dark_handler"/>
+		<iteminfo name="bk_sns_lgt_ud" function="als_lightsensor_handler"/>
+		<iteminfo name="countryinfo" function="op_countryinfo"/>
+	</common_items>
+	<qualcomm_items>
+		<iteminfo name="switch_hifi" function="switch_left_and_right_hifi_handler"/>
+		<iteminfo name="get_imei" function="get_imei_handler"/>
+		<iteminfo name="dpdt" function="set_dpdt_status_handler"/>
+		<iteminfo name="efs_golden_copy" function="efs_golden_copy_handler"/>
+		<iteminfo name="bkwmac" function="wlan_addr_handler"/>
+		<iteminfo name="bkmeid" function="meid_code_handler"/>
+		<iteminfo name="egmr" function="imei_and_pcb_code_on_handler"/>
+		<iteminfo name="bkts" function="check_card_slot_status_handler"/>
+		<iteminfo name="bkhwkj" function="ps_test_handler"/>
+	</qualcomm_items>
+	<mtk_items>
+		<iteminfo name="sim_lock" function="simlock_handler1"/>
+		<iteminfo name="bkwmac" function="wlan_addr_handler"/>
+		<iteminfo name="bkmeid" function="meid_code_handler"/>
+		<iteminfo name="egmr" function="imei_and_pcb_code_on_handler"/>
+		<iteminfo name="bkts" function="check_card_slot_status_handler"/>
+		<iteminfo name="bkhwkj" function="ps_test_handler"/>
+	</mtk_items>
+	<samsung_items>
+		<iteminfo name="bkwmac" function="wlan_addr_handler"/>
+		<iteminfo name="bkmeid" function="meid_code_handler"/>
+		<iteminfo name="egmr" function="imei_and_pcb_code_on_handler"/>
+		<iteminfo name="bkts" function="check_card_slot_status_handler"/>
+		<iteminfo name="bkhwkj" function="ps_test_handler"/>
+	</samsung_items>
+	<sensor_items>
+	</sensor_items>
+	<audio_items>
+	</audio_items>
+</vivoem_cmd_table>

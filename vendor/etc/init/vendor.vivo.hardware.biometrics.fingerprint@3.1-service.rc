@@ -1,0 +1,76 @@
+on post-fs-data
+    chown system system /dev/goodix_fp
+    chmod 0644 /dev/goodix_fp
+    chown system system /dev/jiiov_fp
+    chmod 0644 /dev/jiiov_fp
+    chown system system /dev/esfp0
+    chmod 0644 /dev/esfp0
+    chown system system /dev/silead_fp
+    chmod 0644 /dev/silead_fp
+    chown system system /dev/nvt_device
+    chmod 0644 /dev/nvt_device
+    chown system system /dev/qbt_ipc
+    chmod 0644 /dev/qbt_ipc
+    chown system system /dev/qbt_fd
+    chmod 0644 /dev/qbt_fd
+    chown system system /dev/qbt_res
+    chmod 0644 /dev/qbt_res
+    chown system system /dev/focaltech_fp
+    chmod 0644 /dev/focaltech_fp
+    chown system system /dev/chipone_fp
+    chmod 0644 /dev/chipone_fp
+    mkdir /mnt/vendor/persist/fingerprint 0777 system system
+    chown system system /sys/fingerprint/hbm_notify_enable
+    chmod 0644 /sys/fingerprint/hbm_notify_enable
+    chown system system /sys/fingerprint/hbm_notify_debug
+    chmod 0644 /sys/fingerprint/hbm_notify_debug
+    chown system system /sys/fp_id/fp_id
+    chmod 0644 /sys/fp_id/fp_id
+
+    chown system system /sys/class/vts/vivo_ts/touch_aoi/aoi_set
+    chmod 0644          /sys/class/vts/vivo_ts/touch_aoi/aoi_set
+    chown system system /sys/class/vts/vivo_ts/touch_aoi/aoi_int_pin
+    chmod 0644          /sys/class/vts/vivo_ts/touch_aoi/aoi_int_pin
+    chown system system /sys/class/vts/vivo_ts/touch_aoi/touch_int
+    chmod 0644          /sys/class/vts/vivo_ts/touch_aoi/touch_int
+    chown system system /sys/bus/platform/devices/soc:fpc_fp/wakeup_enable
+    chown system system /sys/bus/platform/devices/soc:fpc_fp/irq
+    chown system system /sys/bus/platform/devices/soc:fpc_fp/do_wakeup
+    chown system system /sys/bus/platform/devices/soc:fpc_fp/hw_reset
+    chown system system /sys/bus/platform/devices/soc:fpc_fp/clk_enable
+    chown system system /sys/bus/platform/devices/soc:fpc_fp/perf_lock
+    chown system system /sys/bus/platform/devices/soc:fpc_fp/keep_awake
+    chown system system /sys/bus/platform/devices/soc:fpc_fp/regulator_enable
+    chown system system /sys/bus/platform/devices/soc:fpc_fp/request_resource
+
+    chown system system /sys/bus/platform/devices/fpc_fp/wakeup_enable
+    chown system system /sys/bus/platform/devices/fpc_fp/irq
+    chown system system /sys/bus/platform/devices/fpc_fp/do_wakeup
+    chown system system /sys/bus/platform/devices/fpc_fp/hw_reset
+    chown system system /sys/bus/platform/devices/fpc_fp/clk_enable
+    chown system system /sys/bus/platform/devices/fpc_fp/perf_lock
+    chown system system /sys/bus/platform/devices/fpc_fp/keep_awake
+    chown system system /sys/bus/platform/devices/fpc_fp/regulator_enable
+    chown system system /sys/bus/platform/devices/fpc_fp/request_resource
+
+on property:vendor.fingerprint.boot=*
+    chown system system /sys/fp_id/fp_id
+    chmod 0644 /sys/fp_id/fp_id
+    write /sys/fp_id/fp_id ${vendor.fingerprint.boot}
+
+on post-fs-data
+    mkdir /data/vendor/fingerprint 0771 system system
+    setprop persist.sys.fptype ${vendor.fingerprint.boot}
+    setprop persist.vivo.fingerprint.front true
+
+service biometrics-fingerprint /vendor/bin/hw/vendor.vivo.hardware.biometrics.fingerprint@3.1-service
+    class late_start
+    user system
+    group system input uhid
+    onrestart restart gf9518-restart-counter-sh
+
+service gf9518-restart-counter-sh /system/vendor/bin/sh /vendor/bin/init.vivo.fingerprint_restart_counter.sh biometrics-fingerprint 5
+    user system
+    group system
+    disabled
+    oneshot

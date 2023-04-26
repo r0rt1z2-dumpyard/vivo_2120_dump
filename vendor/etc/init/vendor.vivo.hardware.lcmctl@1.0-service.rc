@@ -1,0 +1,4 @@
+service lcmctl_service /vendor/bin/hw/vendor.vivo.hardware.lcmctl@1.0-service
+    class hal
+    user system
+    group system

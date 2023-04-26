@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BoostConfigs>
+    <protocol platform="smd855test">
+        <data commonid="0x00001081"  type ="1" hintid="0x00001081" timeout="4999"   vivoResources="0xF0040400, 3,0xF0040400, 3,0xF0040400, 3"/>
+        <data commonid="0x00001081"  type ="2" hintid="0x00001081" timeout="14999"  vivoResources="0xF0040400, 2"/>
+    </protocol>
+     <protocol platform="smd845test">
+        <data commonid="0x00001081"  type ="3" hintid="152" timeout="123456"/>
+        <data commonid="0x00001081"  type ="4" hintid="153" timeout="2000"/>
+    </protocol>
+
+    <protocol platform="9630test">
+        <data commonid="0x00001081"  type ="5" hintid="154" timeout="678910"/>
+    </protocol>
+
+    <protocol platform="MTK6885test">
+        <data commonid="0x00001081"  type ="1" hintid="150" timeout="18795"/>
+    </protocol>
+
+</BoostConfigs>
+

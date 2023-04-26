@@ -1,0 +1,8 @@
+service vendor.vibrator-default /vendor/bin/hw/android.hardware.vibrator-service.mediatek
+    interface aidl android.hardware.vibrator.IVibrator/default
+    interface aidl android.hardware.vibrator.IVibratorManager/default
+    class hal
+    user system
+    group system
+    disabled
+    oneshot

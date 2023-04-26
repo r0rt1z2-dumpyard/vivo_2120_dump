@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Included>
+    <Decoders>
+        <MediaCodec name="c2.vivo.mp3.decoder" rank="0">
+            <Alias name="OMX.vivo.mp3.decoder" />
+            <!--<Type name="audio/mpeg">
+                <Limit name="channel-count" max="2" />
+                <Limit name="sample-rate" ranges="8000,11025,12000,16000,22050,24000,32000,44100,48000" />
+                <Limit name="bitrate" range="8000-320000" />
+            </Type>-->
+            <Type name="audio/mpeg-L1"> 
+                <Limit name="channel-count" max="2" />
+                <Limit name="sample-rate" ranges="8000,11025,12000,16000,22050,24000,32000,44100,48000" />
+                <Limit name="bitrate" range="8000-320000" />
+            </Type>
+            <Type name="audio/mpeg-L2"> 
+                <Limit name="channel-count" max="2" />
+                <Limit name="sample-rate" ranges="8000,11025,12000,16000,22050,24000,32000,44100,48000" />
+                <Limit name="bitrate" range="8000-320000" />
+            </Type>
+        </MediaCodec>
+        <MediaCodec name="c2.vivo.ape.decoder" rank="0">
+            <Alias name="OMX.vivo.ape.decoder" />
+            <Type name="audio/x-ape">
+                <Limit name="channel-count" max="2" />
+                <Limit name="sample-rate" ranges="8000,11025,12000,16000,22050,24000,32000,44100,48000,88200,96000,176400,192000" />
+            </Type>
+            <Type name="audio/ape">
+                <Limit name="channel-count" max="2" />
+                <Limit name="sample-rate" ranges="8000,11025,12000,16000,22050,24000,32000,44100,48000,88200,96000,176400,192000" />
+            </Type>
+        </MediaCodec>
+        <MediaCodec name="c2.vivo.flac.decoder" type="audio/flac">
+            <Alias name="OMX.vivo.flac.decoder" />
+            <Limit name="channel-count" max="8" />
+            <Limit name="sample-rate" ranges="1-655350" />
+            <Limit name="bitrate" range="1-21000000" />
+        </MediaCodec>
+        <MediaCodec name="c2.vivo.alac.decoder" type="audio/alac" rank="0">
+        	  <Alias name="OMX.vivo.alac.decoder" />
+            <Limit name="channel-count" max="8" />
+            <Limit name="sample-rate" ranges="8000,11025,12000,16000,22050,24000,32000,44100,48000,88200,96000,176400,192000" />
+        </MediaCodec>
+        <!--<MediaCodec name="c2.vivo.dts.decoder" type="audio/dts" rank="0">
+            <Alias name="OMX.vivo.dts.decoder" />
+            <Limit name="channel-count" max="8" />
+            <Limit name="sample-rate" ranges="8000,11025,12000,16000,22050,24000,32000,44100,48000,88200,96000,176400,192000" />
+        </MediaCodec>-->
+        <MediaCodec name="c2.vivo.pcm.decoder" type="audio/pcm" rank="0">
+            <Alias name="OMX.vivo.pcm.decoder" />
+            <Limit name="channel-count" max="8" />
+        </MediaCodec>
+        <MediaCodec name="c2.vivo.ra.decoder" type="audio/ra" rank="0">
+            <Alias name="OMX.vivo.ra.decoder" />
+            <Limit name="channel-count" max="2" />
+        </MediaCodec>
+        <!--<MediaCodec name="c2.vivo.ac3.decoder" type="audio/ac3" rank="0">
+            <Alias name="OMX.vivo.ac3.decoder" />
+            <Limit name="channel-count" max="8" />
+            <Limit name="sample-rate" ranges="8000,11025,12000,16000,22050,24000,32000,44100,48000,88200,96000,176400,192000" />
+        </MediaCodec>
+        <MediaCodec name="c2.vivo.eac3.decoder" type="audio/eac3" rank="0">
+            <Limit name="channel-count" max="8" />
+            <Limit name="sample-rate" ranges="8000,11025,12000,16000,22050,24000,32000,44100,48000,88200,96000,176400,192000" />
+        </MediaCodec>-->
+        <MediaCodec name="c2.vivo.wma.decoder" type="audio/x-ms-wma" rank="0">
+            <Alias name="OMX.vivo.wma.decoder" />
+            <Limit name="channel-count" max="8" />
+            <Limit name="sample-rate" ranges="8000,11025,12000,16000,22050,24000,32000,44100,48000,88200,96000,176400,192000" />
+        </MediaCodec>
+        <MediaCodec name="c2.vivo.alaw.decoder" type="audio/g711-alaw" rank="0">
+            <Alias name="OMX.vivo.alaw.decoder" />
+            <Limit name="channel-count" max="1" />
+            <Limit name="sample-rate" ranges="8000-48000" />
+            <Limit name="bitrate" range="64000" />
+        </MediaCodec>
+        <MediaCodec name="c2.vivo.mlaw.decoder" type="audio/g711-mlaw" rank="0">
+            <Alias name="OMX.vivo.mlaw.decoder" />
+            <Limit name="channel-count" max="1" />
+            <Limit name="sample-rate" ranges="8000-48000" />
+            <Limit name="bitrate" range="64000" />
+        </MediaCodec>
+       <!--
+        <MediaCodec name="c2.vivo.aac.decoder" type="audio/mp4a-latm" rank="0">
+            <Limit name="channel-count" max="8" />
+            <Limit name="sample-rate" ranges="7350,8000,11025,12000,16000,22050,24000,32000,44100,48000" />
+            <Limit name="bitrate" range="8000-960000" />
+        </MediaCodec> -->
+        <MediaCodec name="c2.vivo.ms-adpcm.decoder" type="audio/x-ms-adpcm" rank="0">
+        	<Limit name="channel-count" max="8" />
+        </MediaCodec>
+        <MediaCodec name="c2.vivo.adpcm.decoder"    type="audio/adpcm" rank="0">
+        	<Limit name="channel-count" max="8" />
+        </MediaCodec>
+        <MediaCodec name="c2.vivo.dsd.decoder" type="audio/dsd" rank="0">
+            <Alias name="OMX.vivo.dsd.decoder" />
+            <Limit name="channel-count" max="2" />
+        </MediaCodec>
+    </Decoders>
+</Included>

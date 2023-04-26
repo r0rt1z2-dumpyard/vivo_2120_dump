@@ -1,0 +1,47 @@
+
+# load wifi driver after wmt_loader finish
+on property:vendor.connsys.driver.ready=yes
+  insmod /vendor/lib/modules/${ro.vendor.wlan.chrdev}.ko
+  insmod /vendor/lib/modules/wlan_drv_${ro.vendor.wlan.gen}.ko \
+      forceOpen24G40MHz=${persist.vendor.wlan.forceOpen24G40MHz} \
+      productCountryRegion=${persist.vendor.wlan.country.region} \
+      vgcCustName=${persist.vendor.wlan.vgc.cust.name} \
+      platformName=${ro.vendor.mediatek.platform}
+  start wlan_assistant
+
+# vivo liuyang add for force open 2.4G 40MHz bengin
+on property:ro.vgc.cust.wlan.ChannelBondingMode24GHz=1
+  write /dev/kmsg "change persist.vendor.wlan.forceOpen24G40MHz to 1(default 0)"
+  setprop persist.vendor.wlan.forceOpen24G40MHz ${ro.vgc.cust.wlan.ChannelBondingMode24GHz}
+# vivo liuyang add for force open 2.4G 40MHz end
+
+# vivo liuyang add for country.region begin
+on property:ro.product.country.region=*
+  write /dev/kmsg "change persist.vendor.wlan.country.region"
+  setprop persist.vendor.wlan.country.region ${ro.product.country.region}
+# vivo liuyang add for country.region end
+
+# vivo liuyang add for vgc.cust.name begin
+on property:ro.vgc.cust.name=*
+  write /dev/kmsg "change persist.vendor.wlan.vgc.cust.name"
+  setprop persist.vendor.wlan.vgc.cust.name ${ro.vgc.cust.name}
+# vivo liuyang add for vgc.cust.name end
+
+# vivo liuyang add for set chain begin
+on property:sys.boot_completed=1
+    write /dev/kmsg "reset chainValue to MIMO"
+    setprop persist.sys.wlan.chain MIMO
+
+on property:persist.sys.wlan.chain=*
+    chown system system /sys/module/wlan_drv_${ro.vendor.wlan.gen}/parameters/chainValue
+    chmod 0777 /sys/module/wlan_drv_${ro.vendor.wlan.gen}/parameters/chainValue
+    write /sys/module/wlan_drv_${ro.vendor.wlan.gen}/parameters/chainValue ${persist.sys.wlan.chain}
+    write /dev/kmsg "set chainValue to ${persist.sys.wlan.chain}"
+# vivo liuyang add for set chain end
+
+
+on property:vendor.connsys.driver.ready=yes && property:ro.vgc.sar.distinguish=true
+    chown system system /sys/module/wlan_drv_gen4m/parameters/vgc_WIFI_SAR_MODE
+    chmod 0777 /sys/module/wlan_drv_gen4m/parameters/vgc_WIFI_SAR_MODE
+    write /sys/module/wlan_drv_gen4m/parameters/vgc_WIFI_SAR_MODE "vgc_name=VDF"
+    write /dev/kmsg "set vgc_WIFI_SAR_MODE for vgc VDF project"

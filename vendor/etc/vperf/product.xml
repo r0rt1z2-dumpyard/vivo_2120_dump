@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BoostConfigs>
+    <protocol product="PD1916test">
+        <data commonid="0x00001080"  type ="1" hintid="0x00001080"  timeout="9999" vivoResources="0xF0040400, 1"/>
+        <data commonid="0x00001082"  type ="2" hintid="150" timeout="2000"  />
+    </protocol>
+
+    <protocol product="PD1829test">
+        <data commonid="0x00001083"  type ="1" hintid="150"  timeout="2000" />
+        <data commonid="0x00001084"  type ="2" hintid="150" timeout="2000"  />
+    </protocol>
+
+    <protocol product="TD1909test">
+        <data commonid="0x00001083"  type ="1" hintid="150"  timeout="2345" />
+        <data commonid="0x00001084"  type ="2" hintid="150" timeout="6789"  />
+    </protocol>
+
+    <protocol product="PD1968F_EX">
+        <data commonid="0x00001081"  type ="1" hintid="0x00001081" timeout="2000"  />
+        <data commonid="0x00001083"  type ="4" hintid="0x00001083" timeout="500"  />
+        <data commonid="0x00001083"  type ="6" hintid="0x00001083" timeout="400"  />
+        <data commonid="0x00001084"  type ="1" hintid="0x00001083" timeout="600"  />
+        <data commonid="0x00001084"  type ="2" hintid="0x00001083" timeout="400"  />
+        <data commonid="0x00001084"  type ="3" hintid="0x00001083" timeout="300"  />
+    </protocol>
+
+    <protocol product="PD2012">
+        <data commonid="0x00001081"  type ="1" hintid="0x00001081" timeout="2000"  />
+        <data commonid="0x00001083"  type ="4" hintid="0x00001083" timeout="500"  />
+        <data commonid="0x00001083"  type ="6" hintid="0x00001083" timeout="400"  />
+        <data commonid="0x00001084"  type ="1" hintid="0x00001083" timeout="600"  />
+        <data commonid="0x00001084"  type ="2" hintid="0x00001083" timeout="400"  />
+        <data commonid="0x00001084"  type ="3" hintid="0x00001083" timeout="300"  />
+    </protocol>
+
+</BoostConfigs>
+

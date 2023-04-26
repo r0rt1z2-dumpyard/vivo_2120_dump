@@ -1,0 +1,5 @@
+manager                 u:object_r:service_manager_vndservice:s0
+*                       u:object_r:default_android_vndservice:s0
+android.IRemosaicDaemon u:object_r:remosaic_daemon_service:s0
+goodix.fp               u:object_r:gx_vnd_service:s0
+FocalFingerprintService u:object_r:ff_vndservice:s0
