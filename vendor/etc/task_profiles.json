@@ -1,0 +1,375 @@
+{
+  "Profiles": [
+    {
+      "Name": "SchedTuneBackground",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "schedtune",
+            "Path": "background"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "SchedTuneNormal",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "schedtune",
+            "Path": ""
+          }
+        }
+      ]
+    },
+    {
+      "Name": "SchedTuneForeground",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "schedtune",
+            "Path": "foreground"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "SchedTuneTopApp",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "schedtune",
+            "Path": "top-app"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CpuSetLBackground",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpuset",
+            "Path": "l-background"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CpuSetBackground",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpuset",
+            "Path": "background"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CpuSetHBackground",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpuset",
+            "Path": "h-background"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CpuSetLForeground",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpuset",
+            "Path": "l-foreground"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CpuSetForeground",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpuset",
+            "Path": "foreground"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CpuSetRestricted",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpuset",
+            "Path": "restricted"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CpuSetSystemBackground",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpuset",
+            "Path": "system-background"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CpuSetTopApp",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpuset",
+            "Path": "top-app"
+          }
+        }
+      ]
+    },
+
+    {
+      "Name": "CpuCtlBackground",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpu",
+            "Path": "background"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CpuCtlForeground",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpu",
+            "Path": "foreground"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CpuCtlTopApp",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpu",
+            "Path": "top-app"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CpuCtlNormal",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpu",
+            "Path": ""
+          }
+        }
+      ]
+    },
+
+    {
+      "Name": "LowIoPriority",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "blkio",
+            "Path": "bg"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "NormalIoPriority",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "blkio",
+            "Path": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "HighIoPriority",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "blkio",
+            "Path": "fg"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "MaxIoPriority",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "blkio",
+            "Path": "top"
+          }
+        }
+      ]
+    },
+    {
+       "Name": "SFMainPolicy",
+       "Actions": [
+         {
+           "Name": "JoinCgroup",
+           "Params":
+           {
+             "Controller": "cpuset",
+             "Path": "foreground"
+           }
+         }
+       ]
+     },
+
+    {
+      "Name": "TimerSlackBackground",
+      "Actions": [
+        {
+          "Name": "SetTimerSlack",
+          "Params":
+          {
+            "Slack": "10000000"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "TimerSlackHBackground",
+      "Actions": [
+        {
+          "Name": "SetTimerSlack",
+          "Params":
+          {
+            "Slack": "8000000"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "TimerSlackForeground",
+      "Actions": [
+        {
+          "Name": "SetTimerSlack",
+          "Params":
+          {
+            "Slack": "50000"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "TimerSlackTopApp",
+      "Actions": [
+        {
+          "Name": "SetTimerSlack",
+          "Params":
+          {
+            "Slack": "10000"
+          }
+        }
+      ]
+    }
+  ],
+
+  "AggregateProfiles": [
+    {
+      "Name": "SCHED_SP_DEFAULT",
+      "Profiles": [ "TimerSlackNormal" ]
+    },
+    {
+      "Name": "SCHED_SP_BACKGROUND",
+      "Profiles": [ "HighEnergySaving", "CpuCtlBackground", "LowIoPriority", "TimerSlackHigh" ]
+    },
+    {
+      "Name": "SCHED_SP_FOREGROUND",
+      "Profiles": [ "HighPerformance", "CpuCtlForeground", "HighIoPriority", "TimerSlackNormal" ]
+    },
+    {
+      "Name": "SCHED_SP_TOP_APP",
+      "Profiles": [ "MaxPerformance", "CpuCtlTopApp", "MaxIoPriority", "TimerSlackNormal" ]
+    },
+    {
+      "Name": "SCHED_SP_RT_APP",
+      "Profiles": [ "RealtimePerformance", "CpuCtlNormal", "MaxIoPriority", "TimerSlackNormal" ]
+    },
+    {
+      "Name": "CPUSET_SP_DEFAULT",
+      "Profiles": [ "TimerSlackNormal" ]
+    },
+    {
+      "Name": "CPUSET_SP_BACKGROUND",
+      "Profiles": [ "HighEnergySaving", "CpuCtlBackground", "ProcessCapacityLow", "LowIoPriority", "TimerSlackHigh" ]
+    },
+    {
+      "Name": "CPUSET_SP_FOREGROUND",
+      "Profiles": [ "HighPerformance", "CpuCtlForeground", "ProcessCapacityHigh", "HighIoPriority", "TimerSlackNormal" ]
+    },
+    {
+      "Name": "CPUSET_SP_TOP_APP",
+      "Profiles": [ "MaxPerformance", "CpuCtlTopApp", "ProcessCapacityMax", "MaxIoPriority", "TimerSlackNormal" ]
+    },
+    {
+      "Name": "CPUSET_SP_SYSTEM",
+      "Profiles": [ "ServiceCapacityLow", "TimerSlackNormal" ]
+    },
+    {
+      "Name": "CPUSET_SP_RESTRICTED",
+      "Profiles": [ "ServiceCapacityRestricted", "TimerSlackNormal" ]
+    }
+  ]
+}

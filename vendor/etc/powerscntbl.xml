@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCNTABLE>
+    <scenario powerhint="MTKPOWER_HINT_ACT_SWITCH">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+        <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+        <data cmd="PERF_RES_POWER_HINT_EXT_HINT" param1="30"></data>
+        <data cmd="PERF_RES_POWER_HINT_EXT_HINT_HOLD_TIME" param1="2000"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_PACK_SWITCH">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+        <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+        <data cmd="PERF_RES_POWER_HINT_EXT_HINT" param1="30"></data>
+        <data cmd="PERF_RES_POWER_HINT_EXT_HINT_HOLD_TIME" param1="2000"></data>
+    </scenario>
+    <scenario powerhint="LAUNCH">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+        <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_EXT_LAUNCH">
+        <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="1"></data>
+        <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="40"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_WHITELIST_LAUNCH">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+        <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_PROCESS_CREATE">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+        <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+        <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+        <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="6000"></data>
+        <data cmd="PERF_RES_POWER_HINT_EXT_HINT" param1="30"></data>
+        <data cmd="PERF_RES_POWER_HINT_EXT_HINT_HOLD_TIME" param1="35000"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_APP_ROTATE">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+        <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+        <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_PMS_INSTALL">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+        <data cmd="PERF_RES_POWER_HINT_INSTALL_MAX_DURATION" param1="90000"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_APP_TOUCH">
+        <data cmd="PERF_RES_POWERHAL_TOUCH_BOOST_NOTIFY_FBC" param1="1"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_GALLERY_BOOST">
+        <data cmd="PERF_RES_CPUFREQ_PERF_MODE" param1="1"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_WFD">
+        <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+        <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_AUDIO_POWER_DL">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="800000"></data>
+        <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="1"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_AUDIO_LATENCY_UL">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="1500000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="1000000"></data>
+        <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="1"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_AUDIO_DISABLE_WIFI_POWER_SAVE">
+        <data cmd="PERF_RES_NET_WIFI_CAM" param1="1"></data>
+        <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="1"></data>
+    </scenario>
+	 <!-- vivo app lauch boost -->
+    <scenario powerhint="1150">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+        <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+        <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+        <data cmd="PERF_RES_PERF_TASK_TURBO" param1="15"></data>
+        <data cmd="PERF_RES_SCHED_CACHE_PART_CTRL" param1="1"></data>
+        <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="6000"></data>
+        <data cmd="PERF_RES_POWER_HINT_EXT_HINT" param1="30"></data>
+        <data cmd="PERF_RES_POWER_HINT_EXT_HINT_HOLD_TIME" param1="35000"></data>
+    </scenario>
+    <scenario powerhint="1152">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+    </scenario>
+    <scenario powerhint="1153">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+    </scenario>
+    <!-- vivo Scroll boost  boost -->
+    <scenario powerhint="1155">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="1000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="1000000"></data>
+    </scenario>
+    <scenario powerhint="1157">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="1000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="1000000"></data>
+    </scenario>
+    <!-- vivo animation boost -->
+    <scenario powerhint="1158">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+    </scenario>
+    <scenario powerhint="1159">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="1000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="1000000"></data>
+    </scenario>
+    <scenario powerhint="1160">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+        <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+        <data cmd="PERF_RES_POWER_HINT_EXT_HINT" param1="30"></data>
+        <data cmd="PERF_RES_POWER_HINT_EXT_HINT_HOLD_TIME" param1="2000"></data>
+    </scenario>
+    <!-- Activity boost -->
+    <scenario powerhint="1161">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+        <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+        <data cmd="PERF_RES_POWER_HINT_EXT_HINT" param1="30"></data>
+        <data cmd="PERF_RES_POWER_HINT_EXT_HINT_HOLD_TIME" param1="2000"></data>
+    </scenario>
+    <scenario powerhint="1162">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+        <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+        <data cmd="PERF_RES_POWER_HINT_EXT_HINT" param1="30"></data>
+        <data cmd="PERF_RES_POWER_HINT_EXT_HINT_HOLD_TIME" param1="2000"></data>
+    </scenario>
+    <scenario powerhint="1163">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+        <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+        <data cmd="PERF_RES_POWER_HINT_EXT_HINT" param1="30"></data>
+        <data cmd="PERF_RES_POWER_HINT_EXT_HINT_HOLD_TIME" param1="2000"></data>
+    </scenario>
+    <!-- touch boost -->
+    <scenario powerhint="1164">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+    </scenario>
+    <scenario powerhint="1165">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+    </scenario>
+    <scenario powerhint="1166">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+    </scenario>
+    <scenario powerhint="1167">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+    </scenario>
+    <scenario powerhint="1168">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+    </scenario>
+    <scenario powerhint="1167">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+    </scenario>
+    <scenario powerhint="1170">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+    </scenario>
+    <scenario powerhint="1171">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+    </scenario>
+    <!-- mtpboost -->
+    <scenario powerhint="1172">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+    </scenario>
+    <!-- drag boost -->
+    <scenario powerhint="1173">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="1000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="1000000"></data>
+    </scenario>
+    <!-- packageInstall boost -->
+    <scenario powerhint="1176">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+    </scenario>
+    <!-- Rotation latency boost -->
+    <scenario powerhint="1178">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+        <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+        <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+    </scenario>
+    <!-- animation boost -->
+    <scenario powerhint="1179">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="1000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="1000000"></data>
+    </scenario>
+</SCNTABLE>

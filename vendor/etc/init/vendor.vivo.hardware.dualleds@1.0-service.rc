@@ -1,0 +1,4 @@
+service vivo-dualleds-hal-1-0 /vendor/bin/hw/vendor.vivo.hardware.dualleds@1.0-service
+	class hal
+	user system
+	group system

@@ -1,0 +1,94 @@
+{
+  "MotionMetering": {
+    "comment_V1": "params below control V1",
+
+    "comment_smoothFactor": "smooth current motion and previous motion",
+    "smoothFactor": 0,
+
+    "comment_mdLocalTh": "threshold to classify current loacal motion",
+    "mdLocalTh": 10,
+
+    "coment_mdGlobalTh": "threshold to classify current global motion",
+    "mdGlobalTh": 2,
+
+    "comment_mdConfirmTh": "threshold to finally judgement wheather obj moves",
+    "mdConfirmTh": 50,
+
+
+    "comment_V2": "params below control V2",
+
+    "comment_softThresMotion": "soft threshold to pixel motion, in (0.0,4.0)",
+    "softThresMotion": 1.0,
+
+    "comment_pmmPredictMethod": "0: equal current frame motion 1:mean of previous avgFrameNum frame motion 2:GMM(Gaussian Mixture Mode)",
+    "pmmPredictMethod": 1,
+
+    "comment_avgFrameNum": "num of frame in mean method(pmmPredictMethod=1) to predict motion",
+    "avgFrameNum": 4,
+
+    "comment_iterConvergence": "num of iteration in GMM method(pmmPredictMethod=2) to predict motion, in [250,1000]",
+    "iterConvergence": 1000,
+
+    "comment_gmmClusterNum": "num of cluster in GMM method(pmmPredictMethod=2) to predict motion",
+    "gmmClusterNum": 3,
+
+    "comment_gmmFrameNum": "num of frame in GMM method(pmmPredictMethod=2) to predict motion",
+    "gmmFrameNum": 10,
+
+    "comment_gmmConf": "confidence to get one clear frame at least in next gmmKFrameK frame in GMM method",
+    "gmmConf": 0.99,
+
+    "comment_gmmKFrame": "num of capturing frame for using",
+    "gmmKFrame": 4,
+
+    "comment_enableDump": "dump motion marked frame, only in WIN32",
+    "enableDump": 0,
+
+    "comment_gyrot0_and_gyrot1": "phoneMotionMode, take gyro data from gyro0 seconds to gyrot1 before current frame",
+    "gyrot0": 1.5,
+    "gyrot1": 0.4,
+
+    "comment_tripodThresh_and_sportThresh": "gyro threshold to classify tripod and handle",
+    "tripodThresh": 0.008,
+
+    "comment_gyroNumPerSecond": "input max num of gyro per second, eg: preview max 30fps, process 1 frame per 4 frames, every time 40 gyro, the gyroNumPerSecond is 30fps/4*40 = 300",
+    "gyroNumPerSecond": 300,
+
+    "comment_diffSensitivity": "frame diff threshold",
+    "diffSensitivity": 10.0,
+
+    "comment_gradSensitivity": "gradiant threshold",
+    "gradSensitivity": 5.0,
+
+    "comment_noiseSensitivity": "noise filter coefficient",
+    "noiseSensitivity": 2.5,
+
+    "comment_motionClassifyThresh": "threshold to classify motion, this param should match skip frame number",
+    "motionClassifyThresh": 3.0,
+
+    "comment_motionSmoothRate": "the rate of smoothing the current motion and previous motion, in (0.0, 1.0). 1.0 means totally depending on current motion",
+    "motionSmoothRate": 0.5,
+
+    "comment_motionPercent": "select strongest percent grid to classify motion mode",
+    "motionPercent": 0.95,
+
+    "comment_enableBrightCompensation": "0:disable brightness compensation; 1:enable",
+    "enableBrightCompensation": 1,
+
+    "comment_enableBypass": "0: disable bypass 1:enable bypass",
+    "enableBypass": 0,
+
+    "comment_defaultMotion": "if enableBaypass = 1, 1: motion mode 0: no obj motion",
+    "defaultMotion": 1,
+
+    "comment_lowLight": "combine gyro and motion low light point",
+    "lowLight": 150,
+
+    "comment_highLight": "combine gyro and motion high light point",
+    "highLight": 235,
+
+    "comment_gyroMag": "gyro coefficient to match motion in magnitude",
+    "gyroMag": 0.2
+
+  }
+}

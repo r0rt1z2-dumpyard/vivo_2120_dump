@@ -1,0 +1,4 @@
+service vivoasem-hal-1-0 /vendor/bin/hw/vendor.aftersale.hardware.vivoasem@1.0-service
+    class hal
+    user root
+    group system radio audio

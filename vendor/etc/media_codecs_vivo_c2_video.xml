@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Included>
+    <Decoders>
+        <MediaCodec name="c2.vivo.rv.decoder" type="video/rv" rank="1">
+        	  <Alias name="OMX.vivo.rv.decoder" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="size" min="2x2" max="2048x2048" />            
+            <Limit name="block-count" range="1-16384" />
+            <Limit name="blocks-per-second" range="1-1000000" />
+            <Limit name="bitrate" range="1-40000000" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+
+        <MediaCodec name="c2.vivo.vc1.decoder" rank="1">
+        	  <Alias name="OMX.vivo.vc1.decoder" />
+        	  <Type name="video/x-ms-wmv">
+		            <Limit name="alignment" value="2x2" />
+		            <Limit name="block-size" value="16x16" />
+		            <Limit name="size" min="2x2" max="2048x2048" />            
+		            <Limit name="block-count" range="1-16384" />
+		            <Limit name="blocks-per-second" range="1-1000000" />
+		            <Limit name="bitrate" range="1-40000000" />
+		            <Feature name="adaptive-playback" />
+        	  </Type>
+        	  <Type name="video/x-ms-wmv2">
+		            <Limit name="alignment" value="2x2" />
+		            <Limit name="block-size" value="16x16" />
+		            <Limit name="size" min="2x2" max="2048x2048" />            
+		            <Limit name="block-count" range="1-16384" />
+		            <Limit name="blocks-per-second" range="1-1000000" />
+		            <Limit name="bitrate" range="1-40000000" />
+		            <Feature name="adaptive-playback" />
+        	  </Type>
+        </MediaCodec>
+
+        <MediaCodec name="c2.vivo.flv.decoder" rank="1">
+        	  <Alias name="OMX.vivo.flv.decoder" />
+        	  <Type name="video/x-flv">
+		            <Limit name="alignment" value="2x2" />
+		            <Limit name="block-size" value="16x16" />
+		            <Limit name="size" min="2x2" max="2048x2048" />            
+		            <Limit name="block-count" range="1-16384" />
+		            <Limit name="blocks-per-second" range="1-1000000" />
+		            <Limit name="bitrate" range="1-40000000" /> 
+		            <Feature name="adaptive-playback" />         	  	
+        	  </Type>
+        	  <Type name="video/flv1">
+		            <Limit name="alignment" value="2x2" />
+		            <Limit name="block-size" value="16x16" />
+		            <Limit name="size" min="2x2" max="2048x2048" />            
+		            <Limit name="block-count" range="1-16384" />
+		            <Limit name="blocks-per-second" range="1-1000000" />
+		            <Limit name="bitrate" range="1-40000000" />
+		            <Feature name="adaptive-playback" /> 
+        	  </Type>
+        </MediaCodec>
+
+        <MediaCodec name="c2.vivo.divx3.decoder" type="video/divx3" rank="1"> 
+        	  <Alias name="OMX.vivo.divx3.decoder" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="size" min="2x2" max="2048x2048" />            
+            <Limit name="block-count" range="1-16384" />
+            <Limit name="blocks-per-second" range="1-1000000" />
+            <Limit name="bitrate" range="1-40000000" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+		<!--
+        <MediaCodec name="c2.vivo.avc.decoder" type="video/avc" variant="slow-cpu,!slow-cpu" rank="1"> 
+        	  <Alias name="OMX.vivo.avc.decoder" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Variant name="!slow-cpu">
+                <Limit name="size" min="2x2" max="4080x4080" />
+                <Limit name="block-count" range="1-32768" /> 
+                <Limit name="blocks-per-second" range="1-1966080" />
+                <Limit name="bitrate" range="1-48000000" />
+            </Variant>
+            <Variant name="slow-cpu">
+                <Limit name="size" min="2x2" max="2048x2048" />
+                <Limit name="block-count" range="1-16384" />
+                <Limit name="blocks-per-second" range="1-491520" />
+                <Limit name="bitrate" range="1-40000000" />
+            </Variant>
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+
+        <MediaCodec name="c2.vivo.hevc.decoder" type="video/hevc" variant="slow-cpu,!slow-cpu" rank="1">
+            <Alias name="OMX.vivo.hevc.decoder" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="8x8" />
+            <Variant name="!slow-cpu">
+                <Limit name="size" min="2x2" max="4096x4096" />
+                <Limit name="block-count" range="1-196608" /> 
+                <Limit name="blocks-per-second" range="1-2000000" />
+                <Limit name="bitrate" range="1-10000000" />
+            </Variant>
+            <Variant name="slow-cpu">
+                <Limit name="size" min="2x2" max="2048x2048" />
+                <Limit name="block-count" range="1-65536" />
+                <Limit name="blocks-per-second" range="1-491520" />
+                <Limit name="bitrate" range="1-5000000" />
+            </Variant>
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+
+        <MediaCodec name="c2.vivo.mpeg4.decoder" type="video/mp4v-es" rank="1"> 
+        	  <Alias name="OMX.vivo.mpeg4.decoder" />
+            <Limit name="size" min="2x2" max="2048x2048" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" range="12-11880" />
+            <Limit name="bitrate" range="1-384000" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+
+        <MediaCodec name="c2.vivo.h263.decoder" type="video/3gpp" rank="1">
+            <Alias name="OMX.vivo.h263.decoder" />
+            <Limit name="size" min="2x2" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="bitrate" range="1-384000" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+
+        <MediaCodec name="c2.vivo.mpeg2.decoder" type="video/mpeg2" variant="slow-cpu,!slow-cpu" rank="1"> 
+        	  <Alias name="OMX.vivo.mpeg2.decoder" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="size" min="2x2" max="2048x2048" />            
+            <Variant name="!slow-cpu">
+                <Limit name="block-count" range="1-16384" />
+                <Limit name="blocks-per-second" range="1-1000000" />
+                <Limit name="bitrate" range="1-40000000" />
+            </Variant>
+            <Variant name="slow-cpu">
+                <Limit name="block-count" range="1-8192" />
+                <Limit name="blocks-per-second" range="1-1000000" />
+                <Limit name="bitrate" range="1-40000000" />
+            </Variant>
+            <Feature name="adaptive-playback" />
+        </MediaCodec> -->
+
+        <MediaCodec name="c2.vivo.mjpeg.decoder" rank="1">
+        	  <Alias name="OMX.vivo.mjpeg.decoder" />
+        	  <Type name="video/mjpeg">
+		            <Limit name="alignment" value="2x2" />
+		            <Limit name="block-size" value="16x16" />
+		            <Limit name="size" min="2x2" max="2048x2048" />            
+		            <Limit name="block-count" range="1-16384" />
+		            <Limit name="blocks-per-second" range="1-1000000" />
+		            <Limit name="bitrate" range="1-40000000" />
+		            <Feature name="adaptive-playback" />
+        	  </Type>
+        	  <Type name="video/x-motion-jpeg">
+		            <Limit name="alignment" value="2x2" />
+		            <Limit name="block-size" value="16x16" />
+		            <Limit name="size" min="2x2" max="2048x2048" />            
+		            <Limit name="block-count" range="1-16384" />
+		            <Limit name="blocks-per-second" range="1-1000000" />
+		            <Limit name="bitrate" range="1-40000000" />
+		            <Feature name="adaptive-playback" />
+        	  </Type>
+        </MediaCodec>
+        <!--
+        <MediaCodec name="c2.vivo.vp8.decoder" type="video/x-vnd.on2.vp8" variant="slow-cpu,!slow-cpu" rank="1">
+            <Alias name="OMX.vivo.vp8.decoder" />
+            <Limit name="size" min="2x2" max="2048x2048" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Variant name="!slow-cpu">
+                <Limit name="block-count" range="1-16384" />
+                <Limit name="blocks-per-second" range="1-1000000" />
+                <Limit name="bitrate" range="1-40000000" />
+            </Variant>
+            <Variant name="slow-cpu">
+                <Limit name="block-count" range="1-8192" /> 
+                <Limit name="blocks-per-second" range="1-1000000" />
+                <Limit name="bitrate" range="1-40000000" />
+            </Variant>
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+
+        <MediaCodec name="c2.vivo.vp9.decoder" type="video/x-vnd.on2.vp9" variant="slow-cpu,!slow-cpu" rank="1">
+            <Alias name="OMX.vivo.vp9.decoder" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Variant name="!slow-cpu">
+                <Limit name="size" min="2x2" max="2048x2048" />
+                <Limit name="block-count" range="1-16384" />
+                <Limit name="blocks-per-second" range="1-500000" />
+                <Limit name="bitrate" range="1-40000000" />
+            </Variant>
+            <Variant name="slow-cpu">
+                <Limit name="size" min="2x2" max="1280x1280" />
+                <Limit name="block-count" range="1-3600" /> 
+                <Limit name="blocks-per-second" range="1-108000" />
+                <Limit name="bitrate" range="1-5000000" />
+            </Variant>
+            <Feature name="adaptive-playback" />
+        </MediaCodec> -->
+		
+    </Decoders>
+</Included>

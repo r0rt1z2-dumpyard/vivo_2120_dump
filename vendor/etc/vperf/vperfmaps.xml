@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BoostConfigs>
+    <!--app lauch boost  begin-->
+    <!-- Type="1", main launch boost of 2sec begin-->
+    <protocol commonid="0x00001081"  type ="1" vivoResources="0xF0040400, 3" >
+        <data target="mtk" hintid="1150" timeout="2000"  />
+        <data target="qcom" hintid="0x00001081" timeout="2000" />
+        <data target="samsung" hintid="500007" timeout="2000" />
+    </protocol>
+    <!-- Type="1", main launch boost of 2sec end-->
+
+    <!-- Type="2", launch boost for disable packing 1.5sec begin,qcom use-->
+    <protocol commonid="0x00001081"  type ="2">
+        <data target="qcom" hintid="0x00001081" timeout="1500" />
+    </protocol>
+    <!-- Type="2", launch boost for disable packing 1.5sec end-->
+
+    <!-- Type="3", App is launching from recent app begin-->
+    <protocol commonid="0x00001081"  type ="3">
+        <data target="mtk" hintid="-1" timeout="15000"  />
+        <data target="qcom" hintid="0x00001081" timeout="15000" />
+        <data target="samsung" hintid="-1" timeout="15000" />
+    </protocol>
+    <!-- Type="3", App is launching from recent app end-->
+
+    <!-- Type="4", game launch boost begin-->
+    <protocol commonid="0x00001081"  type ="4">
+        <data target="mtk" hintid="-1" timeout="15000"  />
+        <data target="qcom" hintid="0x00001081" timeout="15000" />
+        <data target="samsung" hintid="-1" timeout="15000" />
+    </protocol>
+    <!-- Type="4", game launch boost end-->
+
+    <!-- SAMSUNG NOT USE-->
+    <protocol commonid="0x00001081"  type ="6">
+        <data target="mtk" hintid="-1" timeout="2000"  />
+        <data target="qcom" hintid="0x00001081" timeout="-1" />
+        <data target="samsung" hintid="-1" timeout="-1" />
+    </protocol>
+    <!--app lauch boost  end-->
+
+    <!--Prefling Scroll boost begin -->
+    <!-- Type="1", Vertical Scroll boost -->
+    <protocol commonid="0x00001080"  type ="1">
+        <data target="mtk" hintid="1155" timeout="-1"  />
+        <data target="qcom" hintid="0x00001080" timeout="-1" />
+        <data target="samsung" hintid="500010" timeout="-1" />
+    </protocol>
+
+    <!-- Type="2", Horizontal Scroll boost -->
+    <protocol commonid="0x00001080"  type ="2">
+        <data target="mtk" hintid="1180" timeout="-1"  />
+        <data target="qcom" hintid="0x00001080" timeout="-1" />
+        <data target="samsung" hintid="500011" timeout="-1" />
+    </protocol>
+
+    <!-- Type="4", TOP APP GAME Scroll boost-->
+    <protocol commonid="0x00001080"  type ="4">
+        <data target="mtk" hintid="1157" timeout="80"  />
+        <data target="qcom" hintid="0x00001080" timeout="80" />
+        <data target="samsung" hintid="500009" timeout="80" />
+    </protocol>
+    <!--Prefling Scroll boost end-->
+
+    <!--Animation boost begin -->
+    <protocol commonid="0x00001083"  type ="-1">
+        <data target="mtk" hintid="1158" timeout="500"  />
+        <data target="qcom" hintid="0x00001083" timeout="-1" />
+        <data target="samsung" hintid="500027" timeout="500" />
+    </protocol>
+    <protocol commonid="0x00001083"  type ="1">
+        <data target="mtk" hintid="1158" timeout="-1"  />
+        <data target="qcom" hintid="0x00001083" timeout="-1" />
+        <data target="samsung" hintid="-1" timeout="-1" />
+    </protocol>
+    <protocol commonid="0x00001083"  type ="2">
+        <data target="mtk" hintid="1159" timeout="400"  />
+        <data target="qcom" hintid="0x00001083" timeout="400" />
+        <data target="samsung" hintid="-1" timeout="400" />
+    </protocol>
+    <protocol commonid="0x00001083"  type ="3">
+        <data target="mtk" hintid="1160" timeout="200"  />
+        <data target="qcom" hintid="0x00001083" timeout="200" />
+        <data target="samsung" hintid="-1" timeout="200" />
+    </protocol>
+    <protocol commonid="0x00001083"  type ="4" vivoResources="0xF0040400, 3" >
+        <data target="mtk" hintid="1160" timeout="500"  />
+        <data target="qcom" hintid="0x00001083" timeout="500" />
+        <data target="samsung" hintid="500031" timeout="600" />
+    </protocol>
+    <!--Animation  start -->
+    <protocol commonid="0x00001083"  type ="5">
+        <data target="mtk" hintid="1159" timeout="500"  />
+        <data target="qcom" hintid="0x00001083" timeout="500" />
+        <data target="samsung" hintid="500040" timeout="500" />
+    </protocol>
+    <!--Animation  end -->
+    <protocol commonid="0x00001083"  type ="6">
+        <data target="mtk" hintid="1160" timeout="400" vivoResources="0xF0040400, 3" />
+        <data target="qcom" hintid="0x00001083" timeout="400" />
+        <data target="samsung" hintid="500042" timeout="200" />
+    </protocol>
+    <!--Animation boost end -->
+
+    <!--Activity boost begin -->
+    <!--activity boost for different tasks of 600ms begin-->
+    <protocol commonid="0x00001084"  type ="1" vivoResources="0xF0040400, 3" >
+        <data target="mtk" hintid="1161" timeout="600"  />
+        <data target="qcom" hintid="0x00001083" timeout="600" />
+        <data target="samsung" hintid="500004" timeout="600" />
+    </protocol>
+    <!--activity boost for different tasks of 600ms end-->
+
+    <!--activity boost for same task of 400ms begin-->
+    <protocol commonid="0x00001084"  type ="2" vivoResources="0xF0040400, 3" >
+        <data target="mtk" hintid="1162" timeout="400"  />
+        <data target="qcom" hintid="0x00001083" timeout="400" />
+        <data target="samsung" hintid="500003" timeout="400" />
+    </protocol>
+    <!--activity boost for same task of 400ms end-->
+
+    <!--activity boost for same task of 300ms begin-->
+    <protocol commonid="0x00001084"  type ="3" vivoResources="0xF0040400, 3" >
+        <data target="mtk" hintid="1163" timeout="300"  />
+        <data target="qcom" hintid="0x00001083" timeout="300" />
+        <data target="samsung" hintid="500008" timeout="300" />
+    </protocol>
+    <!--activity boost for same task of 300ms end-->
+    <!--Activity boost end -->
+
+    <!--Touch boost begin -->
+    <protocol commonid="0x00001085"  type ="-1">
+        <data target="mtk" hintid="1164" timeout="300"  />
+        <data target="qcom" hintid="0x00001085" timeout="300" />
+        <data target="samsung" hintid="-1" timeout="300" />
+    </protocol>
+    <protocol commonid="0x00001085"  type ="1">
+        <data target="mtk" hintid="1164" timeout="100"  />
+        <data target="qcom" hintid="0x00001085" timeout="100" />
+        <data target="samsung" hintid="-1" timeout="100" />
+    </protocol>
+    <protocol commonid="0x00001085"  type ="2">
+        <data target="mtk" hintid="1165" timeout="30"  />
+        <data target="qcom" hintid="0x00001085" timeout="30" />
+        <data target="samsung" hintid="500020" timeout="30" />
+    </protocol>
+    <protocol commonid="0x00001085"  type ="3">
+        <data target="mtk" hintid="1166" timeout="150"  />
+        <data target="qcom" hintid="0x00001085" timeout="150" />
+        <data target="samsung" hintid="-1" timeout="150" />
+    </protocol>
+    <protocol commonid="0x00001085"  type ="4">
+        <data target="mtk" hintid="1167" timeout="400"  />
+        <data target="qcom" hintid="0x00001085" timeout="400" />
+        <data target="samsung" hintid="-1" timeout="400" />
+    </protocol>
+    <protocol commonid="0x00001085"  type ="5">
+        <data target="mtk" hintid="1168" timeout="1000"  />
+        <data target="qcom" hintid="0x00001085" timeout="1000" />
+        <data target="samsung" hintid="-1" timeout="1000" />
+    </protocol>
+    <protocol commonid="0x00001085"  type ="6">
+        <data target="mtk" hintid="1169" timeout="4000"  />
+        <data target="qcom" hintid="0x00001085" timeout="4000" />
+        <data target="samsung" hintid="-1" timeout="4000" />
+    </protocol>
+    <protocol commonid="0x00001085"  type ="7">
+        <data target="mtk" hintid="1170" timeout="50"  />
+        <data target="qcom" hintid="0x00001085" timeout="50" />
+        <data target="samsung" hintid="-1" timeout="50" />
+    </protocol>
+    <protocol commonid="0x00001085"  type ="8">
+        <data target="mtk" hintid="1171" timeout="300"  />
+        <data target="qcom" hintid="0x00001085" timeout="300" />
+        <data target="samsung" hintid="-1" timeout="300" />
+    </protocol>
+    <protocol commonid="0x00001085"  type ="9">
+        <data target="mtk" hintid="1171" timeout="500"  />
+        <data target="qcom" hintid="0x00001085" timeout="500" />
+        <data target="samsung" hintid="500036" timeout="500" />
+    </protocol>
+    <protocol commonid="0x00001085"  type ="10">
+        <data target="mtk" hintid="1171" timeout="1500"  />
+        <data target="qcom" hintid="0x00001085" timeout="1500" />
+        <data target="samsung" hintid="500018" timeout="1500" />
+    </protocol>
+    <protocol commonid="0x00001085"  type ="11">
+        <data target="mtk" hintid="1171" timeout="100"  />
+        <data target="qcom" hintid="0x00001085" timeout="100" />
+        <data target="samsung" hintid="-1" timeout="100" />
+    </protocol>
+    <!--Touch boost end -->
+
+    <!--MTP boost begin-->
+    <protocol commonid="0x00001086"  type ="0">
+        <data target="mtk" hintid="1172" timeout="0"  />
+        <data target="qcom" hintid="0x00001086" timeout="0" />
+        <data target="samsung" hintid="-1" timeout="0" />
+    </protocol>
+    <!--MTP boost end -->
+
+    <!--Drag boost begin -->
+    <protocol commonid="0x00001087"  type ="1">
+        <data target="mtk" hintid="1173" timeout="0"  />
+        <data target="qcom" hintid="0x00001087" timeout="0" />
+        <data target="samsung" hintid="500025" timeout="0" />
+    </protocol>
+    <!--Drag boost end -->
+
+    <!--PackageInstall boost begin-->
+    <protocol commonid="0x00001088"  type ="-1">
+        <data target="mtk" hintid="1176" timeout="-1"  />
+        <data target="qcom" hintid="0x00001088" timeout="0" />
+        <data target="samsung" hintid="-1" timeout="-1" />
+    </protocol>
+    <!--PackageInstall boost end -->
+
+    <!--Rotation latency boost  begin -->
+    <protocol commonid="0x00001089"  type ="-1">
+        <data target="mtk" hintid="1178" timeout="1500"  />
+        <data target="qcom" hintid="0x00001089" timeout="1500" />
+        <data target="samsung" hintid="500012" timeout="1500" />
+    </protocol>
+    <!--Rotation latency boost end -->
+
+    <!--Rotation animation boost  begin -->
+    <protocol commonid="0x00001090"  type ="-1">
+        <data target="mtk" hintid="1179" timeout="1000"  />
+        <data target="qcom" hintid="0x00001089" timeout="1000" />
+        <data target="samsung" hintid="500013" timeout="1000" />
+    </protocol>
+    <!--Rotation animation boost end-->
+
+    <!--monster mode  begin -->
+    <protocol commonid="0x00001091"  type ="10">
+        <data target="mtk" hintid="2000" timeout="0"  />
+        <data target="qcom" hintid="-1" timeout="0" />
+        <data target="samsung" hintid="-1" timeout="0" />
+    </protocol>
+    <!--monster mode end-->
+
+   <!--Display on Resource  begin -->
+    <protocol commonid="0x00001041"  type ="-1">
+        <data target="mtk" hintid="-1" timeout="0"  />
+        <data target="qcom" hintid="0x00001041" timeout="0" />
+        <data target="samsung" hintid="-1" timeout="0" />
+    </protocol>
+    <protocol commonid="0x00001040"  type ="-1">
+        <data target="mtk" hintid="-1" timeout="0"  />
+        <data target="qcom" hintid="0x00001040" timeout="0" />
+        <data target="samsung" hintid="-1" timeout="0" />
+    </protocol>
+    <!--Display on Resource end-->
+</BoostConfigs>
+
+
+

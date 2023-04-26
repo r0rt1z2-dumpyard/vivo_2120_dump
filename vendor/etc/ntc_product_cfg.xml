@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ntc_auto_test>
+	<Command name = "AT+BK_PWR_NTC=1,1">
+		<item name = "BOARD_THERM"/>
+		<item name = "BATT_THERM"/>
+	</Command>
+	<Command name = "AT+BK_PWR_NTC=1,2" cache_file="/cache/recovery/last_ntc_temperature">
+		<item name = "4G_PA_THERM"/>
+	</Command>
+</ntc_auto_test>
